@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# Publish service-management-metrics.github.io/ to its own repository with git subtree.
+#
+#   bin/deploy-site            push the subtree to the `site` remote's main branch
+#   bin/deploy-site --dry-run  show what would be pushed
+#
+# One-time setup:
+#
+#   git remote add site git@github.com:service-management-metrics/service-management-metrics.github.io.git
+#
+# Never push to the site repository directly: all site changes are made here.
+set -eu
+cd "$(dirname "$0")/.."
+
+PREFIX=service-management-metrics.github.io
+REMOTE=site
+BRANCH=main
+
+git remote get-url "$REMOTE" >/dev/null 2>&1 || {
+  echo "deploy-site: no git remote named '$REMOTE'; see the comment at the top of this script" >&2
+  exit 1
+}
+[ -d "$PREFIX" ] || { echo "deploy-site: $PREFIX/ does not exist yet" >&2; exit 1; }
+[ -z "$(git status --porcelain -- "$PREFIX")" ] || {
+  echo "deploy-site: uncommitted changes under $PREFIX/; commit them first" >&2
+  exit 1
+}
+
+if [ "${1:-}" = "--dry-run" ]; then
+  echo "would run: git subtree push --prefix=$PREFIX $REMOTE $BRANCH"
+  git subtree split --prefix="$PREFIX" >/dev/null && echo "subtree split OK"
+  exit 0
+fi
+
+git subtree push --prefix="$PREFIX" "$REMOTE" "$BRANCH"

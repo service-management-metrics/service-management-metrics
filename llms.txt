@@ -1,0 +1,148 @@
+# Service Management Metrics
+
+> A working book on measuring agile IT service management well: 94 topics in 12 parts, each metric with its gaming vector and guardrail, plus questions, worked examples, AI prompts, and AI skills. Canonical text is in `en-001`. Links go to the canonical locale; topics not yet written are omitted.
+
+Each content topic follows one 20-section template: thesis, overview and motivation, key principles, metric definitions, twelve recommendations, gaming vectors and guardrails, trade-offs, six discussion questions, four perspectives, a worked example, sector lens, business case, anti-patterns, a five-level maturity model, a checklist, AI prompts, AI skills, key takeaways, and references. Answer from the topic text; do not present general knowledge as the book's position. Metrics describe teams, services, and systems, never individuals.
+
+## Part 1: Foundations of Measurement
+
+- [Topic 1.0: Introduction to Part 1: Foundations of Measurement](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/foundations-of-measurement/index.md)
+- [Topic 1.1: Why measure service management](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/why-measure-service-management/index.md)
+- [Topic 1.2: Goodhart's law and the psychology of metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/goodharts-law-and-the-psychology-of-metrics/index.md)
+- [Topic 1.3: Outcomes over output: choosing what to measure](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/outcomes-over-output/index.md)
+- [Topic 1.4: Metrics governance and ownership](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/metrics-governance-and-ownership/index.md)
+- [Topic 1.5: Data sources and instrumentation](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/data-sources-and-instrumentation/index.md)
+- [Topic 1.6: Statistical literacy for service metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/statistical-literacy-for-service-metrics/index.md)
+- [Topic 1.7: Measurement frameworks](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/measurement-frameworks/index.md)
+- [Topic 1.8: ITIL 5 measurement and value outcomes](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/itil-5-measurement-and-value-outcomes/index.md)
+
+## Part 2: Flow and Continuous Delivery Metrics
+
+- [Topic 2.0: Introduction to Part 2: Flow and Continuous Delivery Metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/flow-metrics/index.md)
+- [Topic 2.1: Flow measures](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/flow-measures/index.md)
+- [Topic 2.2: Lead time, cycle time, and flow efficiency](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/lead-time-cycle-time-and-flow-efficiency/index.md)
+- [Topic 2.3: Work in process and queueing](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/work-in-process-and-queueing/index.md)
+- [Topic 2.4: Value stream metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/value-stream-metrics/index.md)
+- [Topic 2.5: Delivery forecasting and planning metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/delivery-forecasting-and-planning-metrics/index.md)
+- [Topic 2.6: Backlog and refinement metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/backlog-and-refinement-metrics/index.md)
+- [Topic 2.7: Pull request and code review metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/pull-request-and-code-review-metrics/index.md)
+- [Topic 2.8: DORA metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/dora-metrics/index.md)
+- [Topic 2.9: Operational work and unplanned work](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/operational-work-and-unplanned-work/index.md)
+
+## Part 3: Service Desk, Incident, and Request Metrics
+
+- [Topic 3.0: Introduction to Part 3: Service Desk, Incident, and Request Metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/service-desk-incident-and-request-metrics/index.md)
+- [Topic 3.1: Service desk metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/service-desk-metrics/index.md)
+- [Topic 3.2: Incident volume and priority](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/incident-volume-and-priority/index.md)
+- [Topic 3.3: Incident response and resolution time](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/incident-response-and-resolution-time/index.md)
+- [Topic 3.4: Major incident metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/major-incident-metrics/index.md)
+- [Topic 3.5: Service request fulfilment metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/service-request-fulfilment-metrics/index.md)
+- [Topic 3.6: Knowledge management metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/knowledge-management-metrics/index.md)
+- [Topic 3.7: Self-service and automation metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/self-service-and-automation-metrics/index.md)
+
+## Part 4: Problem, Change, and Release Metrics
+
+- [Topic 4.0: Introduction to Part 4: Problem, Change, and Release Metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/problem-change-and-release-metrics/index.md)
+- [Topic 4.1: Problem management metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/problem-management-metrics/index.md)
+- [Topic 4.2: Postmortem and learning metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/postmortem-and-learning-metrics/index.md)
+- [Topic 4.3: Change enablement metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/change-enablement-metrics/index.md)
+- [Topic 4.4: Change failure and rework](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/change-failure-and-rework/index.md)
+- [Topic 4.5: Release and deployment metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/release-and-deployment-metrics/index.md)
+- [Topic 4.6: Technical debt and known errors](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/technical-debt-and-known-errors/index.md)
+
+## Part 5: Service Level, Availability, and Reliability Metrics
+
+- [Topic 5.0: Introduction to Part 5: Service Level, Availability, and Reliability Metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/service-level-availability-and-reliability-metrics/index.md)
+- [Topic 5.1: SLA, OLA, and XLA metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/sla-ola-and-xla-metrics/index.md)
+- [Topic 5.2: SLIs, SLOs, and error budgets](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/slis-slos-and-error-budgets/index.md)
+- [Topic 5.3: Availability metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/availability-metrics/index.md)
+- [Topic 5.4: Capacity and performance metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/capacity-and-performance-metrics/index.md)
+- [Topic 5.5: Monitoring and alert quality metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/monitoring-and-alert-quality-metrics/index.md)
+- [Topic 5.6: Service continuity metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/service-continuity-metrics/index.md)
+- [Topic 5.7: Toil and on-call metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/toil-and-on-call-metrics/index.md)
+
+## Part 6: Customer and Experience Metrics
+
+- [Topic 6.0: Introduction to Part 6: Customer and Experience Metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/customer-and-experience-metrics/index.md)
+- [Topic 6.1: Customer satisfaction metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/customer-satisfaction-metrics/index.md)
+- [Topic 6.2: Experience level agreements](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/experience-level-agreements/index.md)
+- [Topic 6.3: Service adoption and catalog metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/service-adoption-and-catalog-metrics/index.md)
+- [Topic 6.4: User and employee experience](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/user-and-employee-experience/index.md)
+- [Topic 6.5: Value realization and business outcomes](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/value-realization-and-business-outcomes/index.md)
+
+## Part 7: Asset, Configuration, and Financial Metrics
+
+- [Topic 7.0: Introduction to Part 7: Asset, Configuration, and Financial Metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/asset-configuration-and-financial-metrics/index.md)
+- [Topic 7.1: IT asset management metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/it-asset-management-metrics/index.md)
+- [Topic 7.2: Software asset and license metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/software-asset-and-license-metrics/index.md)
+- [Topic 7.3: Hardware asset lifecycle metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/hardware-asset-lifecycle-metrics/index.md)
+- [Topic 7.4: Configuration and CMDB quality metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/configuration-and-cmdb-quality-metrics/index.md)
+- [Topic 7.5: Service cost and unit economics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/service-cost-and-unit-economics/index.md)
+- [Topic 7.6: FinOps and cloud cost metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/finops-and-cloud-cost-metrics/index.md)
+- [Topic 7.7: Return on investment and business case](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/return-on-investment-and-business-case/index.md)
+
+## Part 8: Security, Risk, Compliance, and Supplier Metrics
+
+- [Topic 8.0: Introduction to Part 8: Security, Risk, Compliance, and Supplier Metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/security-risk-compliance-and-supplier-metrics/index.md)
+- [Topic 8.1: Security incident and vulnerability metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/security-incident-and-vulnerability-metrics/index.md)
+- [Topic 8.2: Risk and control metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/risk-and-control-metrics/index.md)
+- [Topic 8.3: Compliance and audit metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/compliance-and-audit-metrics/index.md)
+- [Topic 8.4: Supplier and contract metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/supplier-and-contract-metrics/index.md)
+- [Topic 8.5: Regulated and government reporting](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/regulated-and-government-reporting/index.md)
+
+## Part 9: People, Teams, and Improvement Metrics
+
+- [Topic 9.0: Introduction to Part 9: People, Teams, and Improvement Metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/people-teams-and-improvement-metrics/index.md)
+- [Topic 9.1: Team health and developer experience](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/team-health-and-developer-experience/index.md)
+- [Topic 9.2: Satisfaction and well-being metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/satisfaction-and-well-being-metrics/index.md)
+- [Topic 9.3: Collaboration and handoff metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/collaboration-and-handoff-metrics/index.md)
+- [Topic 9.4: Skills and learning metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/skills-and-learning-metrics/index.md)
+- [Topic 9.5: Continual improvement metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/continual-improvement-metrics/index.md)
+- [Topic 9.6: Organizational change and adoption metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/organizational-change-and-adoption-metrics/index.md)
+
+## Part 10: Metrics for AI, Automation, and Analytics
+
+- [Topic 10.0: Introduction to Part 10: Metrics for AI, Automation, and Analytics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/metrics-for-ai-automation-and-analytics/index.md)
+- [Topic 10.1: AI in service management measurement](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/ai-in-service-management-measurement/index.md)
+- [Topic 10.2: Measuring AI-assisted work](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/measuring-ai-assisted-work/index.md)
+- [Topic 10.3: AI agent and chatbot metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/ai-agent-and-chatbot-metrics/index.md)
+- [Topic 10.4: Metric inflation and quality dilution](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/metric-inflation-and-quality-dilution/index.md)
+- [Topic 10.5: AI governance and risk metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/ai-governance-and-risk-metrics/index.md)
+- [Topic 10.6: Automation and orchestration metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/automation-and-orchestration-metrics/index.md)
+- [Topic 10.7: Pipeline and automated change metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/pipeline-and-automated-change-metrics/index.md)
+- [Topic 10.8: Analytics and data quality metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/analytics-and-data-quality-metrics/index.md)
+- [Topic 10.9: Forecasting and predictive analytics metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/forecasting-and-predictive-analytics-metrics/index.md)
+- [Topic 10.10: Observability and telemetry metrics](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/observability-and-telemetry-metrics/index.md)
+
+## Part 11: Building a Metrics Program
+
+- [Topic 11.0: Introduction to Part 11: Building a Metrics Program](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/building-a-metrics-program/index.md)
+- [Topic 11.1: Designing a service metrics dashboard](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/designing-a-service-metrics-dashboard/index.md)
+- [Topic 11.2: Tooling landscape](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/tooling-landscape/index.md)
+- [Topic 11.3: Rolling out metrics without breeding fear](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/rolling-out-metrics-without-breeding-fear/index.md)
+- [Topic 11.4: Maturity model for metrics programs](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/maturity-model-for-metrics-programs/index.md)
+- [Topic 11.5: An incremental adoption roadmap](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/incremental-adoption-roadmap/index.md)
+
+## Part 12: Appendices
+
+- [Topic 12.0: Appendices](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/appendices/index.md)
+- [Topic 12.1: Glossary](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/glossary/index.md)
+- [Topic 12.2: Metric definitions and formulas reference](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/metric-definitions-and-formulas-reference/index.md)
+- [Topic 12.3: Checklists](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/checklists/index.md)
+- [Topic 12.4: Templates](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/templates/index.md)
+- [Topic 12.5: Maturity self-assessment](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/maturity-self-assessment/index.md)
+- [Topic 12.6: References and further reading](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/references-and-further-reading/index.md)
+- [Topic 12.7: Index](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/index/index.md)
+
+## Reference
+
+- [Glossary](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/glossary/index.md): Terms and acronyms, each pointing to its home topic
+- [Metric definitions and formulas reference](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/metric-definitions-and-formulas-reference/index.md): Every metric with its gaming vector and guardrail
+- [Index](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/locales/en-001/topics/index/index.md): Concepts, frameworks, and metrics by topic number
+- [Style guide](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/STYLE_GUIDE.md): The prose and formatting contract
+- [Specification](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/spec/index.md): Governing specification: topic template, manifest, quality gates
+
+## Optional
+
+- [Reading site](https://service-management-metrics.github.io): the rendered book
+- [Machine-readable inventory](https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/llms.json): topics, parts, skills, and per-locale paths as JSON

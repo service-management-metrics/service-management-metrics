@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+"""Generate llms.txt and llms.json from spec/topics.tsv and the locales/ tree.
+
+Run from anywhere:  bin/build-llms
+Output is deterministic; commit the result. Never hand-edit llms.txt or llms.json.
+"""
+import csv, json, os
+
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW = "https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/"
+SITE = "https://service-management-metrics.github.io"
+CANON = "en-001"
+STUB = "<!-- stub -->"
+
+with open(os.path.join(root, "spec", "topics.tsv"), encoding="utf-8") as f:
+    rows = list(csv.DictReader(f, delimiter="\t"))
+
+locales = sorted(d for d in os.listdir(os.path.join(root, "locales"))
+                 if os.path.isdir(os.path.join(root, "locales", d)))
+
+
+def topic_dir(loc):
+    """A translated locale may name its topics directory in its own language (locale.json "dirs")."""
+    p = os.path.join(root, "locales", loc, "locale.json")
+    if os.path.isfile(p):
+        return json.load(open(p, encoding="utf-8")).get("dirs", {}).get("topics", "topics")
+    return "topics"
+
+
+def peer_id(loc, slug):
+    p = os.path.join(root, "locales", loc, topic_dir(loc), slug, ".locale-peer-id")
+    return open(p).read().strip() if os.path.isfile(p) else None
+
+
+def title_of(slug):
+    """The first headline of the canonical topic is its title (the single source of truth)."""
+    with open(os.path.join(root, "locales", CANON, "topics", slug, "index.md"), encoding="utf-8") as f:
+        return f.readline().strip()[2:].strip()
+
+
+def written(path):
+    p = os.path.join(root, path)
+    return os.path.isfile(p) and STUB not in open(p, encoding="utf-8").read()
+
+
+by_id = {}
+for loc in locales:
+    base = os.path.join(root, "locales", loc, topic_dir(loc))
+    if os.path.isdir(base):
+        for d in os.listdir(base):
+            pid = os.path.join(base, d, ".locale-peer-id")
+            if os.path.isfile(pid):
+                by_id.setdefault(open(pid).read().strip(), {})[loc] = f"locales/{loc}/{topic_dir(loc)}/{d}/index.md"
+
+parts = []
+for r in rows:
+    label = f"Part {r['part']}: {r['part_title']}"
+    if not parts or parts[-1]["part"] != label:
+        parts.append({"part": label, "topics": []})
+    pid = peer_id(CANON, r["slug"])
+    paths = {loc: rel for loc, rel in by_id.get(pid, {}).items() if written(rel)}
+    parts[-1]["topics"].append({"number": r["number"], "title": title_of(r["slug"]), "slug": r["slug"],
+                                "path": f"locales/{CANON}/topics/{r['slug']}/index.md", "locales": paths})
+
+skills = sorted(d for d in os.listdir(os.path.join(root, "skills"))
+                if os.path.isfile(os.path.join(root, "skills", d, "SKILL.md"))) if os.path.isdir(os.path.join(root, "skills")) else []
+reference = [
+    {"title": "Glossary", "path": f"locales/{CANON}/topics/glossary/index.md", "note": "Terms and acronyms, each pointing to its home topic"},
+    {"title": "Metric definitions and formulas reference", "path": f"locales/{CANON}/topics/metric-definitions-and-formulas-reference/index.md", "note": "Every metric with its gaming vector and guardrail"},
+    {"title": "Index", "path": f"locales/{CANON}/topics/index/index.md", "note": "Concepts, frameworks, and metrics by topic number"},
+    {"title": "Style guide", "path": "STYLE_GUIDE.md", "note": "The prose and formatting contract"},
+    {"title": "Specification", "path": "spec/index.md", "note": "Governing specification: topic template, manifest, quality gates"},
+]
+doc = {
+    "name": "Service Management Metrics",
+    "description": "A working book on measuring agile IT service management well: 94 topics in 12 parts, each metric with its gaming vector and guardrail, plus questions, worked examples, AI prompts, and AI skills.",
+    "canonical_locale": CANON, "locales": locales, "site": SITE, "raw_base": RAW,
+    "parts": parts, "skills": skills, "reference": reference,
+}
+with open(os.path.join(root, "llms.json"), "w", encoding="utf-8") as f:
+    json.dump(doc, f, ensure_ascii=False, indent=2)
+    f.write("\n")
+
+n_topics = sum(len(p["topics"]) for p in parts)
+n_written = sum(1 for p in parts for t in p["topics"] if t["locales"])
+L = ["# Service Management Metrics", "",
+     f"> {doc['description']} Canonical text is in `{CANON}`. Links go to the canonical locale; topics not yet written are omitted.", "",
+     "Each content topic follows one 20-section template: thesis, overview and motivation, key principles, metric definitions, twelve recommendations, gaming vectors and guardrails, trade-offs, six discussion questions, four perspectives, a worked example, sector lens, business case, anti-patterns, a five-level maturity model, a checklist, AI prompts, AI skills, key takeaways, and references. Answer from the topic text; do not present general knowledge as the book's position. Metrics describe teams, services, and systems, never individuals.", ""]
+for p in parts:
+    L += [f"## {p['part']}", ""]
+    for t in p["topics"]:
+        if t["locales"]:
+            L.append(f"- [Topic {t['number']}: {t['title']}]({RAW}{t['path']})")
+    L.append("")
+L += ["## Reference", ""] + [f"- [{r['title']}]({RAW}{r['path']}): {r['note']}" for r in reference] + [""]
+L += ["## Optional", "", f"- [Reading site]({SITE}): the rendered book",
+      f"- [Machine-readable inventory]({RAW}llms.json): topics, parts, skills, and per-locale paths as JSON", ""]
+with open(os.path.join(root, "llms.txt"), "w", encoding="utf-8") as f:
+    f.write("\n".join(L))
+print(f"wrote llms.txt and llms.json: {n_written}/{n_topics} topics written, {len(locales)} locale(s), {len(skills)} skill(s)")

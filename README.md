@@ -21,7 +21,7 @@ ITIL (Version 5), introduced by PeopleCert in 2026, frames service management ar
 
 ## Contents
 
-94 topics in 12 parts, written in English (World), locale `en-001`. Unwritten topics are stubs. The specification is in [`spec/`](spec/index.md).
+94 topics in 12 parts, written in English (World), locale `en-001`. All 94 topics are drafted; see [`tasks.md`](tasks.md) for the review status. The specification is in [`spec/`](spec/index.md).
 
 <!-- toc:start -->
 **Part 1: Foundations of Measurement**

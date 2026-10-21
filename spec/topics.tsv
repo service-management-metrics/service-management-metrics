@@ -1,0 +1,95 @@
+part	number	slug	part_title
+1	1.0	foundations-of-measurement	Foundations of Measurement
+1	1.1	why-measure-service-management	Foundations of Measurement
+1	1.2	goodharts-law-and-the-psychology-of-metrics	Foundations of Measurement
+1	1.3	outcomes-over-output	Foundations of Measurement
+1	1.4	metrics-governance-and-ownership	Foundations of Measurement
+1	1.5	data-sources-and-instrumentation	Foundations of Measurement
+1	1.6	statistical-literacy-for-service-metrics	Foundations of Measurement
+1	1.7	measurement-frameworks	Foundations of Measurement
+1	1.8	itil-5-measurement-and-value-outcomes	Foundations of Measurement
+2	2.0	flow-metrics	Flow and Continuous Delivery Metrics
+2	2.1	flow-measures	Flow and Continuous Delivery Metrics
+2	2.2	lead-time-cycle-time-and-flow-efficiency	Flow and Continuous Delivery Metrics
+2	2.3	work-in-process-and-queueing	Flow and Continuous Delivery Metrics
+2	2.4	value-stream-metrics	Flow and Continuous Delivery Metrics
+2	2.5	delivery-forecasting-and-planning-metrics	Flow and Continuous Delivery Metrics
+2	2.6	backlog-and-refinement-metrics	Flow and Continuous Delivery Metrics
+2	2.7	pull-request-and-code-review-metrics	Flow and Continuous Delivery Metrics
+2	2.8	dora-metrics	Flow and Continuous Delivery Metrics
+2	2.9	operational-work-and-unplanned-work	Flow and Continuous Delivery Metrics
+3	3.0	service-desk-incident-and-request-metrics	Service Desk, Incident, and Request Metrics
+3	3.1	service-desk-metrics	Service Desk, Incident, and Request Metrics
+3	3.2	incident-volume-and-priority	Service Desk, Incident, and Request Metrics
+3	3.3	incident-response-and-resolution-time	Service Desk, Incident, and Request Metrics
+3	3.4	major-incident-metrics	Service Desk, Incident, and Request Metrics
+3	3.5	service-request-fulfilment-metrics	Service Desk, Incident, and Request Metrics
+3	3.6	knowledge-management-metrics	Service Desk, Incident, and Request Metrics
+3	3.7	self-service-and-automation-metrics	Service Desk, Incident, and Request Metrics
+4	4.0	problem-change-and-release-metrics	Problem, Change, and Release Metrics
+4	4.1	problem-management-metrics	Problem, Change, and Release Metrics
+4	4.2	postmortem-and-learning-metrics	Problem, Change, and Release Metrics
+4	4.3	change-enablement-metrics	Problem, Change, and Release Metrics
+4	4.4	change-failure-and-rework	Problem, Change, and Release Metrics
+4	4.5	release-and-deployment-metrics	Problem, Change, and Release Metrics
+4	4.6	technical-debt-and-known-errors	Problem, Change, and Release Metrics
+5	5.0	service-level-availability-and-reliability-metrics	Service Level, Availability, and Reliability Metrics
+5	5.1	sla-ola-and-xla-metrics	Service Level, Availability, and Reliability Metrics
+5	5.2	slis-slos-and-error-budgets	Service Level, Availability, and Reliability Metrics
+5	5.3	availability-metrics	Service Level, Availability, and Reliability Metrics
+5	5.4	capacity-and-performance-metrics	Service Level, Availability, and Reliability Metrics
+5	5.5	monitoring-and-alert-quality-metrics	Service Level, Availability, and Reliability Metrics
+5	5.6	service-continuity-metrics	Service Level, Availability, and Reliability Metrics
+5	5.7	toil-and-on-call-metrics	Service Level, Availability, and Reliability Metrics
+6	6.0	customer-and-experience-metrics	Customer and Experience Metrics
+6	6.1	customer-satisfaction-metrics	Customer and Experience Metrics
+6	6.2	experience-level-agreements	Customer and Experience Metrics
+6	6.3	service-adoption-and-catalog-metrics	Customer and Experience Metrics
+6	6.4	user-and-employee-experience	Customer and Experience Metrics
+6	6.5	value-realization-and-business-outcomes	Customer and Experience Metrics
+7	7.0	asset-configuration-and-financial-metrics	Asset, Configuration, and Financial Metrics
+7	7.1	it-asset-management-metrics	Asset, Configuration, and Financial Metrics
+7	7.2	software-asset-and-license-metrics	Asset, Configuration, and Financial Metrics
+7	7.3	hardware-asset-lifecycle-metrics	Asset, Configuration, and Financial Metrics
+7	7.4	configuration-and-cmdb-quality-metrics	Asset, Configuration, and Financial Metrics
+7	7.5	service-cost-and-unit-economics	Asset, Configuration, and Financial Metrics
+7	7.6	finops-and-cloud-cost-metrics	Asset, Configuration, and Financial Metrics
+7	7.7	return-on-investment-and-business-case	Asset, Configuration, and Financial Metrics
+8	8.0	security-risk-compliance-and-supplier-metrics	Security, Risk, Compliance, and Supplier Metrics
+8	8.1	security-incident-and-vulnerability-metrics	Security, Risk, Compliance, and Supplier Metrics
+8	8.2	risk-and-control-metrics	Security, Risk, Compliance, and Supplier Metrics
+8	8.3	compliance-and-audit-metrics	Security, Risk, Compliance, and Supplier Metrics
+8	8.4	supplier-and-contract-metrics	Security, Risk, Compliance, and Supplier Metrics
+8	8.5	regulated-and-government-reporting	Security, Risk, Compliance, and Supplier Metrics
+9	9.0	people-teams-and-improvement-metrics	People, Teams, and Improvement Metrics
+9	9.1	team-health-and-developer-experience	People, Teams, and Improvement Metrics
+9	9.2	satisfaction-and-well-being-metrics	People, Teams, and Improvement Metrics
+9	9.3	collaboration-and-handoff-metrics	People, Teams, and Improvement Metrics
+9	9.4	skills-and-learning-metrics	People, Teams, and Improvement Metrics
+9	9.5	continual-improvement-metrics	People, Teams, and Improvement Metrics
+9	9.6	organizational-change-and-adoption-metrics	People, Teams, and Improvement Metrics
+10	10.0	metrics-for-ai-automation-and-analytics	Metrics for AI, Automation, and Analytics
+10	10.1	ai-in-service-management-measurement	Metrics for AI, Automation, and Analytics
+10	10.2	measuring-ai-assisted-work	Metrics for AI, Automation, and Analytics
+10	10.3	ai-agent-and-chatbot-metrics	Metrics for AI, Automation, and Analytics
+10	10.4	metric-inflation-and-quality-dilution	Metrics for AI, Automation, and Analytics
+10	10.5	ai-governance-and-risk-metrics	Metrics for AI, Automation, and Analytics
+10	10.6	automation-and-orchestration-metrics	Metrics for AI, Automation, and Analytics
+10	10.7	pipeline-and-automated-change-metrics	Metrics for AI, Automation, and Analytics
+10	10.8	analytics-and-data-quality-metrics	Metrics for AI, Automation, and Analytics
+10	10.9	forecasting-and-predictive-analytics-metrics	Metrics for AI, Automation, and Analytics
+10	10.10	observability-and-telemetry-metrics	Metrics for AI, Automation, and Analytics
+11	11.0	building-a-metrics-program	Building a Metrics Program
+11	11.1	designing-a-service-metrics-dashboard	Building a Metrics Program
+11	11.2	tooling-landscape	Building a Metrics Program
+11	11.3	rolling-out-metrics-without-breeding-fear	Building a Metrics Program
+11	11.4	maturity-model-for-metrics-programs	Building a Metrics Program
+11	11.5	incremental-adoption-roadmap	Building a Metrics Program
+12	12.0	appendices	Appendices
+12	12.1	glossary	Appendices
+12	12.2	metric-definitions-and-formulas-reference	Appendices
+12	12.3	checklists	Appendices
+12	12.4	templates	Appendices
+12	12.5	maturity-self-assessment	Appendices
+12	12.6	references-and-further-reading	Appendices
+12	12.7	index	Appendices

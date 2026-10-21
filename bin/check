@@ -1,0 +1,185 @@
+#!/usr/bin/env python3
+"""Offline quality gates. Usage: bin/check [--strict] [--links]
+--strict  fail on unwritten (stub) topics
+--links   also resolve every Wikipedia link (needs network)"""
+import os, re, sys, urllib.request, urllib.error, urllib.parse
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+strict, links = "--strict" in sys.argv, "--links" in sys.argv
+errs, notes = [], []
+LINKS = {}
+def fetch(u, tries=4):
+    import time
+    last = None
+    for i in range(tries):
+        try:
+            urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "service-management-metrics-check"}), timeout=20)
+            return True
+        except urllib.error.HTTPError as e:
+            if e.code == 404: return "HTTP 404"
+            last = e
+        except Exception as e:
+            last = e
+        time.sleep(2 * (i + 1))
+    return last
+def err(m): errs.append(m)
+
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+slugs = [r[2] for r in rows]
+# manifest agreement
+md = {}
+for line in open(f"{root}/spec/structure.md"):
+    m = re.match(r"\| (\d+\.\d+) \| `([^`]+)` \|", line)
+    if m: md[m.group(1)] = m.group(2)
+if md != {r[1]: r[2] for r in rows}: err("spec/structure.md and spec/topics.tsv disagree")
+if len(set(slugs)) != len(slugs): err("duplicate slugs in topics.tsv")
+# contiguous numbering
+byp = {}
+for r in rows: byp.setdefault(int(r[0]), []).append(int(r[1].split(".")[1]))
+for p, ns in byp.items():
+    if ns != list(range(len(ns))): err(f"part {p} numbering not contiguous from N.0")
+
+NONTEMPLATE_PART = 12
+TEMPLATE = ["Overview and motivation","Key principles","Metric definitions","Recommendations",
+ "Gaming vectors and guardrails","Trade-offs: pros and cons","Questions to discuss with your team",
+ "Four perspectives","In practice: a service management example","Agile, AI, automation, and analytics","Sector lens","Business case: motivations, ROI, and TCO",
+ "Anti-patterns and pitfalls","Maturity model","Checklist","AI prompts","AI skills","Key takeaways",
+ "References and further reading"]
+PERSP = ["Product and delivery teams","Service and operations teams","Leadership and governance","Customers and users"]
+BANNED = ["not only","but also","load-bearing","It's important to note","In today's fast-paced","It's crucial to consider",
+          "It appears that","One could argue","revolutionary","game-changing","cutting-edge","seamless","best-in-class"]
+disk = os.path.join(root, "locales/en-001/topics")
+on_disk = sorted(d for d in os.listdir(disk) if os.path.isdir(os.path.join(disk, d))) if os.path.isdir(disk) else []
+for s in set(on_disk) - set(slugs): err(f"topic directory not in manifest: {s}")
+ids = {}
+written = 0
+for part, num, slug, _ in rows:
+    d = f"{disk}/{slug}"
+    if not os.path.isdir(d): err(f"{num} missing directory {slug}"); continue
+    idx = f"{d}/index.md"
+    if not os.path.isfile(idx): err(f"{num} missing index.md"); continue
+    rd = f"{d}/README.md"
+    if not os.path.islink(rd) or os.readlink(rd) != "index.md":
+        err(f"{num} README.md must be a relative symlink to index.md")
+    try:
+        pid = open(f"{d}/.locale-peer-id").read()
+        if not re.fullmatch(r"[0-9a-f]{32}\n", pid): err(f"{num} bad .locale-peer-id")
+        elif pid in ids: err(f"{num} duplicate peer id with {ids[pid]}")
+        ids[pid] = num
+    except OSError: err(f"{num} missing .locale-peer-id")
+    text = open(idx).read()
+    for ch, name in (("—","em-dash"),):
+        if ch in text: err(f"{num} contains {name}")
+    first = text.splitlines()[0] if text else ""
+    if not first.startswith("# "): err(f"{num} first line must be '# Title'")
+    if "<!-- stub -->" in text:
+        notes.append(f"{num} stub")
+        if strict: err(f"{num} is an unwritten stub")
+        continue
+    written += 1
+    for m in re.finditer(r"\b(behaviour\w*|colour\w*|organis\w+|favour\w*|labelled|modelled|judgement|programme|licence|analyse[sd]?)\b", re.sub(r"\]\([^)]*\)", "]", text)):
+        err(f"{num} British spelling in en-001: {m.group(0)}")
+    if re.search(r"\bagile delivery\b", text, re.I): err(f"{num} says 'agile delivery'; write 'continuous delivery'")
+    body_no_refs = text.split("## References and further reading")[0]
+    COND = re.compile(r"\b(if|where|when)\b[^.!?]*\bchoo?ses? to use\b", re.I)
+    for sent in re.split(r"(?<=[.!?])\s+|\n+", re.sub(r"\]\([^)]*\)", "]", body_no_refs)):
+        if COND.search(sent): continue
+        for w in re.findall(r"\b(sprints?|burn-?down|burn-?up|iterations?)\b", sent, re.I):
+            err(f"{num} de-emphasized term outside references: {w}")
+    for b in BANNED:
+        if b.lower() in text.lower(): err(f"{num} banned phrase: {b}")
+    if re.search(r"\d(?<!\d)–|–(?=\d)", "") : pass
+    if int(part) == NONTEMPLATE_PART and not num.endswith(".0"): continue
+    h2 = re.findall(r"^## (.+)$", text, re.M)
+    if num.endswith(".0"):
+        if h2 != ["Topics in this part","How these topics interrelate"]: err(f"{num} part intro sections wrong: {h2}")
+        continue
+    if h2 != TEMPLATE: err(f"{num} sections do not match template.\n   got:  {h2}")
+    sec = lambda n: (re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", text, re.M|re.S) or [None,""])[1]
+    q = re.findall(r"^\*\*.+\?\*\*", sec("Questions to discuss with your team"), re.M)
+    if len(q) != 6: err(f"{num} needs exactly six bold questions, found {len(q)}")
+    if re.findall(r"^### (.+)$", sec("Four perspectives"), re.M) != PERSP: err(f"{num} four perspectives wrong")
+    if re.findall(r"^### (.+)$", sec("Agile, AI, automation, and analytics"), re.M) != ["Agile","AI","Automation","Analytics"]: err(f"{num} Agile/AI/Automation/Analytics subsections wrong")
+    cl = len(re.findall(r"^- \[ \]", sec("Checklist"), re.M))
+    if not 6 <= cl <= 12: err(f"{num} checklist has {cl} items (6-12)")
+    pr = sec("AI prompts")
+    n = len(re.findall(r"^```text", pr, re.M))
+    if not 3 <= n <= 5: err(f"{num} has {n} AI prompts (3-5)")
+    if "[" not in pr or "assumptions" not in pr.lower(): err(f"{num} AI prompts need [placeholders] and an assumptions request")
+    for l in re.findall(r"\]\(\.\./\.\./\.\./\.\./skills/([^/)]+)/SKILL\.md\)", sec("AI skills")):
+        if not os.path.isfile(f"{root}/skills/{l}/SKILL.md"): err(f"{num} skill link does not resolve: {l}")
+    md_def = sec("Metric definitions")
+    if md_def.count("\n|") < 5: err(f"{num} metric definitions table needs at least 3 rows")
+    body = re.sub(r"```.*?```", "", text, flags=re.S)
+    wl = set(re.findall(r"\]\((https://en\.wikipedia\.org/wiki/(?:[^()\s]|\([^()\s]*\))+)\)", body))
+    if not 5 <= len(wl) <= 12: err(f"{num} has {len(wl)} distinct Wikipedia links (5-12)")
+    refs = sec("References and further reading")
+    for u in wl:
+        if u not in refs: err(f"{num} Wikipedia link missing from references: {u}")
+    if links:
+        for u in wl:
+            if u not in LINKS: LINKS[u] = fetch(u)
+            if LINKS[u] is not True: err(f"{num} link failed: {u} ({LINKS[u]})")
+    for m in re.finditer(r"\(see topic (\d+\.\d+)\)", text):
+        err(f"{num} cross-reference needs number and title: {m.group(0)}")
+# translated locales: structure mirrors en-001, matched by .locale-peer-id
+import json, glob
+en_ids = {}
+for part, num, slug, _ in rows:
+    try: en_ids[open(f"{disk}/{slug}/.locale-peer-id").read()] = (num, part)
+    except OSError: pass
+tr_written = 0
+for lp in sorted(glob.glob(f"{root}/locales/*/locale.json")):
+    loc = os.path.basename(os.path.dirname(lp))
+    if loc == "en-001": continue
+    cfg = json.load(open(lp, encoding="utf-8"))
+    H2, H3, MAT = cfg["h2"], cfg["h3"], cfg["maturity"]
+    tdir = f"{root}/locales/{loc}/{cfg['dirs'].get('topics', 'topics')}"
+    seen = set()
+    for d in sorted(x for x in os.listdir(tdir) if os.path.isdir(f"{tdir}/{x}")):
+        k = f"{loc}/{d}"
+        try: pid = open(f"{tdir}/{d}/.locale-peer-id").read()
+        except OSError: err(f"{k}: missing .locale-peer-id"); continue
+        if pid not in en_ids: err(f"{k}: peer id matches no en-001 topic"); continue
+        if pid in seen: err(f"{k}: duplicate peer id"); continue
+        seen.add(pid)
+        num, part = en_ids[pid]
+        rd = f"{tdir}/{d}/README.md"
+        if not os.path.islink(rd) or os.readlink(rd) != "index.md": err(f"{k}: README.md must be a relative symlink to index.md")
+        text = open(f"{tdir}/{d}/index.md", encoding="utf-8").read()
+        if not text.startswith("# "): err(f"{k}: first line must be '# Title'")
+        if "<!-- stub -->" in text:
+            if strict: err(f"{k} is an unwritten stub")
+            continue
+        tr_written += 1
+        if re.search(r"\bagile delivery\b|敏捷交付", text, re.I): err(f"{k}: says 'agile delivery'")
+        if int(part) == NONTEMPLATE_PART and not num.endswith(".0"): continue
+        h2 = re.findall(r"^## (.+)$", text, re.M)
+        if num.endswith(".0"): want = [H2["Topics in this part"], H2["How these topics interrelate"]]
+        else: want = [H2[x] for x in TEMPLATE]
+        if h2 != want:
+            err(f"{k}: sections do not match template.\n   got:  {h2}"); continue
+        if num.endswith(".0"): continue
+        sec = lambda n: (re.search(rf"^## {re.escape(H2[n])}\n(.*?)(?=^## |\Z)", text, re.M|re.S) or [None,""])[1]
+        if len(re.findall(r"^\*\*.+[?？]\*\*", sec("Questions to discuss with your team"), re.M)) != 6: err(f"{k}: needs exactly six bold questions")
+        if re.findall(r"^### (.+)$", sec("Four perspectives"), re.M) != [H3[x] for x in PERSP]: err(f"{k}: four perspectives wrong")
+        if re.findall(r"^### (.+)$", sec("Agile, AI, automation, and analytics"), re.M) != [H3[x] for x in ["Agile","AI","Automation","Analytics"]]: err(f"{k}: agile/AI/automation/analytics subsections wrong")
+        if not 6 <= len(re.findall(r"^- \[ \]", sec("Checklist"), re.M)) <= 12: err(f"{k}: checklist count")
+        if not 3 <= len(re.findall(r"^```text", sec("AI prompts"), re.M)) <= 5: err(f"{k}: AI prompt count")
+        mat = re.search(r"^\|.*\|\s*$", sec("Maturity model"), re.M)
+        if mat and [re.sub(r"^\d+\s+","",c.strip()) for c in mat.group(0).strip("|").split("|")][1:] != [MAT[x] for x in ["Initiate","Develop","Standardize","Manage","Orchestrate"]]: err(f"{k}: maturity columns wrong")
+        body = re.sub(r"```.*?```", "", text, flags=re.S)
+        wl = set(re.findall(r"\]\((https://en\.wikipedia\.org/wiki/(?:[^()\s]|\([^()\s]*\))+)\)", body))
+        refs = sec("References and further reading")
+        for u in wl:
+            if u not in refs: err(f"{k}: Wikipedia link missing from references: {u}")
+            if links:
+                if u not in LINKS: LINKS[u] = fetch(u)
+                if LINKS[u] is not True: err(f"{k}: link failed: {u} ({LINKS[u]})")
+    for pid, (num, _) in en_ids.items():
+        if pid not in seen: err(f"{loc}: missing topic {num}")
+if tr_written: print(f"{tr_written} translated topics written")
+for ref in ("AGENTS.md","CLAUDE.md","STYLE_GUIDE.md","README.md","tasks.md"):
+    if not os.path.isfile(f"{root}/{ref}"): err(f"missing {ref}")
+print(f"{len(rows)} topics in manifest, {written} written, {len(notes)} stubs")
+for e in errs: print("ERROR:", e)
+sys.exit(1 if errs else 0)

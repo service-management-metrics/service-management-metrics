@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# Regenerates appendix 12.2 from the topics.
+import re,sys
+import os
+root=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows=[l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+def sec(t,n):
+    m=re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)",t,re.M|re.S); return m.group(1) if m else ""
+def table(s):
+    out=[]
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| Metric |"):
+            c=[x.strip() for x in l.strip().strip("|").split(" | ")]
+            out.append(c)
+    return out
+o=[]; total=0; miss=[]
+cur=None
+for part,num,slug,pt in rows:
+    if int(part)>=12 or num.endswith(".0"): continue
+    t=open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    title=t.splitlines()[0][2:]
+    md=table(sec(t,"Metric definitions")); gv={c[0]:c for c in table(sec(t,"Gaming vectors and guardrails")) if len(c)==3}
+    if part!=cur:
+        o.append(f"\n## Part {part}: {pt}\n"); cur=part
+    o.append(f"### {num} {title}\n")
+    o.append(f"Home topic: (see topic {num}, {title}).\n")
+    o.append("| Metric | Definition | Formula | Unit | Data source | ITIL practice | Agile counterpart | Cadence | Gaming vector | Guardrail |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c)!=8: miss.append((num,c[0],len(c))); continue
+        g=gv.get(c[0])
+        if not g: miss.append((num,c[0],"nogaming")); continue
+        o.append("| "+" | ".join(c[:8]+[g[1],g[2]])+" |"); total+=1
+    o.append("")
+print(total,miss,file=sys.stderr)
+HEAD='# Metric definitions and formulas reference\n\nThis appendix lists every metric defined in the content topics, grouped by part and topic. Each entry carries the definition, formula, unit, data source, related ITIL practice, agile counterpart, and cadence from the home topic, together with the gaming vector and the paired guardrail. It is generated from the "Metric definitions" and "Gaming vectors and guardrails" sections of each topic, so the home topic is the authority: where an entry here differs from its topic, the topic wins, and this appendix is regenerated.\n\n## How to use this reference\n\n- **Look up before you adopt.** Before adding a metric to a dashboard, read its entry, including the gaming vector and the guardrail, and adopt the guardrail with it (see topic 1.3, Outcomes over output: choosing what to measure).\n- **Measure teams, services, and systems.** No entry is meant for ranking individuals (see topic 1.2, Goodhart\'s law and the psychology of metrics).\n- **Prefer the home topic for judgment.** The formulas here are short. The definitions of terms, the caveats on sampling, and the worked examples are in the home topic.\n- **Record your own variations.** If your organization changes a definition, record the change and the reason in your metric catalog (see topic 1.4, Metrics governance and ownership). Metric cards help (see topic 12.4, Templates).\n- **Illustrative figures are marked.** This appendix contains no benchmark values. Any number comes from your own baseline.\n'
+open(f"{root}/locales/en-001/topics/metric-definitions-and-formulas-reference/index.md","w").write(HEAD+"\n".join(o))

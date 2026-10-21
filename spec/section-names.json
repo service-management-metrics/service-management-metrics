@@ -1,0 +1,18 @@
+{
+  "default": {
+    "topics": "topics",
+    "front-matter": "front-matter",
+    "examples": "examples",
+    "contributing": "contributing",
+    "project": "project"
+  },
+  "locales": {
+    "zh-cn": {
+      "topics": "主题",
+      "front-matter": "前言",
+      "examples": "示例",
+      "contributing": "贡献",
+      "project": "项目"
+    }
+  }
+}

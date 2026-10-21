@@ -1,0 +1,1067 @@
+{
+  "name": "Service Management Metrics",
+  "description": "A working book on measuring agile IT service management well: 94 topics in 12 parts, each metric with its gaming vector and guardrail, plus questions, worked examples, AI prompts, and AI skills.",
+  "canonical_locale": "en-001",
+  "locales": [
+    "en-001",
+    "zh-cn"
+  ],
+  "site": "https://service-management-metrics.github.io",
+  "raw_base": "https://raw.githubusercontent.com/service-management-metrics/service-management-metrics/main/",
+  "parts": [
+    {
+      "part": "Part 1: Foundations of Measurement",
+      "topics": [
+        {
+          "number": "1.0",
+          "title": "Introduction to Part 1: Foundations of Measurement",
+          "slug": "foundations-of-measurement",
+          "path": "locales/en-001/topics/foundations-of-measurement/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/foundations-of-measurement/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-1-部分导读度量基础/index.md"
+          }
+        },
+        {
+          "number": "1.1",
+          "title": "Why measure service management",
+          "slug": "why-measure-service-management",
+          "path": "locales/en-001/topics/why-measure-service-management/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/why-measure-service-management/index.md",
+            "zh-cn": "locales/zh-cn/主题/为什么要度量服务管理/index.md"
+          }
+        },
+        {
+          "number": "1.2",
+          "title": "Goodhart's law and the psychology of metrics",
+          "slug": "goodharts-law-and-the-psychology-of-metrics",
+          "path": "locales/en-001/topics/goodharts-law-and-the-psychology-of-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/goodharts-law-and-the-psychology-of-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/古德哈特定律与度量的心理学/index.md"
+          }
+        },
+        {
+          "number": "1.3",
+          "title": "Outcomes over output: choosing what to measure",
+          "slug": "outcomes-over-output",
+          "path": "locales/en-001/topics/outcomes-over-output/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/outcomes-over-output/index.md",
+            "zh-cn": "locales/zh-cn/主题/结果重于产出选择度量什么/index.md"
+          }
+        },
+        {
+          "number": "1.4",
+          "title": "Metrics governance and ownership",
+          "slug": "metrics-governance-and-ownership",
+          "path": "locales/en-001/topics/metrics-governance-and-ownership/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/metrics-governance-and-ownership/index.md",
+            "zh-cn": "locales/zh-cn/主题/度量治理与归属/index.md"
+          }
+        },
+        {
+          "number": "1.5",
+          "title": "Data sources and instrumentation",
+          "slug": "data-sources-and-instrumentation",
+          "path": "locales/en-001/topics/data-sources-and-instrumentation/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/data-sources-and-instrumentation/index.md",
+            "zh-cn": "locales/zh-cn/主题/数据来源与埋点/index.md"
+          }
+        },
+        {
+          "number": "1.6",
+          "title": "Statistical literacy for service metrics",
+          "slug": "statistical-literacy-for-service-metrics",
+          "path": "locales/en-001/topics/statistical-literacy-for-service-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/statistical-literacy-for-service-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/服务度量的统计素养/index.md"
+          }
+        },
+        {
+          "number": "1.7",
+          "title": "Measurement frameworks",
+          "slug": "measurement-frameworks",
+          "path": "locales/en-001/topics/measurement-frameworks/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/measurement-frameworks/index.md",
+            "zh-cn": "locales/zh-cn/主题/度量框架/index.md"
+          }
+        },
+        {
+          "number": "1.8",
+          "title": "ITIL 5 measurement and value outcomes",
+          "slug": "itil-5-measurement-and-value-outcomes",
+          "path": "locales/en-001/topics/itil-5-measurement-and-value-outcomes/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/itil-5-measurement-and-value-outcomes/index.md",
+            "zh-cn": "locales/zh-cn/主题/ITIL-5-度量与价值成果/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 2: Flow and Continuous Delivery Metrics",
+      "topics": [
+        {
+          "number": "2.0",
+          "title": "Introduction to Part 2: Flow and Continuous Delivery Metrics",
+          "slug": "flow-metrics",
+          "path": "locales/en-001/topics/flow-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/flow-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-2-部分导读流动与持续交付度量/index.md"
+          }
+        },
+        {
+          "number": "2.1",
+          "title": "Flow measures",
+          "slug": "flow-measures",
+          "path": "locales/en-001/topics/flow-measures/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/flow-measures/index.md",
+            "zh-cn": "locales/zh-cn/主题/流动度量/index.md"
+          }
+        },
+        {
+          "number": "2.2",
+          "title": "Lead time, cycle time, and flow efficiency",
+          "slug": "lead-time-cycle-time-and-flow-efficiency",
+          "path": "locales/en-001/topics/lead-time-cycle-time-and-flow-efficiency/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/lead-time-cycle-time-and-flow-efficiency/index.md",
+            "zh-cn": "locales/zh-cn/主题/前置时间周期时间与流动效率/index.md"
+          }
+        },
+        {
+          "number": "2.3",
+          "title": "Work in process and queueing",
+          "slug": "work-in-process-and-queueing",
+          "path": "locales/en-001/topics/work-in-process-and-queueing/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/work-in-process-and-queueing/index.md",
+            "zh-cn": "locales/zh-cn/主题/在制品与排队/index.md"
+          }
+        },
+        {
+          "number": "2.4",
+          "title": "Value stream metrics",
+          "slug": "value-stream-metrics",
+          "path": "locales/en-001/topics/value-stream-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/value-stream-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/价值流度量/index.md"
+          }
+        },
+        {
+          "number": "2.5",
+          "title": "Delivery forecasting and planning metrics",
+          "slug": "delivery-forecasting-and-planning-metrics",
+          "path": "locales/en-001/topics/delivery-forecasting-and-planning-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/delivery-forecasting-and-planning-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/交付预测与规划度量/index.md"
+          }
+        },
+        {
+          "number": "2.6",
+          "title": "Backlog and refinement metrics",
+          "slug": "backlog-and-refinement-metrics",
+          "path": "locales/en-001/topics/backlog-and-refinement-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/backlog-and-refinement-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/待办事项列表与梳理度量/index.md"
+          }
+        },
+        {
+          "number": "2.7",
+          "title": "Pull request and code review metrics",
+          "slug": "pull-request-and-code-review-metrics",
+          "path": "locales/en-001/topics/pull-request-and-code-review-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/pull-request-and-code-review-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/拉取请求与代码评审度量/index.md"
+          }
+        },
+        {
+          "number": "2.8",
+          "title": "DORA metrics",
+          "slug": "dora-metrics",
+          "path": "locales/en-001/topics/dora-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/dora-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/DORA-度量/index.md"
+          }
+        },
+        {
+          "number": "2.9",
+          "title": "Operational work and unplanned work",
+          "slug": "operational-work-and-unplanned-work",
+          "path": "locales/en-001/topics/operational-work-and-unplanned-work/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/operational-work-and-unplanned-work/index.md",
+            "zh-cn": "locales/zh-cn/主题/运维工作与计划外工作/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 3: Service Desk, Incident, and Request Metrics",
+      "topics": [
+        {
+          "number": "3.0",
+          "title": "Introduction to Part 3: Service Desk, Incident, and Request Metrics",
+          "slug": "service-desk-incident-and-request-metrics",
+          "path": "locales/en-001/topics/service-desk-incident-and-request-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/service-desk-incident-and-request-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-3-部分导读服务台事件与请求度量/index.md"
+          }
+        },
+        {
+          "number": "3.1",
+          "title": "Service desk metrics",
+          "slug": "service-desk-metrics",
+          "path": "locales/en-001/topics/service-desk-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/service-desk-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/服务台度量/index.md"
+          }
+        },
+        {
+          "number": "3.2",
+          "title": "Incident volume and priority",
+          "slug": "incident-volume-and-priority",
+          "path": "locales/en-001/topics/incident-volume-and-priority/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/incident-volume-and-priority/index.md",
+            "zh-cn": "locales/zh-cn/主题/事件数量与优先级/index.md"
+          }
+        },
+        {
+          "number": "3.3",
+          "title": "Incident response and resolution time",
+          "slug": "incident-response-and-resolution-time",
+          "path": "locales/en-001/topics/incident-response-and-resolution-time/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/incident-response-and-resolution-time/index.md",
+            "zh-cn": "locales/zh-cn/主题/事件响应与解决时间/index.md"
+          }
+        },
+        {
+          "number": "3.4",
+          "title": "Major incident metrics",
+          "slug": "major-incident-metrics",
+          "path": "locales/en-001/topics/major-incident-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/major-incident-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/重大事件度量/index.md"
+          }
+        },
+        {
+          "number": "3.5",
+          "title": "Service request fulfilment metrics",
+          "slug": "service-request-fulfilment-metrics",
+          "path": "locales/en-001/topics/service-request-fulfilment-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/service-request-fulfilment-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/服务请求履行度量/index.md"
+          }
+        },
+        {
+          "number": "3.6",
+          "title": "Knowledge management metrics",
+          "slug": "knowledge-management-metrics",
+          "path": "locales/en-001/topics/knowledge-management-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/knowledge-management-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/知识管理度量/index.md"
+          }
+        },
+        {
+          "number": "3.7",
+          "title": "Self-service and automation metrics",
+          "slug": "self-service-and-automation-metrics",
+          "path": "locales/en-001/topics/self-service-and-automation-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/self-service-and-automation-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/自助服务与自动化度量/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 4: Problem, Change, and Release Metrics",
+      "topics": [
+        {
+          "number": "4.0",
+          "title": "Introduction to Part 4: Problem, Change, and Release Metrics",
+          "slug": "problem-change-and-release-metrics",
+          "path": "locales/en-001/topics/problem-change-and-release-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/problem-change-and-release-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-4-部分导读问题变更与发布度量/index.md"
+          }
+        },
+        {
+          "number": "4.1",
+          "title": "Problem management metrics",
+          "slug": "problem-management-metrics",
+          "path": "locales/en-001/topics/problem-management-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/problem-management-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/问题管理度量/index.md"
+          }
+        },
+        {
+          "number": "4.2",
+          "title": "Postmortem and learning metrics",
+          "slug": "postmortem-and-learning-metrics",
+          "path": "locales/en-001/topics/postmortem-and-learning-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/postmortem-and-learning-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/事后复盘与学习度量/index.md"
+          }
+        },
+        {
+          "number": "4.3",
+          "title": "Change enablement metrics",
+          "slug": "change-enablement-metrics",
+          "path": "locales/en-001/topics/change-enablement-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/change-enablement-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/变更赋能度量/index.md"
+          }
+        },
+        {
+          "number": "4.4",
+          "title": "Change failure and rework",
+          "slug": "change-failure-and-rework",
+          "path": "locales/en-001/topics/change-failure-and-rework/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/change-failure-and-rework/index.md",
+            "zh-cn": "locales/zh-cn/主题/变更失败与返工/index.md"
+          }
+        },
+        {
+          "number": "4.5",
+          "title": "Release and deployment metrics",
+          "slug": "release-and-deployment-metrics",
+          "path": "locales/en-001/topics/release-and-deployment-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/release-and-deployment-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/发布与部署度量/index.md"
+          }
+        },
+        {
+          "number": "4.6",
+          "title": "Technical debt and known errors",
+          "slug": "technical-debt-and-known-errors",
+          "path": "locales/en-001/topics/technical-debt-and-known-errors/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/technical-debt-and-known-errors/index.md",
+            "zh-cn": "locales/zh-cn/主题/技术债与已知错误/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 5: Service Level, Availability, and Reliability Metrics",
+      "topics": [
+        {
+          "number": "5.0",
+          "title": "Introduction to Part 5: Service Level, Availability, and Reliability Metrics",
+          "slug": "service-level-availability-and-reliability-metrics",
+          "path": "locales/en-001/topics/service-level-availability-and-reliability-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/service-level-availability-and-reliability-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-5-部分导读服务级别可用性与可靠性度量/index.md"
+          }
+        },
+        {
+          "number": "5.1",
+          "title": "SLA, OLA, and XLA metrics",
+          "slug": "sla-ola-and-xla-metrics",
+          "path": "locales/en-001/topics/sla-ola-and-xla-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/sla-ola-and-xla-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/SLAOLA-与-XLA-度量/index.md"
+          }
+        },
+        {
+          "number": "5.2",
+          "title": "SLIs, SLOs, and error budgets",
+          "slug": "slis-slos-and-error-budgets",
+          "path": "locales/en-001/topics/slis-slos-and-error-budgets/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/slis-slos-and-error-budgets/index.md",
+            "zh-cn": "locales/zh-cn/主题/SLISLO-与错误预算/index.md"
+          }
+        },
+        {
+          "number": "5.3",
+          "title": "Availability metrics",
+          "slug": "availability-metrics",
+          "path": "locales/en-001/topics/availability-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/availability-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/可用性度量/index.md"
+          }
+        },
+        {
+          "number": "5.4",
+          "title": "Capacity and performance metrics",
+          "slug": "capacity-and-performance-metrics",
+          "path": "locales/en-001/topics/capacity-and-performance-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/capacity-and-performance-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/容量与性能度量/index.md"
+          }
+        },
+        {
+          "number": "5.5",
+          "title": "Monitoring and alert quality metrics",
+          "slug": "monitoring-and-alert-quality-metrics",
+          "path": "locales/en-001/topics/monitoring-and-alert-quality-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/monitoring-and-alert-quality-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/监控与告警质量度量/index.md"
+          }
+        },
+        {
+          "number": "5.6",
+          "title": "Service continuity metrics",
+          "slug": "service-continuity-metrics",
+          "path": "locales/en-001/topics/service-continuity-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/service-continuity-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/服务连续性度量/index.md"
+          }
+        },
+        {
+          "number": "5.7",
+          "title": "Toil and on-call metrics",
+          "slug": "toil-and-on-call-metrics",
+          "path": "locales/en-001/topics/toil-and-on-call-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/toil-and-on-call-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/繁琐工作与值班度量/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 6: Customer and Experience Metrics",
+      "topics": [
+        {
+          "number": "6.0",
+          "title": "Introduction to Part 6: Customer and Experience Metrics",
+          "slug": "customer-and-experience-metrics",
+          "path": "locales/en-001/topics/customer-and-experience-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/customer-and-experience-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-6-部分导读客户与体验度量/index.md"
+          }
+        },
+        {
+          "number": "6.1",
+          "title": "Customer satisfaction metrics",
+          "slug": "customer-satisfaction-metrics",
+          "path": "locales/en-001/topics/customer-satisfaction-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/customer-satisfaction-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/客户满意度度量/index.md"
+          }
+        },
+        {
+          "number": "6.2",
+          "title": "Experience level agreements",
+          "slug": "experience-level-agreements",
+          "path": "locales/en-001/topics/experience-level-agreements/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/experience-level-agreements/index.md",
+            "zh-cn": "locales/zh-cn/主题/体验级别协议/index.md"
+          }
+        },
+        {
+          "number": "6.3",
+          "title": "Service adoption and catalog metrics",
+          "slug": "service-adoption-and-catalog-metrics",
+          "path": "locales/en-001/topics/service-adoption-and-catalog-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/service-adoption-and-catalog-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/服务采纳与目录度量/index.md"
+          }
+        },
+        {
+          "number": "6.4",
+          "title": "User and employee experience",
+          "slug": "user-and-employee-experience",
+          "path": "locales/en-001/topics/user-and-employee-experience/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/user-and-employee-experience/index.md",
+            "zh-cn": "locales/zh-cn/主题/用户与员工体验/index.md"
+          }
+        },
+        {
+          "number": "6.5",
+          "title": "Value realization and business outcomes",
+          "slug": "value-realization-and-business-outcomes",
+          "path": "locales/en-001/topics/value-realization-and-business-outcomes/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/value-realization-and-business-outcomes/index.md",
+            "zh-cn": "locales/zh-cn/主题/价值实现与业务成果/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 7: Asset, Configuration, and Financial Metrics",
+      "topics": [
+        {
+          "number": "7.0",
+          "title": "Introduction to Part 7: Asset, Configuration, and Financial Metrics",
+          "slug": "asset-configuration-and-financial-metrics",
+          "path": "locales/en-001/topics/asset-configuration-and-financial-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/asset-configuration-and-financial-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-7-部分导读资产配置与财务度量/index.md"
+          }
+        },
+        {
+          "number": "7.1",
+          "title": "IT asset management metrics",
+          "slug": "it-asset-management-metrics",
+          "path": "locales/en-001/topics/it-asset-management-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/it-asset-management-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/IT-资产管理度量/index.md"
+          }
+        },
+        {
+          "number": "7.2",
+          "title": "Software asset and license metrics",
+          "slug": "software-asset-and-license-metrics",
+          "path": "locales/en-001/topics/software-asset-and-license-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/software-asset-and-license-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/软件资产与许可度量/index.md"
+          }
+        },
+        {
+          "number": "7.3",
+          "title": "Hardware asset lifecycle metrics",
+          "slug": "hardware-asset-lifecycle-metrics",
+          "path": "locales/en-001/topics/hardware-asset-lifecycle-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/hardware-asset-lifecycle-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/硬件资产生命周期度量/index.md"
+          }
+        },
+        {
+          "number": "7.4",
+          "title": "Configuration and CMDB quality metrics",
+          "slug": "configuration-and-cmdb-quality-metrics",
+          "path": "locales/en-001/topics/configuration-and-cmdb-quality-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/configuration-and-cmdb-quality-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/配置与-CMDB-质量度量/index.md"
+          }
+        },
+        {
+          "number": "7.5",
+          "title": "Service cost and unit economics",
+          "slug": "service-cost-and-unit-economics",
+          "path": "locales/en-001/topics/service-cost-and-unit-economics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/service-cost-and-unit-economics/index.md",
+            "zh-cn": "locales/zh-cn/主题/服务成本与单位经济/index.md"
+          }
+        },
+        {
+          "number": "7.6",
+          "title": "FinOps and cloud cost metrics",
+          "slug": "finops-and-cloud-cost-metrics",
+          "path": "locales/en-001/topics/finops-and-cloud-cost-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/finops-and-cloud-cost-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/FinOps-与云成本度量/index.md"
+          }
+        },
+        {
+          "number": "7.7",
+          "title": "Return on investment and business case",
+          "slug": "return-on-investment-and-business-case",
+          "path": "locales/en-001/topics/return-on-investment-and-business-case/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/return-on-investment-and-business-case/index.md",
+            "zh-cn": "locales/zh-cn/主题/投资回报与业务论证/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 8: Security, Risk, Compliance, and Supplier Metrics",
+      "topics": [
+        {
+          "number": "8.0",
+          "title": "Introduction to Part 8: Security, Risk, Compliance, and Supplier Metrics",
+          "slug": "security-risk-compliance-and-supplier-metrics",
+          "path": "locales/en-001/topics/security-risk-compliance-and-supplier-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/security-risk-compliance-and-supplier-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-8-部分导读安全风险合规与供应商度量/index.md"
+          }
+        },
+        {
+          "number": "8.1",
+          "title": "Security incident and vulnerability metrics",
+          "slug": "security-incident-and-vulnerability-metrics",
+          "path": "locales/en-001/topics/security-incident-and-vulnerability-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/security-incident-and-vulnerability-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/安全事件与漏洞度量/index.md"
+          }
+        },
+        {
+          "number": "8.2",
+          "title": "Risk and control metrics",
+          "slug": "risk-and-control-metrics",
+          "path": "locales/en-001/topics/risk-and-control-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/risk-and-control-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/风险与控制度量/index.md"
+          }
+        },
+        {
+          "number": "8.3",
+          "title": "Compliance and audit metrics",
+          "slug": "compliance-and-audit-metrics",
+          "path": "locales/en-001/topics/compliance-and-audit-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/compliance-and-audit-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/合规与审计度量/index.md"
+          }
+        },
+        {
+          "number": "8.4",
+          "title": "Supplier and contract metrics",
+          "slug": "supplier-and-contract-metrics",
+          "path": "locales/en-001/topics/supplier-and-contract-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/supplier-and-contract-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/供应商与合同度量/index.md"
+          }
+        },
+        {
+          "number": "8.5",
+          "title": "Regulated and government reporting",
+          "slug": "regulated-and-government-reporting",
+          "path": "locales/en-001/topics/regulated-and-government-reporting/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/regulated-and-government-reporting/index.md",
+            "zh-cn": "locales/zh-cn/主题/受监管与政府报告/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 9: People, Teams, and Improvement Metrics",
+      "topics": [
+        {
+          "number": "9.0",
+          "title": "Introduction to Part 9: People, Teams, and Improvement Metrics",
+          "slug": "people-teams-and-improvement-metrics",
+          "path": "locales/en-001/topics/people-teams-and-improvement-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/people-teams-and-improvement-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-9-部分导读人员团队与改进度量/index.md"
+          }
+        },
+        {
+          "number": "9.1",
+          "title": "Team health and developer experience",
+          "slug": "team-health-and-developer-experience",
+          "path": "locales/en-001/topics/team-health-and-developer-experience/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/team-health-and-developer-experience/index.md",
+            "zh-cn": "locales/zh-cn/主题/团队健康与开发者体验/index.md"
+          }
+        },
+        {
+          "number": "9.2",
+          "title": "Satisfaction and well-being metrics",
+          "slug": "satisfaction-and-well-being-metrics",
+          "path": "locales/en-001/topics/satisfaction-and-well-being-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/satisfaction-and-well-being-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/满意度与福祉度量/index.md"
+          }
+        },
+        {
+          "number": "9.3",
+          "title": "Collaboration and handoff metrics",
+          "slug": "collaboration-and-handoff-metrics",
+          "path": "locales/en-001/topics/collaboration-and-handoff-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/collaboration-and-handoff-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/协作与交接度量/index.md"
+          }
+        },
+        {
+          "number": "9.4",
+          "title": "Skills and learning metrics",
+          "slug": "skills-and-learning-metrics",
+          "path": "locales/en-001/topics/skills-and-learning-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/skills-and-learning-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/技能与学习度量/index.md"
+          }
+        },
+        {
+          "number": "9.5",
+          "title": "Continual improvement metrics",
+          "slug": "continual-improvement-metrics",
+          "path": "locales/en-001/topics/continual-improvement-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/continual-improvement-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/持续改进度量/index.md"
+          }
+        },
+        {
+          "number": "9.6",
+          "title": "Organizational change and adoption metrics",
+          "slug": "organizational-change-and-adoption-metrics",
+          "path": "locales/en-001/topics/organizational-change-and-adoption-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/organizational-change-and-adoption-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/组织变革与采纳度量/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 10: Metrics for AI, Automation, and Analytics",
+      "topics": [
+        {
+          "number": "10.0",
+          "title": "Introduction to Part 10: Metrics for AI, Automation, and Analytics",
+          "slug": "metrics-for-ai-automation-and-analytics",
+          "path": "locales/en-001/topics/metrics-for-ai-automation-and-analytics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/metrics-for-ai-automation-and-analytics/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-10-部分导读AI自动化与分析度量/index.md"
+          }
+        },
+        {
+          "number": "10.1",
+          "title": "AI in service management measurement",
+          "slug": "ai-in-service-management-measurement",
+          "path": "locales/en-001/topics/ai-in-service-management-measurement/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/ai-in-service-management-measurement/index.md",
+            "zh-cn": "locales/zh-cn/主题/服务管理中的-AI-度量/index.md"
+          }
+        },
+        {
+          "number": "10.2",
+          "title": "Measuring AI-assisted work",
+          "slug": "measuring-ai-assisted-work",
+          "path": "locales/en-001/topics/measuring-ai-assisted-work/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/measuring-ai-assisted-work/index.md",
+            "zh-cn": "locales/zh-cn/主题/度量-AI-辅助的工作/index.md"
+          }
+        },
+        {
+          "number": "10.3",
+          "title": "AI agent and chatbot metrics",
+          "slug": "ai-agent-and-chatbot-metrics",
+          "path": "locales/en-001/topics/ai-agent-and-chatbot-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/ai-agent-and-chatbot-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/AI-代理与聊天机器人度量/index.md"
+          }
+        },
+        {
+          "number": "10.4",
+          "title": "Metric inflation and quality dilution",
+          "slug": "metric-inflation-and-quality-dilution",
+          "path": "locales/en-001/topics/metric-inflation-and-quality-dilution/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/metric-inflation-and-quality-dilution/index.md",
+            "zh-cn": "locales/zh-cn/主题/度量膨胀与质量稀释/index.md"
+          }
+        },
+        {
+          "number": "10.5",
+          "title": "AI governance and risk metrics",
+          "slug": "ai-governance-and-risk-metrics",
+          "path": "locales/en-001/topics/ai-governance-and-risk-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/ai-governance-and-risk-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/AI-治理与风险度量/index.md"
+          }
+        },
+        {
+          "number": "10.6",
+          "title": "Automation and orchestration metrics",
+          "slug": "automation-and-orchestration-metrics",
+          "path": "locales/en-001/topics/automation-and-orchestration-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/automation-and-orchestration-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/自动化与编排度量/index.md"
+          }
+        },
+        {
+          "number": "10.7",
+          "title": "Pipeline and automated change metrics",
+          "slug": "pipeline-and-automated-change-metrics",
+          "path": "locales/en-001/topics/pipeline-and-automated-change-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/pipeline-and-automated-change-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/流水线与自动化变更度量/index.md"
+          }
+        },
+        {
+          "number": "10.8",
+          "title": "Analytics and data quality metrics",
+          "slug": "analytics-and-data-quality-metrics",
+          "path": "locales/en-001/topics/analytics-and-data-quality-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/analytics-and-data-quality-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/分析与数据质量度量/index.md"
+          }
+        },
+        {
+          "number": "10.9",
+          "title": "Forecasting and predictive analytics metrics",
+          "slug": "forecasting-and-predictive-analytics-metrics",
+          "path": "locales/en-001/topics/forecasting-and-predictive-analytics-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/forecasting-and-predictive-analytics-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/预测与预测分析度量/index.md"
+          }
+        },
+        {
+          "number": "10.10",
+          "title": "Observability and telemetry metrics",
+          "slug": "observability-and-telemetry-metrics",
+          "path": "locales/en-001/topics/observability-and-telemetry-metrics/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/observability-and-telemetry-metrics/index.md",
+            "zh-cn": "locales/zh-cn/主题/可观测性与遥测度量/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 11: Building a Metrics Program",
+      "topics": [
+        {
+          "number": "11.0",
+          "title": "Introduction to Part 11: Building a Metrics Program",
+          "slug": "building-a-metrics-program",
+          "path": "locales/en-001/topics/building-a-metrics-program/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/building-a-metrics-program/index.md",
+            "zh-cn": "locales/zh-cn/主题/第-11-部分导读构建度量计划/index.md"
+          }
+        },
+        {
+          "number": "11.1",
+          "title": "Designing a service metrics dashboard",
+          "slug": "designing-a-service-metrics-dashboard",
+          "path": "locales/en-001/topics/designing-a-service-metrics-dashboard/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/designing-a-service-metrics-dashboard/index.md",
+            "zh-cn": "locales/zh-cn/主题/设计服务度量仪表盘/index.md"
+          }
+        },
+        {
+          "number": "11.2",
+          "title": "Tooling landscape",
+          "slug": "tooling-landscape",
+          "path": "locales/en-001/topics/tooling-landscape/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/tooling-landscape/index.md",
+            "zh-cn": "locales/zh-cn/主题/工具全景/index.md"
+          }
+        },
+        {
+          "number": "11.3",
+          "title": "Rolling out metrics without breeding fear",
+          "slug": "rolling-out-metrics-without-breeding-fear",
+          "path": "locales/en-001/topics/rolling-out-metrics-without-breeding-fear/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/rolling-out-metrics-without-breeding-fear/index.md",
+            "zh-cn": "locales/zh-cn/主题/推行度量而不滋生恐惧/index.md"
+          }
+        },
+        {
+          "number": "11.4",
+          "title": "Maturity model for metrics programs",
+          "slug": "maturity-model-for-metrics-programs",
+          "path": "locales/en-001/topics/maturity-model-for-metrics-programs/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/maturity-model-for-metrics-programs/index.md",
+            "zh-cn": "locales/zh-cn/主题/度量计划的成熟度模型/index.md"
+          }
+        },
+        {
+          "number": "11.5",
+          "title": "An incremental adoption roadmap",
+          "slug": "incremental-adoption-roadmap",
+          "path": "locales/en-001/topics/incremental-adoption-roadmap/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/incremental-adoption-roadmap/index.md",
+            "zh-cn": "locales/zh-cn/主题/渐进式采纳路线图/index.md"
+          }
+        }
+      ]
+    },
+    {
+      "part": "Part 12: Appendices",
+      "topics": [
+        {
+          "number": "12.0",
+          "title": "Appendices",
+          "slug": "appendices",
+          "path": "locales/en-001/topics/appendices/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/appendices/index.md",
+            "zh-cn": "locales/zh-cn/主题/附录/index.md"
+          }
+        },
+        {
+          "number": "12.1",
+          "title": "Glossary",
+          "slug": "glossary",
+          "path": "locales/en-001/topics/glossary/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/glossary/index.md",
+            "zh-cn": "locales/zh-cn/主题/术语表/index.md"
+          }
+        },
+        {
+          "number": "12.2",
+          "title": "Metric definitions and formulas reference",
+          "slug": "metric-definitions-and-formulas-reference",
+          "path": "locales/en-001/topics/metric-definitions-and-formulas-reference/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/metric-definitions-and-formulas-reference/index.md",
+            "zh-cn": "locales/zh-cn/主题/度量定义与公式参考/index.md"
+          }
+        },
+        {
+          "number": "12.3",
+          "title": "Checklists",
+          "slug": "checklists",
+          "path": "locales/en-001/topics/checklists/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/checklists/index.md",
+            "zh-cn": "locales/zh-cn/主题/检查清单集/index.md"
+          }
+        },
+        {
+          "number": "12.4",
+          "title": "Templates",
+          "slug": "templates",
+          "path": "locales/en-001/topics/templates/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/templates/index.md",
+            "zh-cn": "locales/zh-cn/主题/模板/index.md"
+          }
+        },
+        {
+          "number": "12.5",
+          "title": "Maturity self-assessment",
+          "slug": "maturity-self-assessment",
+          "path": "locales/en-001/topics/maturity-self-assessment/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/maturity-self-assessment/index.md",
+            "zh-cn": "locales/zh-cn/主题/成熟度自评/index.md"
+          }
+        },
+        {
+          "number": "12.6",
+          "title": "References and further reading",
+          "slug": "references-and-further-reading",
+          "path": "locales/en-001/topics/references-and-further-reading/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/references-and-further-reading/index.md",
+            "zh-cn": "locales/zh-cn/主题/参考文献与延伸阅读/index.md"
+          }
+        },
+        {
+          "number": "12.7",
+          "title": "Index",
+          "slug": "index",
+          "path": "locales/en-001/topics/index/index.md",
+          "locales": {
+            "en-001": "locales/en-001/topics/index/index.md",
+            "zh-cn": "locales/zh-cn/主题/索引/index.md"
+          }
+        }
+      ]
+    }
+  ],
+  "skills": [
+    "anomaly-analysis",
+    "change-request",
+    "data-pipeline",
+    "data-quality",
+    "demand-forecasting",
+    "itil-5",
+    "kaizen",
+    "key-risk-indicators",
+    "machine-learning-model-card",
+    "maturity-models",
+    "mlops",
+    "postmortem",
+    "release-notes",
+    "roi-analysis",
+    "root-cause-analysis",
+    "runbook",
+    "service-catalog",
+    "service-level-agreement",
+    "service-management-metrics-maintainer-skill",
+    "service-management-metrics-skill",
+    "software-engineering-metrics",
+    "statistical-analysis",
+    "survey-design",
+    "trend-analysis",
+    "value-stream-map"
+  ],
+  "reference": [
+    {
+      "title": "Glossary",
+      "path": "locales/en-001/topics/glossary/index.md",
+      "note": "Terms and acronyms, each pointing to its home topic"
+    },
+    {
+      "title": "Metric definitions and formulas reference",
+      "path": "locales/en-001/topics/metric-definitions-and-formulas-reference/index.md",
+      "note": "Every metric with its gaming vector and guardrail"
+    },
+    {
+      "title": "Index",
+      "path": "locales/en-001/topics/index/index.md",
+      "note": "Concepts, frameworks, and metrics by topic number"
+    },
+    {
+      "title": "Style guide",
+      "path": "STYLE_GUIDE.md",
+      "note": "The prose and formatting contract"
+    },
+    {
+      "title": "Specification",
+      "path": "spec/index.md",
+      "note": "Governing specification: topic template, manifest, quality gates"
+    }
+  ]
+}

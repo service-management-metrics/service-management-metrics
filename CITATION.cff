@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Service Management Metrics"
+message: "If you use this book, please cite it using the metadata below."
+type: dataset
+authors:
+  - given-names: "Joel Parker"
+    family-names: "Henderson"
+    email: "joel@joelparkerhenderson.com"
+abstract: >-
+  A working book on measuring service management well in the age of ITIL 5,
+  through four lenses: agile, AI, automation, and analytics. Every metric
+  names its gaming vector and the guardrail that catches it.
+keywords:
+  - agile
+  - ITIL
+  - IT service management
+  - metrics
+  - ITIL 5
+  - automation
+  - analytics
+  - Goodhart's law
+  - DORA
+  - AI skills
+  - AI prompts
+license: CC-BY-4.0
+repository-code: "https://github.com/service-management-metrics/service-management-metrics"
+url: "https://service-management-metrics.github.io"

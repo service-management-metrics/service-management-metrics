@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+# Regenerates an appendix from the topics.
+import re,sys
+import os
+root=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows=[l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+refs={}; wiki={}
+for part,num,slug,pt in rows:
+    if int(part)>=12: continue
+    t=open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    m=re.search(r"^## References and further reading\n(.*?)\Z",t,re.M|re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm=re.match(r"\d+\. (.*)",l)
+        if not mm: continue
+        r=mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm=re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$",r)
+            wiki.setdefault(wm.group(2),[wm.group(1),[]])[1].append(num)
+        else:
+            refs.setdefault(r,[]).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]","",r.lower())
+o=["# References and further reading","",
+"This appendix consolidates the references cited in the content topics, with the topics that cite each one. Entries are listed alphabetically by author or body. The home topic remains the place to see how a source is used.","",
+"## About verification","",
+"Wikipedia links in this book are checked to resolve. Books, papers, standards, and guidance documents were cited from memory by the authors and have not yet all been checked against the originals. Treat bibliographic details (years, editions, titles) as leads to confirm before relying on them in formal work. Report corrections through the maintainer skill.","",
+"## Books, papers, standards, and guidance","",]
+for i,r in enumerate(sorted(refs,key=key),1):
+    o.append(f"{i}. {r} (cited in {', '.join(sorted(set(refs[r]),key=lambda n:[int(x) for x in n.split('.')]))})")
+o+=["","## Wikipedia articles","",]
+for i,(u,(title,ns)) in enumerate(sorted(wiki.items(),key=lambda kv:kv[1][0].lower()),1):
+    o.append(f"{i}. Wikipedia, [{title}]({u}) (cited in {', '.join(sorted(set(ns),key=lambda n:[int(x) for x in n.split('.')]))})")
+open(f"{root}/locales/en-001/topics/references-and-further-reading/index.md","w").write("\n".join(o)+"\n")
+print(len(refs),len(wiki))
