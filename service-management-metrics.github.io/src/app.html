@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-001" data-theme="light" data-text-size="normal">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="%sveltekit.assets%/assets/favicon.svg" type="image/svg+xml" />
+
+    <!-- Lily theme stylesheet. ThemePicker adopts this exact <link> (matched by
+         data-lily-theme-picker) and swaps its href, so the first paint is already
+         themed and switching themes causes no flash of unstyled content. -->
+    <link
+      rel="stylesheet"
+      data-lily-theme-picker="theme"
+      href="%sveltekit.assets%/assets/themes/light.css"
+    />
+    <!-- Site stylesheet last so its rules win over the Lily component defaults. -->
+    <link rel="stylesheet" href="%sveltekit.assets%/assets/style.css" />
+
+    %sveltekit.head%
+    <script src="%sveltekit.assets%/assets/picker-popup.js" defer></script>
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>

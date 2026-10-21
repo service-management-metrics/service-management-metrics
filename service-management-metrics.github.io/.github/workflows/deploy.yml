@@ -1,0 +1,74 @@
+# Build the static site and publish it to GitHub Pages.
+#
+# Follows https://svelte.dev/docs/kit/adapter-static#GitHub-Pages, with one
+# deliberate difference: that example sets BASE_PATH to the repository name,
+# which is correct for a project site served from user.github.io/repo. This is
+# an organisation root site served from the domain root, so BASE_PATH stays
+# unset and `paths.base` resolves to '' — see svelte.config.js.
+#
+# Requires Settings -> Pages -> Source to be set to "GitHub Actions". With the
+# default "Deploy from a branch", Jekyll publishes the README instead and this
+# workflow's artifact is built, uploaded, and then ignored.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Allow one concurrent deployment; queued runs supersede each other rather than
+# racing to publish different commits.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # No `version` input: the action reads the exact pnpm from the
+      # `packageManager` field in package.json, so CI and local development
+      # cannot drift onto different majors. They did once, and pnpm 11 rejected
+      # the build-script config that pnpm 10 had accepted.
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Install Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: build/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

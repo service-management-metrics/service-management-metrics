@@ -1,0 +1,1041 @@
+/* ============================================================================
+ * Service Management Metrics — site stylesheet
+ *
+ * Loaded after the active Lily theme, which supplies the design tokens
+ * (--color-*, --lily-*) and a baseline for all 492 Lily component classes.
+ * The theme states nearly everything inside `:where()`, so the plain selectors
+ * below win without needing `!important` or specificity games.
+ *
+ * What this file adds on top of the theme:
+ *   1. The page frame — the grail layout's grid, the sticky header and sidebar.
+ *   2. Book typography — the reading column, its measure, and its rhythm.
+ *   3. Book-specific components — contents, topic header, pagination, letters.
+ *
+ * Everything scales from --text-base, which the Lily TextSizePicker drives via
+ * `data-text-size` on <html>. Sizes are in rem so a reader's own browser
+ * setting still multiplies through.
+ * ========================================================================= */
+
+/* --- Reader-controlled type scale ---------------------------------------- */
+
+:root {
+    --text-base: 1.0625rem;
+    /* The reading column's measure. Roughly 68 characters at the base size —
+       long enough for the book's dense sentences, short enough to track. */
+    --measure: 44rem;
+    --header-height: 4.5rem;
+}
+
+:root[data-text-size="smallest"] {
+    --text-base: 0.6875rem;
+}
+:root[data-text-size="smaller"] {
+    --text-base: 0.8125rem;
+}
+:root[data-text-size="small"] {
+    --text-base: 0.9375rem;
+}
+:root[data-text-size="normal"] {
+    --text-base: 1.0625rem;
+}
+:root[data-text-size="large"] {
+    --text-base: 1.1875rem;
+}
+:root[data-text-size="larger"] {
+    --text-base: 1.3125rem;
+}
+:root[data-text-size="largest"] {
+    --text-base: 1.4375rem;
+}
+
+/* --- Page frame ----------------------------------------------------------- */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--lily-font-body);
+    font-size: var(--text-base);
+    line-height: 1.65;
+    color: var(--lily-text);
+    background-color: var(--color-base-100);
+    /* Prevent iOS from inflating text in landscape, which would fight the
+       reader's own text-size choice. */
+    -webkit-text-size-adjust: 100%;
+}
+
+/* The grail layout, reduced to a single column: a full-width header, the
+   reading column, and a footer. Neither aside is used — a book does not need a
+   rail competing with the prose, and navigation lives in the header, the
+   contents page, and the previous/next links at the foot of each topic. */
+.grail-layout.site {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+}
+
+.grail-layout-top-header.site-header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--lily-space-md);
+    min-height: var(--header-height);
+    padding: var(--lily-space-sm) var(--lily-space-lg);
+    background-color: var(--color-base-200);
+    border-bottom: 1px solid var(--lily-border);
+}
+
+.grail-layout-center-main.site-main {
+    grid-area: main;
+    min-width: 0;
+    padding: var(--lily-space-xl) var(--lily-space-lg) 4rem;
+}
+
+.grail-layout-bottom-footer.site-footer {
+    grid-area: footer;
+    padding: var(--lily-space-lg);
+    background-color: var(--color-base-200);
+    border-top: 1px solid var(--lily-border);
+    color: var(--lily-text-muted);
+    font-size: 0.9375em;
+}
+
+.site-footer p {
+    max-width: var(--measure);
+    margin: 0 0 var(--lily-space-xs);
+}
+
+/* --- Header --------------------------------------------------------------- */
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--lily-space-xs);
+    text-decoration: none;
+    color: inherit;
+    margin-right: auto;
+}
+
+.site-brand-icon {
+    font-size: 1.25em;
+    line-height: 1;
+    color: var(--color-primary);
+}
+
+.site-brand-title {
+    font-size: 1.0625em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.site-brand:hover .site-brand-title {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--lily-space-md);
+    font-size: 0.9375em;
+}
+
+.site-nav a {
+    color: var(--lily-text);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+    border-bottom-color: var(--lily-border-strong);
+}
+
+.site-nav a[aria-current="page"] {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.site-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--lily-space-sm);
+}
+
+/* Topic numbers, wherever a topic is listed: the home page's part cards and
+   the contents page. Tabular figures keep the numbers in a straight edge. */
+.site-contents-number {
+    font-variant-numeric: tabular-nums;
+    color: var(--lily-text-muted);
+}
+
+/* --- Article shell -------------------------------------------------------- */
+
+.article-layout.page {
+    max-width: var(--measure);
+    margin: 0 auto;
+}
+
+/* The home page lays out cards in a grid, so it needs more room than the
+   reading measure allows. */
+.article-layout.page-home {
+    max-width: 62rem;
+}
+
+.page-breadcrumb {
+    margin-bottom: var(--lily-space-lg);
+    font-size: 0.875em;
+}
+
+.page-breadcrumb .breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--lily-space-xs);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--lily-text-muted);
+}
+
+.page-breadcrumb .breadcrumb-list-item + .breadcrumb-list-item::before {
+    content: "/";
+    margin-right: var(--lily-space-xs);
+    color: var(--lily-border-strong);
+}
+
+.page-breadcrumb a {
+    color: inherit;
+}
+
+.page-header {
+    margin-bottom: var(--lily-space-xl);
+    padding-bottom: var(--lily-space-lg);
+    border-bottom: 1px solid var(--lily-border);
+}
+
+.page-eyebrow {
+    margin: 0 0 var(--lily-space-xs);
+    font-size: 0.8125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+}
+
+.page-header h1,
+.page-hero h1 {
+    margin: 0 0 var(--lily-space-md);
+    font-size: 2.125em;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+}
+
+/* The bold sentence under a topic title is the topic's thesis. Give it the
+   weight of a pull quote so a reader skimming the book gets the argument from
+   the topic headers alone. */
+.page-lead,
+.page-hero-lead {
+    margin: 0;
+    font-size: 1.1875em;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--lily-text);
+    text-wrap: pretty;
+}
+
+.page-section {
+    margin-top: 3rem;
+}
+
+/* The theme sizes the SectionHeading *container* with a clamp() and bolds it,
+   so its children inherit a 28px bold baseline and any `em` sizing below
+   compounds off that. Reset the container to body type; the parts below then
+   size predictably against --text-base. */
+.section-heading {
+    font-size: var(--text-base);
+    font-weight: 400;
+    line-height: 1.65;
+    margin: 0 0 var(--lily-space-lg);
+}
+
+.section-heading-eyebrow {
+    margin: 0 0 var(--lily-space-xs);
+    font-size: 0.8125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+}
+
+.section-heading-heading {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.section-heading-subtitle {
+    margin: var(--lily-space-xs) 0 0;
+    font-size: 0.9375em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--lily-text-muted);
+    text-wrap: pretty;
+}
+
+/* --- Home page ------------------------------------------------------------ */
+
+.page-hero {
+    max-width: var(--measure);
+    margin-bottom: 3rem;
+}
+
+.page-hero p {
+    text-wrap: pretty;
+}
+
+.page-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--lily-space-sm);
+    margin-top: var(--lily-space-lg);
+}
+
+.page-action {
+    display: inline-block;
+    padding: 0.55rem 1.1rem;
+    border: 1px solid var(--lily-border-strong);
+    border-radius: var(--lily-radius-md);
+    text-decoration: none;
+    color: var(--lily-text);
+    font-weight: 600;
+    font-size: 0.9375em;
+}
+
+.page-action:hover {
+    background-color: var(--color-base-200);
+}
+
+.page-action-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-primary-content);
+}
+
+.page-action-primary:hover {
+    background-color: var(--color-primary);
+    filter: brightness(1.1);
+}
+
+.part-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--lily-space-lg);
+}
+
+.part-block {
+    padding-top: var(--lily-space-lg);
+    border-top: 1px solid var(--lily-border);
+}
+
+.part-block:first-child {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.part-block-heading {
+    margin: 0;
+    font-size: 1.0625em;
+    line-height: 1.3;
+}
+
+.part-block-tagline {
+    margin: var(--lily-space-xs) 0 var(--lily-space-md);
+    font-size: 0.875em;
+    color: var(--lily-text-muted);
+    text-wrap: pretty;
+}
+
+.reference-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--lily-space-md);
+}
+
+.reference-list a {
+    font-weight: 600;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    margin: 0 0.15rem;
+    border-radius: var(--lily-radius-sm);
+    background-color: var(--color-base-300);
+    color: var(--lily-text-muted);
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
+}
+
+/* --- Contents page -------------------------------------------------------- */
+
+.contents-topics {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.contents-topics a {
+    display: grid;
+    grid-template-columns: 2.5em minmax(0, 1fr);
+    gap: 0.25em;
+    padding: 0.35rem var(--lily-space-sm);
+    margin-left: calc(-1 * var(--lily-space-sm));
+    border-radius: var(--lily-radius-sm);
+    color: var(--lily-text);
+    text-decoration: none;
+}
+
+.contents-topics a:not(:has(.site-contents-number)) {
+    display: block;
+}
+
+.contents-topics a:hover {
+    background-color: var(--color-base-200);
+    color: var(--color-primary);
+}
+
+/* The `/contents/` page's part-and-topic listing: a single nested list
+   (`<ul><li>` part, nested `<ul><li>` topics), deliberately plain — no
+   tiles, no table or grid layout, no flexbox. Indentation comes from the
+   browser's own default nested-list rendering. */
+.contents-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contents-list .contents-list {
+    margin-top: 0.35rem;
+    padding-inline-start: 1.5rem;
+    list-style: disc;
+}
+
+.contents-list li {
+    margin: 0.15rem 0;
+}
+
+.contents-parts > li {
+    margin: 0 0 var(--lily-space-lg);
+}
+
+.contents-part-heading {
+    margin: 0;
+    font-size: 1.0625em;
+    font-weight: 700;
+}
+
+.contents-part-tagline {
+    margin: 0.2rem 0 0;
+    font-size: 0.875em;
+    color: var(--lily-text-muted);
+    text-wrap: pretty;
+}
+
+.contents-list a {
+    color: var(--lily-text);
+}
+
+.contents-list a:hover {
+    color: var(--color-primary);
+}
+
+/* --- On-this-page nav ------------------------------------------------------ */
+
+.contents-nav.page-toc {
+    margin-bottom: var(--lily-space-xl);
+    padding: var(--lily-space-md) var(--lily-space-lg);
+    background-color: var(--color-base-200);
+    border-radius: var(--lily-radius-lg);
+    font-size: 0.9375em;
+}
+
+.page-toc-heading {
+    margin: 0 0 var(--lily-space-sm);
+    font-size: 0.8125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--lily-text-muted);
+}
+
+.contents-link.page-toc-item {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-toc-item a {
+    display: block;
+    padding: 0.15rem 0;
+    color: var(--lily-text);
+    text-decoration: none;
+}
+
+.page-toc-item a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+/* --- Prose ---------------------------------------------------------------- */
+
+.prose {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+}
+
+/* Headings get scroll margin so that following an anchor does not tuck the
+   target under the sticky header. */
+.prose h2,
+.prose h3,
+.prose h4 {
+    scroll-margin-top: calc(var(--header-height) + 1rem);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+}
+
+.prose h2 {
+    margin: 2.75rem 0 var(--lily-space-md);
+    padding-top: var(--lily-space-md);
+    font-size: 1.5em;
+    border-top: 1px solid var(--lily-border);
+}
+
+.prose h3 {
+    margin: 2rem 0 var(--lily-space-sm);
+    font-size: 1.1875em;
+}
+
+.prose h4 {
+    margin: 1.5rem 0 var(--lily-space-xs);
+    font-size: 1.0625em;
+}
+
+.prose p {
+    margin: 0 0 var(--lily-space-md);
+}
+
+.prose a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: 1px;
+}
+
+.prose a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.prose ul,
+.prose ol {
+    margin: 0 0 var(--lily-space-md);
+    padding-left: 1.5rem;
+}
+
+.prose li {
+    margin-bottom: var(--lily-space-xs);
+}
+
+.prose li > ul,
+.prose li > ol {
+    margin-top: var(--lily-space-xs);
+}
+
+.prose strong {
+    font-weight: 650;
+}
+
+.prose blockquote {
+    margin: var(--lily-space-lg) 0;
+    padding: var(--lily-space-xs) var(--lily-space-lg);
+    border-left: 3px solid var(--color-primary);
+    color: var(--lily-text-muted);
+    font-style: italic;
+}
+
+.prose hr {
+    margin: 2.5rem 0;
+    border: 0;
+    border-top: 1px solid var(--lily-border);
+}
+
+.prose code {
+    font-family: var(--lily-font-mono);
+    font-size: 0.9em;
+    padding: 0.1em 0.3em;
+    background-color: var(--color-base-200);
+    border-radius: var(--lily-radius-sm);
+}
+
+/* Tables carry real comparative content in this book — governance paradigms,
+   maturity levels, sector lenses. They must stay legible on a phone, so the
+   wrapper scrolls rather than the page. */
+.prose-scroll {
+    margin: var(--lily-space-lg) 0;
+    overflow-x: auto;
+    /* Scrolling is the point, but the region is also focusable, so it needs a
+       visible focus ring like any other tab stop. */
+    border-radius: var(--lily-radius-sm);
+}
+
+.prose-scroll:focus-visible {
+    outline: 2px solid var(--lily-focus-ring);
+    outline-offset: 2px;
+}
+
+.prose table {
+    width: 100%;
+    /* Columns of prose need room; below this the table scrolls instead. */
+    min-width: 34rem;
+    margin: 0;
+    border-collapse: collapse;
+    font-size: 0.9375em;
+    text-wrap: initial;
+}
+
+.prose table :is(th, td) {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--lily-border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.prose table th {
+    background-color: var(--color-base-200);
+    font-weight: 650;
+}
+
+.prose table tbody tr:nth-child(even) {
+    background-color: color-mix(in oklch, var(--color-base-200) 50%, transparent);
+}
+
+/* The references section that closes every topic is a long numbered list of
+   bare URLs, which markdown autolinks. A URL has no spaces to break at, so on a
+   phone it would set the page width on its own; `anywhere` lets it break at any
+   character, but only when it does not fit. */
+.prose a {
+    overflow-wrap: anywhere;
+}
+
+/* --- Topic pagination ---------------------------------------------------- */
+
+.pagination-nav.page-pagination {
+    margin-top: 3rem;
+    padding-top: var(--lily-space-lg);
+    border-top: 1px solid var(--lily-border);
+}
+
+.page-pagination .pagination-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--lily-space-md);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-pagination a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    height: 100%;
+    padding: var(--lily-space-md);
+    border: 1px solid var(--lily-border);
+    border-radius: var(--lily-radius-md);
+    text-decoration: none;
+    color: var(--lily-text);
+}
+
+.page-pagination a:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-base-200);
+}
+
+.page-pagination-next {
+    text-align: right;
+}
+
+.page-pagination-direction {
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--lily-text-muted);
+}
+
+.page-pagination-label {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* --- Glossary and index ---------------------------------------------------- */
+
+.contents-nav.letter-nav {
+    position: sticky;
+    top: var(--header-height);
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem;
+    margin-bottom: var(--lily-space-xl);
+    padding: var(--lily-space-sm);
+    background-color: var(--color-base-200);
+    border-radius: var(--lily-radius-md);
+}
+
+.letter-nav a {
+    min-width: 1.9rem;
+    padding: 0.2rem 0.35rem;
+    border-radius: var(--lily-radius-sm);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9375em;
+    color: var(--lily-text);
+}
+
+.letter-nav a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-primary-content);
+}
+
+/* Glossary entries are paragraphs that open with a bold term. Hang a little
+   space between them so the A–Z scans as a list rather than a wall. */
+.page-reference .prose p {
+    margin-bottom: var(--lily-space-md);
+}
+
+.page-reference .prose h2 {
+    margin-top: 2.5rem;
+    font-size: 1.75em;
+}
+
+/* --- Lily pickers ---------------------------------------------------------- */
+
+/* The installed package version (@lilydesignsystem/svelte-*-picker 0.1.1)
+   renders each popup's button and listbox through the shared generic
+   IconButton/Listbox primitives — real classes "icon-button" and
+   "listbox" — and carries the per-picker identity ("theme-picker-button",
+   "locale-picker-list", etc.) only as an inert `baseclass` HTML
+   attribute, not an actual CSS class. Only the *option* elements inside
+   an open list get a real per-picker class (.theme-picker-option,
+   .locale-picker-option, ...), which is why those already match the
+   theme file's rules correctly.
+   The theme file's own ":where(.theme-picker-list, .locale-picker-list,
+   ...)" block therefore matches nothing in the DOM at all, so the
+   popup got no positioning from anywhere: it rendered as a static,
+   block-level element and pushed the rest of the page down when it
+   opened — the reported "page jump" bug. This block supplies the
+   positioning and visual baseline directly against the classes that
+   actually exist. If a future package version adds real per-picker
+   classes, prefer those and drop this. */
+.picker-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--lily-space-sm);
+}
+
+/* Every *-picker wrapper (the div PickerBar renders per control) does
+   get its real class name, and the theme already sets `position:
+   relative` on it — confirmed against the rendered page, not assumed. */
+
+.listbox {
+    position: absolute;
+    z-index: 20;
+    inset-block-start: 100%;
+    /* All four pickers sit in the right-hand cluster of a right-aligned
+       header, so hang every popup from its own end edge rather than the
+       theme's (also non-matching) left-anchored default — otherwise the
+       widest list (theme-picker, 45 options) would run past the
+       viewport's right edge. */
+    inset-inline-end: 0;
+    inset-inline-start: auto;
+    margin-block-start: var(--lily-space-xs);
+    /* No min-width: max-content here (deliberately) — it would beat the
+       narrower max-width the mobile media query below sets, since
+       min-width always wins over a conflicting max-width. Letting the
+       box size to its content up to max-width is enough; option text
+       wraps if a name is ever wider than that. */
+    width: max-content;
+    max-width: min(20rem, calc(100vw - 2 * var(--lily-space-lg)));
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: var(--lily-space-xs);
+    list-style: none;
+    color: var(--lily-text);
+    background-color: var(--color-base-100);
+    border: 1px solid var(--lily-border-strong);
+    border-radius: var(--lily-radius-md);
+    box-shadow: var(--lily-shadow-md, 0 4px 16px rgba(0, 0, 0, 0.15));
+}
+
+/* Needed explicitly: a `display` declaration on a styled element
+   overrides the UA stylesheet's `[hidden] { display: none }` rule, so
+   without this the closed list stays visible. */
+.listbox[hidden] {
+    display: none;
+}
+
+/* Unlike the other three, SharePicker in this package version renders
+   its own real `.share-picker-list` class (confirmed against the
+   rendered page) rather than the generic `.listbox` — so it already
+   gets position/background/border from the theme's `:where(...)` rule,
+   which does match it. It only needs the same right-edge anchor as
+   `.listbox` above, since the theme's default is left-anchored. */
+.share-picker-list {
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+}
+
+/* The share picker's status line ("Copied!") is a real class too, and
+   is in normal flow by default — a caption line under the button,
+   which is fine on its own, but it makes .share-picker taller than its
+   sibling wrappers (which have no such line). .picker-bar centers its
+   children on the cross axis, so that extra height was pushing the
+   share button, icon included, up relative to the other three. Take
+   the status line out of flow so every wrapper stays button-height. */
+.share-picker-status {
+    position: absolute;
+    inset-inline-end: 0;
+    top: 100%;
+}
+
+/* --- Narrow viewports ------------------------------------------------------ */
+
+@media (max-width: 64rem) {
+    .grail-layout-center-main.site-main {
+        padding: var(--lily-space-lg) var(--lily-space-md) 3rem;
+    }
+}
+
+/* On a phone the search field opens over the row of picker buttons instead of
+   hanging below the header. Hung below, a 278px popup straddled the header's
+   bottom edge and covered the start of the content. Over its own row it stays
+   inside the header, and the other pickers are hidden only while searching.
+   The theme positions the panel with anchor positioning inside `:where()`,
+   which has no specificity, so these class selectors override it. */
+@media (max-width: 40rem) {
+    .site-controls {
+        position: relative;
+        width: 100%;
+    }
+
+    .site-controls .search-picker {
+        position: static;
+    }
+
+    .site-controls .search-picker-panel {
+        position: absolute;
+        inset: 0 0 auto 0;
+        position-area: none;
+        width: auto;
+        max-width: none;
+        margin: 0;
+    }
+}
+
+@media (max-width: 40rem) {
+    .page-pagination .pagination-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .page-pagination-next {
+        text-align: left;
+    }
+
+    .page-header h1,
+    .page-hero h1 {
+        font-size: 1.75em;
+    }
+
+    /* .site-header wraps at this width (see .site-header's flex-wrap) and
+       .picker-bar drops to its own row, left-aligned under the nav rather
+       than pinned to the header's right edge as on a wide viewport. A
+       popup anchored to its own trigger's *end* edge (the desktop choice,
+       made when every trigger sits near the header's right edge) then
+       hangs mostly off-screen to the left from the *left-most* of the
+       four clustered icon buttons — anchor from the trigger's start edge
+       here instead, since there is room to the right of the cluster but
+       not to the left of it. */
+    .listbox,
+    .share-picker-list {
+        inset-inline-start: 0;
+        inset-inline-end: auto;
+    }
+
+    .listbox {
+        max-width: calc(100vw - 2 * var(--lily-space-md) - 2 * var(--lily-space-lg));
+    }
+}
+
+/* --- Print ----------------------------------------------------------------- */
+
+@media print {
+    .site-header,
+    .page-breadcrumb,
+    .page-toc,
+    .page-pagination,
+    .letter-nav {
+        display: none;
+    }
+
+    .grail-layout.site {
+        display: block;
+    }
+
+    .grail-layout-center-main.site-main {
+        padding: 0;
+    }
+
+    .article-layout.page {
+        max-width: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Site search (spec/search/index.md) */
+.site-search {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 0 1.5rem;
+}
+.site-search input {
+	flex: 1 1 14rem;
+	min-width: 0;
+	padding: 0.4rem 0.6rem;
+	font: inherit;
+	color: inherit;
+	background: transparent;
+	border: 1px solid color-mix(in srgb, currentColor 40%, transparent);
+	border-radius: 4px;
+}
+.site-search button {
+	padding: 0.4rem 0.9rem;
+	font: inherit;
+	cursor: pointer;
+}
+.site-search-results ol {
+	padding-left: 1.25rem;
+}
+.site-search-results li {
+	margin: 0 0 1.25rem;
+}
+.site-search-url {
+	font-size: 0.8em;
+	opacity: 0.7;
+	word-break: break-all;
+}
+.site-search-results li p {
+	margin: 0.25rem 0 0;
+}
+
+/* Contents page: topics that are not written yet. */
+.contents-unwritten {
+  color: var(--text-muted, inherit);
+  opacity: 0.75;
+}
+
+/* Skills list. */
+.skills-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75em;
+}
+
+.skills-list li {
+  display: grid;
+  gap: 0.15em;
+  overflow-wrap: anywhere;
+}
+
+.skills-description {
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+/* Locale landing page hero: headline, subheadline, intro, and the translations list. */
+.page-hero-subheadline {
+    margin: 0 0 var(--lily-space-md);
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.35;
+    text-wrap: balance;
+}
+
+.page-hero-contents {
+    margin: var(--lily-space-md) 0 var(--lily-space-sm);
+    font-weight: 600;
+}
+
+.page-hero-translations {
+    margin: 0;
+    font-size: 0.875em;
+    color: var(--lily-text-muted);
+}
+
+.page-hero-translations a[aria-current='page'] {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Picker bar buttons: visible hover and open state on every theme. */
+button[class*="-picker-button"] {
+  transition: background-color 150ms, color 150ms, border-color 150ms;
+}
+button[class*="-picker-button"]:hover:not(:disabled),
+button[class*="-picker-button"][aria-expanded="true"] {
+  background-color: color-mix(in srgb, currentColor 16%, transparent) !important;
+  border-color: currentColor !important;
+}

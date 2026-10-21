@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://service-management-metrics.github.io/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/ar-001/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/cy-001/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/cy-gb/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/en-001/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/en-gb/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/en-gb-oxendict/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/en-us/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/hi-001/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/hi-in/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/zh-001/sitemap.xml
+Sitemap: https://service-management-metrics.github.io/zh-cn/sitemap.xml

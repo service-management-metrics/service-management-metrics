@@ -1,0 +1,4 @@
+# pnpm 11's dependency-build-script allowlist. Without this, Vite's esbuild
+# binary doesn't install correctly and CI breaks.
+allowBuilds:
+  esbuild: true
