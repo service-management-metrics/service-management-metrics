@@ -1,0 +1,49 @@
+{
+  "name": "简体中文（中国）",
+  "topic_word": "主题",
+  "topics_word": "主题",
+  "h2": {
+    "Overview and motivation": "概述与动因",
+    "Key principles": "关键原则",
+    "Metric definitions": "度量定义",
+    "Recommendations": "建议",
+    "Gaming vectors and guardrails": "钻空子途径与护栏",
+    "Trade-offs: pros and cons": "权衡：利与弊",
+    "Questions to discuss with your team": "与团队讨论的问题",
+    "Four perspectives": "四种视角",
+    "In practice: a service management example": "实践：一个服务管理示例",
+    "Agile, AI, automation, and analytics": "敏捷、AI、自动化与分析",
+    "Sector lens": "行业视角",
+    "Business case: motivations, ROI, and TCO": "业务论证：动因、投资回报与总拥有成本",
+    "Anti-patterns and pitfalls": "反模式与陷阱",
+    "Maturity model": "成熟度模型",
+    "Checklist": "检查清单",
+    "AI prompts": "AI 提示词",
+    "AI skills": "AI 技能",
+    "Key takeaways": "要点",
+    "References and further reading": "参考文献与延伸阅读",
+    "Topics in this part": "本部分的主题",
+    "How these topics interrelate": "这些主题如何相互关联"
+  },
+  "h3": {
+    "Product and delivery teams": "产品与交付团队",
+    "Service and operations teams": "服务与运维团队",
+    "Leadership and governance": "领导层与治理",
+    "Customers and users": "客户与用户",
+    "Agile": "敏捷",
+    "AI": "AI",
+    "Automation": "自动化",
+    "Analytics": "分析"
+  },
+  "maturity": {
+    "Initiate": "起步",
+    "Develop": "发展",
+    "Standardize": "标准化",
+    "Manage": "管理",
+    "Orchestrate": "协同"
+  },
+  "dirs": {
+    "topics": "主题",
+    "terminology": "术语"
+  }
+}
