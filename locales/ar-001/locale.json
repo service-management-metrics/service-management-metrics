@@ -1,0 +1,49 @@
+{
+  "name": "العربية (العالم)",
+  "topic_word": "الموضوع",
+  "topics_word": "المواضيع",
+  "h2": {
+    "Overview and motivation": "نظرة عامة والدافع",
+    "Key principles": "المبادئ الأساسية",
+    "Metric definitions": "تعريفات المقاييس",
+    "Recommendations": "التوصيات",
+    "Gaming vectors and guardrails": "مسارات التلاعب وحواجز الحماية",
+    "Trade-offs: pros and cons": "المفاضلات: الإيجابيات والسلبيات",
+    "Questions to discuss with your team": "أسئلة للنقاش مع فريقك",
+    "Four perspectives": "أربعة منظورات",
+    "In practice: a service management example": "في الممارسة: مثال من إدارة الخدمات",
+    "Agile, AI, automation, and analytics": "الأجايل والذكاء الاصطناعي والأتمتة والتحليلات",
+    "Sector lens": "منظور القطاعات",
+    "Business case: motivations, ROI, and TCO": "مبررات الأعمال: الدوافع والعائد على الاستثمار والتكلفة الإجمالية للملكية",
+    "Anti-patterns and pitfalls": "الأنماط المضادة والمزالق",
+    "Maturity model": "نموذج النضج",
+    "Checklist": "قائمة التحقق",
+    "AI prompts": "موجِّهات الذكاء الاصطناعي",
+    "AI skills": "مهارات الذكاء الاصطناعي",
+    "Key takeaways": "أهم الخلاصات",
+    "References and further reading": "المراجع والقراءات الإضافية",
+    "Topics in this part": "مواضيع هذا الجزء",
+    "How these topics interrelate": "كيف تترابط هذه المواضيع"
+  },
+  "h3": {
+    "Product and delivery teams": "فرق المنتج والتسليم",
+    "Service and operations teams": "فرق الخدمة والعمليات",
+    "Leadership and governance": "القيادة والحوكمة",
+    "Customers and users": "العملاء والمستخدمون",
+    "Agile": "الأجايل",
+    "AI": "الذكاء الاصطناعي",
+    "Automation": "الأتمتة",
+    "Analytics": "التحليلات"
+  },
+  "maturity": {
+    "Initiate": "البدء",
+    "Develop": "التطوير",
+    "Standardize": "التوحيد",
+    "Manage": "الإدارة",
+    "Orchestrate": "التنسيق"
+  },
+  "dirs": {
+    "topics": "المواضيع",
+    "terminology": "المصطلحات"
+  }
+}

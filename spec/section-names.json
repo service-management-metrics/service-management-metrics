@@ -20,6 +20,13 @@
       "examples": "उदाहरण",
       "contributing": "योगदान",
       "project": "परियोजना"
+    },
+    "ar-001": {
+      "topics": "المواضيع",
+      "front-matter": "التمهيد",
+      "examples": "أمثلة",
+      "contributing": "المساهمة",
+      "project": "المشروع"
     }
   }
 }

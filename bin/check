@@ -151,7 +151,7 @@ for lp in sorted(glob.glob(f"{root}/locales/*/locale.json")):
             if strict: err(f"{k} is an unwritten stub")
             continue
         tr_written += 1
-        if re.search(r"\bagile delivery\b|敏捷交付", text, re.I): err(f"{k}: says 'agile delivery'")
+        if re.search(r"\bagile delivery\b|敏捷交付|التسليم الرشيق|تسليم أجايل", text, re.I): err(f"{k}: says 'agile delivery'")
         if int(part) == NONTEMPLATE_PART and not num.endswith(".0"): continue
         h2 = re.findall(r"^## (.+)$", text, re.M)
         if num.endswith(".0"): want = [H2["Topics in this part"], H2["How these topics interrelate"]]
@@ -160,7 +160,7 @@ for lp in sorted(glob.glob(f"{root}/locales/*/locale.json")):
             err(f"{k}: sections do not match template.\n   got:  {h2}"); continue
         if num.endswith(".0"): continue
         sec = lambda n: (re.search(rf"^## {re.escape(H2[n])}\n(.*?)(?=^## |\Z)", text, re.M|re.S) or [None,""])[1]
-        if len(re.findall(r"^\*\*.+[?？]\*\*", sec("Questions to discuss with your team"), re.M)) != 6: err(f"{k}: needs exactly six bold questions")
+        if len(re.findall(r"^\*\*.+[?？؟]\*\*", sec("Questions to discuss with your team"), re.M)) != 6: err(f"{k}: needs exactly six bold questions")
         if re.findall(r"^### (.+)$", sec("Four perspectives"), re.M) != [H3[x] for x in PERSP]: err(f"{k}: four perspectives wrong")
         if re.findall(r"^### (.+)$", sec("Agile, AI, automation, and analytics"), re.M) != [H3[x] for x in ["Agile","AI","Automation","Analytics"]]: err(f"{k}: agile/AI/automation/analytics subsections wrong")
         if not 6 <= len(re.findall(r"^- \[ \]", sec("Checklist"), re.M)) <= 12: err(f"{k}: checklist count")

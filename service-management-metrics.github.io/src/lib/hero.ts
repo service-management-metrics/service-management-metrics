@@ -1,5 +1,10 @@
 // Hand-authored hero strings (subheadline, intro, and the Translations label) and locale endonyms.
 export const HERO: Record<string, Record<string, string>> = {
+ "ar-001": {
+  "tagline": "قِس إدارة الخدمات في عصر ITIL 5 دون تشويه العمل.",
+  "intro": "كتاب عملي في قياس إدارة الخدمات قياسًا جيدًا عبر أربع عدسات: الأجايل والذكاء الاصطناعي والأتمتة والتحليلات. يسمّي كل مقياس مسار تلاعبه وحاجز الحماية الذي يكشفه. والمقاييس تصف الفرق والخدمات والأنظمة، لا الأفراد أبدًا.",
+  "translations": "الترجمات: "
+ },
  "en-001": {
   "tagline": "Measure service management in the age of ITIL 5 without distorting the work.",
   "intro": "A working book on measuring service management well through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",

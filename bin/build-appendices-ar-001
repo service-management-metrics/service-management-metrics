@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# Regenerates the ar-001 appendices 12.2 (metric definitions), 12.6 (references) and 12.7 (index)
+# from the ar-001 content topics. The home topic is the authority; rerun after any ar-001 topic changes.
+import os, re, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+HI = f"{root}/locales/ar-001/المواضيع"
+def nk(n): return [int(x) for x in n.split(".")]
+def sec(t, n):
+    m = re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", t, re.M | re.S)
+    return m.group(1) if m else ""
+def table(s):
+    out = []
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| المقياس |"):
+            out.append([x.strip() for x in l.strip().strip("|").split(" | ")])
+    return out
+# map slug -> ar-001 directory through the shared locale peer id
+def pid(path):
+    return open(path).read().strip()
+peer = {}
+for d in os.listdir(HI):
+    p = f"{HI}/{d}/.locale-peer-id"
+    if os.path.exists(p): peer[pid(p)] = d
+def adir(slug):
+    return peer[pid(f"{root}/locales/en-001/topics/{slug}/.locale-peer-id")]
+texts, titles, en = {}, {}, {}
+PARTS = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    d = adir(slug)
+    texts[num] = open(f"{HI}/{d}/index.md").read()
+    titles[num] = texts[num].splitlines()[0][2:]
+    en[num] = open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    if num.endswith(".0"): PARTS[part] = titles[num].split(": ", 1)[-1]
+
+# 12.2 metric definitions
+o = []; total = 0; miss = []; cur = None
+for part, num, slug, pt in rows:
+    if int(part) >= 12 or num.endswith(".0"): continue
+    t = texts[num]
+    md = table(sec(t, "تعريفات المقاييس")); gv = {c[0]: c for c in table(sec(t, "مسارات التلاعب وحواجز الحماية")) if len(c) == 3}
+    if part != cur:
+        o.append(f"\n## الجزء {part}: {PARTS[part]}\n"); cur = part
+    o.append(f"### {num} {titles[num]}\n")
+    o.append(f"الموضوع الأصلي: (انظر الموضوع {num}، {titles[num]}).\n")
+    o.append("| المقياس | التعريف | الصيغة | الوحدة | مصدر البيانات | ممارسة ITIL | المقابل في الأجايل | التكرار | مسار التلاعب | حاجز الحماية |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c) != 8: miss.append((num, c[0], len(c))); continue
+        g = gv.get(c[0])
+        if not g: miss.append((num, c[0], "nogaming")); continue
+        o.append("| " + " | ".join(c[:8] + [g[1], g[2]]) + " |"); total += 1
+    o.append("")
+HEAD = """# مرجع تعريفات المقاييس وصيغها
+
+يسرد هذا الملحق كل مقياس معرَّف في مواضيع المحتوى، مجمَّعًا بحسب الجزء والموضوع. يعطي كل مدخل التعريف والصيغة والوحدة ومصدر البيانات وممارسة ITIL ذات الصلة والمقابل في الأجايل والتكرار من الموضوع الأصلي، مع مسار التلاعب وحاجز الحماية المقترن. وهو مولَّد من قسمي «تعريفات المقاييس» و«مسارات التلاعب وحواجز الحماية» في كل موضوع، فالموضوع الأصلي هو المرجع: حيث يختلف المدخل هنا عن الموضوع، يسود الموضوع ويُعاد توليد هذا الملحق.
+
+## كيف تستخدم هذا المرجع
+
+- **انظر فيه قبل الاعتماد.** قبل إضافة مقياس إلى لوحة، اقرأ مدخله، بمسار تلاعبه وحاجز حمايته، واعتمد حاجز الحماية معه (انظر الموضوع 1.3، النتائج قبل المخرجات: اختيار ما نقيسه).
+- **قِس الفرق والخدمات والأنظمة.** لا يقصد أي مدخل ترتيب الأفراد (انظر الموضوع 1.2، قانون غودهارت وسيكولوجية المقاييس).
+- **ارجع إلى الموضوع الأصلي للقرار.** الصيغ هنا موجزة. تعريفات المصطلحات وتحفظات العينات وأمثلة الممارسة في الموضوع الأصلي.
+- **سجّل صيغك الخاصة.** إن غيرت مؤسستك تعريفًا، فسجّل التغيير وسببه في كتالوج مقاييسك (انظر الموضوع 1.4، حوكمة المقاييس وملكيتها). تساعد بطاقات المقاييس (انظر الموضوع 12.4، القوالب).
+- **الأرقام التوضيحية موسومة.** لا قيم معيارية في هذا الملحق. ينبغي أن يأتي كل رقم من خط أساسك.
+"""
+open(f"{HI}/{adir('metric-definitions-and-formulas-reference')}/index.md", "w").write(HEAD + "\n".join(o))
+print("12.2 metrics:", total, "missing:", miss, file=sys.stderr)
+
+# 12.6 references (entries are kept verbatim; the cited-in lists use topic numbers)
+refs = {}; wiki = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    m = re.search(r"^## المراجع والقراءات الإضافية\n(.*?)\Z", texts[num], re.M | re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm = re.match(r"\d+\. (.*)", l)
+        if not mm: continue
+        r = mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm = re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$", r)
+            wiki.setdefault(wm.group(2), [wm.group(1), []])[1].append(num)
+        else:
+            refs.setdefault(r, []).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]", "", r.lower())
+cite = lambda ns: ", ".join(sorted(set(ns), key=nk))
+o = ["# المراجع والقراءات الإضافية", "",
+     "يجمع هذا الملحق المراجع المذكورة في مواضيع المحتوى في مكان واحد ويبين أي المواضيع تذكر كلًّا منها. المداخل مرتبة أبجديًا بالمؤلف أو الجهة ومحفوظة كما هي. لرؤية كيف استُخدم مصدر، انظر الموضوع الأصلي.", "",
+     "## عن التحقق", "",
+     "روابط ويكيبيديا في هذا الكتاب فُحصت لتعمل. أما الكتب والأوراق والمعايير والوثائق الإرشادية فقد استشهد بها المؤلفون من الذاكرة ولم يُتحقق من كلها بالنسخة الأصلية. عامل التفاصيل الببليوغرافية (السنة والطبعة والعنوان) إشاراتٍ وتأكد منها قبل الاعتماد عليها في عمل رسمي. أبلِغ عن التصحيحات عبر مهارة المشرف.", "",
+     "## الكتب والأوراق والمعايير والوثائق الإرشادية", ""]
+for i, r in enumerate(sorted(refs, key=key), 1):
+    o.append(f"{i}. {r} (مذكور في: {cite(refs[r])})")
+o += ["", "## مقالات ويكيبيديا", ""]
+for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
+    o.append(f"{i}. Wikipedia, [{title}]({u}) (مذكور في: {cite(ns)})")
+open(f"{HI}/{adir('references-and-further-reading')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.6 refs:", len(refs), len(wiki), file=sys.stderr)
+
+# 12.7 index
+metrics = {}; wurl = {}
+url_title = {u: v[0] for u, v in wiki.items()}
+for num, t in texts.items():
+    if num.endswith(".0"): continue
+    for c in table(sec(t, "تعريفات المقاييس")):
+        metrics.setdefault(c[0], []).append(num)
+    body = t.split("## المراجع والقراءات الإضافية")[0]
+    for m in re.finditer(r"\]\((https://en\.wikipedia\.org/wiki/[^)\s]+(?:\([^)]*\))?[^)\s]*)\)", body):
+        wurl.setdefault(m.group(1), set()).add(num)
+FW = ["ITIL 5", "ITIL 4", "ITIL", "DORA", "SPACE", "DevEx", "OKR", "GQM", "Balanced scorecard", "Goal-Question-Metric", "Site reliability", "Lean", "Kanban Guide", "COBIT", "ISO/IEC 20000", "ISO/IEC 27001", "NIST", "Cynefin", "Value stream mapping", "HEART", "Four Keys", "Westrum", "CMMI", "FinOps", "COPC", "Team Topologies", "Theory of constraints"]
+fw = {}
+for f in FW:
+    ns = [n for n, t in en.items() if re.search(rf"\b{re.escape(f)}\b", t.split("## References and further reading")[0])]
+    if ns: fw[f] = ns
+def fmt(ns): return ", ".join(sorted(set(ns), key=nk))
+o = ["# الفهرس", "",
+     "المفاهيم والأطر والمقاييس، يشير كل منها إلى المواضيع التي يرد فيها. الأرقام أرقام المواضيع؛ والعناوين في فهرس README وفي [البنية](../../../../spec/structure.md). للتعريفات الموجزة انظر الموضوع 12.1، المسرد.", "",
+     "## الأطر والنماذج", ""]
+for f in sorted(fw, key=str.lower):
+    o.append(f"- **{f}**: {fmt(fw[f]) if len(fw[f]) <= 12 else fmt(sorted(fw[f], key=nk)[:12]) + ' وغيرها'}")
+o += ["", "## المقاييس", "", "أسماء المقاييس هي نفسها الواردة في جداول التعريف في المواضيع. المداخل الكاملة في الملحق 12.2 (انظر الموضوع 12.2، مرجع تعريفات المقاييس وصيغها).", ""]
+for k in sorted(metrics): o.append(f"- **{k}**: {fmt(metrics[k])}")
+o += ["", "## المفاهيم", "", "المفاهيم مأخوذة من المصطلحات التي تربطها المواضيع بويكيبيديا للخلفية (عناوين المداخل بالإنجليزية). الرقم الأول هو عادة الموضوع الذي يشرح المفهوم بأوسع تفصيل.", ""]
+for u in sorted(wurl, key=lambda u: url_title.get(u, u).lower()):
+    o.append(f"- **{url_title.get(u, u.rsplit('/', 1)[-1].replace('_', ' '))}**: {fmt(wurl[u])}")
+open(f"{HI}/{adir('index')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.7:", len(fw), len(metrics), len(wurl), file=sys.stderr)
