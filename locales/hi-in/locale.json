@@ -1,0 +1,49 @@
+{
+  "name": "हिन्दी (भारत)",
+  "topic_word": "विषय",
+  "topics_word": "विषय",
+  "h2": {
+    "Overview and motivation": "अवलोकन और प्रेरणा",
+    "Key principles": "मुख्य सिद्धांत",
+    "Metric definitions": "मीट्रिक परिभाषाएँ",
+    "Recommendations": "सिफ़ारिशें",
+    "Gaming vectors and guardrails": "गेमिंग के रास्ते और सुरक्षा-रेखाएँ",
+    "Trade-offs: pros and cons": "समझौते: लाभ और हानि",
+    "Questions to discuss with your team": "अपनी टीम के साथ चर्चा के प्रश्न",
+    "Four perspectives": "चार दृष्टिकोण",
+    "In practice: a service management example": "व्यवहार में: सेवा प्रबंधन का एक उदाहरण",
+    "Agile, AI, automation, and analytics": "एजाइल, AI, स्वचालन और विश्लेषण",
+    "Sector lens": "क्षेत्र का नज़रिया",
+    "Business case: motivations, ROI, and TCO": "व्यावसायिक औचित्य: प्रेरणाएँ, ROI और TCO",
+    "Anti-patterns and pitfalls": "प्रतिरूप-विरोधी और जाल",
+    "Maturity model": "परिपक्वता मॉडल",
+    "Checklist": "जाँच-सूची",
+    "AI prompts": "AI प्रॉम्प्ट",
+    "AI skills": "AI स्किल",
+    "Key takeaways": "मुख्य निष्कर्ष",
+    "References and further reading": "संदर्भ और आगे का अध्ययन",
+    "Topics in this part": "इस भाग के विषय",
+    "How these topics interrelate": "ये विषय आपस में कैसे जुड़ते हैं"
+  },
+  "h3": {
+    "Product and delivery teams": "उत्पाद और डिलीवरी टीमें",
+    "Service and operations teams": "सेवा और संचालन टीमें",
+    "Leadership and governance": "नेतृत्व और शासन",
+    "Customers and users": "ग्राहक और उपयोगकर्ता",
+    "Agile": "एजाइल",
+    "AI": "AI",
+    "Automation": "स्वचालन",
+    "Analytics": "विश्लेषण"
+  },
+  "maturity": {
+    "Initiate": "आरंभ",
+    "Develop": "विकास",
+    "Standardize": "मानकीकरण",
+    "Manage": "प्रबंधन",
+    "Orchestrate": "समन्वयन"
+  },
+  "dirs": {
+    "topics": "विषय",
+    "terminology": "शब्दावली"
+  }
+}

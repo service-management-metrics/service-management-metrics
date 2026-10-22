@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# Regenerates the hi-in appendices 12.2 (metric definitions), 12.6 (references) and 12.7 (index)
+# from the hi-in content topics. The home topic is the authority; rerun after any hi-in topic changes.
+import os, re, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+HI = f"{root}/locales/hi-in/विषय"
+def nk(n): return [int(x) for x in n.split(".")]
+def sec(t, n):
+    m = re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", t, re.M | re.S)
+    return m.group(1) if m else ""
+def table(s):
+    out = []
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| मीट्रिक |"):
+            out.append([x.strip() for x in l.strip().strip("|").split(" | ")])
+    return out
+# map slug -> hi-in directory through the shared locale peer id
+def pid(path):
+    return open(path).read().strip()
+peer = {}
+for d in os.listdir(HI):
+    p = f"{HI}/{d}/.locale-peer-id"
+    if os.path.exists(p): peer[pid(p)] = d
+def adir(slug):
+    return peer[pid(f"{root}/locales/en-001/topics/{slug}/.locale-peer-id")]
+texts, titles, en = {}, {}, {}
+PARTS = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    d = adir(slug)
+    texts[num] = open(f"{HI}/{d}/index.md").read()
+    titles[num] = texts[num].splitlines()[0][2:]
+    en[num] = open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    if num.endswith(".0"): PARTS[part] = titles[num].split(": ", 1)[-1]
+
+# 12.2 metric definitions
+o = []; total = 0; miss = []; cur = None
+for part, num, slug, pt in rows:
+    if int(part) >= 12 or num.endswith(".0"): continue
+    t = texts[num]
+    md = table(sec(t, "मीट्रिक परिभाषाएँ")); gv = {c[0]: c for c in table(sec(t, "गेमिंग के रास्ते और सुरक्षा-रेखाएँ")) if len(c) == 3}
+    if part != cur:
+        o.append(f"\n## भाग {part}: {PARTS[part]}\n"); cur = part
+    o.append(f"### {num} {titles[num]}\n")
+    o.append(f"मूल विषय: (देखें विषय {num}, {titles[num]})।\n")
+    o.append("| मीट्रिक | परिभाषा | सूत्र | इकाई | डेटा स्रोत | ITIL प्रैक्टिस | एजाइल समकक्ष | आवृत्ति | गेमिंग का रास्ता | सुरक्षा-रेखा |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c) != 8: miss.append((num, c[0], len(c))); continue
+        g = gv.get(c[0])
+        if not g: miss.append((num, c[0], "nogaming")); continue
+        o.append("| " + " | ".join(c[:8] + [g[1], g[2]]) + " |"); total += 1
+    o.append("")
+HEAD = """# मीट्रिक परिभाषाओं और सूत्रों का संदर्भ
+
+यह परिशिष्ट सामग्री वाले विषयों में परिभाषित हर माप को भाग और विषय के अनुसार समूहित करके सूचीबद्ध करता है। हर प्रविष्टि में मूल विषय से परिभाषा, सूत्र, इकाई, डेटा स्रोत, संबंधित ITIL प्रैक्टिस, एजाइल समकक्ष और आवृत्ति के साथ गेमिंग का रास्ता और जोड़ीदार सुरक्षा-रेखा दी गई है। यह हर विषय के "मीट्रिक परिभाषाएँ" और "गेमिंग के रास्ते और सुरक्षा-रेखाएँ" खंडों से बनाया गया है, इसलिए मूल विषय ही प्रमाण है: जहाँ यहाँ की प्रविष्टि विषय से भिन्न हो, वहाँ विषय मान्य है और यह परिशिष्ट फिर से बनाया जाता है।
+
+## इस संदर्भ का उपयोग कैसे करें
+
+- **अपनाने से पहले देखें।** किसी माप को डैशबोर्ड में जोड़ने से पहले उसकी प्रविष्टि पढ़ें, गेमिंग के रास्ते और सुरक्षा-रेखा सहित, और सुरक्षा-रेखा को उसके साथ अपनाएँ (देखें विषय 1.3, उत्पादन से ऊपर परिणाम: क्या मापें, यह चुनना)।
+- **टीमों, सेवाओं और प्रणालियों को मापें।** कोई भी प्रविष्टि व्यक्तियों को रैंक करने के लिए नहीं है (देखें विषय 1.2, गुडहार्ट का नियम और मीट्रिक्स का मनोविज्ञान)।
+- **निर्णय के लिए मूल विषय पर जाएँ।** यहाँ के सूत्र संक्षिप्त हैं। शब्दों की परिभाषाएँ, नमूने की सावधानियाँ और प्रथा के उदाहरण मूल विषय में हैं।
+- **अपने रूपांतर दर्ज करें।** यदि आपका संगठन कोई परिभाषा बदलता है, तो बदलाव और उसका कारण अपने मीट्रिक कैटलॉग में दर्ज करें (देखें विषय 1.4, मीट्रिक्स का शासन और स्वामित्व)। मीट्रिक कार्ड मदद करते हैं (देखें विषय 12.4, टेम्पलेट)।
+- **दृष्टांत की संख्याएँ चिह्नित हैं।** इस परिशिष्ट में कोई बेंचमार्क मान नहीं है। हर संख्या आपके अपने आधार से आनी चाहिए।
+"""
+open(f"{HI}/{adir('metric-definitions-and-formulas-reference')}/index.md", "w").write(HEAD + "\n".join(o))
+print("12.2 metrics:", total, "missing:", miss, file=sys.stderr)
+
+# 12.6 references (entries are kept verbatim; the cited-in lists use topic numbers)
+refs = {}; wiki = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    m = re.search(r"^## संदर्भ और आगे का अध्ययन\n(.*?)\Z", texts[num], re.M | re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm = re.match(r"\d+\. (.*)", l)
+        if not mm: continue
+        r = mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm = re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$", r)
+            wiki.setdefault(wm.group(2), [wm.group(1), []])[1].append(num)
+        else:
+            refs.setdefault(r, []).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]", "", r.lower())
+cite = lambda ns: ", ".join(sorted(set(ns), key=nk))
+o = ["# संदर्भ और आगे का अध्ययन", "",
+     "यह परिशिष्ट सामग्री वाले विषयों में उद्धृत संदर्भों को एक जगह इकट्ठा करता है और बताता है कि हर एक को कौन-से विषय उद्धृत करते हैं। प्रविष्टियाँ लेखक या संस्था के वर्णानुक्रम में हैं और मूल रूप में रखी गई हैं। यह देखने के लिए कि कोई स्रोत कैसे उपयोग हुआ, मूल विषय देखें।", "",
+     "## सत्यापन के बारे में", "",
+     "इस पुस्तक के विकिपीडिया लिंक खुलने के लिए जाँचे गए हैं। पुस्तकें, शोध-पत्र, मानक और मार्गदर्शक दस्तावेज़ लेखकों ने स्मृति से उद्धृत किए हैं और सभी की मूल प्रति से जाँच नहीं हुई है। ग्रंथसूची के विवरण (वर्ष, संस्करण, शीर्षक) को संकेत मानें और औपचारिक काम में उन पर निर्भर होने से पहले पुष्टि करें। सुधार maintainer skill के माध्यम से रिपोर्ट करें।", "",
+     "## पुस्तकें, शोध-पत्र, मानक और मार्गदर्शक दस्तावेज़", ""]
+for i, r in enumerate(sorted(refs, key=key), 1):
+    o.append(f"{i}. {r} (उद्धृत: {cite(refs[r])})")
+o += ["", "## विकिपीडिया के लेख", ""]
+for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
+    o.append(f"{i}. Wikipedia, [{title}]({u}) (उद्धृत: {cite(ns)})")
+open(f"{HI}/{adir('references-and-further-reading')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.6 refs:", len(refs), len(wiki), file=sys.stderr)
+
+# 12.7 index
+metrics = {}; wurl = {}
+url_title = {u: v[0] for u, v in wiki.items()}
+for num, t in texts.items():
+    if num.endswith(".0"): continue
+    for c in table(sec(t, "मीट्रिक परिभाषाएँ")):
+        metrics.setdefault(c[0], []).append(num)
+    body = t.split("## संदर्भ और आगे का अध्ययन")[0]
+    for m in re.finditer(r"\]\((https://en\.wikipedia\.org/wiki/[^)\s]+(?:\([^)]*\))?[^)\s]*)\)", body):
+        wurl.setdefault(m.group(1), set()).add(num)
+FW = ["ITIL 5", "ITIL 4", "ITIL", "DORA", "SPACE", "DevEx", "OKR", "GQM", "Balanced scorecard", "Goal-Question-Metric", "Site reliability", "Lean", "Kanban Guide", "COBIT", "ISO/IEC 20000", "ISO/IEC 27001", "NIST", "Cynefin", "Value stream mapping", "HEART", "Four Keys", "Westrum", "CMMI", "FinOps", "COPC", "Team Topologies", "Theory of constraints"]
+fw = {}
+for f in FW:
+    ns = [n for n, t in en.items() if re.search(rf"\b{re.escape(f)}\b", t.split("## References and further reading")[0])]
+    if ns: fw[f] = ns
+def fmt(ns): return ", ".join(sorted(set(ns), key=nk))
+o = ["# अनुक्रमणिका", "",
+     "अवधारणाएँ, ढाँचे और माप, हर एक उन विषयों की ओर इशारा करता है जहाँ वह आता है। संख्याएँ विषय की संख्याएँ हैं; शीर्षक README की विषय-सूची और [संरचना](../../../../spec/structure.md) में हैं। मूल विषय की संक्षिप्त परिभाषाओं के लिए विषय 12.1, शब्दावली देखें।", "",
+     "## ढाँचे और मॉडल", ""]
+for f in sorted(fw, key=str.lower):
+    o.append(f"- **{f}**: {fmt(fw[f]) if len(fw[f]) <= 12 else fmt(sorted(fw[f], key=nk)[:12]) + ' आदि'}")
+o += ["", "## माप", "", "माप के नाम वही हैं जो वे विषयों की परिभाषा की तालिकाओं में आते हैं। पूर्ण प्रविष्टियाँ परिशिष्ट 12.2 में हैं (देखें विषय 12.2, मीट्रिक परिभाषाओं और सूत्रों का संदर्भ)।", ""]
+for k in sorted(metrics): o.append(f"- **{k}**: {fmt(metrics[k])}")
+o += ["", "## अवधारणाएँ", "", "अवधारणाएँ उन शब्दों से ली गई हैं जिन्हें विषय पृष्ठभूमि के लिए विकिपीडिया से जोड़ते हैं (प्रविष्टि के शीर्षक अंग्रेज़ी में रखे गए हैं)। पहली संख्या आम तौर पर वह विषय है जो अवधारणा को सबसे विस्तार से समझाता है।", ""]
+for u in sorted(wurl, key=lambda u: url_title.get(u, u).lower()):
+    o.append(f"- **{url_title.get(u, u.rsplit('/', 1)[-1].replace('_', ' '))}**: {fmt(wurl[u])}")
+open(f"{HI}/{adir('index')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.7:", len(fw), len(metrics), len(wurl), file=sys.stderr)

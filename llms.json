@@ -4,6 +4,7 @@
   "canonical_locale": "en-001",
   "locales": [
     "en-001",
+    "hi-in",
     "zh-cn"
   ],
   "site": "https://service-management-metrics.github.io",
@@ -19,6 +20,7 @@
           "path": "locales/en-001/topics/foundations-of-measurement/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/foundations-of-measurement/index.md",
+            "hi-in": "locales/hi-in/विषय/foundations-of-measurement/index.md",
             "zh-cn": "locales/zh-cn/主题/第-1-部分导读度量基础/index.md"
           }
         },
@@ -29,6 +31,7 @@
           "path": "locales/en-001/topics/why-measure-service-management/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/why-measure-service-management/index.md",
+            "hi-in": "locales/hi-in/विषय/why-measure-service-management/index.md",
             "zh-cn": "locales/zh-cn/主题/为什么要度量服务管理/index.md"
           }
         },
@@ -39,6 +42,7 @@
           "path": "locales/en-001/topics/goodharts-law-and-the-psychology-of-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/goodharts-law-and-the-psychology-of-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/goodharts-law-and-the-psychology-of-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/古德哈特定律与度量的心理学/index.md"
           }
         },
@@ -49,6 +53,7 @@
           "path": "locales/en-001/topics/outcomes-over-output/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/outcomes-over-output/index.md",
+            "hi-in": "locales/hi-in/विषय/outcomes-over-output/index.md",
             "zh-cn": "locales/zh-cn/主题/结果重于产出选择度量什么/index.md"
           }
         },
@@ -59,6 +64,7 @@
           "path": "locales/en-001/topics/metrics-governance-and-ownership/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/metrics-governance-and-ownership/index.md",
+            "hi-in": "locales/hi-in/विषय/metrics-governance-and-ownership/index.md",
             "zh-cn": "locales/zh-cn/主题/度量治理与归属/index.md"
           }
         },
@@ -69,6 +75,7 @@
           "path": "locales/en-001/topics/data-sources-and-instrumentation/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/data-sources-and-instrumentation/index.md",
+            "hi-in": "locales/hi-in/विषय/data-sources-and-instrumentation/index.md",
             "zh-cn": "locales/zh-cn/主题/数据来源与埋点/index.md"
           }
         },
@@ -79,6 +86,7 @@
           "path": "locales/en-001/topics/statistical-literacy-for-service-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/statistical-literacy-for-service-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/statistical-literacy-for-service-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/服务度量的统计素养/index.md"
           }
         },
@@ -89,6 +97,7 @@
           "path": "locales/en-001/topics/measurement-frameworks/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/measurement-frameworks/index.md",
+            "hi-in": "locales/hi-in/विषय/measurement-frameworks/index.md",
             "zh-cn": "locales/zh-cn/主题/度量框架/index.md"
           }
         },
@@ -99,6 +108,7 @@
           "path": "locales/en-001/topics/itil-5-measurement-and-value-outcomes/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/itil-5-measurement-and-value-outcomes/index.md",
+            "hi-in": "locales/hi-in/विषय/itil-5-measurement-and-value-outcomes/index.md",
             "zh-cn": "locales/zh-cn/主题/ITIL-5-度量与价值成果/index.md"
           }
         }
@@ -114,6 +124,7 @@
           "path": "locales/en-001/topics/flow-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/flow-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/flow-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-2-部分导读流动与持续交付度量/index.md"
           }
         },
@@ -124,6 +135,7 @@
           "path": "locales/en-001/topics/flow-measures/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/flow-measures/index.md",
+            "hi-in": "locales/hi-in/विषय/flow-measures/index.md",
             "zh-cn": "locales/zh-cn/主题/流动度量/index.md"
           }
         },
@@ -134,6 +146,7 @@
           "path": "locales/en-001/topics/lead-time-cycle-time-and-flow-efficiency/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/lead-time-cycle-time-and-flow-efficiency/index.md",
+            "hi-in": "locales/hi-in/विषय/lead-time-cycle-time-and-flow-efficiency/index.md",
             "zh-cn": "locales/zh-cn/主题/前置时间周期时间与流动效率/index.md"
           }
         },
@@ -144,6 +157,7 @@
           "path": "locales/en-001/topics/work-in-process-and-queueing/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/work-in-process-and-queueing/index.md",
+            "hi-in": "locales/hi-in/विषय/work-in-process-and-queueing/index.md",
             "zh-cn": "locales/zh-cn/主题/在制品与排队/index.md"
           }
         },
@@ -154,6 +168,7 @@
           "path": "locales/en-001/topics/value-stream-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/value-stream-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/value-stream-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/价值流度量/index.md"
           }
         },
@@ -164,6 +179,7 @@
           "path": "locales/en-001/topics/delivery-forecasting-and-planning-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/delivery-forecasting-and-planning-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/delivery-forecasting-and-planning-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/交付预测与规划度量/index.md"
           }
         },
@@ -174,6 +190,7 @@
           "path": "locales/en-001/topics/backlog-and-refinement-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/backlog-and-refinement-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/backlog-and-refinement-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/待办事项列表与梳理度量/index.md"
           }
         },
@@ -184,6 +201,7 @@
           "path": "locales/en-001/topics/pull-request-and-code-review-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/pull-request-and-code-review-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/pull-request-and-code-review-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/拉取请求与代码评审度量/index.md"
           }
         },
@@ -194,6 +212,7 @@
           "path": "locales/en-001/topics/dora-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/dora-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/dora-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/DORA-度量/index.md"
           }
         },
@@ -204,6 +223,7 @@
           "path": "locales/en-001/topics/operational-work-and-unplanned-work/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/operational-work-and-unplanned-work/index.md",
+            "hi-in": "locales/hi-in/विषय/operational-work-and-unplanned-work/index.md",
             "zh-cn": "locales/zh-cn/主题/运维工作与计划外工作/index.md"
           }
         }
@@ -219,6 +239,7 @@
           "path": "locales/en-001/topics/service-desk-incident-and-request-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/service-desk-incident-and-request-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/service-desk-incident-and-request-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-3-部分导读服务台事件与请求度量/index.md"
           }
         },
@@ -229,6 +250,7 @@
           "path": "locales/en-001/topics/service-desk-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/service-desk-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/service-desk-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/服务台度量/index.md"
           }
         },
@@ -239,6 +261,7 @@
           "path": "locales/en-001/topics/incident-volume-and-priority/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/incident-volume-and-priority/index.md",
+            "hi-in": "locales/hi-in/विषय/incident-volume-and-priority/index.md",
             "zh-cn": "locales/zh-cn/主题/事件数量与优先级/index.md"
           }
         },
@@ -249,6 +272,7 @@
           "path": "locales/en-001/topics/incident-response-and-resolution-time/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/incident-response-and-resolution-time/index.md",
+            "hi-in": "locales/hi-in/विषय/incident-response-and-resolution-time/index.md",
             "zh-cn": "locales/zh-cn/主题/事件响应与解决时间/index.md"
           }
         },
@@ -259,6 +283,7 @@
           "path": "locales/en-001/topics/major-incident-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/major-incident-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/major-incident-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/重大事件度量/index.md"
           }
         },
@@ -269,6 +294,7 @@
           "path": "locales/en-001/topics/service-request-fulfilment-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/service-request-fulfilment-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/service-request-fulfilment-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/服务请求履行度量/index.md"
           }
         },
@@ -279,6 +305,7 @@
           "path": "locales/en-001/topics/knowledge-management-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/knowledge-management-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/knowledge-management-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/知识管理度量/index.md"
           }
         },
@@ -289,6 +316,7 @@
           "path": "locales/en-001/topics/self-service-and-automation-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/self-service-and-automation-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/self-service-and-automation-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/自助服务与自动化度量/index.md"
           }
         }
@@ -304,6 +332,7 @@
           "path": "locales/en-001/topics/problem-change-and-release-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/problem-change-and-release-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/problem-change-and-release-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-4-部分导读问题变更与发布度量/index.md"
           }
         },
@@ -314,6 +343,7 @@
           "path": "locales/en-001/topics/problem-management-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/problem-management-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/problem-management-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/问题管理度量/index.md"
           }
         },
@@ -324,6 +354,7 @@
           "path": "locales/en-001/topics/postmortem-and-learning-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/postmortem-and-learning-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/postmortem-and-learning-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/事后复盘与学习度量/index.md"
           }
         },
@@ -334,6 +365,7 @@
           "path": "locales/en-001/topics/change-enablement-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/change-enablement-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/change-enablement-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/变更赋能度量/index.md"
           }
         },
@@ -344,6 +376,7 @@
           "path": "locales/en-001/topics/change-failure-and-rework/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/change-failure-and-rework/index.md",
+            "hi-in": "locales/hi-in/विषय/change-failure-and-rework/index.md",
             "zh-cn": "locales/zh-cn/主题/变更失败与返工/index.md"
           }
         },
@@ -354,6 +387,7 @@
           "path": "locales/en-001/topics/release-and-deployment-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/release-and-deployment-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/release-and-deployment-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/发布与部署度量/index.md"
           }
         },
@@ -364,6 +398,7 @@
           "path": "locales/en-001/topics/technical-debt-and-known-errors/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/technical-debt-and-known-errors/index.md",
+            "hi-in": "locales/hi-in/विषय/technical-debt-and-known-errors/index.md",
             "zh-cn": "locales/zh-cn/主题/技术债与已知错误/index.md"
           }
         }
@@ -379,6 +414,7 @@
           "path": "locales/en-001/topics/service-level-availability-and-reliability-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/service-level-availability-and-reliability-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/service-level-availability-and-reliability-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-5-部分导读服务级别可用性与可靠性度量/index.md"
           }
         },
@@ -389,6 +425,7 @@
           "path": "locales/en-001/topics/sla-ola-and-xla-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/sla-ola-and-xla-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/sla-ola-and-xla-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/SLAOLA-与-XLA-度量/index.md"
           }
         },
@@ -399,6 +436,7 @@
           "path": "locales/en-001/topics/slis-slos-and-error-budgets/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/slis-slos-and-error-budgets/index.md",
+            "hi-in": "locales/hi-in/विषय/slis-slos-and-error-budgets/index.md",
             "zh-cn": "locales/zh-cn/主题/SLISLO-与错误预算/index.md"
           }
         },
@@ -409,6 +447,7 @@
           "path": "locales/en-001/topics/availability-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/availability-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/availability-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/可用性度量/index.md"
           }
         },
@@ -419,6 +458,7 @@
           "path": "locales/en-001/topics/capacity-and-performance-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/capacity-and-performance-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/capacity-and-performance-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/容量与性能度量/index.md"
           }
         },
@@ -429,6 +469,7 @@
           "path": "locales/en-001/topics/monitoring-and-alert-quality-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/monitoring-and-alert-quality-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/monitoring-and-alert-quality-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/监控与告警质量度量/index.md"
           }
         },
@@ -439,6 +480,7 @@
           "path": "locales/en-001/topics/service-continuity-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/service-continuity-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/service-continuity-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/服务连续性度量/index.md"
           }
         },
@@ -449,6 +491,7 @@
           "path": "locales/en-001/topics/toil-and-on-call-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/toil-and-on-call-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/toil-and-on-call-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/繁琐工作与值班度量/index.md"
           }
         }
@@ -464,6 +507,7 @@
           "path": "locales/en-001/topics/customer-and-experience-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/customer-and-experience-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/customer-and-experience-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-6-部分导读客户与体验度量/index.md"
           }
         },
@@ -474,6 +518,7 @@
           "path": "locales/en-001/topics/customer-satisfaction-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/customer-satisfaction-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/customer-satisfaction-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/客户满意度度量/index.md"
           }
         },
@@ -484,6 +529,7 @@
           "path": "locales/en-001/topics/experience-level-agreements/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/experience-level-agreements/index.md",
+            "hi-in": "locales/hi-in/विषय/experience-level-agreements/index.md",
             "zh-cn": "locales/zh-cn/主题/体验级别协议/index.md"
           }
         },
@@ -494,6 +540,7 @@
           "path": "locales/en-001/topics/service-adoption-and-catalog-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/service-adoption-and-catalog-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/service-adoption-and-catalog-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/服务采纳与目录度量/index.md"
           }
         },
@@ -504,6 +551,7 @@
           "path": "locales/en-001/topics/user-and-employee-experience/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/user-and-employee-experience/index.md",
+            "hi-in": "locales/hi-in/विषय/user-and-employee-experience/index.md",
             "zh-cn": "locales/zh-cn/主题/用户与员工体验/index.md"
           }
         },
@@ -514,6 +562,7 @@
           "path": "locales/en-001/topics/value-realization-and-business-outcomes/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/value-realization-and-business-outcomes/index.md",
+            "hi-in": "locales/hi-in/विषय/value-realization-and-business-outcomes/index.md",
             "zh-cn": "locales/zh-cn/主题/价值实现与业务成果/index.md"
           }
         }
@@ -529,6 +578,7 @@
           "path": "locales/en-001/topics/asset-configuration-and-financial-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/asset-configuration-and-financial-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/asset-configuration-and-financial-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-7-部分导读资产配置与财务度量/index.md"
           }
         },
@@ -539,6 +589,7 @@
           "path": "locales/en-001/topics/it-asset-management-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/it-asset-management-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/it-asset-management-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/IT-资产管理度量/index.md"
           }
         },
@@ -549,6 +600,7 @@
           "path": "locales/en-001/topics/software-asset-and-license-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/software-asset-and-license-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/software-asset-and-license-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/软件资产与许可度量/index.md"
           }
         },
@@ -559,6 +611,7 @@
           "path": "locales/en-001/topics/hardware-asset-lifecycle-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/hardware-asset-lifecycle-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/hardware-asset-lifecycle-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/硬件资产生命周期度量/index.md"
           }
         },
@@ -569,6 +622,7 @@
           "path": "locales/en-001/topics/configuration-and-cmdb-quality-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/configuration-and-cmdb-quality-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/configuration-and-cmdb-quality-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/配置与-CMDB-质量度量/index.md"
           }
         },
@@ -579,6 +633,7 @@
           "path": "locales/en-001/topics/service-cost-and-unit-economics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/service-cost-and-unit-economics/index.md",
+            "hi-in": "locales/hi-in/विषय/service-cost-and-unit-economics/index.md",
             "zh-cn": "locales/zh-cn/主题/服务成本与单位经济/index.md"
           }
         },
@@ -589,6 +644,7 @@
           "path": "locales/en-001/topics/finops-and-cloud-cost-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/finops-and-cloud-cost-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/finops-and-cloud-cost-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/FinOps-与云成本度量/index.md"
           }
         },
@@ -599,6 +655,7 @@
           "path": "locales/en-001/topics/return-on-investment-and-business-case/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/return-on-investment-and-business-case/index.md",
+            "hi-in": "locales/hi-in/विषय/return-on-investment-and-business-case/index.md",
             "zh-cn": "locales/zh-cn/主题/投资回报与业务论证/index.md"
           }
         }
@@ -614,6 +671,7 @@
           "path": "locales/en-001/topics/security-risk-compliance-and-supplier-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/security-risk-compliance-and-supplier-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/security-risk-compliance-and-supplier-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-8-部分导读安全风险合规与供应商度量/index.md"
           }
         },
@@ -624,6 +682,7 @@
           "path": "locales/en-001/topics/security-incident-and-vulnerability-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/security-incident-and-vulnerability-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/security-incident-and-vulnerability-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/安全事件与漏洞度量/index.md"
           }
         },
@@ -634,6 +693,7 @@
           "path": "locales/en-001/topics/risk-and-control-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/risk-and-control-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/risk-and-control-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/风险与控制度量/index.md"
           }
         },
@@ -644,6 +704,7 @@
           "path": "locales/en-001/topics/compliance-and-audit-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/compliance-and-audit-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/compliance-and-audit-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/合规与审计度量/index.md"
           }
         },
@@ -654,6 +715,7 @@
           "path": "locales/en-001/topics/supplier-and-contract-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/supplier-and-contract-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/supplier-and-contract-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/供应商与合同度量/index.md"
           }
         },
@@ -664,6 +726,7 @@
           "path": "locales/en-001/topics/regulated-and-government-reporting/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/regulated-and-government-reporting/index.md",
+            "hi-in": "locales/hi-in/विषय/regulated-and-government-reporting/index.md",
             "zh-cn": "locales/zh-cn/主题/受监管与政府报告/index.md"
           }
         }
@@ -679,6 +742,7 @@
           "path": "locales/en-001/topics/people-teams-and-improvement-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/people-teams-and-improvement-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/people-teams-and-improvement-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-9-部分导读人员团队与改进度量/index.md"
           }
         },
@@ -689,6 +753,7 @@
           "path": "locales/en-001/topics/team-health-and-developer-experience/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/team-health-and-developer-experience/index.md",
+            "hi-in": "locales/hi-in/विषय/team-health-and-developer-experience/index.md",
             "zh-cn": "locales/zh-cn/主题/团队健康与开发者体验/index.md"
           }
         },
@@ -699,6 +764,7 @@
           "path": "locales/en-001/topics/satisfaction-and-well-being-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/satisfaction-and-well-being-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/satisfaction-and-well-being-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/满意度与福祉度量/index.md"
           }
         },
@@ -709,6 +775,7 @@
           "path": "locales/en-001/topics/collaboration-and-handoff-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/collaboration-and-handoff-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/collaboration-and-handoff-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/协作与交接度量/index.md"
           }
         },
@@ -719,6 +786,7 @@
           "path": "locales/en-001/topics/skills-and-learning-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/skills-and-learning-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/skills-and-learning-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/技能与学习度量/index.md"
           }
         },
@@ -729,6 +797,7 @@
           "path": "locales/en-001/topics/continual-improvement-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/continual-improvement-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/continual-improvement-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/持续改进度量/index.md"
           }
         },
@@ -739,6 +808,7 @@
           "path": "locales/en-001/topics/organizational-change-and-adoption-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/organizational-change-and-adoption-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/organizational-change-and-adoption-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/组织变革与采纳度量/index.md"
           }
         }
@@ -754,6 +824,7 @@
           "path": "locales/en-001/topics/metrics-for-ai-automation-and-analytics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/metrics-for-ai-automation-and-analytics/index.md",
+            "hi-in": "locales/hi-in/विषय/metrics-for-ai-automation-and-analytics/index.md",
             "zh-cn": "locales/zh-cn/主题/第-10-部分导读AI自动化与分析度量/index.md"
           }
         },
@@ -764,6 +835,7 @@
           "path": "locales/en-001/topics/ai-in-service-management-measurement/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/ai-in-service-management-measurement/index.md",
+            "hi-in": "locales/hi-in/विषय/ai-in-service-management-measurement/index.md",
             "zh-cn": "locales/zh-cn/主题/服务管理中的-AI-度量/index.md"
           }
         },
@@ -774,6 +846,7 @@
           "path": "locales/en-001/topics/measuring-ai-assisted-work/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/measuring-ai-assisted-work/index.md",
+            "hi-in": "locales/hi-in/विषय/measuring-ai-assisted-work/index.md",
             "zh-cn": "locales/zh-cn/主题/度量-AI-辅助的工作/index.md"
           }
         },
@@ -784,6 +857,7 @@
           "path": "locales/en-001/topics/ai-agent-and-chatbot-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/ai-agent-and-chatbot-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/ai-agent-and-chatbot-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/AI-代理与聊天机器人度量/index.md"
           }
         },
@@ -794,6 +868,7 @@
           "path": "locales/en-001/topics/metric-inflation-and-quality-dilution/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/metric-inflation-and-quality-dilution/index.md",
+            "hi-in": "locales/hi-in/विषय/metric-inflation-and-quality-dilution/index.md",
             "zh-cn": "locales/zh-cn/主题/度量膨胀与质量稀释/index.md"
           }
         },
@@ -804,6 +879,7 @@
           "path": "locales/en-001/topics/ai-governance-and-risk-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/ai-governance-and-risk-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/ai-governance-and-risk-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/AI-治理与风险度量/index.md"
           }
         },
@@ -814,6 +890,7 @@
           "path": "locales/en-001/topics/automation-and-orchestration-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/automation-and-orchestration-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/automation-and-orchestration-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/自动化与编排度量/index.md"
           }
         },
@@ -824,6 +901,7 @@
           "path": "locales/en-001/topics/pipeline-and-automated-change-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/pipeline-and-automated-change-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/pipeline-and-automated-change-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/流水线与自动化变更度量/index.md"
           }
         },
@@ -834,6 +912,7 @@
           "path": "locales/en-001/topics/analytics-and-data-quality-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/analytics-and-data-quality-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/analytics-and-data-quality-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/分析与数据质量度量/index.md"
           }
         },
@@ -844,6 +923,7 @@
           "path": "locales/en-001/topics/forecasting-and-predictive-analytics-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/forecasting-and-predictive-analytics-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/forecasting-and-predictive-analytics-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/预测与预测分析度量/index.md"
           }
         },
@@ -854,6 +934,7 @@
           "path": "locales/en-001/topics/observability-and-telemetry-metrics/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/observability-and-telemetry-metrics/index.md",
+            "hi-in": "locales/hi-in/विषय/observability-and-telemetry-metrics/index.md",
             "zh-cn": "locales/zh-cn/主题/可观测性与遥测度量/index.md"
           }
         }
@@ -869,6 +950,7 @@
           "path": "locales/en-001/topics/building-a-metrics-program/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/building-a-metrics-program/index.md",
+            "hi-in": "locales/hi-in/विषय/building-a-metrics-program/index.md",
             "zh-cn": "locales/zh-cn/主题/第-11-部分导读构建度量计划/index.md"
           }
         },
@@ -879,6 +961,7 @@
           "path": "locales/en-001/topics/designing-a-service-metrics-dashboard/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/designing-a-service-metrics-dashboard/index.md",
+            "hi-in": "locales/hi-in/विषय/designing-a-service-metrics-dashboard/index.md",
             "zh-cn": "locales/zh-cn/主题/设计服务度量仪表盘/index.md"
           }
         },
@@ -889,6 +972,7 @@
           "path": "locales/en-001/topics/tooling-landscape/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/tooling-landscape/index.md",
+            "hi-in": "locales/hi-in/विषय/tooling-landscape/index.md",
             "zh-cn": "locales/zh-cn/主题/工具全景/index.md"
           }
         },
@@ -899,6 +983,7 @@
           "path": "locales/en-001/topics/rolling-out-metrics-without-breeding-fear/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/rolling-out-metrics-without-breeding-fear/index.md",
+            "hi-in": "locales/hi-in/विषय/rolling-out-metrics-without-breeding-fear/index.md",
             "zh-cn": "locales/zh-cn/主题/推行度量而不滋生恐惧/index.md"
           }
         },
@@ -909,6 +994,7 @@
           "path": "locales/en-001/topics/maturity-model-for-metrics-programs/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/maturity-model-for-metrics-programs/index.md",
+            "hi-in": "locales/hi-in/विषय/maturity-model-for-metrics-programs/index.md",
             "zh-cn": "locales/zh-cn/主题/度量计划的成熟度模型/index.md"
           }
         },
@@ -919,6 +1005,7 @@
           "path": "locales/en-001/topics/incremental-adoption-roadmap/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/incremental-adoption-roadmap/index.md",
+            "hi-in": "locales/hi-in/विषय/incremental-adoption-roadmap/index.md",
             "zh-cn": "locales/zh-cn/主题/渐进式采纳路线图/index.md"
           }
         }
@@ -934,6 +1021,7 @@
           "path": "locales/en-001/topics/appendices/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/appendices/index.md",
+            "hi-in": "locales/hi-in/विषय/appendices/index.md",
             "zh-cn": "locales/zh-cn/主题/附录/index.md"
           }
         },
@@ -944,6 +1032,7 @@
           "path": "locales/en-001/topics/glossary/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/glossary/index.md",
+            "hi-in": "locales/hi-in/विषय/glossary/index.md",
             "zh-cn": "locales/zh-cn/主题/术语表/index.md"
           }
         },
@@ -954,6 +1043,7 @@
           "path": "locales/en-001/topics/metric-definitions-and-formulas-reference/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/metric-definitions-and-formulas-reference/index.md",
+            "hi-in": "locales/hi-in/विषय/metric-definitions-and-formulas-reference/index.md",
             "zh-cn": "locales/zh-cn/主题/度量定义与公式参考/index.md"
           }
         },
@@ -964,6 +1054,7 @@
           "path": "locales/en-001/topics/checklists/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/checklists/index.md",
+            "hi-in": "locales/hi-in/विषय/checklists/index.md",
             "zh-cn": "locales/zh-cn/主题/检查清单集/index.md"
           }
         },
@@ -974,6 +1065,7 @@
           "path": "locales/en-001/topics/templates/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/templates/index.md",
+            "hi-in": "locales/hi-in/विषय/templates/index.md",
             "zh-cn": "locales/zh-cn/主题/模板/index.md"
           }
         },
@@ -984,6 +1076,7 @@
           "path": "locales/en-001/topics/maturity-self-assessment/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/maturity-self-assessment/index.md",
+            "hi-in": "locales/hi-in/विषय/maturity-self-assessment/index.md",
             "zh-cn": "locales/zh-cn/主题/成熟度自评/index.md"
           }
         },
@@ -994,6 +1087,7 @@
           "path": "locales/en-001/topics/references-and-further-reading/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/references-and-further-reading/index.md",
+            "hi-in": "locales/hi-in/विषय/references-and-further-reading/index.md",
             "zh-cn": "locales/zh-cn/主题/参考文献与延伸阅读/index.md"
           }
         },
@@ -1004,6 +1098,7 @@
           "path": "locales/en-001/topics/index/index.md",
           "locales": {
             "en-001": "locales/en-001/topics/index/index.md",
+            "hi-in": "locales/hi-in/विषय/index/index.md",
             "zh-cn": "locales/zh-cn/主题/索引/index.md"
           }
         }

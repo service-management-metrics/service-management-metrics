@@ -13,6 +13,13 @@
       "examples": "示例",
       "contributing": "贡献",
       "project": "项目"
+    },
+    "hi-in": {
+      "topics": "विषय",
+      "front-matter": "प्रस्तावना",
+      "examples": "उदाहरण",
+      "contributing": "योगदान",
+      "project": "परियोजना"
     }
   }
 }
