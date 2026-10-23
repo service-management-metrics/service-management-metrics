@@ -1,0 +1,21 @@
+{
+  "name": "Português (mundo)",
+  "topic_word": "tópico",
+  "topics_word": "tópicos",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "tópicos",
+    "contents": "conteúdo",
+    "terminology": "terminologia"
+  },
+  "strings": {
+    "title": "Métricas de gestão de serviços",
+    "tagline": "Meça a gestão de serviços sem distorcer o trabalho.",
+    "intro": "Um livro prático sobre como medir bem a gestão de serviços por quatro lentes: ágil, IA, automação e análise. Cada métrica indica seu vetor de manipulação e a barreira de proteção que o detecta. As métricas descrevem equipes, serviços e sistemas, e nunca servem para classificar pessoas.",
+    "contents": "Conteúdo",
+    "read": "Ler na web",
+    "part_fmt": "Parte {n}"
+  }
+}

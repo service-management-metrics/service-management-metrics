@@ -1,0 +1,3 @@
+# Panorama de ferramentas
+
+<!-- stub -->
