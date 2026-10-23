@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Cymraeg (Cymru)"
+  },
+  "siteTitle": "Metrigau Rheoli Gwasanaethau",
+  "skipToContent": "Neidio i'r cynnwys",
+  "nav": {
+    "contents": "Cynnwys",
+    "skills": "Sgiliau",
+    "source": "Ffynhonnell"
+  },
+  "picker": {
+    "theme": "Thema",
+    "locale": "Iaith",
+    "textSize": "Maint y testun",
+    "share": "Rhannu",
+    "search": "Chwilio",
+    "searchInput": "Chwilio'r llyfr hwn",
+    "searchSubmit": "Chwilio"
+  },
+  "share": {
+    "emailLink": "Anfon y ddolen mewn e-bost",
+    "shareOnLinkedIn": "Rhannu ar LinkedIn",
+    "shareOnReddit": "Rhannu ar Reddit",
+    "shareOnBluesky": "Rhannu ar Bluesky",
+    "shareOnMastodon": "Rhannu ar Mastodon",
+    "copyLink": "Copïo'r ddolen",
+    "copied": "Wedi copïo",
+    "copyFailed": "Methwyd copïo"
+  },
+  "links": {
+    "label": "Dolenni",
+    "llms": "llms.txt (ar gyfer asiantau AI)",
+    "skills": "Sgiliau AI ar GitHub",
+    "issues": "Olrhain materion"
+  },
+  "footer": {
+    "tagline": "Mesurwch reoli gwasanaethau heb ystumio'r gwaith.",
+    "sourceAndContributions": "Ffynhonnell a chyfraniadau:",
+    "builtWith": "Wedi'i adeiladu gyda",
+    "ledBy": "Crëwyd gan"
+  },
+  "breadcrumb": {
+    "home": "Hafan",
+    "contents": "Cynnwys",
+    "skills": "Sgiliau",
+    "label": "Llwybr briwsion"
+  },
+  "contents": {
+    "pageTitle": "Cynnwys",
+    "lead": "Deuddeg rhan a 94 o bynciau ar fesur rheoli gwasanaethau yn oes ITIL 5, drwy lensys ystwyth, AI, awtomeiddio a dadansoddeg, gyda fectorau chwarae'r system a chanllawiau amddiffynnol ar gyfer pob metrig, cwestiynau trafod, anogwyr AI a sgiliau AI.",
+    "readingIn": "Yn darllen yn {$language}",
+    "part": "Rhan {$number}",
+    "reference": "Cyfeirnod",
+    "comingSoon": "yn dod yn fuan"
+  },
+  "topic": {
+    "eyebrow": "Pwnc {$number}",
+    "paginationLabel": "Llywio rhwng pynciau",
+    "previous": "Blaenorol",
+    "next": "Nesaf"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Pam mesur, beth i'w fesur, a sut i fesur heb ystumio'r gwaith.",
+      "title": "Sylfeini mesur"
+    },
+    "2": {
+      "tagline": "Sut mae gwaith yn llifo drwy dimau ystwyth sy'n rhedeg gwasanaethau.",
+      "title": "Metrigau llif a chyflawni parhaus"
+    },
+    "3": {
+      "tagline": "Pa mor dda yr aeth cymorth ac adfer i ddefnyddwyr.",
+      "title": "Metrigau desg gwasanaeth, digwyddiadau a cheisiadau"
+    },
+    "4": {
+      "tagline": "Sut mae newid a dysgu yn effeithio ar sefydlogrwydd a chyflymder.",
+      "title": "Metrigau problemau, newid a rhyddhau"
+    },
+    "5": {
+      "tagline": "Yr hyn y gall defnyddwyr ddibynnu arno.",
+      "title": "Metrigau lefel gwasanaeth, argaeledd a dibynadwyedd"
+    },
+    "6": {
+      "tagline": "A yw defnyddwyr yn well eu byd.",
+      "title": "Metrigau cwsmeriaid a phrofiad"
+    },
+    "7": {
+      "tagline": "Gwybod beth sydd gennych a beth mae'n ei gostio.",
+      "title": "Metrigau asedau, cyfluniad ac ariannol"
+    },
+    "8": {
+      "tagline": "Ymddiriedaeth, rheolaeth, a'r trydydd partïon y tu ôl i wasanaethau.",
+      "title": "Metrigau diogelwch, risg, cydymffurfio a chyflenwyr"
+    },
+    "9": {
+      "tagline": "Iechyd pobl ac arferiad gwelliant parhaus.",
+      "title": "Metrigau pobl, timau a gwelliant"
+    },
+    "10": {
+      "tagline": "Beth mae AI, awtomeiddio a dadansoddeg yn ei newid am y rhifau.",
+      "title": "Metrigau yn oes AI"
+    },
+    "11": {
+      "tagline": "O ychydig o fesurau i arferiad.",
+      "title": "Adeiladu rhaglen fetrigau"
+    },
+    "12": {
+      "tagline": "Deunydd cyfeirio.",
+      "title": "Atodiadau"
+    }
+  },
+  "results": {
+    "button": "Chwilio",
+    "label": "Canlyniadau chwilio",
+    "heading": "Canlyniadau chwilio am {$query}",
+    "failed": "Methwyd llwytho'r mynegai chwilio. Rhowch gynnig arall arni yn nes ymlaen.",
+    "searching": "Wrthi'n chwilio…",
+    "none": "Dim byd yn cyfateb i {$query}.",
+    "browse": "Porwch y cynnwys yn lle hynny.",
+    "count": "{$count} canlyniad.",
+    "limited": "Yn dangos y {$count} canlyniad gorau."
+  },
+  "skillsPage": {
+    "title": "Sgiliau AI",
+    "lead": "Sgiliau ar fformat Claude Code y mae'r pynciau'n cysylltu â nhw. Mae pob un yn ffeil SKILL.md y gallwch ei chopïo i'ch ffolder sgiliau eich hun.",
+    "viewSource": "Gweld ar GitHub",
+    "backToList": "Pob sgil"
+  },
+  "error": {
+    "label": "Gwall {$status}",
+    "notFound": "Nid yw'r dudalen honno yma",
+    "generic": "Aeth rhywbeth o'i le",
+    "unknown": "Gwall anhysbys",
+    "try": "Rhowch gynnig ar y cynnwys."
+  },
+  "home": {
+    "continue": "Ewch ymlaen i Fetrigau Rheoli Gwasanaethau"
+  },
+  "topicWords": [
+    "pwnc",
+    "pwnc"
+  ]
+}

@@ -10,6 +10,8 @@ export const DEFAULT_LOCALE = 'en-001';
 export const LOCALES: Locale[] = [
   { slug: 'ar-001', label: 'العربية - العالم' },
   { slug: 'bn-001', label: 'বাংলা - বিশ্ব' },
+  { slug: 'cy-001', label: 'Cymraeg - Byd' },
+  { slug: 'cy-gb', label: 'Cymraeg - Prydain Fawr' },
   { slug: 'da-001', label: 'Dansk - Verden' },
   { slug: 'de-001', label: 'Deutsch - Welt' },
   { slug: 'en-001', label: 'English - World' },

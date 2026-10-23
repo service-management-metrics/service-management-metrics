@@ -10,6 +10,16 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "চারটি দৃষ্টিকোণ দিয়ে সেবা ব্যবস্থাপনা ভালোভাবে পরিমাপের একটি কার্যকর বই: এজাইল, এআই, অটোমেশন ও বিশ্লেষণ। প্রতিটি মেট্রিকের কারসাজির উপায় ও তা ধরার রক্ষাবেষ্টনী উল্লেখ আছে। এখানকার মেট্রিক দল, সেবা ও ব্যবস্থা বর্ণনা করে, এবং মানুষকে ক্রম দিতে কখনও ব্যবহৃত হয় না।",
   "translations": "অনুবাদ: "
  },
+ "cy-001": {
+  "tagline": "Mesurwch reoli gwasanaethau yn oes ITIL 5 heb ystumio'r gwaith.",
+  "intro": "Llyfr gwaith ar fesur rheoli gwasanaethau'n dda drwy bedwar lens: ystwyth, AI, awtomeiddio a dadansoddeg. Mae pob metrig yn enwi ei fector chwarae'r system a'r canllaw amddiffynnol sy'n ei ddal. Mae metrigau'n disgrifio timau, gwasanaethau a systemau, ac ni chânt byth eu defnyddio i restru pobl.",
+  "translations": "Cyfieithiadau: "
+ },
+ "cy-gb": {
+  "tagline": "Mesurwch reoli gwasanaethau yn oes ITIL 5 heb ystumio'r gwaith.",
+  "intro": "Llyfr gwaith ar fesur rheoli gwasanaethau'n dda drwy bedwar lens: ystwyth, AI, awtomeiddio a dadansoddeg. Mae pob metrig yn enwi ei fector chwarae'r system a'r canllaw amddiffynnol sy'n ei ddal. Mae metrigau'n disgrifio timau, gwasanaethau a systemau, ac ni chânt byth eu defnyddio i restru pobl.",
+  "translations": "Cyfieithiadau: "
+ },
  "da-001": {
   "tagline": "Mål servicestyring i ITIL 5's tidsalder uden at forvride arbejdet.",
   "intro": "En arbejdsbog om at måle servicestyring godt gennem fire linser: agilitet, AI, automatisering og analyse. Hver måling angiver sin manipulationsvektor og det autoværn, der fanger den. Målinger beskriver teams, tjenester og systemer og bruges aldrig til at rangordne mennesker.",
