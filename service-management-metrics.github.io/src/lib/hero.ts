@@ -60,6 +60,11 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "एजाइल, AI, स्वचालन और विश्लेषण के चार दृष्टिकोणों से सेवा प्रबंधन को अच्छी तरह मापने की व्यावहारिक पुस्तक। हर मीट्रिक अपना गेमिंग का रास्ता और उसे पकड़ने वाली सुरक्षा-रेखा बताती है। मीट्रिक्स टीमों, सेवाओं और प्रणालियों का वर्णन करते हैं, व्यक्तियों का कभी नहीं।",
   "translations": "अनुवाद: "
  },
+ "id-001": {
+  "tagline": "Ukur manajemen layanan di era ITIL 5 tanpa memutarbalikkan pekerjaan.",
+  "intro": "Buku kerja tentang cara mengukur manajemen layanan dengan baik melalui empat lensa: agile, AI, otomatisasi, dan analitik. Setiap metrik menyebutkan vektor manipulasi dan pagar pembatas yang menangkapnya. Metrik menggambarkan tim, layanan, dan sistem, dan tidak pernah dipakai untuk memeringkat orang.",
+  "translations": "Terjemahan: "
+ },
  "ja-001": {
   "tagline": "ITIL 5時代のサービスマネジメントを、仕事をゆがめることなく測定する。",
   "intro": "アジャイル、AI、自動化、アナリティクスという四つのレンズでサービスマネジメントを適切に測定するための実践的な本です。各メトリクスには、悪用されうる方法とそれを見つける防護柵を示しています。メトリクスはチーム、サービス、システムを記述するものであり、個人の順位付けには決して使いません。",
