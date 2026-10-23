@@ -1,0 +1,3 @@
+# Mynegai
+
+<!-- stub -->

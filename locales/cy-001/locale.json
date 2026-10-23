@@ -1,0 +1,21 @@
+{
+  "name": "Cymraeg (Byd)",
+  "topic_word": "pwnc",
+  "topics_word": "pwnc",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "pynciau",
+    "contents": "cynnwys",
+    "terminology": "terminoleg"
+  },
+  "strings": {
+    "title": "Metrigau Rheoli Gwasanaethau",
+    "tagline": "Mesurwch reoli gwasanaethau heb ystumio'r gwaith.",
+    "intro": "Llyfr gwaith ar fesur rheoli gwasanaethau'n dda drwy bedwar lens: ystwyth, AI, awtomeiddio a dadansoddeg. Mae pob metrig yn enwi ei fector chwarae'r system a'r canllaw amddiffynnol sy'n ei ddal. Mae metrigau'n disgrifio timau, gwasanaethau a systemau, ac ni chânt byth eu defnyddio i restru pobl.",
+    "contents": "Cynnwys",
+    "read": "Darllen ar y we",
+    "part_fmt": "Rhan {n}"
+  }
+}
