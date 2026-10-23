@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Dansk (verden)"
+  },
+  "siteTitle": "Målinger for servicestyring",
+  "skipToContent": "Gå til indholdet",
+  "nav": {
+    "contents": "Indhold",
+    "skills": "Færdigheder",
+    "source": "Kilde"
+  },
+  "picker": {
+    "theme": "Tema",
+    "locale": "Sprog",
+    "textSize": "Tekststørrelse",
+    "share": "Del",
+    "search": "Søg",
+    "searchInput": "Søg i bogen",
+    "searchSubmit": "Søg"
+  },
+  "share": {
+    "emailLink": "Send link på mail",
+    "shareOnLinkedIn": "Del på LinkedIn",
+    "shareOnReddit": "Del på Reddit",
+    "shareOnBluesky": "Del på Bluesky",
+    "shareOnMastodon": "Del på Mastodon",
+    "copyLink": "Kopiér link",
+    "copied": "Kopieret",
+    "copyFailed": "Kunne ikke kopiere"
+  },
+  "links": {
+    "label": "Links",
+    "llms": "llms.txt (til AI-agenter)",
+    "skills": "AI-færdigheder på GitHub",
+    "issues": "Fejlsporing"
+  },
+  "footer": {
+    "tagline": "Mål servicestyring uden at forvride arbejdet.",
+    "sourceAndContributions": "Kilde og bidrag:",
+    "builtWith": "Bygget med",
+    "ledBy": "Skabt af"
+  },
+  "breadcrumb": {
+    "home": "Forside",
+    "contents": "Indhold",
+    "skills": "Færdigheder",
+    "label": "Brødkrummesti"
+  },
+  "contents": {
+    "pageTitle": "Indhold",
+    "lead": "Tolv dele og 94 emner om at måle servicestyring i ITIL 5's tidsalder, gennem linserne agilitet, AI, automatisering og analyse, med manipulationsvektorer og autoværn for hver måling, diskussionsspørgsmål, AI-prompts og AI-færdigheder.",
+    "readingIn": "Læser på {$language}",
+    "part": "Del {$number}",
+    "reference": "Opslag",
+    "comingSoon": "kommer snart"
+  },
+  "topic": {
+    "eyebrow": "Emne {$number}",
+    "paginationLabel": "Emnenavigation",
+    "previous": "Forrige",
+    "next": "Næste"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Hvorfor, hvad og hvordan man måler uden at forvride arbejdet.",
+      "title": "Grundlaget for måling"
+    },
+    "2": {
+      "tagline": "Hvordan arbejdet bevæger sig gennem agile teams, der også driver tjenester.",
+      "title": "Målinger for flow og kontinuerlig levering"
+    },
+    "3": {
+      "tagline": "Hvor godt support og genoprettelse virker for brugerne.",
+      "title": "Målinger for servicedesk, hændelser og anmodninger"
+    },
+    "4": {
+      "tagline": "Hvordan ændringer og læring påvirker stabilitet og tempo.",
+      "title": "Målinger for problemer, ændringer og releases"
+    },
+    "5": {
+      "tagline": "Det, brugerne kan regne med.",
+      "title": "Målinger for serviceniveau, tilgængelighed og pålidelighed"
+    },
+    "6": {
+      "tagline": "Om brugerne har det bedre.",
+      "title": "Målinger for kunder og oplevelse"
+    },
+    "7": {
+      "tagline": "At vide, hvad man har, og hvad det koster.",
+      "title": "Målinger for aktiver, konfiguration og økonomi"
+    },
+    "8": {
+      "tagline": "Tillid, kontrol og de tredjeparter, der står bag tjenesten.",
+      "title": "Målinger for sikkerhed, risiko, compliance og leverandører"
+    },
+    "9": {
+      "tagline": "Menneskers sundhed og vanen med at forbedre.",
+      "title": "Målinger for mennesker, teams og forbedring"
+    },
+    "10": {
+      "tagline": "Hvad AI, automatisering og analyse ændrer ved tallene.",
+      "title": "Målinger i AI's tidsalder"
+    },
+    "11": {
+      "tagline": "Fra en håndfuld mål til en vane.",
+      "title": "At opbygge et målingsprogram"
+    },
+    "12": {
+      "tagline": "Opslagsmateriale.",
+      "title": "Bilag"
+    }
+  },
+  "results": {
+    "button": "Søg",
+    "label": "Søgeresultater",
+    "heading": "Søgeresultater for {$query}",
+    "failed": "Søgeindekset kunne ikke indlæses. Prøv igen senere.",
+    "searching": "Søger…",
+    "none": "Intet matchede {$query}.",
+    "browse": "Gennemse indholdet i stedet.",
+    "count": "{$count} resultater.",
+    "limited": "Viser de bedste {$count} resultater."
+  },
+  "skillsPage": {
+    "title": "AI-færdigheder",
+    "lead": "Færdigheder i Claude Code-format, som emnerne linker til. Hver er en SKILL.md-fil, som du kan kopiere til din egen færdighedsmappe.",
+    "viewSource": "Se på GitHub",
+    "backToList": "Alle færdigheder"
+  },
+  "error": {
+    "label": "Fejl {$status}",
+    "notFound": "Den side findes ikke her",
+    "generic": "Noget gik galt",
+    "unknown": "Ukendt fejl",
+    "try": "Prøv indholdet."
+  },
+  "home": {
+    "continue": "Fortsæt til Målinger for servicestyring"
+  },
+  "topicWords": [
+    "emne",
+    "emner"
+  ]
+}
