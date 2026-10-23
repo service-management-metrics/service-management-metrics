@@ -1,0 +1,21 @@
+{
+  "name": "Deutsch (Welt)",
+  "topic_word": "Thema",
+  "topics_word": "Themen",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "themen",
+    "contents": "inhalt",
+    "terminology": "terminologie"
+  },
+  "strings": {
+    "title": "Kennzahlen für das Service-Management",
+    "tagline": "Service-Management messen, ohne die Arbeit zu verzerren.",
+    "intro": "Ein Arbeitsbuch zum guten Messen von Service-Management durch vier Linsen: Agilität, KI, Automatisierung und Analytik. Jede Kennzahl nennt ihren Manipulationsvektor und die Leitplanke, die ihn auffängt. Kennzahlen beschreiben Teams, Services und Systeme und dienen nie dazu, Menschen in eine Rangfolge zu bringen.",
+    "contents": "Inhalt",
+    "read": "Im Web lesen",
+    "part_fmt": "Teil {n}"
+  }
+}

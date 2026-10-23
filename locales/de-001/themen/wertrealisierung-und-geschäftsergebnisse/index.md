@@ -1,0 +1,3 @@
+# Wertrealisierung und Geschäftsergebnisse
+
+<!-- stub -->
