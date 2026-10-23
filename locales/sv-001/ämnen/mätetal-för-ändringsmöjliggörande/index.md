@@ -1,0 +1,3 @@
+# Mätetal för ändringsmöjliggörande
+
+<!-- stub -->

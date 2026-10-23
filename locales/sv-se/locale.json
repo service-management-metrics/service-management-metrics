@@ -1,0 +1,21 @@
+{
+  "name": "Svenska (Sverige)",
+  "topic_word": "ämne",
+  "topics_word": "ämnen",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "ämnen",
+    "contents": "innehåll",
+    "terminology": "terminologi"
+  },
+  "strings": {
+    "title": "Mätetal för tjänstehantering",
+    "tagline": "Mät tjänstehantering utan att förvränga arbetet.",
+    "intro": "En arbetsbok om att mäta tjänstehantering väl genom fyra linser: agilitet, AI, automatisering och analys. Varje mätetal anger sin manipuleringsvektor och det skyddsräcke som fångar upp den. Mätetal beskriver team, tjänster och system, och används aldrig för att rangordna människor.",
+    "contents": "Innehåll",
+    "read": "Läs på webben",
+    "part_fmt": "Del {n}"
+  }
+}

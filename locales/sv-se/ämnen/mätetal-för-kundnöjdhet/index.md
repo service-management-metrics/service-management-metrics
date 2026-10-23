@@ -1,0 +1,3 @@
+# Mätetal för kundnöjdhet
+
+<!-- stub -->

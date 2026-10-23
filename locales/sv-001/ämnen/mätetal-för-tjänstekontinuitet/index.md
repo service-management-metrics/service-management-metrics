@@ -1,0 +1,3 @@
+# Mätetal för tjänstekontinuitet
+
+<!-- stub -->
