@@ -1,0 +1,21 @@
+{
+  "name": "Français (monde)",
+  "topic_word": "sujet",
+  "topics_word": "sujets",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "sujets",
+    "contents": "contenus",
+    "terminology": "terminologie"
+  },
+  "strings": {
+    "title": "Métriques de la gestion des services",
+    "tagline": "Mesurez la gestion des services sans fausser le travail.",
+    "intro": "Un livre pratique pour bien mesurer la gestion des services à travers quatre angles : agilité, IA, automatisation et analytique. Chaque métrique indique son vecteur de détournement et le garde-fou qui le détecte. Les métriques décrivent des équipes, des services et des systèmes, et ne servent jamais à classer des personnes.",
+    "contents": "Contenus",
+    "read": "Lire sur le Web",
+    "part_fmt": "Partie {n}"
+  }
+}
