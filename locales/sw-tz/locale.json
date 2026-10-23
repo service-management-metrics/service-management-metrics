@@ -1,0 +1,21 @@
+{
+  "name": "Kiswahili (Tanzania)",
+  "topic_word": "mada",
+  "topics_word": "somo",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "mada",
+    "contents": "yaliyomo",
+    "terminology": "istilahi"
+  },
+  "strings": {
+    "title": "Vipimo vya Usimamizi wa Huduma",
+    "tagline": "Pima usimamizi wa huduma bila kupotosha kazi.",
+    "intro": "Kitabu cha kazi kuhusu kupima vizuri usimamizi wa huduma kupitia lenzi nne: uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi. Kila kipimo kinataja njia yake ya kupotoshwa na kizuizi kinachokikamata. Vipimo vinaelezea timu, huduma na mifumo, na havitumiki kamwe kupanga watu kwa vyeo.",
+    "contents": "Yaliyomo",
+    "read": "Soma mtandaoni",
+    "part_fmt": "Sehemu ya {n}"
+  }
+}
