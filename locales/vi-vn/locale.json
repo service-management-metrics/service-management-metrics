@@ -1,0 +1,21 @@
+{
+  "name": "Tiếng Việt (Việt Nam)",
+  "topic_word": "chủ đề",
+  "topics_word": "chủ đề",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "chủ-đề",
+    "contents": "mục-lục",
+    "terminology": "thuật-ngữ"
+  },
+  "strings": {
+    "title": "Chỉ số quản lý dịch vụ",
+    "tagline": "Đo lường quản lý dịch vụ mà không làm méo mó công việc.",
+    "intro": "Một cuốn sách thực hành về cách đo lường tốt quản lý dịch vụ qua bốn lăng kính: linh hoạt, AI, tự động hóa và phân tích. Mỗi chỉ số nêu rõ vectơ lợi dụng và rào chắn phát hiện được điều đó. Chỉ số mô tả đội nhóm, dịch vụ và hệ thống, và không bao giờ dùng để xếp hạng con người.",
+    "contents": "Mục lục",
+    "read": "Đọc trên web",
+    "part_fmt": "Phần {n}"
+  }
+}

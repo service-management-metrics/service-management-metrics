@@ -1,0 +1,3 @@
+# Bảng thuật ngữ
+
+<!-- stub -->
