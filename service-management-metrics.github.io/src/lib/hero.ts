@@ -105,6 +105,16 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "Kitabu cha kazi kuhusu kupima vizuri usimamizi wa huduma kupitia lenzi nne: uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi. Kila kipimo kinataja njia yake ya kupotoshwa na kizuizi kinachokikamata. Vipimo vinaelezea timu, huduma na mifumo, na havitumiki kamwe kupanga watu kwa vyeo.",
   "translations": "Tafsiri: "
  },
+ "vi-001": {
+  "tagline": "Đo lường quản lý dịch vụ trong kỷ nguyên ITIL 5 mà không làm méo mó công việc.",
+  "intro": "Một cuốn sách thực hành về cách đo lường tốt quản lý dịch vụ qua bốn lăng kính: linh hoạt, AI, tự động hóa và phân tích. Mỗi chỉ số nêu rõ vectơ lợi dụng và rào chắn phát hiện được điều đó. Chỉ số mô tả đội nhóm, dịch vụ và hệ thống, và không bao giờ dùng để xếp hạng con người.",
+  "translations": "Bản dịch: "
+ },
+ "vi-vn": {
+  "tagline": "Đo lường quản lý dịch vụ trong kỷ nguyên ITIL 5 mà không làm méo mó công việc.",
+  "intro": "Một cuốn sách thực hành về cách đo lường tốt quản lý dịch vụ qua bốn lăng kính: linh hoạt, AI, tự động hóa và phân tích. Mỗi chỉ số nêu rõ vectơ lợi dụng và rào chắn phát hiện được điều đó. Chỉ số mô tả đội nhóm, dịch vụ và hệ thống, và không bao giờ dùng để xếp hạng con người.",
+  "translations": "Bản dịch: "
+ },
  "zh-001": {
   "tagline": "在 ITIL 5 时代度量服务管理，而不扭曲工作。",
   "intro": "一本通过敏捷、AI、自动化与分析四个视角，把服务管理度量做好的实用之书。每项度量都指出它的钻空子途径和能发现它的护栏。度量描述的是团队、服务和系统，绝不针对个人。",

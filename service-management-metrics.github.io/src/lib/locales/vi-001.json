@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Tiếng Việt (thế giới)"
+  },
+  "siteTitle": "Chỉ số quản lý dịch vụ",
+  "skipToContent": "Chuyển đến nội dung",
+  "nav": {
+    "contents": "Mục lục",
+    "skills": "Kỹ năng",
+    "source": "Nguồn"
+  },
+  "picker": {
+    "theme": "Giao diện",
+    "locale": "Ngôn ngữ",
+    "textSize": "Cỡ chữ",
+    "share": "Chia sẻ",
+    "search": "Tìm kiếm",
+    "searchInput": "Tìm trong sách",
+    "searchSubmit": "Tìm"
+  },
+  "share": {
+    "emailLink": "Gửi liên kết qua email",
+    "shareOnLinkedIn": "Chia sẻ lên LinkedIn",
+    "shareOnReddit": "Chia sẻ lên Reddit",
+    "shareOnBluesky": "Chia sẻ lên Bluesky",
+    "shareOnMastodon": "Chia sẻ lên Mastodon",
+    "copyLink": "Sao chép liên kết",
+    "copied": "Đã sao chép",
+    "copyFailed": "Không thể sao chép"
+  },
+  "links": {
+    "label": "Liên kết",
+    "llms": "llms.txt (cho tác tử AI)",
+    "skills": "Kỹ năng AI trên GitHub",
+    "issues": "Theo dõi vấn đề"
+  },
+  "footer": {
+    "tagline": "Đo lường quản lý dịch vụ mà không làm méo mó công việc.",
+    "sourceAndContributions": "Nguồn và đóng góp:",
+    "builtWith": "Xây dựng bằng",
+    "ledBy": "Tạo bởi"
+  },
+  "breadcrumb": {
+    "home": "Trang chủ",
+    "contents": "Mục lục",
+    "skills": "Kỹ năng",
+    "label": "Đường dẫn"
+  },
+  "contents": {
+    "pageTitle": "Mục lục",
+    "lead": "Mười hai phần và 94 chủ đề về đo lường quản lý dịch vụ trong kỷ nguyên ITIL 5, qua các lăng kính linh hoạt, AI, tự động hóa và phân tích, mỗi chỉ số có vectơ lợi dụng và rào chắn, câu hỏi thảo luận, lời nhắc AI và kỹ năng AI.",
+    "readingIn": "Đang đọc bằng {$language}",
+    "part": "Phần {$number}",
+    "reference": "Tham chiếu",
+    "comingSoon": "sắp ra mắt"
+  },
+  "topic": {
+    "eyebrow": "Chủ đề {$number}",
+    "paginationLabel": "Điều hướng chủ đề",
+    "previous": "Trước",
+    "next": "Tiếp"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Vì sao, đo gì và đo thế nào mà không làm méo mó công việc.",
+      "title": "Nền tảng của đo lường"
+    },
+    "2": {
+      "tagline": "Cách công việc chảy qua các đội linh hoạt cũng đang vận hành dịch vụ.",
+      "title": "Chỉ số dòng chảy và phân phối liên tục"
+    },
+    "3": {
+      "tagline": "Hỗ trợ và khôi phục hoạt động tốt đến đâu với người dùng.",
+      "title": "Chỉ số bàn dịch vụ, sự cố và yêu cầu"
+    },
+    "4": {
+      "tagline": "Thay đổi và học hỏi ảnh hưởng thế nào đến sự ổn định và tốc độ.",
+      "title": "Chỉ số vấn đề, thay đổi và phát hành"
+    },
+    "5": {
+      "tagline": "Điều người dùng có thể trông cậy.",
+      "title": "Chỉ số mức dịch vụ, tính sẵn sàng và độ tin cậy"
+    },
+    "6": {
+      "tagline": "Người dùng có được lợi hơn hay không.",
+      "title": "Chỉ số khách hàng và trải nghiệm"
+    },
+    "7": {
+      "tagline": "Biết mình có gì và nó tốn bao nhiêu.",
+      "title": "Chỉ số tài sản, cấu hình và tài chính"
+    },
+    "8": {
+      "tagline": "Niềm tin, kiểm soát và các bên thứ ba đứng sau dịch vụ.",
+      "title": "Chỉ số bảo mật, rủi ro, tuân thủ và nhà cung cấp"
+    },
+    "9": {
+      "tagline": "Sức khỏe của con người và thói quen cải tiến.",
+      "title": "Chỉ số con người, đội nhóm và cải tiến"
+    },
+    "10": {
+      "tagline": "AI, tự động hóa và phân tích thay đổi điều gì về các con số.",
+      "title": "Chỉ số trong kỷ nguyên AI"
+    },
+    "11": {
+      "tagline": "Từ vài thước đo đến một thói quen.",
+      "title": "Xây dựng chương trình chỉ số"
+    },
+    "12": {
+      "tagline": "Tài liệu tham khảo.",
+      "title": "Phụ lục"
+    }
+  },
+  "results": {
+    "button": "Tìm",
+    "label": "Kết quả tìm kiếm",
+    "heading": "Kết quả tìm kiếm cho {$query}",
+    "failed": "Không thể tải chỉ mục tìm kiếm. Vui lòng thử lại sau.",
+    "searching": "Đang tìm…",
+    "none": "Không có kết quả nào khớp với {$query}.",
+    "browse": "Hãy xem mục lục thay thế.",
+    "count": "{$count} kết quả.",
+    "limited": "Hiển thị {$count} kết quả tốt nhất."
+  },
+  "skillsPage": {
+    "title": "Kỹ năng AI",
+    "lead": "Các kỹ năng theo định dạng Claude Code mà các chủ đề liên kết tới. Mỗi kỹ năng là một tệp SKILL.md mà bạn có thể sao chép vào thư mục kỹ năng của mình.",
+    "viewSource": "Xem trên GitHub",
+    "backToList": "Tất cả kỹ năng"
+  },
+  "error": {
+    "label": "Lỗi {$status}",
+    "notFound": "Trang đó không có ở đây",
+    "generic": "Đã xảy ra lỗi",
+    "unknown": "Lỗi không xác định",
+    "try": "Hãy thử mục lục."
+  },
+  "home": {
+    "continue": "Tiếp tục đến Chỉ số quản lý dịch vụ"
+  },
+  "topicWords": [
+    "chủ đề",
+    "chủ đề"
+  ]
+}

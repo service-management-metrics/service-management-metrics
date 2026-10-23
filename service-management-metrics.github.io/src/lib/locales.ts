@@ -29,6 +29,8 @@ export const LOCALES: Locale[] = [
   { slug: 'sv-se', label: 'Svenska - Sverige' },
   { slug: 'sw-001', label: 'Kiswahili - Dunia' },
   { slug: 'sw-tz', label: 'Kiswahili - Tanzania' },
+  { slug: 'vi-001', label: 'Tiếng Việt - Thế giới' },
+  { slug: 'vi-vn', label: 'Tiếng Việt - Việt Nam' },
   { slug: 'zh-001', label: '简体中文 - 世界' },
   { slug: 'zh-cn', label: '简体中文 - 中国' },
 ];
