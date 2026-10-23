@@ -85,6 +85,11 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "Een werkboek over het goed meten van servicemanagement door vier lenzen: agile, AI, automatisering en analytics. Bij elke metriek staat de manipulatievector en de vangrail die die opvangt. Metrieken beschrijven teams, services en systemen en worden nooit gebruikt om mensen te rangschikken.",
   "translations": "Vertalingen: "
  },
+ "pt-001": {
+  "tagline": "Meça a gestão de serviços na era do ITIL 5 sem distorcer o trabalho.",
+  "intro": "Um livro prático sobre como medir bem a gestão de serviços por quatro lentes: ágil, IA, automação e análise. Cada métrica indica seu vetor de manipulação e a barreira de proteção que o detecta. As métricas descrevem equipes, serviços e sistemas, e nunca servem para classificar pessoas.",
+  "translations": "Traduções: "
+ },
  "ru-001": {
   "tagline": "Измеряйте управление услугами в эпоху ITIL 5, не искажая работу.",
   "intro": "Практическая книга об измерении управления услугами через четыре линзы: гибкость, ИИ, автоматизацию и аналитику. Для каждой метрики указаны вектор манипуляции и ограждение, которое его выявляет. Метрики описывают команды, услуги и системы и никогда не служат для ранжирования людей.",
