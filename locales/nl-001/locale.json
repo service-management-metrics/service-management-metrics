@@ -1,0 +1,21 @@
+{
+  "name": "Nederlands (wereld)",
+  "topic_word": "onderwerp",
+  "topics_word": "onderwerpen",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "onderwerpen",
+    "contents": "inhoud",
+    "terminology": "terminologie"
+  },
+  "strings": {
+    "title": "Metrieken voor servicemanagement",
+    "tagline": "Meet servicemanagement zonder het werk te vertekenen.",
+    "intro": "Een werkboek over het goed meten van servicemanagement door vier lenzen: agile, AI, automatisering en analytics. Bij elke metriek staat de manipulatievector en de vangrail die die opvangt. Metrieken beschrijven teams, services en systemen en worden nooit gebruikt om mensen te rangschikken.",
+    "contents": "Inhoud",
+    "read": "Lees op het web",
+    "part_fmt": "Deel {n}"
+  }
+}
