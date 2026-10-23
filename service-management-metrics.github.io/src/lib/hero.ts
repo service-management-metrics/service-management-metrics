@@ -75,6 +75,16 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "Практическая книга об измерении управления услугами через четыре линзы: гибкость, ИИ, автоматизацию и аналитику. Для каждой метрики указаны вектор манипуляции и ограждение, которое его выявляет. Метрики описывают команды, услуги и системы и никогда не служат для ранжирования людей.",
   "translations": "Переводы: "
  },
+ "sv-001": {
+  "tagline": "Mät tjänstehantering i ITIL 5:s tid utan att förvränga arbetet.",
+  "intro": "En arbetsbok om att mäta tjänstehantering väl genom fyra linser: agilitet, AI, automatisering och analys. Varje mätetal anger sin manipuleringsvektor och det skyddsräcke som fångar upp den. Mätetal beskriver team, tjänster och system, och används aldrig för att rangordna människor.",
+  "translations": "Översättningar: "
+ },
+ "sv-se": {
+  "tagline": "Mät tjänstehantering i ITIL 5:s tid utan att förvränga arbetet.",
+  "intro": "En arbetsbok om att mäta tjänstehantering väl genom fyra linser: agilitet, AI, automatisering och analys. Varje mätetal anger sin manipuleringsvektor och det skyddsräcke som fångar upp den. Mätetal beskriver team, tjänster och system, och används aldrig för att rangordna människor.",
+  "translations": "Översättningar: "
+ },
  "sw-001": {
   "tagline": "Pima usimamizi wa huduma katika enzi ya ITIL 5 bila kupotosha kazi.",
   "intro": "Kitabu cha kazi kuhusu kupima vizuri usimamizi wa huduma kupitia lenzi nne: uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi. Kila kipimo kinataja njia yake ya kupotoshwa na kizuizi kinachokikamata. Vipimo vinaelezea timu, huduma na mifumo, na havitumiki kamwe kupanga watu kwa vyeo.",

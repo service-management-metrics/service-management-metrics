@@ -23,6 +23,8 @@ export const LOCALES: Locale[] = [
   { slug: 'ko-001', label: '한국어 - 세계' },
   { slug: 'ko-kr', label: '한국어 - 대한민국' },
   { slug: 'ru-001', label: 'Русский - Мир' },
+  { slug: 'sv-001', label: 'Svenska - Världen' },
+  { slug: 'sv-se', label: 'Svenska - Sverige' },
   { slug: 'sw-001', label: 'Kiswahili - Dunia' },
   { slug: 'sw-tz', label: 'Kiswahili - Tanzania' },
   { slug: 'zh-001', label: '简体中文 - 世界' },

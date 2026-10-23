@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Svenska (världen)"
+  },
+  "siteTitle": "Mätetal för tjänstehantering",
+  "skipToContent": "Hoppa till innehållet",
+  "nav": {
+    "contents": "Innehåll",
+    "skills": "Färdigheter",
+    "source": "Källa"
+  },
+  "picker": {
+    "theme": "Tema",
+    "locale": "Språk",
+    "textSize": "Textstorlek",
+    "share": "Dela",
+    "search": "Sök",
+    "searchInput": "Sök i boken",
+    "searchSubmit": "Sök"
+  },
+  "share": {
+    "emailLink": "Skicka länk med e-post",
+    "shareOnLinkedIn": "Dela på LinkedIn",
+    "shareOnReddit": "Dela på Reddit",
+    "shareOnBluesky": "Dela på Bluesky",
+    "shareOnMastodon": "Dela på Mastodon",
+    "copyLink": "Kopiera länk",
+    "copied": "Kopierad",
+    "copyFailed": "Kunde inte kopiera"
+  },
+  "links": {
+    "label": "Länkar",
+    "llms": "llms.txt (för AI-agenter)",
+    "skills": "AI-färdigheter på GitHub",
+    "issues": "Ärendehantering"
+  },
+  "footer": {
+    "tagline": "Mät tjänstehantering utan att förvränga arbetet.",
+    "sourceAndContributions": "Källa och bidrag:",
+    "builtWith": "Byggd med",
+    "ledBy": "Skapad av"
+  },
+  "breadcrumb": {
+    "home": "Startsida",
+    "contents": "Innehåll",
+    "skills": "Färdigheter",
+    "label": "Sökväg"
+  },
+  "contents": {
+    "pageTitle": "Innehåll",
+    "lead": "Tolv delar och 94 ämnen om att mäta tjänstehantering i ITIL 5:s tid, genom linserna agilitet, AI, automatisering och analys, med manipuleringsvektorer och skyddsräcken för varje mätetal, diskussionsfrågor, AI-prompter och AI-färdigheter.",
+    "readingIn": "Läser på {$language}",
+    "part": "Del {$number}",
+    "reference": "Referens",
+    "comingSoon": "kommer snart"
+  },
+  "topic": {
+    "eyebrow": "Ämne {$number}",
+    "paginationLabel": "Ämnesnavigering",
+    "previous": "Föregående",
+    "next": "Nästa"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Varför, vad och hur man mäter utan att förvränga arbetet.",
+      "title": "Grunderna i mätning"
+    },
+    "2": {
+      "tagline": "Hur arbetet rör sig genom agila team som också driftar tjänster.",
+      "title": "Mätetal för flöde och kontinuerlig leverans"
+    },
+    "3": {
+      "tagline": "Hur väl support och återställning fungerar för användarna.",
+      "title": "Mätetal för servicedesk, incidenter och förfrågningar"
+    },
+    "4": {
+      "tagline": "Hur ändringar och lärande påverkar stabilitet och tempo.",
+      "title": "Mätetal för problem, ändringar och releaser"
+    },
+    "5": {
+      "tagline": "Det användarna kan lita på.",
+      "title": "Mätetal för servicenivå, tillgänglighet och tillförlitlighet"
+    },
+    "6": {
+      "tagline": "Om användarna har fått det bättre.",
+      "title": "Mätetal för kunder och upplevelse"
+    },
+    "7": {
+      "tagline": "Att veta vad man har och vad det kostar.",
+      "title": "Mätetal för tillgångar, konfiguration och ekonomi"
+    },
+    "8": {
+      "tagline": "Förtroende, kontroll och tredje parter bakom tjänsten.",
+      "title": "Mätetal för säkerhet, risk, regelefterlevnad och leverantörer"
+    },
+    "9": {
+      "tagline": "Människors hälsa och vanan att förbättra.",
+      "title": "Mätetal för människor, team och förbättring"
+    },
+    "10": {
+      "tagline": "Vad AI, automatisering och analys förändrar med siffrorna.",
+      "title": "Mätetal i AI-eran"
+    },
+    "11": {
+      "tagline": "Från en handfull mått till en vana.",
+      "title": "Att bygga ett mätetalsprogram"
+    },
+    "12": {
+      "tagline": "Referensmaterial.",
+      "title": "Bilagor"
+    }
+  },
+  "results": {
+    "button": "Sök",
+    "label": "Sökresultat",
+    "heading": "Sökresultat för {$query}",
+    "failed": "Sökindexet kunde inte läsas in. Försök igen senare.",
+    "searching": "Söker…",
+    "none": "Inget matchade {$query}.",
+    "browse": "Bläddra bland innehållet i stället.",
+    "count": "{$count} resultat.",
+    "limited": "Visar de {$count} bästa resultaten."
+  },
+  "skillsPage": {
+    "title": "AI-färdigheter",
+    "lead": "Färdigheter i Claude Code-format som ämnena länkar till. Var och en är en SKILL.md-fil som du kan kopiera till din egen färdighetsmapp.",
+    "viewSource": "Visa på GitHub",
+    "backToList": "Alla färdigheter"
+  },
+  "error": {
+    "label": "Fel {$status}",
+    "notFound": "Den sidan finns inte här",
+    "generic": "Något gick fel",
+    "unknown": "Okänt fel",
+    "try": "Prova innehållet."
+  },
+  "home": {
+    "continue": "Fortsätt till Mätetal för tjänstehantering"
+  },
+  "topicWords": [
+    "ämne",
+    "ämnen"
+  ]
+}
