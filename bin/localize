@@ -1,0 +1,181 @@
+#!/usr/bin/env python3
+"""Derive the English spelling-variant locales from en-001.
+
+en-001 is the hand-authored source. The derived locales are never edited by
+hand: en-us, en-gb, and en-gb-oxendict are rewritten on every run.
+
+    bin/localize            # rewrite derived locales
+    bin/localize --check    # exit 1 if a derived locale is out of date
+
+Derived text leaves these zones untouched: fenced code blocks (except ```text
+blocks, which hold reader-facing prompt and template prose), inline code, link
+targets, italic spans (titles of cited works), and everything from the
+References heading to the end of a file (bibliographic titles and Wikipedia
+article names keep their published spelling). See spec/locales.md.
+"""
+import glob
+import os
+import re
+import shutil
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LOCALES = os.path.join(ROOT, "locales")
+SOURCE = "en-001"
+TARGETS = ["en-us", "en-gb", "en-gb-oxendict"]
+
+PROTECT = re.compile(
+    r"(```(?!text\b)\S*\n.*?\n```|~~~.*?~~~|`[^`\n]+`|\]\([^)]*\)"
+    r"|(?<!\*)\*(?!\*)(?:[^*]|\n(?!\n))+?\*(?!\*))",
+    re.S,
+)
+
+
+def case_like(model, word):
+    if model.isupper() and len(model) > 1:
+        return word.upper()
+    if model[:1].isupper():
+        return word[:1].upper() + word[1:]
+    return word
+
+
+def word_sub(mapping):
+    pat = re.compile(r"\b(" + "|".join(sorted(map(re.escape, mapping), key=len, reverse=True)) + r")\b", re.I)
+    return lambda s: pat.sub(lambda m: case_like(m.group(0), mapping[m.group(0).lower()]), s)
+
+
+def apply_outside_protected(text, fns):
+    parts, last = [], 0
+    for m in PROTECT.finditer(text):
+        seg = text[last:m.start()]
+        for fn in fns:
+            seg = fn(seg)
+        parts.append(seg)
+        parts.append(m.group(0))
+        last = m.end()
+    seg = text[last:]
+    for fn in fns:
+        seg = fn(seg)
+    parts.append(seg)
+    return "".join(parts)
+
+
+def split_references(text):
+    marker = "## References and further reading"
+    i = text.find(marker)
+    return (text, "") if i < 0 else (text[:i], text[i:])
+
+
+# --- en-us: fix stray British forms in the en-001 source ------------------
+US = word_sub({
+    "organisation": "organization", "organisations": "organizations",
+    "licence": "license", "licences": "licenses", "programme": "program", "programmes": "programs",
+    "cancelled": "canceled", "cancelling": "canceling", "labelled": "labeled", "labelling": "labeling",
+    "modelled": "modeled", "modelling": "modeling", "catalogue": "catalog", "catalogues": "catalogs",
+    "centre": "center", "centres": "centers", "centred": "centered", "theatre": "theater",
+    "analogue": "analog", "behaviour": "behavior", "behaviours": "behaviors", "colour": "color",
+    "colours": "colors", "favour": "favor", "favours": "favors", "judgement": "judgment",
+    "fulfilment": "fulfillment", "defence": "defense", "artefact": "artifact", "artefacts": "artifacts",
+    "sceptical": "skeptical", "scepticism": "skepticism", "travelled": "traveled",
+    "enrolment": "enrollment", "relabelled": "relabeled", "relabelling": "relabeling",
+    "unlabelled": "unlabeled", "mislabelling": "mislabeling",
+})
+
+# --- en-gb family: American to British -------------------------------------
+IZE_STEMS = re.compile(r"\b([A-Za-z]{3,}?)iz(e|es|ed|ing|ation|ations|ational|able)\b", re.I)
+IZE_NOT = {"size", "sized", "sizes", "sizing", "oversized", "resize", "resized", "resizes", "prize",
+           "seize", "seized", "capsize", "downsize", "downsized", "upsize", "upsized", "rightsize",
+           "rightsized", "rightsizing"}
+
+
+def ize_to_ise(s):
+    def r(m):
+        w = m.group(0)
+        if w.lower() in IZE_NOT or re.match(r"(?i)(?:\w*)(?:size|sized|sizes|sizing)$", w):
+            return w
+        return m.group(1) + case_like(w[len(m.group(1))], "i") + "s" + w[len(m.group(1)) + 2:]
+    return IZE_STEMS.sub(r, s)
+
+
+def analyze_to_analyse(s):
+    return re.sub(r"\b(an[a-z]*?)alyz(e|es|ed|ing)\b", lambda m: m.group(1) + "alys" + m.group(2), s, flags=re.I)
+
+
+GB = word_sub({
+    "behavior": "behaviour", "behaviors": "behaviours", "behavioral": "behavioural",
+    "behaviorally": "behaviourally", "candor": "candour", "color": "colour", "colors": "colours",
+    "colored": "coloured", "coloring": "colouring", "favor": "favour", "favors": "favours",
+    "favored": "favoured", "favoring": "favouring", "favorable": "favourable", "unfavorable": "unfavourable",
+    "honor": "honour", "honors": "honours", "honoring": "honouring", "neighbor": "neighbour",
+    "neighbors": "neighbours", "neighboring": "neighbouring", "rumor": "rumour", "rumors": "rumours",
+    "center": "centre", "centers": "centres", "centered": "centred", "centering": "centring",
+    "license": "licence", "licenses": "licences", "program": "programme", "programs": "programmes",
+    "catalog": "catalogue", "catalogs": "catalogues", "canceled": "cancelled", "canceling": "cancelling",
+    "labeled": "labelled", "labeling": "labelling", "unlabeled": "unlabelled", "mislabeling": "mislabelling",
+    "relabel": "relabel", "relabeled": "relabelled", "relabeling": "relabelling",
+    "modeled": "modelled", "modeling": "modelling", "fulfillment": "fulfilment",
+    "enroll": "enrol", "enrolled": "enrolled", "enrollment": "enrolment", "defense": "defence",
+    "judgment": "judgement", "judgments": "judgements", "artifact": "artefact", "artifacts": "artefacts",
+    "skeptical": "sceptical", "skepticism": "scepticism", "skeptic": "sceptic", "traveled": "travelled",
+    "theater": "theatre", "analog": "analogue",
+})
+
+FUNCS = {
+    "en-us": [US],
+    "en-gb": [GB, ize_to_ise, analyze_to_analyse],
+    "en-gb-oxendict": [GB, analyze_to_analyse],
+}
+
+
+def convert(text, locale):
+    body, refs = split_references(text)
+    return apply_outside_protected(body, FUNCS[locale]) + refs
+
+
+def main():
+    check = "--check" in sys.argv
+    src_root = os.path.join(LOCALES, SOURCE)
+    stale = []
+    count = 0
+    for path in sorted(glob.glob(os.path.join(src_root, "**", "index.md"), recursive=True)):
+        rel = os.path.relpath(os.path.dirname(path), src_root)
+        text = open(path, encoding="utf-8").read()
+        pid = open(os.path.join(os.path.dirname(path), ".locale-peer-id")).read()
+        for loc in TARGETS:
+            d = os.path.join(LOCALES, loc, rel)
+            out = convert(text, loc)
+            idx = os.path.join(d, "index.md")
+            current = open(idx, encoding="utf-8").read() if os.path.isfile(idx) else None
+            if check:
+                if current != out:
+                    stale.append(f"{loc}/{rel}")
+                continue
+            os.makedirs(d, exist_ok=True)
+            if current != out:
+                open(idx, "w", encoding="utf-8").write(out)
+            rd = os.path.join(d, "README.md")
+            if not os.path.islink(rd):
+                if os.path.lexists(rd):
+                    os.remove(rd)
+                os.symlink("index.md", rd)
+            open(os.path.join(d, ".locale-peer-id"), "w").write(pid)
+        count += 1
+    if check:
+        if stale:
+            print(f"{len(stale)} derived topic(s) out of date; run bin/localize. First: {stale[0]}")
+            sys.exit(1)
+        print(f"derived locales up to date ({count} topics x {len(TARGETS)} locales)")
+        return
+    for loc in TARGETS:
+        known = {os.path.relpath(os.path.dirname(p), src_root)
+                 for p in glob.glob(os.path.join(src_root, "**", "index.md"), recursive=True)}
+        base = os.path.join(LOCALES, loc)
+        for p in glob.glob(os.path.join(base, "**", "index.md"), recursive=True):
+            rel = os.path.relpath(os.path.dirname(p), base)
+            if rel not in known:
+                shutil.rmtree(os.path.dirname(p))
+    print(f"derived {', '.join(TARGETS)} from {SOURCE}: {count} topics each")
+
+
+if __name__ == "__main__":
+    main()
