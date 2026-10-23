@@ -5,6 +5,11 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "كتاب عملي في قياس إدارة الخدمات قياسًا جيدًا عبر أربع عدسات: الأجايل والذكاء الاصطناعي والأتمتة والتحليلات. يسمّي كل مقياس مسار تلاعبه وحاجز الحماية الذي يكشفه. والمقاييس تصف الفرق والخدمات والأنظمة، لا الأفراد أبدًا.",
   "translations": "الترجمات: "
  },
+ "bn-001": {
+  "tagline": "কাজ বিকৃত না করে ITIL 5-এর যুগে সেবা ব্যবস্থাপনা পরিমাপ করুন।",
+  "intro": "চারটি দৃষ্টিকোণ দিয়ে সেবা ব্যবস্থাপনা ভালোভাবে পরিমাপের একটি কার্যকর বই: এজাইল, এআই, অটোমেশন ও বিশ্লেষণ। প্রতিটি মেট্রিকের কারসাজির উপায় ও তা ধরার রক্ষাবেষ্টনী উল্লেখ আছে। এখানকার মেট্রিক দল, সেবা ও ব্যবস্থা বর্ণনা করে, এবং মানুষকে ক্রম দিতে কখনও ব্যবহৃত হয় না।",
+  "translations": "অনুবাদ: "
+ },
  "en-001": {
   "tagline": "Measure service management in the age of ITIL 5 without distorting the work.",
   "intro": "A working book on measuring service management well through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",
