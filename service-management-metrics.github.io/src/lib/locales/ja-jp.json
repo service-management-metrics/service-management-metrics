@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "日本語（日本）"
+  },
+  "siteTitle": "サービスマネジメントメトリクス",
+  "skipToContent": "本文へ移動",
+  "nav": {
+    "contents": "目次",
+    "skills": "スキル",
+    "source": "ソース"
+  },
+  "picker": {
+    "theme": "テーマ",
+    "locale": "言語",
+    "textSize": "文字サイズ",
+    "share": "共有",
+    "search": "検索",
+    "searchInput": "本の中を検索",
+    "searchSubmit": "検索"
+  },
+  "share": {
+    "emailLink": "リンクをメールで送る",
+    "shareOnLinkedIn": "LinkedInで共有",
+    "shareOnReddit": "Redditで共有",
+    "shareOnBluesky": "Blueskyで共有",
+    "shareOnMastodon": "Mastodonで共有",
+    "copyLink": "リンクをコピー",
+    "copied": "コピーしました",
+    "copyFailed": "コピーできませんでした"
+  },
+  "links": {
+    "label": "リンク",
+    "llms": "llms.txt（AIエージェント向け）",
+    "skills": "GitHubのAIスキル",
+    "issues": "課題トラッカー"
+  },
+  "footer": {
+    "tagline": "サービスマネジメントを、仕事をゆがめることなく測定する。",
+    "sourceAndContributions": "ソースと貢献：",
+    "builtWith": "使用技術",
+    "ledBy": "作成者"
+  },
+  "breadcrumb": {
+    "home": "ホーム",
+    "contents": "目次",
+    "skills": "スキル",
+    "label": "パンくずリスト"
+  },
+  "contents": {
+    "pageTitle": "目次",
+    "lead": "ITIL 5時代のサービスマネジメントの測定を、アジャイル、AI、自動化、アナリティクスのレンズで捉えた全12部・94トピック。各メトリクスに、悪用の経路と防護柵、議論のための問い、AIプロンプト、AIスキル付き。",
+    "readingIn": "閲覧言語：{$language}",
+    "part": "第{$number}部",
+    "reference": "リファレンス",
+    "comingSoon": "近日公開"
+  },
+  "topic": {
+    "eyebrow": "トピック{$number}",
+    "paginationLabel": "トピックのナビゲーション",
+    "previous": "前へ",
+    "next": "次へ"
+  },
+  "parts": {
+    "1": {
+      "tagline": "仕事をゆがめずに測るための、理由・対象・方法。",
+      "title": "測定の基礎"
+    },
+    "2": {
+      "tagline": "サービスも運用するアジャイルチームを、仕事がどう流れるか。",
+      "title": "フローと継続的デリバリーのメトリクス"
+    },
+    "3": {
+      "tagline": "サポートと復旧が利用者にとってどれだけうまく機能しているか。",
+      "title": "サービスデスク、インシデント、リクエストのメトリクス"
+    },
+    "4": {
+      "tagline": "変更と学習が安定性と速度にどう影響するか。",
+      "title": "問題、変更、リリースのメトリクス"
+    },
+    "5": {
+      "tagline": "利用者が当てにできるもの。",
+      "title": "サービスレベル、可用性、信頼性のメトリクス"
+    },
+    "6": {
+      "tagline": "利用者の状況が良くなっているか。",
+      "title": "顧客と体験のメトリクス"
+    },
+    "7": {
+      "tagline": "何を持ち、いくらかかるかを知る。",
+      "title": "資産、構成、財務のメトリクス"
+    },
+    "8": {
+      "tagline": "信頼、統制、そしてサービスの背後にいる第三者。",
+      "title": "セキュリティ、リスク、コンプライアンス、サプライヤーのメトリクス"
+    },
+    "9": {
+      "tagline": "人の健全性と、改善を続ける習慣。",
+      "title": "人、チーム、改善のメトリクス"
+    },
+    "10": {
+      "tagline": "AI、自動化、アナリティクスが数字にもたらす変化。",
+      "title": "AI時代のメトリクス"
+    },
+    "11": {
+      "tagline": "わずかな指標から習慣へ。",
+      "title": "メトリクスプログラムを築く"
+    },
+    "12": {
+      "tagline": "参考資料。",
+      "title": "付録"
+    }
+  },
+  "results": {
+    "button": "検索",
+    "label": "検索結果",
+    "heading": "「{$query}」の検索結果",
+    "failed": "検索インデックスを読み込めませんでした。しばらくしてからもう一度お試しください。",
+    "searching": "検索中…",
+    "none": "「{$query}」に一致するものはありません。",
+    "browse": "代わりに目次をご覧ください。",
+    "count": "{$count}件の結果。",
+    "limited": "上位{$count}件を表示しています。"
+  },
+  "skillsPage": {
+    "title": "AIスキル",
+    "lead": "トピックからリンクしている、Claude Code形式のスキル。それぞれ、ご自身のスキルフォルダにコピーできるSKILL.mdファイルです。",
+    "viewSource": "GitHubで見る",
+    "backToList": "すべてのスキル"
+  },
+  "error": {
+    "label": "エラー{$status}",
+    "notFound": "このページは見つかりません",
+    "generic": "問題が発生しました",
+    "unknown": "不明なエラー",
+    "try": "目次をお試しください。"
+  },
+  "home": {
+    "continue": "サービスマネジメントメトリクスへ進む"
+  },
+  "topicWords": [
+    "トピック",
+    "項目"
+  ]
+}
