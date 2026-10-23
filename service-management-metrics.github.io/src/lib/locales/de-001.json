@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Deutsch (Welt)"
+  },
+  "siteTitle": "Kennzahlen für das Service-Management",
+  "skipToContent": "Zum Inhalt springen",
+  "nav": {
+    "contents": "Inhalt",
+    "skills": "Skills",
+    "source": "Quelle"
+  },
+  "picker": {
+    "theme": "Design",
+    "locale": "Sprache",
+    "textSize": "Textgröße",
+    "share": "Teilen",
+    "search": "Suchen",
+    "searchInput": "Im Buch suchen",
+    "searchSubmit": "Suchen"
+  },
+  "share": {
+    "emailLink": "Link per E-Mail senden",
+    "shareOnLinkedIn": "Auf LinkedIn teilen",
+    "shareOnReddit": "Auf Reddit teilen",
+    "shareOnBluesky": "Auf Bluesky teilen",
+    "shareOnMastodon": "Auf Mastodon teilen",
+    "copyLink": "Link kopieren",
+    "copied": "Kopiert",
+    "copyFailed": "Kopieren nicht möglich"
+  },
+  "links": {
+    "label": "Links",
+    "llms": "llms.txt (für KI-Agenten)",
+    "skills": "KI-Skills auf GitHub",
+    "issues": "Issue-Tracker"
+  },
+  "footer": {
+    "tagline": "Service-Management messen, ohne die Arbeit zu verzerren.",
+    "sourceAndContributions": "Quelle und Beiträge:",
+    "builtWith": "Gebaut mit",
+    "ledBy": "Erstellt von"
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "contents": "Inhalt",
+    "skills": "Skills",
+    "label": "Brotkrümelnavigation"
+  },
+  "contents": {
+    "pageTitle": "Inhalt",
+    "lead": "Zwölf Teile und 94 Themen zum Messen von Service-Management im Zeitalter von ITIL 5, durch die Linsen Agilität, KI, Automatisierung und Analytik, mit Manipulationsvektoren und Leitplanken für jede Kennzahl, Diskussionsfragen, KI-Prompts und KI-Skills.",
+    "readingIn": "Lesen auf {$language}",
+    "part": "Teil {$number}",
+    "reference": "Nachschlagewerk",
+    "comingSoon": "demnächst"
+  },
+  "topic": {
+    "eyebrow": "Thema {$number}",
+    "paginationLabel": "Themennavigation",
+    "previous": "Zurück",
+    "next": "Weiter"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Warum, was und wie man misst, ohne die Arbeit zu verzerren.",
+      "title": "Grundlagen des Messens"
+    },
+    "2": {
+      "tagline": "Wie Arbeit durch agile Teams fließt, die auch Services betreiben.",
+      "title": "Kennzahlen für Fluss und kontinuierliche Auslieferung"
+    },
+    "3": {
+      "tagline": "Wie gut Support und Wiederherstellung für die Nutzer funktionieren.",
+      "title": "Kennzahlen für Service Desk, Incidents und Anfragen"
+    },
+    "4": {
+      "tagline": "Wie Änderungen und Lernen Stabilität und Tempo beeinflussen.",
+      "title": "Kennzahlen für Probleme, Changes und Releases"
+    },
+    "5": {
+      "tagline": "Worauf sich Nutzer verlassen können.",
+      "title": "Kennzahlen für Servicelevel, Verfügbarkeit und Zuverlässigkeit"
+    },
+    "6": {
+      "tagline": "Ob es den Nutzern besser geht.",
+      "title": "Kennzahlen für Kunden und Erlebnis"
+    },
+    "7": {
+      "tagline": "Wissen, was man hat und was es kostet.",
+      "title": "Kennzahlen für Assets, Konfiguration und Finanzen"
+    },
+    "8": {
+      "tagline": "Vertrauen, Kontrolle und die Dritten hinter dem Service.",
+      "title": "Kennzahlen für Sicherheit, Risiko, Compliance und Lieferanten"
+    },
+    "9": {
+      "tagline": "Die Gesundheit der Menschen und die Gewohnheit des Verbesserns.",
+      "title": "Kennzahlen für Menschen, Teams und Verbesserung"
+    },
+    "10": {
+      "tagline": "Was KI, Automatisierung und Analytik an den Zahlen verändern.",
+      "title": "Kennzahlen im Zeitalter der KI"
+    },
+    "11": {
+      "tagline": "Von einer Handvoll Messgrößen zur Gewohnheit.",
+      "title": "Ein Kennzahlenprogramm aufbauen"
+    },
+    "12": {
+      "tagline": "Nachschlagematerial.",
+      "title": "Anhänge"
+    }
+  },
+  "results": {
+    "button": "Suchen",
+    "label": "Suchergebnisse",
+    "heading": "Suchergebnisse für {$query}",
+    "failed": "Der Suchindex konnte nicht geladen werden. Bitte später erneut versuchen.",
+    "searching": "Suche läuft…",
+    "none": "Nichts passt zu {$query}.",
+    "browse": "Stöbern Sie stattdessen im Inhalt.",
+    "count": "{$count} Ergebnisse.",
+    "limited": "Die besten {$count} Ergebnisse werden angezeigt."
+  },
+  "skillsPage": {
+    "title": "KI-Skills",
+    "lead": "Skills im Claude-Code-Format, auf die die Themen verweisen. Jeder ist eine SKILL.md-Datei, die Sie in Ihren eigenen Skills-Ordner kopieren können.",
+    "viewSource": "Auf GitHub ansehen",
+    "backToList": "Alle Skills"
+  },
+  "error": {
+    "label": "Fehler {$status}",
+    "notFound": "Diese Seite gibt es hier nicht",
+    "generic": "Etwas ist schiefgelaufen",
+    "unknown": "Unbekannter Fehler",
+    "try": "Versuchen Sie es mit dem Inhalt."
+  },
+  "home": {
+    "continue": "Weiter zu Kennzahlen für das Service-Management"
+  },
+  "topicWords": [
+    "Thema",
+    "Themen"
+  ]
+}

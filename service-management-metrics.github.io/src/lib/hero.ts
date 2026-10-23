@@ -10,6 +10,11 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "চারটি দৃষ্টিকোণ দিয়ে সেবা ব্যবস্থাপনা ভালোভাবে পরিমাপের একটি কার্যকর বই: এজাইল, এআই, অটোমেশন ও বিশ্লেষণ। প্রতিটি মেট্রিকের কারসাজির উপায় ও তা ধরার রক্ষাবেষ্টনী উল্লেখ আছে। এখানকার মেট্রিক দল, সেবা ও ব্যবস্থা বর্ণনা করে, এবং মানুষকে ক্রম দিতে কখনও ব্যবহৃত হয় না।",
   "translations": "অনুবাদ: "
  },
+ "de-001": {
+  "tagline": "Service-Management im Zeitalter von ITIL 5 messen, ohne die Arbeit zu verzerren.",
+  "intro": "Ein Arbeitsbuch zum guten Messen von Service-Management durch vier Linsen: Agilität, KI, Automatisierung und Analytik. Jede Kennzahl nennt ihren Manipulationsvektor und die Leitplanke, die ihn auffängt. Kennzahlen beschreiben Teams, Services und Systeme und dienen nie dazu, Menschen in eine Rangfolge zu bringen.",
+  "translations": "Übersetzungen: "
+ },
  "en-001": {
   "tagline": "Measure service management in the age of ITIL 5 without distorting the work.",
   "intro": "A working book on measuring service management well through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",
