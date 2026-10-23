@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "한국어(세계)"
+  },
+  "siteTitle": "서비스 관리 지표",
+  "skipToContent": "본문으로 건너뛰기",
+  "nav": {
+    "contents": "목차",
+    "skills": "스킬",
+    "source": "소스"
+  },
+  "picker": {
+    "theme": "테마",
+    "locale": "언어",
+    "textSize": "글자 크기",
+    "share": "공유",
+    "search": "검색",
+    "searchInput": "책에서 검색",
+    "searchSubmit": "검색"
+  },
+  "share": {
+    "emailLink": "링크를 이메일로 보내기",
+    "shareOnLinkedIn": "LinkedIn에 공유",
+    "shareOnReddit": "Reddit에 공유",
+    "shareOnBluesky": "Bluesky에 공유",
+    "shareOnMastodon": "Mastodon에 공유",
+    "copyLink": "링크 복사",
+    "copied": "복사됨",
+    "copyFailed": "복사할 수 없습니다"
+  },
+  "links": {
+    "label": "링크",
+    "llms": "llms.txt (AI 에이전트용)",
+    "skills": "GitHub의 AI 스킬",
+    "issues": "이슈 트래커"
+  },
+  "footer": {
+    "tagline": "일을 왜곡하지 않으면서 서비스 관리를 측정하세요.",
+    "sourceAndContributions": "소스와 기여:",
+    "builtWith": "사용 기술",
+    "ledBy": "제작"
+  },
+  "breadcrumb": {
+    "home": "홈",
+    "contents": "목차",
+    "skills": "스킬",
+    "label": "탐색 경로"
+  },
+  "contents": {
+    "pageTitle": "목차",
+    "lead": "ITIL 5 시대의 서비스 관리 측정을 애자일, AI, 자동화, 분석의 렌즈로 다룬 12개 부, 94개 주제. 각 지표에는 악용 경로와 방호책, 토론 질문, AI 프롬프트, AI 스킬이 있습니다.",
+    "readingIn": "읽는 언어: {$language}",
+    "part": "제{$number}부",
+    "reference": "참조",
+    "comingSoon": "곧 공개"
+  },
+  "topic": {
+    "eyebrow": "주제 {$number}",
+    "paginationLabel": "주제 탐색",
+    "previous": "이전",
+    "next": "다음"
+  },
+  "parts": {
+    "1": {
+      "tagline": "일을 왜곡하지 않고 측정하는 이유, 대상, 방법.",
+      "title": "측정의 기초"
+    },
+    "2": {
+      "tagline": "서비스도 운영하는 애자일 팀에서 일이 흘러가는 방식.",
+      "title": "흐름과 지속적 전달 지표"
+    },
+    "3": {
+      "tagline": "지원과 복구가 사용자에게 얼마나 잘 작동하는가.",
+      "title": "서비스 데스크, 인시던트, 요청 지표"
+    },
+    "4": {
+      "tagline": "변경과 학습이 안정성과 속도에 미치는 영향.",
+      "title": "문제, 변경, 릴리스 지표"
+    },
+    "5": {
+      "tagline": "사용자가 믿고 기댈 수 있는 것.",
+      "title": "서비스 수준, 가용성, 신뢰성 지표"
+    },
+    "6": {
+      "tagline": "사용자의 상황이 나아졌는가.",
+      "title": "고객과 경험 지표"
+    },
+    "7": {
+      "tagline": "무엇을 가지고 있고 얼마가 드는지 알기.",
+      "title": "자산, 구성, 재무 지표"
+    },
+    "8": {
+      "tagline": "신뢰, 통제, 그리고 서비스 뒤의 제3자.",
+      "title": "보안, 위험, 규정 준수, 공급업체 지표"
+    },
+    "9": {
+      "tagline": "사람의 건강과 개선하는 습관.",
+      "title": "사람, 팀, 개선 지표"
+    },
+    "10": {
+      "tagline": "AI, 자동화, 분석이 숫자에 가져오는 변화.",
+      "title": "AI 시대의 지표"
+    },
+    "11": {
+      "tagline": "몇 가지 측정에서 습관으로.",
+      "title": "지표 프로그램 구축"
+    },
+    "12": {
+      "tagline": "참고 자료.",
+      "title": "부록"
+    }
+  },
+  "results": {
+    "button": "검색",
+    "label": "검색 결과",
+    "heading": "{$query} 검색 결과",
+    "failed": "검색 색인을 불러오지 못했습니다. 나중에 다시 시도하세요.",
+    "searching": "검색 중…",
+    "none": "{$query}에 일치하는 항목이 없습니다.",
+    "browse": "대신 목차를 둘러보세요.",
+    "count": "결과 {$count}건.",
+    "limited": "상위 {$count}건을 표시합니다."
+  },
+  "skillsPage": {
+    "title": "AI 스킬",
+    "lead": "각 주제가 링크하는 Claude Code 형식의 스킬입니다. 각각 자신의 스킬 폴더에 복사해 쓸 수 있는 SKILL.md 파일입니다.",
+    "viewSource": "GitHub에서 보기",
+    "backToList": "모든 스킬"
+  },
+  "error": {
+    "label": "오류 {$status}",
+    "notFound": "이 페이지는 여기에 없습니다",
+    "generic": "문제가 발생했습니다",
+    "unknown": "알 수 없는 오류",
+    "try": "목차를 살펴보세요."
+  },
+  "home": {
+    "continue": "서비스 관리 지표로 계속"
+  },
+  "topicWords": [
+    "주제",
+    "토픽"
+  ]
+}
