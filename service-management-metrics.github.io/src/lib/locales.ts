@@ -14,6 +14,7 @@ export const LOCALES: Locale[] = [
   { slug: 'en-gb', label: 'English - Great Britain' },
   { slug: 'en-gb-oxendict', label: 'English - Great Britain - Oxford' },
   { slug: 'en-us', label: 'English - United States' },
+  { slug: 'es-001', label: 'Español - Mundo' },
   { slug: 'hi-001', label: 'हिन्दी - विश्व' },
   { slug: 'hi-in', label: 'हिन्दी - भारत' },
   { slug: 'ru-001', label: 'Русский - Мир' },

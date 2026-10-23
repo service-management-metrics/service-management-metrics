@@ -30,6 +30,11 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "A working book on measuring service management well through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",
   "translations": "Translations: "
  },
+ "es-001": {
+  "tagline": "Mide la gestión de servicios en la era de ITIL 5 sin distorsionar el trabajo.",
+  "intro": "Un libro práctico sobre cómo medir bien la gestión de servicios a través de cuatro lentes: ágil, IA, automatización y analítica. Cada métrica indica su vector de manipulación y la barrera de protección que lo detecta. Las métricas describen equipos, servicios y sistemas, y nunca se usan para clasificar a las personas.",
+  "translations": "Traducciones: "
+ },
  "hi-001": {
   "tagline": "ITIL 5 के युग में सेवा प्रबंधन को मापें, काम को विकृत किए बिना।",
   "intro": "एजाइल, AI, स्वचालन और विश्लेषण के चार दृष्टिकोणों से सेवा प्रबंधन को अच्छी तरह मापने की व्यावहारिक पुस्तक। हर मीट्रिक अपना गेमिंग का रास्ता और उसे पकड़ने वाली सुरक्षा-रेखा बताती है। मीट्रिक्स टीमों, सेवाओं और प्रणालियों का वर्णन करते हैं, व्यक्तियों का कभी नहीं।",
