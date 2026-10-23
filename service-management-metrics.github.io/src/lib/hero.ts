@@ -35,6 +35,11 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "Un libro práctico sobre cómo medir bien la gestión de servicios a través de cuatro lentes: ágil, IA, automatización y analítica. Cada métrica indica su vector de manipulación y la barrera de protección que lo detecta. Las métricas describen equipos, servicios y sistemas, y nunca se usan para clasificar a las personas.",
   "translations": "Traducciones: "
  },
+ "fr-001": {
+  "tagline": "Mesurez la gestion des services à l'ère d'ITIL 5 sans fausser le travail.",
+  "intro": "Un livre pratique pour bien mesurer la gestion des services à travers quatre angles : agilité, IA, automatisation et analytique. Chaque métrique indique son vecteur de détournement et le garde-fou qui le détecte. Les métriques décrivent des équipes, des services et des systèmes, et ne servent jamais à classer des personnes.",
+  "translations": "Traductions : "
+ },
  "hi-001": {
   "tagline": "ITIL 5 के युग में सेवा प्रबंधन को मापें, काम को विकृत किए बिना।",
   "intro": "एजाइल, AI, स्वचालन और विश्लेषण के चार दृष्टिकोणों से सेवा प्रबंधन को अच्छी तरह मापने की व्यावहारिक पुस्तक। हर मीट्रिक अपना गेमिंग का रास्ता और उसे पकड़ने वाली सुरक्षा-रेखा बताती है। मीट्रिक्स टीमों, सेवाओं और प्रणालियों का वर्णन करते हैं, व्यक्तियों का कभी नहीं।",
