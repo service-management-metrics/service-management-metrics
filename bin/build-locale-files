@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+"""Write each locale's own files: index.md (translated README), README.md symlink,
+.locale-peer-id, and sitemap.xml (the locale's routes on the published site).
+Also gives every locale subdirectory (topics, terminology, glossary, index) a
+.locale-peer-id and a README.md symlink to index.md.
+
+    bin/build-locale-files            # all locales under locales/
+    bin/build-locale-files zh-cn ...  # only these
+
+A locale's directory names come from locales/<locale>/locale.json ("dirs"), and
+its UI words for the index page from "strings". English locales use the defaults.
+The topic list comes from each locale's own topic headlines, matched by
+.locale-peer-id, so links and titles never drift.
+"""
+import csv, hashlib, json, os, sys, uuid
+from urllib.parse import quote
+
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SITE = "https://service-management-metrics.github.io"
+CANON = "en-001"
+LOCALES = os.path.join(root, "locales")
+EXTRA = []  # section directories besides topics that hold an index.md
+DEFAULT_STRINGS = {
+    "title": "Service Management Metrics",
+    "tagline": "Measure service management without distorting the work.",
+    "intro": "A working book of 94 topics in 12 parts on measuring service management well in the age of ITIL 5, through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",
+    "contents": "Contents",
+    "part_fmt": "Part {n}",
+    "read": "Read on the web"
+}
+
+
+def load(loc):
+    p = os.path.join(LOCALES, loc, "locale.json")
+    d = json.load(open(p, encoding="utf-8")) if os.path.isfile(p) else {}
+    return d.get("dirs", {}), {**DEFAULT_STRINGS, **d.get("strings", {})}
+
+
+def headline(path):
+    with open(path, encoding="utf-8") as f:
+        return f.readline().strip()[2:].strip()
+
+
+def stable_id(name):
+    return hashlib.md5(f"{SITE}:{name}".encode()).hexdigest() + "\n"
+
+
+def link_readme(d):
+    rd = os.path.join(d, "README.md")
+    if not os.path.islink(rd):
+        if os.path.lexists(rd):
+            os.remove(rd)
+        os.symlink("index.md", rd)
+
+
+rows = list(csv.DictReader(open(os.path.join(root, "spec", "topics.tsv"), encoding="utf-8"), delimiter="\t"))
+canon_ids = {r["slug"]: open(os.path.join(LOCALES, CANON, "topics", r["slug"], ".locale-peer-id")).read().strip() for r in rows}
+
+# The locale index shares one peer id across locales, assigned once.
+idfile = os.path.join(LOCALES, CANON, ".locale-peer-id")
+if not os.path.isfile(idfile):
+    open(idfile, "w").write(uuid.uuid4().hex + "\n")
+locale_id = open(idfile).read()
+
+# Section ids are shared across locales. Keep any id already assigned.
+section_ids = {}
+for name in ["terminology"] + EXTRA:
+    found = None
+    for loc in sorted(os.listdir(LOCALES)):
+        ldirs, _ = load(loc)
+        p = os.path.join(LOCALES, loc, ldirs.get(name, name), ".locale-peer-id")
+        if os.path.isfile(p):
+            found = open(p).read()
+            break
+    section_ids[name] = found or stable_id(name)
+
+targets = sys.argv[1:] or sorted(d for d in os.listdir(LOCALES) if os.path.isdir(os.path.join(LOCALES, d)))
+for loc in targets:
+    dirs, st = load(loc)
+    topics_dir = dirs.get("topics", "topics")
+    contents_dir = dirs.get("contents", "contents")
+    base = os.path.join(LOCALES, loc, topics_dir)
+    if loc != CANON:
+        topics_id = os.path.join(base, ".locale-peer-id")
+        if not os.path.isfile(topics_id):
+            open(topics_id, "w").write(open(os.path.join(LOCALES, CANON, "topics", ".locale-peer-id")).read())
+        for name in ["terminology"] + EXTRA:
+            d = os.path.join(LOCALES, loc, dirs.get(name, name))
+            if os.path.isfile(os.path.join(d, "index.md")):
+                link_readme(d)
+                if not os.path.isfile(os.path.join(d, ".locale-peer-id")):
+                    open(os.path.join(d, ".locale-peer-id"), "w").write(section_ids[name])
+    by_id = {}
+    for d in sorted(os.listdir(base)):
+        pid = os.path.join(base, d, ".locale-peer-id")
+        if os.path.isfile(pid):
+            by_id[open(pid).read().strip()] = d
+    out = [f"# {st['title']}", "", f"**{st['tagline']}**", "", st["intro"], "", f"## {st['contents']}", ""]
+    urls = [f"{SITE}/{loc}/"]
+    urls.append(f"{SITE}/{loc}/{quote(contents_dir)}/")
+    for name in EXTRA:
+        if os.path.isfile(os.path.join(LOCALES, loc, dirs.get(name, name), "index.md")) or loc == CANON:
+            urls.append(f"{SITE}/{loc}/{quote(dirs.get(name, name))}/")
+    part = None
+    for r in rows:
+        slug = by_id.get(canon_ids[r["slug"]])
+        if not slug:
+            continue
+        title = headline(os.path.join(base, slug, "index.md"))
+        if r["part"] != part:
+            part = r["part"]
+            out += ["", "### " + st["part_fmt"].format(n=part), ""]
+        out.append(f"- [{r['number']} {title}]({topics_dir}/{slug}/index.md)")
+        urls.append(f"{SITE}/{loc}/{quote(topics_dir)}/{quote(slug)}/")
+    out += ["", f"[{st['read']}]({SITE}/{loc}/{quote(contents_dir)}/)", ""]
+    d = os.path.join(LOCALES, loc)
+    open(os.path.join(d, "index.md"), "w", encoding="utf-8").write("\n".join(out))
+    link_readme(d)
+    open(os.path.join(d, ".locale-peer-id"), "w").write(locale_id)
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    sm += [f"  <url><loc>{u}</loc></url>" for u in urls] + ["</urlset>", ""]
+    open(os.path.join(d, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(sm))
+    print(f"{loc}: index.md, sitemap.xml ({len(urls)} urls)")

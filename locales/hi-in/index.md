@@ -1,0 +1,140 @@
+# सेवा प्रबंधन मीट्रिक्स
+
+**सेवा प्रबंधन को मापें, काम को विकृत किए बिना।**
+
+एजाइल, AI, स्वचालन और विश्लेषण के चार दृष्टिकोणों से सेवा प्रबंधन को अच्छी तरह मापने की व्यावहारिक पुस्तक। हर मीट्रिक अपना गेमिंग का रास्ता और उसे पकड़ने वाली सुरक्षा-रेखा बताती है। मीट्रिक्स टीमों, सेवाओं और प्रणालियों का वर्णन करते हैं, व्यक्तियों का कभी नहीं।
+
+## विषय-सूची
+
+
+### भाग 1
+
+- [1.0 भाग 1 का परिचय: मापन की बुनियाद](विषय/foundations-of-measurement/index.md)
+- [1.1 सेवा प्रबंधन को क्यों मापें](विषय/why-measure-service-management/index.md)
+- [1.2 गुडहार्ट का नियम और मीट्रिक्स का मनोविज्ञान](विषय/goodharts-law-and-the-psychology-of-metrics/index.md)
+- [1.3 उत्पादन से ऊपर परिणाम: क्या मापें, यह चुनना](विषय/outcomes-over-output/index.md)
+- [1.4 मीट्रिक्स का शासन और स्वामित्व](विषय/metrics-governance-and-ownership/index.md)
+- [1.5 डेटा स्रोत और इंस्ट्रूमेंटेशन](विषय/data-sources-and-instrumentation/index.md)
+- [1.6 सेवा मीट्रिक्स के लिए सांख्यिकीय साक्षरता](विषय/statistical-literacy-for-service-metrics/index.md)
+- [1.7 मापन ढाँचे](विषय/measurement-frameworks/index.md)
+- [1.8 ITIL 5 मापन और मूल्य परिणाम](विषय/itil-5-measurement-and-value-outcomes/index.md)
+
+### भाग 2
+
+- [2.0 भाग 2 का परिचय: प्रवाह और निरंतर डिलीवरी मीट्रिक्स](विषय/flow-metrics/index.md)
+- [2.1 प्रवाह के माप](विषय/flow-measures/index.md)
+- [2.2 लीड टाइम, साइकल टाइम और प्रवाह दक्षता](विषय/lead-time-cycle-time-and-flow-efficiency/index.md)
+- [2.3 प्रगतिरत कार्य और कतारें](विषय/work-in-process-and-queueing/index.md)
+- [2.4 मूल्य-धारा मीट्रिक्स](विषय/value-stream-metrics/index.md)
+- [2.5 डिलीवरी पूर्वानुमान और योजना मीट्रिक्स](विषय/delivery-forecasting-and-planning-metrics/index.md)
+- [2.6 बैकलॉग और रिफ़ाइनमेंट मीट्रिक्स](विषय/backlog-and-refinement-metrics/index.md)
+- [2.7 पुल रिक्वेस्ट और कोड रिव्यू मीट्रिक्स](विषय/pull-request-and-code-review-metrics/index.md)
+- [2.8 DORA मीट्रिक्स](विषय/dora-metrics/index.md)
+- [2.9 संचालन-कार्य और अनियोजित कार्य](विषय/operational-work-and-unplanned-work/index.md)
+
+### भाग 3
+
+- [3.0 भाग 3 का परिचय: सर्विस डेस्क, घटना और अनुरोध मीट्रिक्स](विषय/service-desk-incident-and-request-metrics/index.md)
+- [3.1 सर्विस डेस्क मीट्रिक्स](विषय/service-desk-metrics/index.md)
+- [3.2 घटनाओं की संख्या और प्राथमिकता](विषय/incident-volume-and-priority/index.md)
+- [3.3 घटना की प्रतिक्रिया और समाधान का समय](विषय/incident-response-and-resolution-time/index.md)
+- [3.4 बड़ी घटना के मीट्रिक्स](विषय/major-incident-metrics/index.md)
+- [3.5 सेवा अनुरोध पूर्ति मीट्रिक्स](विषय/service-request-fulfilment-metrics/index.md)
+- [3.6 ज्ञान प्रबंधन मीट्रिक्स](विषय/knowledge-management-metrics/index.md)
+- [3.7 स्व-सेवा और स्वचालन मीट्रिक्स](विषय/self-service-and-automation-metrics/index.md)
+
+### भाग 4
+
+- [4.0 भाग 4 का परिचय: समस्या, परिवर्तन और रिलीज़ मीट्रिक्स](विषय/problem-change-and-release-metrics/index.md)
+- [4.1 समस्या प्रबंधन मीट्रिक्स](विषय/problem-management-metrics/index.md)
+- [4.2 पोस्टमॉर्टम और सीखने के मीट्रिक्स](विषय/postmortem-and-learning-metrics/index.md)
+- [4.3 परिवर्तन सक्षमीकरण मीट्रिक्स](विषय/change-enablement-metrics/index.md)
+- [4.4 परिवर्तन की विफलता और पुनर्कार्य](विषय/change-failure-and-rework/index.md)
+- [4.5 रिलीज़ और डिप्लॉयमेंट मीट्रिक्स](विषय/release-and-deployment-metrics/index.md)
+- [4.6 तकनीकी ऋण और ज्ञात त्रुटियाँ](विषय/technical-debt-and-known-errors/index.md)
+
+### भाग 5
+
+- [5.0 भाग 5 का परिचय: सेवा-स्तर, उपलब्धता और विश्वसनीयता मीट्रिक्स](विषय/service-level-availability-and-reliability-metrics/index.md)
+- [5.1 SLA, OLA और XLA मीट्रिक्स](विषय/sla-ola-and-xla-metrics/index.md)
+- [5.2 SLI, SLO और त्रुटि बजट](विषय/slis-slos-and-error-budgets/index.md)
+- [5.3 उपलब्धता मीट्रिक्स](विषय/availability-metrics/index.md)
+- [5.4 क्षमता और प्रदर्शन मीट्रिक्स](विषय/capacity-and-performance-metrics/index.md)
+- [5.5 मॉनिटरिंग और अलर्ट गुणवत्ता मीट्रिक्स](विषय/monitoring-and-alert-quality-metrics/index.md)
+- [5.6 सेवा निरंतरता मीट्रिक्स](विषय/service-continuity-metrics/index.md)
+- [5.7 टॉइल और ऑन-कॉल मीट्रिक्स](विषय/toil-and-on-call-metrics/index.md)
+
+### भाग 6
+
+- [6.0 भाग 6 का परिचय: ग्राहक और अनुभव मीट्रिक्स](विषय/customer-and-experience-metrics/index.md)
+- [6.1 ग्राहक संतुष्टि मीट्रिक्स](विषय/customer-satisfaction-metrics/index.md)
+- [6.2 अनुभव-स्तर समझौते](विषय/experience-level-agreements/index.md)
+- [6.3 सेवा अपनाने और कैटलॉग के मीट्रिक्स](विषय/service-adoption-and-catalog-metrics/index.md)
+- [6.4 उपयोगकर्ता और कर्मचारी का अनुभव](विषय/user-and-employee-experience/index.md)
+- [6.5 मूल्य की प्राप्ति और व्यावसायिक परिणाम](विषय/value-realization-and-business-outcomes/index.md)
+
+### भाग 7
+
+- [7.0 भाग 7 का परिचय: परिसंपत्ति, कॉन्फ़िगरेशन और वित्तीय मीट्रिक्स](विषय/asset-configuration-and-financial-metrics/index.md)
+- [7.1 IT परिसंपत्ति प्रबंधन मीट्रिक्स](विषय/it-asset-management-metrics/index.md)
+- [7.2 सॉफ़्टवेयर परिसंपत्ति और लाइसेंस मीट्रिक्स](विषय/software-asset-and-license-metrics/index.md)
+- [7.3 हार्डवेयर परिसंपत्ति जीवनचक्र मीट्रिक्स](विषय/hardware-asset-lifecycle-metrics/index.md)
+- [7.4 कॉन्फ़िगरेशन और CMDB गुणवत्ता मीट्रिक्स](विषय/configuration-and-cmdb-quality-metrics/index.md)
+- [7.5 सेवा लागत और इकाई अर्थशास्त्र](विषय/service-cost-and-unit-economics/index.md)
+- [7.6 FinOps और क्लाउड लागत मीट्रिक्स](विषय/finops-and-cloud-cost-metrics/index.md)
+- [7.7 निवेश पर प्रतिफल और व्यावसायिक औचित्य](विषय/return-on-investment-and-business-case/index.md)
+
+### भाग 8
+
+- [8.0 भाग 8 का परिचय: सुरक्षा, जोखिम, अनुपालन और आपूर्तिकर्ता मीट्रिक्स](विषय/security-risk-compliance-and-supplier-metrics/index.md)
+- [8.1 सुरक्षा घटना और संवेदनशीलता मीट्रिक्स](विषय/security-incident-and-vulnerability-metrics/index.md)
+- [8.2 जोखिम और नियंत्रण मीट्रिक्स](विषय/risk-and-control-metrics/index.md)
+- [8.3 अनुपालन और ऑडिट मीट्रिक्स](विषय/compliance-and-audit-metrics/index.md)
+- [8.4 आपूर्तिकर्ता और अनुबंध मीट्रिक्स](विषय/supplier-and-contract-metrics/index.md)
+- [8.5 विनियमित और सरकारी रिपोर्टिंग](विषय/regulated-and-government-reporting/index.md)
+
+### भाग 9
+
+- [9.0 भाग 9 का परिचय: लोग, टीमें और सुधार मीट्रिक्स](विषय/people-teams-and-improvement-metrics/index.md)
+- [9.1 टीम स्वास्थ्य और डेवलपर अनुभव](विषय/team-health-and-developer-experience/index.md)
+- [9.2 संतुष्टि और कल्याण मीट्रिक्स](विषय/satisfaction-and-well-being-metrics/index.md)
+- [9.3 सहयोग और हस्तांतरण मीट्रिक्स](विषय/collaboration-and-handoff-metrics/index.md)
+- [9.4 कौशल और सीखने के मीट्रिक्स](विषय/skills-and-learning-metrics/index.md)
+- [9.5 सतत सुधार मीट्रिक्स](विषय/continual-improvement-metrics/index.md)
+- [9.6 संगठनात्मक परिवर्तन और अपनाने के मीट्रिक्स](विषय/organizational-change-and-adoption-metrics/index.md)
+
+### भाग 10
+
+- [10.0 भाग 10 का परिचय: AI, स्वचालन और विश्लेषण के मीट्रिक्स](विषय/metrics-for-ai-automation-and-analytics/index.md)
+- [10.1 सेवा प्रबंधन मापन में AI](विषय/ai-in-service-management-measurement/index.md)
+- [10.2 AI-सहायता प्राप्त कार्य को मापना](विषय/measuring-ai-assisted-work/index.md)
+- [10.3 AI एजेंट और चैटबॉट मीट्रिक्स](विषय/ai-agent-and-chatbot-metrics/index.md)
+- [10.4 मीट्रिक की स्फीति और गुणवत्ता का क्षरण](विषय/metric-inflation-and-quality-dilution/index.md)
+- [10.5 AI शासन और जोखिम मीट्रिक्स](विषय/ai-governance-and-risk-metrics/index.md)
+- [10.6 स्वचालन और ऑर्केस्ट्रेशन मीट्रिक्स](विषय/automation-and-orchestration-metrics/index.md)
+- [10.7 पाइपलाइन और स्वचालित परिवर्तन मीट्रिक्स](विषय/pipeline-and-automated-change-metrics/index.md)
+- [10.8 विश्लेषण और डेटा गुणवत्ता मीट्रिक्स](विषय/analytics-and-data-quality-metrics/index.md)
+- [10.9 पूर्वानुमान और प्रेडिक्टिव विश्लेषण मीट्रिक्स](विषय/forecasting-and-predictive-analytics-metrics/index.md)
+- [10.10 ऑब्ज़र्वेबिलिटी और टेलीमेट्री मीट्रिक्स](विषय/observability-and-telemetry-metrics/index.md)
+
+### भाग 11
+
+- [11.0 भाग 11 का परिचय: मीट्रिक्स कार्यक्रम का निर्माण](विषय/building-a-metrics-program/index.md)
+- [11.1 सेवा मीट्रिक्स डैशबोर्ड की रूपरेखा](विषय/designing-a-service-metrics-dashboard/index.md)
+- [11.2 औज़ारों का परिदृश्य](विषय/tooling-landscape/index.md)
+- [11.3 भय पैदा किए बिना मीट्रिक्स लागू करना](विषय/rolling-out-metrics-without-breeding-fear/index.md)
+- [11.4 मीट्रिक्स कार्यक्रमों के लिए परिपक्वता मॉडल](विषय/maturity-model-for-metrics-programs/index.md)
+- [11.5 क्रमिक अपनाने की रूपरेखा](विषय/incremental-adoption-roadmap/index.md)
+
+### भाग 12
+
+- [12.0 परिशिष्ट](विषय/appendices/index.md)
+- [12.1 शब्दावली](विषय/glossary/index.md)
+- [12.2 मीट्रिक परिभाषाओं और सूत्रों का संदर्भ](विषय/metric-definitions-and-formulas-reference/index.md)
+- [12.3 जाँच-सूचियाँ](विषय/checklists/index.md)
+- [12.4 टेम्पलेट](विषय/templates/index.md)
+- [12.5 परिपक्वता स्व-मूल्यांकन](विषय/maturity-self-assessment/index.md)
+- [12.6 संदर्भ और आगे का अध्ययन](विषय/references-and-further-reading/index.md)
+- [12.7 अनुक्रमणिका](विषय/index/index.md)
+
+[वेब पर पढ़ें](https://service-management-metrics.github.io/hi-in/contents/)
