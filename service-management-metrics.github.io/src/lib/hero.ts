@@ -115,6 +115,11 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "Kitabu cha kazi kuhusu kupima vizuri usimamizi wa huduma kupitia lenzi nne: uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi. Kila kipimo kinataja njia yake ya kupotoshwa na kizuizi kinachokikamata. Vipimo vinaelezea timu, huduma na mifumo, na havitumiki kamwe kupanga watu kwa vyeo.",
   "translations": "Tafsiri: "
  },
+ "ur-001": {
+  "tagline": "آئی ٹی آئی ایل 5 کے دور میں خدمات کے انتظام کو کام بگاڑے بغیر ناپیں۔",
+  "intro": "چار زاویوں سے خدمات کے انتظام کو اچھی طرح ناپنے پر ایک عملی کتاب: ایجائل، مصنوعی ذہانت، خودکاری اور تجزیات۔ ہر میٹرک اپنے بگاڑ کا راستہ اور اسے پکڑنے والی حفاظتی حد بتاتا ہے۔ میٹرکس ٹیموں، خدمات اور نظاموں کو بیان کرتے ہیں، اور لوگوں کی درجہ بندی کے لیے کبھی استعمال نہیں ہوتے۔",
+  "translations": "تراجم: "
+ },
  "vi-001": {
   "tagline": "Đo lường quản lý dịch vụ trong kỷ nguyên ITIL 5 mà không làm méo mó công việc.",
   "intro": "Một cuốn sách thực hành về cách đo lường tốt quản lý dịch vụ qua bốn lăng kính: linh hoạt, AI, tự động hóa và phân tích. Mỗi chỉ số nêu rõ vectơ lợi dụng và rào chắn phát hiện được điều đó. Chỉ số mô tả đội nhóm, dịch vụ và hệ thống, và không bao giờ dùng để xếp hạng con người.",
