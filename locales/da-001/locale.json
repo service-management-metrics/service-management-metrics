@@ -1,0 +1,21 @@
+{
+  "name": "Dansk (verden)",
+  "topic_word": "emne",
+  "topics_word": "emner",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "emner",
+    "contents": "indhold",
+    "terminology": "terminologi"
+  },
+  "strings": {
+    "title": "Målinger for servicestyring",
+    "tagline": "Mål servicestyring uden at forvride arbejdet.",
+    "intro": "En arbejdsbog om at måle servicestyring godt gennem fire linser: agilitet, AI, automatisering og analyse. Hver måling angiver sin manipulationsvektor og det autoværn, der fanger den. Målinger beskriver teams, tjenester og systemer og bruges aldrig til at rangordne mennesker.",
+    "contents": "Indhold",
+    "read": "Læs på nettet",
+    "part_fmt": "Del {n}"
+  }
+}

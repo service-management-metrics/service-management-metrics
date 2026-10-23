@@ -1,0 +1,3 @@
+# Værdirealisering og forretningsresultater
+
+<!-- stub -->

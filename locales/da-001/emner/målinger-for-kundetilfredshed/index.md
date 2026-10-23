@@ -1,0 +1,3 @@
+# Målinger for kundetilfredshed
+
+<!-- stub -->
