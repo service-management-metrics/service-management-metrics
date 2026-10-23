@@ -70,6 +70,16 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "애자일, AI, 자동화, 분석이라는 네 가지 렌즈로 서비스 관리를 제대로 측정하는 방법을 담은 실무서입니다. 모든 지표에는 악용될 수 있는 방식과 이를 잡아내는 방호책이 함께 나와 있습니다. 지표는 팀, 서비스, 시스템을 설명할 뿐 개인의 순위를 매기는 데 쓰이지 않습니다.",
   "translations": "번역: "
  },
+ "nl-001": {
+  "tagline": "Meet servicemanagement in het tijdperk van ITIL 5 zonder het werk te vertekenen.",
+  "intro": "Een werkboek over het goed meten van servicemanagement door vier lenzen: agile, AI, automatisering en analytics. Bij elke metriek staat de manipulatievector en de vangrail die die opvangt. Metrieken beschrijven teams, services en systemen en worden nooit gebruikt om mensen te rangschikken.",
+  "translations": "Vertalingen: "
+ },
+ "nl-nl": {
+  "tagline": "Meet servicemanagement in het tijdperk van ITIL 5 zonder het werk te vertekenen.",
+  "intro": "Een werkboek over het goed meten van servicemanagement door vier lenzen: agile, AI, automatisering en analytics. Bij elke metriek staat de manipulatievector en de vangrail die die opvangt. Metrieken beschrijven teams, services en systemen en worden nooit gebruikt om mensen te rangschikken.",
+  "translations": "Vertalingen: "
+ },
  "ru-001": {
   "tagline": "Измеряйте управление услугами в эпоху ITIL 5, не искажая работу.",
   "intro": "Практическая книга об измерении управления услугами через четыре линзы: гибкость, ИИ, автоматизацию и аналитику. Для каждой метрики указаны вектор манипуляции и ограждение, которое его выявляет. Метрики описывают команды, услуги и системы и никогда не служат для ранжирования людей.",

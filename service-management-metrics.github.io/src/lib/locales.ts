@@ -22,6 +22,8 @@ export const LOCALES: Locale[] = [
   { slug: 'ja-jp', label: '日本語 - 日本' },
   { slug: 'ko-001', label: '한국어 - 세계' },
   { slug: 'ko-kr', label: '한국어 - 대한민국' },
+  { slug: 'nl-001', label: 'Nederlands - Wereld' },
+  { slug: 'nl-nl', label: 'Nederlands - Nederland' },
   { slug: 'ru-001', label: 'Русский - Мир' },
   { slug: 'sv-001', label: 'Svenska - Världen' },
   { slug: 'sv-se', label: 'Svenska - Sverige' },

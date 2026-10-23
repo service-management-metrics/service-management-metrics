@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Nederlands (wereld)"
+  },
+  "siteTitle": "Metrieken voor servicemanagement",
+  "skipToContent": "Ga naar de inhoud",
+  "nav": {
+    "contents": "Inhoud",
+    "skills": "Vaardigheden",
+    "source": "Bron"
+  },
+  "picker": {
+    "theme": "Thema",
+    "locale": "Taal",
+    "textSize": "Tekstgrootte",
+    "share": "Delen",
+    "search": "Zoeken",
+    "searchInput": "Zoek in het boek",
+    "searchSubmit": "Zoeken"
+  },
+  "share": {
+    "emailLink": "Link mailen",
+    "shareOnLinkedIn": "Delen op LinkedIn",
+    "shareOnReddit": "Delen op Reddit",
+    "shareOnBluesky": "Delen op Bluesky",
+    "shareOnMastodon": "Delen op Mastodon",
+    "copyLink": "Link kopiëren",
+    "copied": "Gekopieerd",
+    "copyFailed": "Kopiëren mislukt"
+  },
+  "links": {
+    "label": "Links",
+    "llms": "llms.txt (voor AI-agents)",
+    "skills": "AI-vaardigheden op GitHub",
+    "issues": "Issuetracker"
+  },
+  "footer": {
+    "tagline": "Meet servicemanagement zonder het werk te vertekenen.",
+    "sourceAndContributions": "Bron en bijdragen:",
+    "builtWith": "Gebouwd met",
+    "ledBy": "Gemaakt door"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "contents": "Inhoud",
+    "skills": "Vaardigheden",
+    "label": "Kruimelpad"
+  },
+  "contents": {
+    "pageTitle": "Inhoud",
+    "lead": "Twaalf delen en 94 onderwerpen over het meten van servicemanagement in het tijdperk van ITIL 5, door de lenzen agile, AI, automatisering en analytics, met voor elke metriek manipulatievectoren en vangrails, discussievragen, AI-prompts en AI-vaardigheden.",
+    "readingIn": "Lezen in het {$language}",
+    "part": "Deel {$number}",
+    "reference": "Naslag",
+    "comingSoon": "binnenkort"
+  },
+  "topic": {
+    "eyebrow": "Onderwerp {$number}",
+    "paginationLabel": "Onderwerpnavigatie",
+    "previous": "Vorige",
+    "next": "Volgende"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Waarom, wat en hoe je meet zonder het werk te vertekenen.",
+      "title": "Grondslagen van meten"
+    },
+    "2": {
+      "tagline": "Hoe werk door agile teams stroomt die ook diensten draaien.",
+      "title": "Metrieken voor stroom en continue oplevering"
+    },
+    "3": {
+      "tagline": "Hoe goed ondersteuning en herstel voor gebruikers werken.",
+      "title": "Metrieken voor servicedesk, incidenten en verzoeken"
+    },
+    "4": {
+      "tagline": "Hoe wijziging en leren stabiliteit en snelheid beïnvloeden.",
+      "title": "Metrieken voor problemen, wijzigingen en releases"
+    },
+    "5": {
+      "tagline": "Waar gebruikers op kunnen rekenen.",
+      "title": "Metrieken voor serviceniveau, beschikbaarheid en betrouwbaarheid"
+    },
+    "6": {
+      "tagline": "Of gebruikers er beter van worden.",
+      "title": "Metrieken voor klanten en ervaring"
+    },
+    "7": {
+      "tagline": "Weten wat je hebt en wat het kost.",
+      "title": "Metrieken voor assets, configuratie en financiën"
+    },
+    "8": {
+      "tagline": "Vertrouwen, beheersing en de derden achter de dienst.",
+      "title": "Metrieken voor beveiliging, risico, compliance en leveranciers"
+    },
+    "9": {
+      "tagline": "De gezondheid van mensen en de gewoonte om te verbeteren.",
+      "title": "Metrieken voor mensen, teams en verbetering"
+    },
+    "10": {
+      "tagline": "Wat AI, automatisering en analytics veranderen aan de cijfers.",
+      "title": "Metrieken in het tijdperk van AI"
+    },
+    "11": {
+      "tagline": "Van een handvol metingen naar een gewoonte.",
+      "title": "Een metriekenprogramma opbouwen"
+    },
+    "12": {
+      "tagline": "Naslagmateriaal.",
+      "title": "Bijlagen"
+    }
+  },
+  "results": {
+    "button": "Zoeken",
+    "label": "Zoekresultaten",
+    "heading": "Zoekresultaten voor {$query}",
+    "failed": "De zoekindex kon niet worden geladen. Probeer het later opnieuw.",
+    "searching": "Zoeken…",
+    "none": "Niets gevonden voor {$query}.",
+    "browse": "Blader in plaats daarvan door de inhoud.",
+    "count": "{$count} resultaten.",
+    "limited": "De beste {$count} resultaten worden getoond."
+  },
+  "skillsPage": {
+    "title": "AI-vaardigheden",
+    "lead": "Vaardigheden in Claude Code-formaat waar de onderwerpen naar verwijzen. Elke vaardigheid is een SKILL.md-bestand dat je naar je eigen vaardighedenmap kunt kopiëren.",
+    "viewSource": "Bekijk op GitHub",
+    "backToList": "Alle vaardigheden"
+  },
+  "error": {
+    "label": "Fout {$status}",
+    "notFound": "Die pagina is hier niet",
+    "generic": "Er ging iets mis",
+    "unknown": "Onbekende fout",
+    "try": "Probeer de inhoud."
+  },
+  "home": {
+    "continue": "Verder naar Metrieken voor servicemanagement"
+  },
+  "topicWords": [
+    "onderwerp",
+    "onderwerpen"
+  ]
+}
