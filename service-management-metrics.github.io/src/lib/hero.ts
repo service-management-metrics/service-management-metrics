@@ -75,6 +75,16 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "Практическая книга об измерении управления услугами через четыре линзы: гибкость, ИИ, автоматизацию и аналитику. Для каждой метрики указаны вектор манипуляции и ограждение, которое его выявляет. Метрики описывают команды, услуги и системы и никогда не служат для ранжирования людей.",
   "translations": "Переводы: "
  },
+ "sw-001": {
+  "tagline": "Pima usimamizi wa huduma katika enzi ya ITIL 5 bila kupotosha kazi.",
+  "intro": "Kitabu cha kazi kuhusu kupima vizuri usimamizi wa huduma kupitia lenzi nne: uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi. Kila kipimo kinataja njia yake ya kupotoshwa na kizuizi kinachokikamata. Vipimo vinaelezea timu, huduma na mifumo, na havitumiki kamwe kupanga watu kwa vyeo.",
+  "translations": "Tafsiri: "
+ },
+ "sw-tz": {
+  "tagline": "Pima usimamizi wa huduma katika enzi ya ITIL 5 bila kupotosha kazi.",
+  "intro": "Kitabu cha kazi kuhusu kupima vizuri usimamizi wa huduma kupitia lenzi nne: uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi. Kila kipimo kinataja njia yake ya kupotoshwa na kizuizi kinachokikamata. Vipimo vinaelezea timu, huduma na mifumo, na havitumiki kamwe kupanga watu kwa vyeo.",
+  "translations": "Tafsiri: "
+ },
  "zh-001": {
   "tagline": "在 ITIL 5 时代度量服务管理，而不扭曲工作。",
   "intro": "一本通过敏捷、AI、自动化与分析四个视角，把服务管理度量做好的实用之书。每项度量都指出它的钻空子途径和能发现它的护栏。度量描述的是团队、服务和系统，绝不针对个人。",

@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Kiswahili (dunia)"
+  },
+  "siteTitle": "Vipimo vya Usimamizi wa Huduma",
+  "skipToContent": "Ruka hadi maudhui",
+  "nav": {
+    "contents": "Yaliyomo",
+    "skills": "Ujuzi",
+    "source": "Chanzo"
+  },
+  "picker": {
+    "theme": "Mandhari",
+    "locale": "Lugha",
+    "textSize": "Ukubwa wa maandishi",
+    "share": "Shiriki",
+    "search": "Tafuta",
+    "searchInput": "Tafuta kitabuni",
+    "searchSubmit": "Tafuta"
+  },
+  "share": {
+    "emailLink": "Tuma kiungo kwa barua pepe",
+    "shareOnLinkedIn": "Shiriki kwenye LinkedIn",
+    "shareOnReddit": "Shiriki kwenye Reddit",
+    "shareOnBluesky": "Shiriki kwenye Bluesky",
+    "shareOnMastodon": "Shiriki kwenye Mastodon",
+    "copyLink": "Nakili kiungo",
+    "copied": "Kimenakiliwa",
+    "copyFailed": "Haikuweza kunakili"
+  },
+  "links": {
+    "label": "Viungo",
+    "llms": "llms.txt (kwa mawakala wa AI)",
+    "skills": "Ujuzi wa AI kwenye GitHub",
+    "issues": "Kifuatiliaji cha masuala"
+  },
+  "footer": {
+    "tagline": "Pima usimamizi wa huduma bila kupotosha kazi.",
+    "sourceAndContributions": "Chanzo na michango:",
+    "builtWith": "Imejengwa kwa",
+    "ledBy": "Imeundwa na"
+  },
+  "breadcrumb": {
+    "home": "Mwanzo",
+    "contents": "Yaliyomo",
+    "skills": "Ujuzi",
+    "label": "Njia ya kurasa"
+  },
+  "contents": {
+    "pageTitle": "Yaliyomo",
+    "lead": "Sehemu kumi na mbili na mada 94 kuhusu kupima usimamizi wa huduma katika enzi ya ITIL 5, kupitia lenzi za uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi, kila kipimo na njia za kupotosha na vizuizi, maswali ya majadiliano, maelekezo ya AI na ujuzi wa AI.",
+    "readingIn": "Kusoma kwa {$language}",
+    "part": "Sehemu ya {$number}",
+    "reference": "Rejeo",
+    "comingSoon": "inakuja hivi karibuni"
+  },
+  "topic": {
+    "eyebrow": "Mada ya {$number}",
+    "paginationLabel": "Urambazaji wa mada",
+    "previous": "Iliyotangulia",
+    "next": "Inayofuata"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Kwa nini, nini na jinsi ya kupima bila kupotosha kazi.",
+      "title": "Misingi ya Kupima"
+    },
+    "2": {
+      "tagline": "Jinsi kazi inavyopita katika timu za uchapuchapu zinazoendesha huduma pia.",
+      "title": "Vipimo vya Mtiririko na Utoaji Endelevu"
+    },
+    "3": {
+      "tagline": "Jinsi usaidizi na urejeshaji wa huduma unavyofanya kazi vizuri kwa watumiaji.",
+      "title": "Vipimo vya Dawati la Huduma, Matukio na Maombi"
+    },
+    "4": {
+      "tagline": "Jinsi mabadiliko na kujifunza kunavyoathiri uthabiti na kasi.",
+      "title": "Vipimo vya Matatizo, Mabadiliko na Matoleo"
+    },
+    "5": {
+      "tagline": "Kile ambacho watumiaji wanaweza kukitegemea.",
+      "title": "Vipimo vya Kiwango cha Huduma, Upatikanaji na Uaminifu"
+    },
+    "6": {
+      "tagline": "Kama watumiaji wamenufaika.",
+      "title": "Vipimo vya Wateja na Uzoefu"
+    },
+    "7": {
+      "tagline": "Kujua ulicho nacho na kinachogharimu.",
+      "title": "Vipimo vya Mali, Usanidi na Fedha"
+    },
+    "8": {
+      "tagline": "Uaminifu, udhibiti na wahusika wengine nyuma ya huduma.",
+      "title": "Vipimo vya Usalama, Hatari, Kufuata Sheria na Wasambazaji"
+    },
+    "9": {
+      "tagline": "Afya ya watu na tabia ya kuboresha.",
+      "title": "Vipimo vya Watu, Timu na Uboreshaji"
+    },
+    "10": {
+      "tagline": "Kile AI, uendeshaji otomatiki na uchanganuzi vinachobadilisha kuhusu namba.",
+      "title": "Vipimo katika Enzi ya AI"
+    },
+    "11": {
+      "tagline": "Kutoka vipimo vichache hadi tabia.",
+      "title": "Kujenga Programu ya Vipimo"
+    },
+    "12": {
+      "tagline": "Nyenzo za rejeo.",
+      "title": "Viambatisho"
+    }
+  },
+  "results": {
+    "button": "Tafuta",
+    "label": "Matokeo ya utafutaji",
+    "heading": "Matokeo ya utafutaji wa {$query}",
+    "failed": "Faharasa ya utafutaji haikuweza kupakiwa. Jaribu tena baadaye.",
+    "searching": "Inatafuta…",
+    "none": "Hakuna kilicholingana na {$query}.",
+    "browse": "Vinjari yaliyomo badala yake.",
+    "count": "Matokeo {$count}.",
+    "limited": "Inaonyesha matokeo bora {$count}."
+  },
+  "skillsPage": {
+    "title": "Ujuzi wa AI",
+    "lead": "Ujuzi katika muundo wa Claude Code ambao mada zinaunganisha nao. Kila mmoja ni faili la SKILL.md unaloweza kunakili kwenye folda yako ya ujuzi.",
+    "viewSource": "Tazama kwenye GitHub",
+    "backToList": "Ujuzi wote"
+  },
+  "error": {
+    "label": "Hitilafu {$status}",
+    "notFound": "Ukurasa huo haupo hapa",
+    "generic": "Kuna kitu kimekwenda vibaya",
+    "unknown": "Hitilafu isiyojulikana",
+    "try": "Jaribu yaliyomo."
+  },
+  "home": {
+    "continue": "Endelea kwenye Vipimo vya Usimamizi wa Huduma"
+  },
+  "topicWords": [
+    "mada",
+    "somo"
+  ]
+}
