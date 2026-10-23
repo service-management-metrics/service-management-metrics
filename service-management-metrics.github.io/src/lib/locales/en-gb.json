@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "English (Great Britain)"
+  },
+  "siteTitle": "Service Management Metrics",
+  "skipToContent": "Skip to content",
+  "nav": {
+    "contents": "Contents",
+    "skills": "Skills",
+    "source": "Source"
+  },
+  "picker": {
+    "theme": "Theme",
+    "locale": "Language",
+    "textSize": "Text size",
+    "share": "Share",
+    "search": "Search",
+    "searchInput": "Search the book",
+    "searchSubmit": "Search"
+  },
+  "share": {
+    "emailLink": "Email link",
+    "shareOnLinkedIn": "Share on LinkedIn",
+    "shareOnReddit": "Share on Reddit",
+    "shareOnBluesky": "Share on Bluesky",
+    "shareOnMastodon": "Share on Mastodon",
+    "copyLink": "Copy link",
+    "copied": "Copied",
+    "copyFailed": "Could not copy"
+  },
+  "links": {
+    "label": "Links",
+    "llms": "llms.txt (for AI agents)",
+    "skills": "AI skills on GitHub",
+    "issues": "Issue tracker"
+  },
+  "footer": {
+    "tagline": "Measure service management without distorting the work.",
+    "sourceAndContributions": "Source and contributions:",
+    "builtWith": "Built with",
+    "ledBy": "Created by"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "contents": "Contents",
+    "skills": "Skills",
+    "label": "Breadcrumb"
+  },
+  "contents": {
+    "pageTitle": "Contents",
+    "lead": "Twelve parts and 94 topics on measuring service management in the age of ITIL 5, through agile, AI, automation, and analytics lenses, each metric with gaming vectors and guardrails, discussion questions, AI prompts, and AI skills.",
+    "readingIn": "Reading in {$language}",
+    "part": "Part {$number}",
+    "reference": "Reference",
+    "comingSoon": "coming soon"
+  },
+  "topic": {
+    "eyebrow": "Topic {$number}",
+    "paginationLabel": "Topic navigation",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Why, what, and how to measure without distorting the work.",
+      "title": "Foundations of Measurement"
+    },
+    "2": {
+      "tagline": "How work moves through agile teams that also run services.",
+      "title": "Flow and Continuous Delivery Metrics"
+    },
+    "3": {
+      "tagline": "How well support and restoration work for users.",
+      "title": "Service Desk, Incident, and Request Metrics"
+    },
+    "4": {
+      "tagline": "How change and learning affect stability and speed.",
+      "title": "Problem, Change, and Release Metrics"
+    },
+    "5": {
+      "tagline": "What users can count on.",
+      "title": "Service Level, Availability, and Reliability Metrics"
+    },
+    "6": {
+      "tagline": "Whether users are better off.",
+      "title": "Customer and Experience Metrics"
+    },
+    "7": {
+      "tagline": "Knowing what you have and what it costs.",
+      "title": "Asset, Configuration, and Financial Metrics"
+    },
+    "8": {
+      "tagline": "Trust, control, and the third parties behind the service.",
+      "title": "Security, Risk, Compliance, and Supplier Metrics"
+    },
+    "9": {
+      "tagline": "The health of the people and the habit of improving.",
+      "title": "People, Teams, and Improvement Metrics"
+    },
+    "10": {
+      "tagline": "What AI, automation, and analytics change about the numbers.",
+      "title": "Metrics in the Age of AI"
+    },
+    "11": {
+      "tagline": "From a handful of measures to a habit.",
+      "title": "Building a Metrics Program"
+    },
+    "12": {
+      "tagline": "Reference material.",
+      "title": "Appendices"
+    }
+  },
+  "results": {
+    "button": "Search",
+    "label": "Search results",
+    "heading": "Search results for {$query}",
+    "failed": "The search index could not be loaded. Try again later.",
+    "searching": "Searching…",
+    "none": "Nothing matched {$query}.",
+    "browse": "Browse the contents instead.",
+    "count": ".input {$count :integer}\n.match $count\none {{1 result.}}\n*   {{{$count} results.}}",
+    "limited": "Showing the best {$count} results."
+  },
+  "skillsPage": {
+    "title": "AI skills",
+    "lead": "Skills in Claude Code format that the topics link to. Each is a SKILL.md file you can copy into your own skills folder.",
+    "viewSource": "View on GitHub",
+    "backToList": "All skills"
+  },
+  "error": {
+    "label": "Error {$status}",
+    "notFound": "That page is not here",
+    "generic": "Something went wrong",
+    "unknown": "Unknown error",
+    "try": "Try the contents."
+  },
+  "home": {
+    "continue": "Continue to Service Management Metrics"
+  },
+  "topicWords": [
+    "topic",
+    "topics"
+  ]
+}
