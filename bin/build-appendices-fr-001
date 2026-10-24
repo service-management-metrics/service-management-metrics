@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# Regenerates the fr-001 appendices 12.2 (metric definitions), 12.6 (references) and 12.7 (index)
+# from the fr-001 content topics. The home topic is the authority; rerun after any fr-001 topic changes.
+import os, re, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+VI = f"{root}/locales/fr-001/sujets"
+def nk(n): return [int(x) for x in n.split(".")]
+def sec(t, n):
+    m = re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", t, re.M | re.S)
+    return m.group(1) if m else ""
+def table(s):
+    out = []
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| Métrique |"):
+            out.append([x.strip() for x in l.strip().strip("|").split(" | ")])
+    return out
+def pid(path):
+    return open(path).read().strip()
+peer = {}
+for d in os.listdir(VI):
+    p = f"{VI}/{d}/.locale-peer-id"
+    if os.path.exists(p): peer[pid(p)] = d
+def adir(slug):
+    return peer[pid(f"{root}/locales/en-001/topics/{slug}/.locale-peer-id")]
+texts, titles, en = {}, {}, {}
+PARTS = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    d = adir(slug)
+    texts[num] = open(f"{VI}/{d}/index.md").read()
+    titles[num] = texts[num].splitlines()[0][2:]
+    en[num] = open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    if num.endswith(".0"):
+        PARTS[part] = re.sub(r"^Introduction à la partie \d+ : ", "", titles[num])
+
+# 12.2 metric definitions
+o = []; total = 0; miss = []; cur = None
+for part, num, slug, pt in rows:
+    if int(part) >= 12 or num.endswith(".0"): continue
+    t = texts[num]
+    md = table(sec(t, "Définitions des métriques")); gv = {c[0]: c for c in table(sec(t, "Vecteurs de détournement et garde-fous")) if len(c) == 3}
+    if part != cur:
+        o.append(f"\n## Partie {part} : {PARTS[part]}\n"); cur = part
+    o.append(f"### {num} {titles[num]}\n")
+    o.append(f"Sujet d'origine : (voir le sujet {num}, {titles[num]}).\n")
+    o.append("| Métrique | Définition | Formule | Unité | Source de données | Pratique ITIL | Équivalent agile | Cadence | Vecteur de détournement | Garde-fou |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c) != 8: miss.append((num, c[0], len(c))); continue
+        g = gv.get(c[0])
+        if not g: miss.append((num, c[0], "nogaming")); continue
+        o.append("| " + " | ".join(c[:8] + [g[1], g[2]]) + " |"); total += 1
+    o.append("")
+HEAD = """# Référentiel des définitions et formules de métriques
+
+Cette annexe énumère chaque métrique définie dans les sujets de contenu, regroupée par partie et par sujet. Chaque entrée porte la définition, la formule, l'unité, la source de données, la pratique ITIL liée, l'équivalent agile et la cadence du sujet d'origine, avec le vecteur de détournement et le garde-fou correspondants. Elle est générée à partir des deux sections « Définitions des métriques » et « Vecteurs de détournement et garde-fous » de chaque sujet : le sujet d'origine fait donc autorité. Si une entrée d'ici diffère de son sujet, le sujet l'emporte et l'annexe est régénérée.
+
+## Comment utiliser le référentiel
+
+- **Consultez avant d'adopter.** Avant de mettre une métrique dans un tableau de bord, lisez son entrée, vecteur de détournement et garde-fou compris, et appliquez le garde-fou avec elle (voir le sujet 1.3, Les résultats plutôt que la production : choisir ce qu'il faut mesurer).
+- **Mesurez des équipes, des services et des systèmes.** Aucune entrée n'est conçue pour classer des individus (voir le sujet 1.2, Loi de Goodhart et psychologie des métriques).
+- **Préférez le sujet d'origine pour les jugements.** Les formules d'ici sont brèves. Les définitions des termes, les notes sur les échantillons et les exemples pratiques se trouvent dans le sujet d'origine.
+- **Consignez vos variantes.** Si votre organisation modifie une définition, notez le changement et sa raison dans votre registre de métriques (voir le sujet 1.4, Gouvernance et responsabilité des métriques). Une fiche de métrique aide (voir le sujet 12.4, Modèles).
+- **Les chiffres illustratifs sont signalés.** Cette annexe ne contient aucune valeur de référence. Tous les chiffres proviennent de vos propres bases de référence.
+"""
+open(f"{VI}/{adir('metric-definitions-and-formulas-reference')}/index.md", "w").write(HEAD + "\n".join(o))
+print("12.2 metrics:", total, "missing:", miss, file=sys.stderr)
+
+# 12.6 references (entries are kept verbatim; the cited-in lists use topic numbers)
+refs = {}; wiki = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    m = re.search(r"^## Références et lectures complémentaires\n(.*?)\Z", texts[num], re.M | re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm = re.match(r"\d+\. (.*)", l)
+        if not mm: continue
+        r = mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm = re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$", r)
+            wiki.setdefault(wm.group(2), [wm.group(1), []])[1].append(num)
+        else:
+            refs.setdefault(r, []).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]", "", r.lower())
+cite = lambda ns: ", ".join(sorted(set(ns), key=nk))
+o = ["# Références et lectures complémentaires", "",
+     "Cette annexe réunit les sources citées dans les sujets de contenu, avec les sujets qui citent chacune. Les entrées sont classées par ordre alphabétique d'auteur ou d'organisme et conservées telles quelles dans leur forme d'origine. Le sujet d'origine reste l'endroit où voir comment une source est employée.", "",
+     "## À propos de la vérification", "",
+     "Les liens Wikipédia de ce livre ont été vérifiés pour qu'ils s'ouvrent. Les livres, articles, normes et guides ont été cités de mémoire par les auteurs et n'ont pas tous été confrontés aux originaux. Traitez les données bibliographiques (année, édition, titre) comme des pistes à confirmer avant de vous y appuyer dans un travail formel. Signalez les corrections par la skill de maintenance.", "",
+     "## Livres, articles, normes et guides", ""]
+for i, r in enumerate(sorted(refs, key=key), 1):
+    o.append(f"{i}. {r} (cité dans {cite(refs[r])})")
+o += ["", "## Articles de Wikipédia", ""]
+for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
+    o.append(f"{i}. Wikipedia, [{title}]({u}) (cité dans {cite(ns)})")
+open(f"{VI}/{adir('references-and-further-reading')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.6 refs:", len(refs), len(wiki), file=sys.stderr)
+
+# 12.7 index
+metrics = {}; wurl = {}
+url_title = {u: v[0] for u, v in wiki.items()}
+for num, t in texts.items():
+    if num.endswith(".0"): continue
+    for c in table(sec(t, "Définitions des métriques")):
+        metrics.setdefault(c[0], []).append(num)
+    body = t.split("## Références et lectures complémentaires")[0]
+    for m in re.finditer(r"\]\((https://en\.wikipedia\.org/wiki/[^)\s]+(?:\([^)]*\))?[^)\s]*)\)", body):
+        wurl.setdefault(m.group(1), set()).add(num)
+FW = ["ITIL 5", "ITIL 4", "ITIL", "DORA", "SPACE", "DevEx", "OKR", "GQM", "Balanced scorecard", "Goal-Question-Metric", "Site reliability", "Lean", "Kanban Guide", "COBIT", "ISO/IEC 20000", "ISO/IEC 27001", "NIST", "Cynefin", "Value stream mapping", "HEART", "Four Keys", "Westrum", "CMMI", "FinOps", "COPC", "Team Topologies", "Theory of constraints"]
+fw = {}
+for f in FW:
+    ns = [n for n, t in en.items() if re.search(rf"\b{re.escape(f)}\b", t.split("## References and further reading")[0])]
+    if ns: fw[f] = ns
+def fmt(ns): return ", ".join(sorted(set(ns), key=nk))
+o = ["# Index alphabétique", "",
+     "Concepts, cadres et métriques, chacun avec des renvois aux sujets où il apparaît. Les nombres sont des numéros de sujet. Les titres figurent dans la table des matières du README et dans la [structure](../../../../spec/structure.md). Pour des définitions brèves avec leurs sujets d'origine, voir le sujet 12.1, Glossaire.", "",
+     "## Cadres et modèles", ""]
+for f in sorted(fw, key=str.lower):
+    o.append(f"- **{f}**: {fmt(fw[f]) if len(fw[f]) <= 12 else fmt(sorted(fw[f], key=nk)[:12]) + ' et autres sujets'}")
+o += ["", "## Métriques", "", "Les noms des métriques tels qu'ils figurent dans le tableau de définitions de chaque sujet. Les entrées complètes sont dans l'annexe 12.2 (voir le sujet 12.2, Référentiel des définitions et formules de métriques).", ""]
+for k in sorted(metrics): o.append(f"- **{k}**: {fmt(metrics[k])}")
+o += ["", "## Concepts", "", "Les concepts proviennent des termes pour lesquels chaque sujet renvoie à Wikipédia comme contexte (les adresses des articles sont celles de la version anglaise). Le premier nombre est généralement le sujet qui explique le concept le plus complètement.", ""]
+for u in sorted(wurl, key=lambda u: url_title.get(u, u).lower()):
+    o.append(f"- **{url_title.get(u, u.rsplit('/', 1)[-1].replace('_', ' '))}**: {fmt(wurl[u])}")
+open(f"{VI}/{adir('index')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.7:", len(fw), len(metrics), len(wurl), file=sys.stderr)
