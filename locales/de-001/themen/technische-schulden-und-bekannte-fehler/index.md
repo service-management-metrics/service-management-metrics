@@ -135,7 +135,7 @@ Lieferteams sehen Schuld zuerst, meist beim Ändern von Code. Sie profitieren vo
 
 ### Service- und Betriebsteams
 
-Betriebsteams sehen die Zinsen: wiederholte Incidents, manuelle Schritte, fragile Umgehungen und die Bereitschaftslast, die folgt. Sie besitzen die Known-Error-Datensätze und die Umgehungsdokumente, und sie haben die Incident-Daten, die die Zinsen bepreisen. Sie sollten jeden Incident mit seinem bekannten Fehler verknüpfen, Umgehungen testen und geordnete Belege statt einer Beschwerdeliste ins Planungsgespräch bringen (siehe Thema 5.7, Kennzahlen für Toil und Bereitschaft).
+Betriebsteams sehen die Zinsen: wiederholte Incidents, manuelle Schritte, fragile Umgehungen und die Bereitschaftslast, die folgt. Sie besitzen die Known-Error-Datensätze und die Umgehungsdokumente, und sie haben die Incident-Daten, die die Zinsen bepreisen. Sie sollten jeden Incident mit seinem bekannten Fehler verknüpfen, Umgehungen testen und geordnete Belege statt einer Beschwerdeliste ins Planungsgespräch bringen (siehe Thema 5.7, Kennzahlen für Toil und Bereitschaftsdienst).
 
 ### Führung und Governance
 
