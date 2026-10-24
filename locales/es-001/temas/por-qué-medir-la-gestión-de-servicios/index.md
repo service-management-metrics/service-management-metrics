@@ -121,16 +121,16 @@ Pide al grupo que recuerde decisiones concretas y averigüe cuáles, si alguna, 
 Pon el panel actual en una pantalla y marca cada métrica como actividad (tickets cerrados, compilaciones ejecutadas, puntos completados) o resultado (usuarios que pueden trabajar, problemas que no se repiten). No discutáis mucho los casos dudosos. Lo importante es ver el equilibrio. Donde solo haya actividad, pregunta qué resultado debería producir esa actividad y cómo lo sabría el equipo.
 
 **3. ¿Dónde viven hoy los números de entrega y de operaciones, y miran ambos las mismas personas?**
-Rastrea dónde se almacena cada familia de medidas y quién la revisa. A menudo los equipos se sorprenden al descubrir que los datos de cambios los revisa un grupo y los de incidentes otro, sin una reunión compartida. Pregunta qué patrón podría pasarse por alto porque nunca se ven los dos juntos. Acordad un lugar o una reunión donde se encuentren.
+Rastrea dónde se almacena cada familia de medidas y quién la revisa. A menudo los equipos se sorprenden al descubrir que los datos de cambios los revisa un grupo y los de incidentes otro, sin una reunión compartida. Pregunta qué patrón podría pasarse por alto porque nunca se ven los dos juntos. Acuerden un lugar o una reunión donde se encuentren.
 
 **4. ¿Qué no estamos midiendo que lamentaríamos no saber?**
-Invita a plantear preocupaciones en lugar de métricas: «Me temo que no notaríamos si...». Trabajad desde las respuestas hacia medidas candidatas, y luego hacia los datos más baratos que las mostrarían. Mantened la lista corta.
+Invita a plantear preocupaciones en lugar de métricas: «Me temo que no notaríamos si...». Trabajen desde las respuestas hacia medidas candidatas, y luego hacia los datos más baratos que las mostrarían. Mantengan la lista corta.
 
 **5. ¿Qué tendríamos que creer de nuestros números antes de mostrarlos a la dirección?**
-Hablad de qué hace fiables los datos: definiciones estables, comprobaciones de exactitud por muestreo y acuerdo sobre las exclusiones. Enumerad las dudas del equipo, incluso las pequeñas, como un estado usado de forma incoherente. Decidid qué dudas deben resolverse antes de compartir más ampliamente y cuáles pueden divulgarse junto con el número.
+Hablen de qué hace fiables los datos: definiciones estables, comprobaciones de exactitud por muestreo y acuerdo sobre las exclusiones. Enumerad las dudas del equipo, incluso las pequeñas, como un estado usado de forma incoherente. Decidan qué dudas deben resolverse antes de compartir más ampliamente y cuáles pueden divulgarse junto con el número.
 
 **6. Si solo pudiéramos conservar tres métricas el próximo trimestre, ¿cuáles serían y por qué?**
-La restricción obliga a priorizar. Pide a cada persona que escriba tres y luego comparadlas. Buscad acuerdo en los resultados y desacuerdo en las medidas de actividad. Pregunta qué barrera de protección necesita cada una de las tres.
+La restricción obliga a priorizar. Pide a cada persona que escriba tres y luego comparadlas. Busquen acuerdo en los resultados y desacuerdo en las medidas de actividad. Pregunta qué barrera de protección necesita cada una de las tres.
 
 ## Cuatro perspectivas
 

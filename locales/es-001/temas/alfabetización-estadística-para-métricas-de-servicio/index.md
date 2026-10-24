@@ -103,13 +103,13 @@ Para un servicio con un puñado de incidentes al año ninguna estadística es es
 Elige la medida de tiempo más vigilada y calcula las tres sobre el mismo conjunto de elementos antes de la reunión. Pregunta si la historia que cuenta el promedio coincide con lo que dicen los usuarios. Termina acordando qué resumen pasa a ser el titular y dónde aparecerán los demás.
 
 **2. ¿Cuántos elementos hay detrás de nuestro porcentaje más citado y lo seguiríamos citando si escribiéramos los recuentos?**
-Enumera los tres porcentajes que más lee la dirección. Junto a cada uno, escribe el numerador y el denominador del último periodo. Pregunta qué haría un éxito o un fallo adicional con la cifra. Acordad un recuento mínimo por debajo del cual el equipo muestre los elementos en lugar de una tasa.
+Enumera los tres porcentajes que más lee la dirección. Junto a cada uno, escribe el numerador y el denominador del último periodo. Pregunta qué haría un éxito o un fallo adicional con la cifra. Acuerden un recuento mínimo por debajo del cual el equipo muestre los elementos en lugar de una tasa.
 
 **3. ¿Cuándo atribuimos por última vez una mejora a una iniciativa y qué más era cierto en ese momento?**
 Elige una historia de éxito reciente. Pregunta cuándo estaba la medida en su peor punto, qué aspecto tiene el historial más largo y si un servicio comparable también mejoró. Mantén un tono curioso.
 
 **4. ¿Cuál es el rango normal de nuestras medidas clave y quién podría decir que una semana dada es inusual?**
-Grafica los últimos 20 o más valores semanales de una medida y dibuja el centro y los límites, o calcúlalos de forma aproximada. Pregunta ante qué semanas reaccionó el equipo que estaban dentro del rango. Acordad quién posee el gráfico y dónde se escriben las reglas de señal.
+Grafica los últimos 20 o más valores semanales de una medida y dibuja el centro y los límites, o calcúlalos de forma aproximada. Pregunta ante qué semanas reaccionó el equipo que estaban dentro del rango. Acuerden quién posee el gráfico y dónde se escriben las reglas de señal.
 
 **5. ¿Quién o qué falta en nuestros datos?**
 Enumera las fuentes de la medida: tickets cerrados, respuestas de encuestas, servicios monitorizados, herramientas con marcas de tiempo. Para cada una, pregunta a quién se excluye y por qué. Recoge cada laguna como una corrección o una salvedad.

@@ -115,16 +115,16 @@ Pide al grupo que siga el número desde el panel hasta el primer evento. Anota c
 Enumera los relojes en uso, como el tiempo de respuesta, el tiempo de resolución y el tiempo de ciclo. Marca cada inicio y parada como automático o manual. Para los manuales, pregunta cuánto después del evento suele hacerse la introducción. La discusión suele mostrar que la métrica más debatida descansa sobre la marca de tiempo menos fiable.
 
 **3. ¿Qué significan nuestros estados y significan lo mismo para todos los equipos?**
-Pon el flujo de trabajo en una pizarra y haz que personas de distintos equipos expliquen cada estado con sus propias palabras. Compara las explicaciones. Cuenta los estados en que el reloj se pausa y pregunta quién puede usarlos y por qué. Acordad un cambio que elimine la ambigüedad y registradlo con el motivo.
+Pon el flujo de trabajo en una pizarra y haz que personas de distintos equipos expliquen cada estado con sus propias palabras. Compara las explicaciones. Cuenta los estados en que el reloj se pausa y pregunta quién puede usarlos y por qué. Acuerden un cambio que elimine la ambigüedad y registradlo con el motivo.
 
 **4. ¿Cómo nos enteraríamos si un flujo se hubiera detenido en silencio?**
-Pregunta cuándo comprobó alguien por última vez que los datos del panel están al día. Hablad de qué alerta o indicador de frescura detectaría un conector detenido en un día. El facilitador debe insistir en un responsable con nombre y una comprobación concreta, no en una intención general de tener cuidado.
+Pregunta cuándo comprobó alguien por última vez que los datos del panel están al día. Hablen de qué alerta o indicador de frescura detectaría un conector detenido en un día. El facilitador debe insistir en un responsable con nombre y una comprobación concreta, no en una intención general de tener cuidado.
 
 **5. ¿Qué recogemos que nunca usamos y qué usamos que no recogemos bien?**
-Pon lado a lado la lista de campos y la lista de métricas. Marca los campos que no alimentan ninguna decisión y las métricas que descansan en campos deficientes. Decidid un campo que dejar de recoger y otro que mejorar este trimestre.
+Pon lado a lado la lista de campos y la lista de métricas. Marca los campos que no alimentan ninguna decisión y las métricas que descansan en campos deficientes. Decidan un campo que dejar de recoger y otro que mejorar este trimestre.
 
 **6. ¿Quién responde a nuestras encuestas y quién no?**
-Compara a los encuestados con la población de usuarios o de miembros del equipo. Mira las tasas de respuesta por grupo y por hora del día o de la semana. Hablad de lo que podría significar el silencio y de cómo llegar a los grupos callados sin presión. Acordad cómo se mostrará la tasa de respuesta junto a cada resultado de encuesta.
+Compara a los encuestados con la población de usuarios o de miembros del equipo. Mira las tasas de respuesta por grupo y por hora del día o de la semana. Hablen de lo que podría significar el silencio y de cómo llegar a los grupos callados sin presión. Acuerden cómo se mostrará la tasa de respuesta junto a cada resultado de encuesta.
 
 ## Cuatro perspectivas
 
@@ -180,7 +180,7 @@ Concilia al menos un número con una fuente independiente cada trimestre y publi
 
 **Pequeña empresa.** A menudo una sola persona dirige TI sobre un centro de servicios alojado. Usa los informes de la herramienta, pide por escrito al proveedor sus definiciones y exporta los datos en bruto periódicamente para evitar el bloqueo por parte del proveedor.
 
-**Gran empresa.** Muchas herramientas, muchos equipos y capas de integración crean el mayor riesgo de deriva de las definiciones. Invierte en un modelo de eventos compartido, un almacén central de métricas con responsables con nombre y comprobaciones automatizadas de conciliación y frescura. Acordad un pequeño vocabulario de estados para toda la empresa y deja que los equipos añadan estados locales solo con una correspondencia declarada con él.
+**Gran empresa.** Muchas herramientas, muchos equipos y capas de integración crean el mayor riesgo de deriva de las definiciones. Invierte en un modelo de eventos compartido, un almacén central de métricas con responsables con nombre y comprobaciones automatizadas de conciliación y frescura. Acuerden un pequeño vocabulario de estados para toda la empresa y deja que los equipos añadan estados locales solo con una correspondencia declarada con él.
 
 **Gobierno y sector público.** Los registros pueden estar sujetos a leyes de conservación, auditoría, acceso y privacidad, y la contratación pública puede fijar herramientas y formatos de datos. Trátalo como datos de diseño: mantén una pista de auditoría, documenta el linaje desde el evento hasta el informe y negocia en los contratos los derechos de exportación de datos. Las obligaciones de información hacen esenciales las definiciones documentadas (véase el tema 8.5, Informes regulatorios y gubernamentales).
 

@@ -120,13 +120,13 @@ Esto obliga a ordenar las preguntas antes que las métricas. Deja que cada perso
 Lee cada resultado clave en voz alta y pregunta si un usuario lo notaría si se lograra. Si la respuesta es no, reescríbelo como resultado o pásalo al plan. El facilitador puede mencionar que las tareas están bien, pero pertenecen a una lista de pendientes. Termina acordando un resultado clave que reescribir este trimestre.
 
 **4. ¿Dónde discrepan nuestras cuatro perspectivas del cuadro de mando y qué nos dice eso?**
-Pide al grupo que busque un periodo reciente en que una perspectiva mejoró mientras otra empeoraba, como un costo que baja mientras cae la experiencia. Hablad de la causa y de si alguien lo vio venir. Esto crea el hábito de leer las medidas juntas. Anota cualquier perspectiva sin medida y decide si añadir una o decir con claridad que no entra en el alcance.
+Pide al grupo que busque un periodo reciente en que una perspectiva mejoró mientras otra empeoraba, como un costo que baja mientras cae la experiencia. Hablen de la causa y de si alguien lo vio venir. Esto crea el hábito de leer las medidas juntas. Anota cualquier perspectiva sin medida y decide si añadir una o decir con claridad que no entra en el alcance.
 
 **5. Para cada factor crítico de éxito, ¿qué lectura nos diría que está fallando?**
 Elige dos CSF y nombra el KPI; pregunta después qué valor desencadenaría una conversación. Si el equipo no sabe decirlo, el KPI no está cumpliendo su función. Busca KPI que nunca han cambiado de color, lo que suele señalar un umbral demasiado laxo. El facilitador debe preguntar cuál sería el vector de manipulación del KPI.
 
 **6. ¿Qué marco debería poseer qué decisión y dónde definimos hoy dos veces el mismo número?**
-Sigue una métrica, como el tiempo de resolución de incidentes, a través de todos los informes en que aparece. Compara las definiciones. Las diferencias en los relojes o las exclusiones son comunes y a menudo explican las discusiones entre equipos. Acordad un responsable y una definición y registradlos en el registro.
+Sigue una métrica, como el tiempo de resolución de incidentes, a través de todos los informes en que aparece. Compara las definiciones. Las diferencias en los relojes o las exclusiones son comunes y a menudo explican las discusiones entre equipos. Acuerden un responsable y una definición y registradlos en el registro.
 
 ## Cuatro perspectivas
 

@@ -118,13 +118,13 @@ Pregunta a quienes hablan con los clientes y evita el vocabulario propio del equ
 Elige un indicador y grafícalo frente a su pareja rezagada durante los últimos periodos. Pregunta qué se ve y con cuánta confianza. Si la relación es débil, hablad de con qué sustituirlo. Trata un indicador descartado como un resultado normal del aprendizaje, no como un fracaso.
 
 **4. ¿Dónde se atribuye nuestro equipo el mérito de un resultado que solo observa?**
-Mira las métricas de los informes a la dirección. ¿Cuáles dependen de factores fuera del control del equipo, como la estacionalidad, una campaña o un proveedor? Acordad una forma sencilla de declarar en qué influye el equipo y qué solo observa. Esto prepara al equipo para el día en que un resultado se mueva por razones que no causó.
+Mira las métricas de los informes a la dirección. ¿Cuáles dependen de factores fuera del control del equipo, como la estacionalidad, una campaña o un proveedor? Acuerden una forma sencilla de declarar en qué influye el equipo y qué solo observa. Esto prepara al equipo para el día en que un resultado se mueva por razones que no causó.
 
 **5. ¿Qué entregamos o cambiamos en los dos últimos trimestres y revisó alguien si funcionó?**
 Enumera los cambios en una pizarra y marca los que tienen un registro de revisión. Para los demás, pregunta qué resultado se esperaba y cómo podríais averiguarlo ahora. Resiste la búsqueda de culpables. El fin es iniciar el hábito, aunque las primeras revisiones lleguen tarde.
 
 **6. ¿Qué medidas de producción deberían volver a nuestra vista de trabajo?**
-Algunas medidas son útiles para el equipo y engañosas en un informe. Pregunta cuáles son cuáles y qué necesitaría cada una a su lado para permanecer en un informe de la dirección. Acordad una medida que trasladar este trimestre. Trasladar una medida es señal de madurez, no un retroceso en transparencia.
+Algunas medidas son útiles para el equipo y engañosas en un informe. Pregunta cuáles son cuáles y qué necesitaría cada una a su lado para permanecer en un informe de la dirección. Acuerden una medida que trasladar este trimestre. Trasladar una medida es señal de madurez, no un retroceso en transparencia.
 
 ## Cuatro perspectivas
 
@@ -180,9 +180,9 @@ Los datos de resultado suelen ser más lentos y ruidosos que los de producción.
 
 **Pequeña empresa.** Los números son demasiado pequeños para la estadística, así que prefiere las conversaciones directas, un puñado de casos seguidos y una lista corta de sucedáneos. Desconfía de los paneles de proveedores que reportan su propia actividad como si fuera tu resultado.
 
-**Gran empresa.** La escala invita a reportar producción, porque las producciones son comparables entre muchos equipos y los resultados no. Resiste la tentación de imponer una sola definición de resultado a servicios distintos. Acordad un conjunto pequeño de frases de resultado compartidas, dejad que cada servicio elija sus medidas y mantened el registro al día.
+**Gran empresa.** La escala invita a reportar producción, porque las producciones son comparables entre muchos equipos y los resultados no. Resiste la tentación de imponer una sola definición de resultado a servicios distintos. Acuerden un conjunto pequeño de frases de resultado compartidas, dejad que cada servicio elija sus medidas y mantened el registro al día.
 
-**Gobierno y sector público.** Las obligaciones legales, las reglas de financiación y los niveles de servicio fijan de antemano algunas medidas, a menudo producciones como los casos tramitados. Cúmplelas y añade junto a ellas medidas de resultado para los ciudadanos y el personal, como si una persona obtuvo la ayuda que buscaba. La información pública hace que los datos honestos de resultados sean más valiosos y más delicados, así que acordad de antemano cómo se explicarán las cifras corregidas (véase el tema 8.5, Informes regulatorios y gubernamentales).
+**Gobierno y sector público.** Las obligaciones legales, las reglas de financiación y los niveles de servicio fijan de antemano algunas medidas, a menudo producciones como los casos tramitados. Cúmplelas y añade junto a ellas medidas de resultado para los ciudadanos y el personal, como si una persona obtuvo la ayuda que buscaba. La información pública hace que los datos honestos de resultados sean más valiosos y más delicados, así que acuerden de antemano cómo se explicarán las cifras corregidas (véase el tema 8.5, Informes regulatorios y gubernamentales).
 
 ## Caso de negocio: motivaciones, ROI y TCO
 

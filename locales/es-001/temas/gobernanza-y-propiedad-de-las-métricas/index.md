@@ -98,16 +98,16 @@ El equilibrio consiste en centralizar la capa delgada que debe concordar, que es
 Pide al grupo que nombre a una persona, no a un grupo. Si salen varios nombres, o ninguno, la métrica no tiene responsable en la práctica. El facilitador debe anotar la métrica, el responsable candidato y lo que este necesitaría para hacer el trabajo, como acceso de lectura a los datos o tiempo en la revisión. Cierra acordando quién confirmará al responsable y registrará el rol en el registro.
 
 **2. ¿Dónde existen hoy dos versiones de la misma cifra?**
-Busca informes que muestren la misma métrica con valores distintos: una diapositiva semanal frente a un panel en vivo, o un informe de un proveedor frente al interno. Para cada uno, pregunta de dónde surge la diferencia, como el alcance, el reloj o las exclusiones. Decidid qué fuente es la autorizada y qué ocurre con la otra versión. Espera que la conversación descubra definiciones de trabajo distintas de palabras que todos daban por compartidas.
+Busca informes que muestren la misma métrica con valores distintos: una diapositiva semanal frente a un panel en vivo, o un informe de un proveedor frente al interno. Para cada uno, pregunta de dónde surge la diferencia, como el alcance, el reloj o las exclusiones. Decidan qué fuente es la autorizada y qué ocurre con la otra versión. Espera que la conversación descubra definiciones de trabajo distintas de palabras que todos daban por compartidas.
 
 **3. Si tuviéramos que retirar una métrica este trimestre, ¿cuál sería?**
 Empieza por la métrica que nadie ha citado recientemente en una decisión. Pregunta qué pasaría si desapareciera y quién lo notaría. Si la respuesta es «nadie», sácala del conjunto reportado durante un periodo de prueba. El facilitador debe tratar la retirada como algo normal y sano, y anotar el resultado en el registro de retiradas.
 
 **4. ¿Quién ve cuáles de nuestras métricas y es a propósito?**
-Dibuja una cuadrícula sencilla de métricas frente a audiencias: equipo, propietario del servicio, dirección, clientes, proveedores, reguladores. Marca dónde el acceso fue una decisión y dónde simplemente ocurrió. Busca cualquier vista que pudiera usarse para comparar individuos. Acordad un cambio en al menos una lista de audiencia y quién la revisará a continuación.
+Dibuja una cuadrícula sencilla de métricas frente a audiencias: equipo, propietario del servicio, dirección, clientes, proveedores, reguladores. Marca dónde el acceso fue una decisión y dónde simplemente ocurrió. Busca cualquier vista que pudiera usarse para comparar individuos. Acuerden un cambio en al menos una lista de audiencia y quién la revisará a continuación.
 
 **5. ¿Cómo cambiamos una definición sin romper la tendencia?**
-Repasa un cambio reciente en un flujo de estados o en una escala de prioridades. Pregunta a quién se avisó, si se anotó el gráfico y si alguien comparó los valores antiguo y nuevo. Redacta una entrada de cambio ligera que el equipo rellenaría de verdad. Acordad quién aprueba los cambios en las métricas que aparecen en contratos o informes externos.
+Repasa un cambio reciente en un flujo de estados o en una escala de prioridades. Pregunta a quién se avisó, si se anotó el gráfico y si alguien comparó los valores antiguo y nuevo. Redacta una entrada de cambio ligera que el equipo rellenaría de verdad. Acuerden quién aprueba los cambios en las métricas que aparecen en contratos o informes externos.
 
 **6. ¿Qué dejaríamos de hacer si la gobernanza se volviera una carga?**
 La gobernanza puede convertirse en un ritual. Pregunta qué partes del enfoque actual se saltaría la gente si nadie lo comprobara, y por qué. Trata las respuestas como retroalimentación de diseño y no como resistencia. El facilitador debe buscar pasos que se dupliquen, campos que nadie lee y revisiones que nunca producen una decisión.
