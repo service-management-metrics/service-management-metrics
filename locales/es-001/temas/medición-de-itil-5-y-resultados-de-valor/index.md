@@ -116,7 +116,7 @@ Los pasos pequeños superan a un programa de transición construido sobre detall
 
 ### Equipos de producto y de entrega
 
-Se les pregunta quién posee el producto tras el lanzamiento. Mantengan el servicio en vivo dentro del perímetro del producto, escribid una frase de resultado y situad las funciones de IA que construís en el mismo mapa del parque que todo lo demás. Muestren primero los números del propio equipo y mantenedlos alejados de las evaluaciones individuales.
+Se les pregunta quién posee el producto tras el lanzamiento. Mantengan el servicio en vivo dentro del perímetro del producto, escriban una frase de resultado y situad las funciones de IA que construís en el mismo mapa del parque que todo lo demás. Muestren primero los números del propio equipo y mantenedlos alejados de las evaluaciones individuales.
 
 ### Equipos de servicio y de operaciones
 

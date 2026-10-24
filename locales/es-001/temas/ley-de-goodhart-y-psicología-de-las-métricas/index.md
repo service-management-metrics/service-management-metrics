@@ -123,7 +123,7 @@ Invita a contar historias, no a culpar. Ejemplos comunes son cerrar tickets ante
 Sigue cada métrica desde el equipo hasta su audiencia. Pregunta si alguna versión de ella se usa para comparar equipos o personas. Pregunta qué mostraría el equipo si la audiencia fuera otra. Donde el equipo cambiaría los números que muestra, hay una brecha de confianza de la que hablar con la audiencia.
 
 **5. ¿Cuál es la barrera de protección de cada una de nuestras cinco métricas más importantes, y está en la misma página?**
-Haz una lista de dos columnas en una pizarra. Si una métrica no tiene barrera de protección, acuerden una candidata y un responsable que la pruebe durante un trimestre. Si existe una barrera de protección pero rara vez se consulta, hablad de por qué. Evita elegir una barrera de protección que sea meramente la inversa de la métrica, porque no aporta nada nuevo.
+Haz una lista de dos columnas en una pizarra. Si una métrica no tiene barrera de protección, acuerden una candidata y un responsable que la pruebe durante un trimestre. Si existe una barrera de protección pero rara vez se consulta, hablen de por qué. Evita elegir una barrera de protección que sea meramente la inversa de la métrica, porque no aporta nada nuevo.
 
 **6. ¿Qué métrica deberíamos retirar este trimestre?**
 Pide pruebas: ¿cuándo se usó por última vez en una decisión? Si nadie lo recuerda, retírala a modo de prueba y mirad si alguien lo nota. El facilitador debe tratar la retirada como un hecho normal. Los equipos que nunca abandonan métricas acaban con informes en los que nadie confía ni lee.

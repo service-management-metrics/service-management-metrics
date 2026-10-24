@@ -115,7 +115,7 @@ Escribe las cinco en una pizarra y haz la pregunta de cada una. Un recuento de t
 Pregunta a quienes hablan con los clientes y evita el vocabulario propio del equipo. Las respuestas se convierten en frases de resultado y a menudo revelan cosas que nadie mide, como no tener que explicar un problema dos veces. Recoge tres frases y pregunta cuáles pueden medirse, aunque sea mediante un sucedáneo.
 
 **3. ¿Cuáles de nuestros indicadores adelantados hemos comprobado alguna vez frente al resultado que se supone que predicen?**
-Elige un indicador y grafícalo frente a su pareja rezagada durante los últimos periodos. Pregunta qué se ve y con cuánta confianza. Si la relación es débil, hablad de con qué sustituirlo. Trata un indicador descartado como un resultado normal del aprendizaje, no como un fracaso.
+Elige un indicador y grafícalo frente a su pareja rezagada durante los últimos periodos. Pregunta qué se ve y con cuánta confianza. Si la relación es débil, hablen de con qué sustituirlo. Trata un indicador descartado como un resultado normal del aprendizaje, no como un fracaso.
 
 **4. ¿Dónde se atribuye nuestro equipo el mérito de un resultado que solo observa?**
 Mira las métricas de los informes a la dirección. ¿Cuáles dependen de factores fuera del control del equipo, como la estacionalidad, una campaña o un proveedor? Acuerden una forma sencilla de declarar en qué influye el equipo y qué solo observa. Esto prepara al equipo para el día en que un resultado se mueva por razones que no causó.
