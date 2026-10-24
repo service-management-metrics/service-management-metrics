@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# Regenerates the sv-se appendices 12.2 (metric definitions), 12.6 (references) and 12.7 (index)
+# from the sv-se content topics. The home topic is the authority; rerun after any sv-se topic changes.
+import os, re, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+VI = f"{root}/locales/sv-se/ämnen"
+def nk(n): return [int(x) for x in n.split(".")]
+def sec(t, n):
+    m = re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", t, re.M | re.S)
+    return m.group(1) if m else ""
+def table(s):
+    out = []
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| Mätetal |"):
+            out.append([x.strip() for x in l.strip().strip("|").split(" | ")])
+    return out
+def pid(path):
+    return open(path).read().strip()
+peer = {}
+for d in os.listdir(VI):
+    p = f"{VI}/{d}/.locale-peer-id"
+    if os.path.exists(p): peer[pid(p)] = d
+def adir(slug):
+    return peer[pid(f"{root}/locales/en-001/topics/{slug}/.locale-peer-id")]
+texts, titles, en = {}, {}, {}
+PARTS = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    d = adir(slug)
+    texts[num] = open(f"{VI}/{d}/index.md").read()
+    titles[num] = texts[num].splitlines()[0][2:]
+    en[num] = open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    if num.endswith(".0"):
+        PARTS[part] = re.sub(r"^Introduktion till del \d+: ", "", titles[num])
+
+# 12.2 metric definitions
+o = []; total = 0; miss = []; cur = None
+for part, num, slug, pt in rows:
+    if int(part) >= 12 or num.endswith(".0"): continue
+    t = texts[num]
+    md = table(sec(t, "Mätetalsdefinitioner")); gv = {c[0]: c for c in table(sec(t, "Manipuleringsvektorer och skyddsräcken")) if len(c) == 3}
+    if part != cur:
+        o.append(f"\n## Del {part}: {PARTS[part]}\n"); cur = part
+    o.append(f"### {num} {titles[num]}\n")
+    o.append(f"Hemämne: (se ämne {num}, {titles[num]}).\n")
+    o.append("| Mätetal | Definition | Formel | Enhet | Datakälla | ITIL-praktik | Agil motsvarighet | Rytm | Manipuleringsvektor | Skyddsräcke |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c) != 8: miss.append((num, c[0], len(c))); continue
+        g = gv.get(c[0])
+        if not g: miss.append((num, c[0], "nogaming")); continue
+        o.append("| " + " | ".join(c[:8] + [g[1], g[2]]) + " |"); total += 1
+    o.append("")
+HEAD = """# Referens för mätetalsdefinitioner och formler
+
+Den här bilagan listar varje mätetal som definieras i innehållsämnena, grupperat efter del och ämne. Varje post bär definition, formel, enhet, datakälla, relaterad ITIL-praktik, agil motsvarighet och rytm från hemämnet, tillsammans med den manipuleringsvektor och det skyddsräcke som hör till. Den genereras ur de två avsnitten "Mätetalsdefinitioner" och "Manipuleringsvektorer och skyddsräcken" i varje ämne, så hemämnet är auktoriteten. Om en post här skiljer sig från sitt ämne gäller ämnet och bilagan genereras på nytt.
+
+## Så här använder du referensen
+
+- **Slå upp före införande.** Innan du lägger till ett mätetal på en instrumentpanel, läs dess post, inklusive manipuleringsvektorn och skyddsräcket, och tillämpa skyddsräcket tillsammans med det (se ämne 1.3, Resultat före leverans: att välja vad som ska mätas).
+- **Mät team, tjänster och system.** Ingen post är avsedd att rangordna individer (se ämne 1.2, Goodharts lag och mätetalens psykologi).
+- **Föredra hemämnet för omdöme.** Formlerna här är korta. Definitioner av termer, anmärkningar om stickprov och praktiska exempel finns i hemämnet.
+- **Registrera dina egna varianter.** Om din organisation ändrar en definition, registrera ändringen och skälet i ditt mätetalsregister (se ämne 1.4, Styrning och ägarskap av mätetal). Ett mätetalskort hjälper (se ämne 12.4, Mallar).
+- **Illustrativa tal är markerade.** Den här bilagan innehåller inga referensvärden. Alla tal kommer från dina egna baslinjer.
+"""
+open(f"{VI}/{adir('metric-definitions-and-formulas-reference')}/index.md", "w").write(HEAD + "\n".join(o))
+print("12.2 metrics:", total, "missing:", miss, file=sys.stderr)
+
+# 12.6 references (entries are kept verbatim; the cited-in lists use topic numbers)
+refs = {}; wiki = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    m = re.search(r"^## Referenser och vidare läsning\n(.*?)\Z", texts[num], re.M | re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm = re.match(r"\d+\. (.*)", l)
+        if not mm: continue
+        r = mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm = re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$", r)
+            wiki.setdefault(wm.group(2), [wm.group(1), []])[1].append(num)
+        else:
+            refs.setdefault(r, []).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]", "", r.lower())
+cite = lambda ns: ", ".join(sorted(set(ns), key=nk))
+o = ["# Referenser och vidare läsning", "",
+     "Den här bilagan samlar de referenser som anförs i innehållsämnena, tillsammans med de ämnen som anför var och en. Posterna är ordnade alfabetiskt efter författare eller organ och är oförändrade i sin ursprungliga form. Hemämnet förblir stället att se hur en källa används.", "",
+     "## Om verifiering", "",
+     "Wikipedia-länkarna i den här boken har kontrollerats så att de öppnas. Böcker, artiklar, standarder och vägledningar anfördes av författarna ur minnet och har inte alla stämts av mot originalen. Behandla bibliografiska uppgifter (år, upplaga, titel) som ledtrådar att bekräfta innan du förlitar dig på dem i formellt arbete. Rapportera rättelser genom underhållsfärdigheten.", "",
+     "## Böcker, artiklar, standarder och vägledningar", ""]
+for i, r in enumerate(sorted(refs, key=key), 1):
+    o.append(f"{i}. {r} (anförd i {cite(refs[r])})")
+o += ["", "## Wikipedia-artiklar", ""]
+for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
+    o.append(f"{i}. Wikipedia, [{title}]({u}) (anförd i {cite(ns)})")
+open(f"{VI}/{adir('references-and-further-reading')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.6 refs:", len(refs), len(wiki), file=sys.stderr)
+
+# 12.7 index
+metrics = {}; wurl = {}
+url_title = {u: v[0] for u, v in wiki.items()}
+for num, t in texts.items():
+    if num.endswith(".0"): continue
+    for c in table(sec(t, "Mätetalsdefinitioner")):
+        metrics.setdefault(c[0], []).append(num)
+    body = t.split("## Referenser och vidare läsning")[0]
+    for m in re.finditer(r"\]\((https://en\.wikipedia\.org/wiki/[^)\s]+(?:\([^)]*\))?[^)\s]*)\)", body):
+        wurl.setdefault(m.group(1), set()).add(num)
+FW = ["ITIL 5", "ITIL 4", "ITIL", "DORA", "SPACE", "DevEx", "OKR", "GQM", "Balanced scorecard", "Goal-Question-Metric", "Site reliability", "Lean", "Kanban Guide", "COBIT", "ISO/IEC 20000", "ISO/IEC 27001", "NIST", "Cynefin", "Value stream mapping", "HEART", "Four Keys", "Westrum", "CMMI", "FinOps", "COPC", "Team Topologies", "Theory of constraints"]
+fw = {}
+for f in FW:
+    ns = [n for n, t in en.items() if re.search(rf"\b{re.escape(f)}\b", t.split("## References and further reading")[0])]
+    if ns: fw[f] = ns
+def fmt(ns): return ", ".join(sorted(set(ns), key=nk))
+o = ["# Index", "",
+     "Begrepp, ramverk och mätetal, var och en med pekare till de ämnen där de förekommer. Talen är ämnesnummer. Titlarna finns i innehållsförteckningen i README och i [strukturen](../../../../spec/structure.md). För korta definitioner med hemämnen, se ämne 12.1, Ordlista.", "",
+     "## Ramverk och modeller", ""]
+for f in sorted(fw, key=str.lower):
+    o.append(f"- **{f}**: {fmt(fw[f]) if len(fw[f]) <= 12 else fmt(sorted(fw[f], key=nk)[:12]) + ' och andra ämnen'}")
+o += ["", "## Mätetal", "", "Mätetalens namn så som de förekommer i varje ämnes definitionstabell. De fullständiga posterna finns i bilaga 12.2 (se ämne 12.2, Referens för mätetalsdefinitioner och formler).", ""]
+for k in sorted(metrics): o.append(f"- **{k}**: {fmt(metrics[k])}")
+o += ["", "## Begrepp", "", "Begreppen hämtas ur de termer som varje ämne länkar till Wikipedia för bakgrund (artikelrubrikerna förblir engelska). Det första talet är vanligen ämnet som förklarar begreppet mest fullständigt.", ""]
+for u in sorted(wurl, key=lambda u: url_title.get(u, u).lower()):
+    o.append(f"- **{url_title.get(u, u.rsplit('/', 1)[-1].replace('_', ' '))}**: {fmt(wurl[u])}")
+open(f"{VI}/{adir('index')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.7:", len(fw), len(metrics), len(wurl), file=sys.stderr)
