@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# Regenerates the vi-vn appendices 12.2 (metric definitions), 12.6 (references) and 12.7 (index)
+# from the vi-vn content topics. The home topic is the authority; rerun after any vi-vn topic changes.
+import os, re, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+VI = f"{root}/locales/vi-vn/chủ-đề"
+def nk(n): return [int(x) for x in n.split(".")]
+def sec(t, n):
+    m = re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", t, re.M | re.S)
+    return m.group(1) if m else ""
+def table(s):
+    out = []
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| Chỉ số |"):
+            out.append([x.strip() for x in l.strip().strip("|").split(" | ")])
+    return out
+def pid(path):
+    return open(path).read().strip()
+peer = {}
+for d in os.listdir(VI):
+    p = f"{VI}/{d}/.locale-peer-id"
+    if os.path.exists(p): peer[pid(p)] = d
+def adir(slug):
+    return peer[pid(f"{root}/locales/en-001/topics/{slug}/.locale-peer-id")]
+texts, titles, en = {}, {}, {}
+PARTS = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    d = adir(slug)
+    texts[num] = open(f"{VI}/{d}/index.md").read()
+    titles[num] = texts[num].splitlines()[0][2:]
+    en[num] = open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    if num.endswith(".0"):
+        PARTS[part] = re.sub(r"^Giới thiệu Phần \d+: ", "", titles[num])
+
+# 12.2 metric definitions
+o = []; total = 0; miss = []; cur = None
+for part, num, slug, pt in rows:
+    if int(part) >= 12 or num.endswith(".0"): continue
+    t = texts[num]
+    md = table(sec(t, "Định nghĩa chỉ số")); gv = {c[0]: c for c in table(sec(t, "Vectơ lợi dụng và rào chắn")) if len(c) == 3}
+    if part != cur:
+        o.append(f"\n## Phần {part}: {PARTS[part]}\n"); cur = part
+    o.append(f"### {num} {titles[num]}\n")
+    o.append(f"Chủ đề gốc: (xem chủ đề {num}, {titles[num]}).\n")
+    o.append("| Chỉ số | Định nghĩa | Công thức | Đơn vị | Nguồn dữ liệu | Thực hành ITIL | Đối ứng linh hoạt | Nhịp | Vectơ lợi dụng | Rào chắn |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c) != 8: miss.append((num, c[0], len(c))); continue
+        g = gv.get(c[0])
+        if not g: miss.append((num, c[0], "nogaming")); continue
+        o.append("| " + " | ".join(c[:8] + [g[1], g[2]]) + " |"); total += 1
+    o.append("")
+HEAD = """# Tham chiếu định nghĩa và công thức chỉ số
+
+Phụ lục này liệt kê mọi chỉ số được định nghĩa trong các chủ đề nội dung, nhóm theo phần và chủ đề. Mỗi mục mang định nghĩa, công thức, đơn vị, nguồn dữ liệu, thực hành ITIL liên quan, đối ứng linh hoạt và nhịp từ chủ đề gốc, cùng với vectơ lợi dụng và rào chắn đi kèm. Nó được tạo ra từ hai mục "Định nghĩa chỉ số" và "Vectơ lợi dụng và rào chắn" của mỗi chủ đề, nên chủ đề gốc là thẩm quyền. Nếu một mục ở đây khác với chủ đề của nó, chủ đề được ưu tiên và phụ lục này sẽ được tạo lại.
+
+## Cách dùng tài liệu tham chiếu này
+
+- **Tra cứu trước khi áp dụng.** Trước khi thêm một chỉ số vào bảng điều khiển, hãy đọc mục của nó, gồm cả vectơ lợi dụng và rào chắn, và áp dụng rào chắn cùng với nó (xem chủ đề 1.3, Kết quả hơn đầu ra: chọn đo cái gì).
+- **Đo đội, dịch vụ và hệ thống.** Không mục nào nhằm để xếp hạng cá nhân (xem chủ đề 1.2, Định luật Goodhart và tâm lý học của chỉ số).
+- **Ưu tiên chủ đề gốc cho phán đoán.** Các công thức ở đây ngắn. Định nghĩa thuật ngữ, lưu ý về lấy mẫu và các ví dụ thực hành nằm trong chủ đề gốc.
+- **Ghi lại các biến thể của riêng bạn.** Nếu tổ chức của bạn đổi một định nghĩa, hãy ghi thay đổi và lý do trong danh mục chỉ số của bạn (xem chủ đề 1.4, Quản trị và quyền sở hữu chỉ số). Thẻ chỉ số giúp ích (xem chủ đề 12.4, Biểu mẫu).
+- **Các con số minh họa được đánh dấu.** Phụ lục này không chứa giá trị chuẩn. Mọi con số đến từ đường cơ sở của chính bạn.
+"""
+open(f"{VI}/{adir('metric-definitions-and-formulas-reference')}/index.md", "w").write(HEAD + "\n".join(o))
+print("12.2 metrics:", total, "missing:", miss, file=sys.stderr)
+
+# 12.6 references (entries are kept verbatim; the cited-in lists use topic numbers)
+refs = {}; wiki = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    m = re.search(r"^## Tài liệu tham khảo và đọc thêm\n(.*?)\Z", texts[num], re.M | re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm = re.match(r"\d+\. (.*)", l)
+        if not mm: continue
+        r = mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm = re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$", r)
+            wiki.setdefault(wm.group(2), [wm.group(1), []])[1].append(num)
+        else:
+            refs.setdefault(r, []).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]", "", r.lower())
+cite = lambda ns: ", ".join(sorted(set(ns), key=nk))
+o = ["# Tài liệu tham khảo và đọc thêm", "",
+     "Phụ lục này tổng hợp các tài liệu tham khảo được trích dẫn trong các chủ đề nội dung, kèm các chủ đề trích dẫn từng cái. Các mục được xếp theo thứ tự bảng chữ cái của tác giả hoặc cơ quan và giữ nguyên bản gốc. Chủ đề gốc vẫn là nơi để xem một nguồn được sử dụng thế nào.", "",
+     "## Về việc xác minh", "",
+     "Các liên kết Wikipedia trong cuốn sách này đã được kiểm tra là mở được. Sách, bài báo, tiêu chuẩn và tài liệu hướng dẫn được các tác giả trích dẫn theo trí nhớ và chưa phải tất cả đều được đối chiếu với bản gốc. Hãy coi các chi tiết thư mục (năm, lần xuất bản, tiêu đề) là manh mối cần xác nhận trước khi dựa vào chúng trong công việc chính thức. Hãy báo cáo các chỉnh sửa qua kỹ năng người duy trì.", "",
+     "## Sách, bài báo, tiêu chuẩn và tài liệu hướng dẫn", ""]
+for i, r in enumerate(sorted(refs, key=key), 1):
+    o.append(f"{i}. {r} (được trích dẫn trong {cite(refs[r])})")
+o += ["", "## Các bài Wikipedia", ""]
+for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
+    o.append(f"{i}. Wikipedia, [{title}]({u}) (được trích dẫn trong {cite(ns)})")
+open(f"{VI}/{adir('references-and-further-reading')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.6 refs:", len(refs), len(wiki), file=sys.stderr)
+
+# 12.7 index
+metrics = {}; wurl = {}
+url_title = {u: v[0] for u, v in wiki.items()}
+for num, t in texts.items():
+    if num.endswith(".0"): continue
+    for c in table(sec(t, "Định nghĩa chỉ số")):
+        metrics.setdefault(c[0], []).append(num)
+    body = t.split("## Tài liệu tham khảo và đọc thêm")[0]
+    for m in re.finditer(r"\]\((https://en\.wikipedia\.org/wiki/[^)\s]+(?:\([^)]*\))?[^)\s]*)\)", body):
+        wurl.setdefault(m.group(1), set()).add(num)
+FW = ["ITIL 5", "ITIL 4", "ITIL", "DORA", "SPACE", "DevEx", "OKR", "GQM", "Balanced scorecard", "Goal-Question-Metric", "Site reliability", "Lean", "Kanban Guide", "COBIT", "ISO/IEC 20000", "ISO/IEC 27001", "NIST", "Cynefin", "Value stream mapping", "HEART", "Four Keys", "Westrum", "CMMI", "FinOps", "COPC", "Team Topologies", "Theory of constraints"]
+fw = {}
+for f in FW:
+    ns = [n for n, t in en.items() if re.search(rf"\b{re.escape(f)}\b", t.split("## References and further reading")[0])]
+    if ns: fw[f] = ns
+def fmt(ns): return ", ".join(sorted(set(ns), key=nk))
+o = ["# Chỉ mục", "",
+     "Các khái niệm, khung và chỉ số, mỗi cái chỉ đến các chủ đề nơi chúng xuất hiện. Các con số là số chủ đề. Tiêu đề nằm trong mục lục của README và trong [cấu trúc](../../../../spec/structure.md). Để có các định nghĩa ngắn kèm chủ đề gốc, xem chủ đề 12.1, Bảng thuật ngữ.", "",
+     "## Khung và mô hình", ""]
+for f in sorted(fw, key=str.lower):
+    o.append(f"- **{f}**: {fmt(fw[f]) if len(fw[f]) <= 12 else fmt(sorted(fw[f], key=nk)[:12]) + ' và các chủ đề khác'}")
+o += ["", "## Chỉ số", "", "Tên chỉ số như chúng xuất hiện trong bảng định nghĩa của mỗi chủ đề. Các mục đầy đủ nằm ở phụ lục 12.2 (xem chủ đề 12.2, Tham chiếu định nghĩa và công thức chỉ số).", ""]
+for k in sorted(metrics): o.append(f"- **{k}**: {fmt(metrics[k])}")
+o += ["", "## Khái niệm", "", "Các khái niệm được lấy từ những thuật ngữ mà mỗi chủ đề liên kết tới Wikipedia để có kiến thức nền (tiêu đề mục vẫn bằng tiếng Anh). Số đầu tiên thường là chủ đề giải thích khái niệm đó đầy đủ nhất.", ""]
+for u in sorted(wurl, key=lambda u: url_title.get(u, u).lower()):
+    o.append(f"- **{url_title.get(u, u.rsplit('/', 1)[-1].replace('_', ' '))}**: {fmt(wurl[u])}")
+open(f"{VI}/{adir('index')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.7:", len(fw), len(metrics), len(wurl), file=sys.stderr)

@@ -1,3 +1,36 @@
 # Giới thiệu Phần 10: Chỉ số cho AI, tự động hóa và phân tích
 
-<!-- stub -->
+**AI làm cho đầu ra trở nên rẻ và trôi chảy, điều này phá vỡ mối liên kết cũ giữa cái được tạo ra và cái đáng có, nên hãy đo cái còn lại, cái giúp ích, và cái vẫn nằm trong tầm kiểm soát.**
+
+Mọi chỉ số trong cuốn sách này đều dựa trên một giả định rằng tạo ra thứ đang được đếm đòi hỏi nỗ lực thật. Một phiếu đã giải quyết phản ánh công việc. Một bài viết phản ánh tri thức. Một thay đổi đã gộp phản ánh sự cẩn thận. AI tạo sinh làm yếu giả định đó. Nó có thể soạn một câu trả lời, một bài viết, một kiểm thử, hay một khối mã trong vài giây, và điều nó soạn thường hợp lý và đôi khi sai. Các số đếm tăng lên. Liệu những người được phục vụ có tốt hơn không là một câu hỏi riêng mà các số đếm không thể trả lời.
+
+AI cũng thêm những thứ mới để đo. Các trợ lý hội thoại và tác tử hành động thay mặt người dùng cần các thước đo về giải quyết, bàn giao và tác hại của hành động sai. Quản trị mô hình, lời nhắc và nhà cung cấp cần các thước đo về độ phủ, kiểm soát và xử lý sự cố. Và những người làm việc bên cạnh các công cụ này cần kỹ năng, sự hiểu biết và nhịp độ bền vững của họ được bảo vệ. Các thước đo trong phần này dựa vào phần còn lại của cuốn sách, vì các rào chắn là như nhau: ghép mỗi chỉ số với một phép kiểm tra xem nó có thể giấu gì, so sánh với đường cơ sở, lấy mẫu cùng con người, và giữ dữ liệu về con người ra khỏi đánh giá (xem chủ đề 1.2, Định luật Goodhart và tâm lý học của chỉ số).
+
+Cách làm việc linh hoạt và ITIL đưa ra một lập trường hợp lý đối với tất cả điều này. Hãy coi mỗi việc dùng AI là một thí nghiệm nhỏ. Nêu lợi ích kỳ vọng, thử với những người sẵn lòng, so sánh với công việc tương tự làm không có nó, và quyết định dựa trên bằng chứng. Giữ các bên liên quan tham gia liên tục, vì họ là những người đầu tiên nhận ra khi tín hiệu suy giảm. Hướng tới một nhịp độ bền vững, để thời gian tiết kiệm được là một lựa chọn về chất lượng và học hỏi, không phải sự tăng tự động của nhu cầu. Và hãy nhớ mục đích xây dựng quanh những cá nhân có động lực: AI nên làm nhẹ công việc tẻ nhạt và tôn trọng phán đoán của con người, và nó không nên trở thành cách để giám sát họ.
+
+Các sự kiện về công cụ, sản phẩm và quy tắc AI thay đổi nhanh. Các phát biểu trong phần này về quy định, tiêu chuẩn và công cụ cụ thể được ghi ngày tính đến tháng 10 năm 2026, và người đọc nên kiểm tra lại. Các nguyên tắc đo lường bền vững hơn bất kỳ công nghệ nào chúng mô tả.
+
+Phần này cũng bao quát hai trong bốn lăng kính còn lại, tự động hóa và phân tích. Tự động hóa và điều phối thay đổi ai làm công việc và làm cho thất bại nhanh và rộng, nên chúng được đo theo điều chúng gỡ bỏ và điều chúng làm hỏng. Các đường ống tạo ra nhiều bằng chứng cho thay đổi và tuân thủ, nên chúng được đo như những hệ thống. Phân tích, dự báo và khả năng quan sát tạo ra các con số được dùng ở mọi nơi khác trong cuốn sách, nên chất lượng dữ liệu, độ bất định và chi phí của chúng cần các thước đo riêng.
+
+## Các chủ đề trong phần này
+
+- **10.1 AI trong đo lường quản lý dịch vụ**: nơi AI đi vào công việc, đường cơ sở trước khi áp dụng, so sánh, thời gian đến một kết quả đã kiểm tra, và chi phí đầy đủ.
+- **10.2 Đo lường công việc có AI hỗ trợ**: giữ lại, làm lại, tải rà soát, lỗi lọt ra ngoài, sự hiểu biết và kỹ năng.
+- **10.3 Chỉ số tác tử AI và chatbot**: giải quyết đã xác minh, liên hệ quay lại, bàn giao, thời gian đến một con người, độ chính xác của câu trả lời, và việc đảo ngược hành động của tác tử.
+- **10.4 Lạm phát chỉ số và pha loãng chất lượng**: khối lượng và tốc độ phình ra thế nào, lấy mẫu tính hữu ích, gánh nặng xác minh, và phá vỡ các vòng phản hồi.
+- **10.5 Chỉ số quản trị và rủi ro AI**: sổ đăng ký các việc sử dụng, các lớp rủi ro, kiểm soát thay đổi cho mô hình và lời nhắc, đánh giá, giám sát và sự cố.
+- **10.6 Chỉ số tự động hóa và điều phối**: tự động hóa gỡ bỏ và làm hỏng điều gì, độ phủ có ý nghĩa, thất bại và hoàn tác, và thiết kế có con người trong vòng lặp.
+- **10.7 Chỉ số đường ống và thay đổi tự động**: sức khỏe đường ống, phê duyệt tự động, chính sách dưới dạng mã, và bằng chứng mà một đường ống tạo ra.
+- **10.8 Chỉ số phân tích và chất lượng dữ liệu**: tính đầy đủ, kịp thời, nguồn gốc dữ liệu, đối chiếu, và điều một con số có thể và không thể cho thấy.
+- **10.9 Chỉ số dự báo và phân tích dự đoán**: sai số dự báo, hiệu chỉnh, khoảng, và các quyết định mà dự báo cung cấp thông tin.
+- **10.10 Chỉ số khả năng quan sát và đo từ xa**: độ phủ của nhật ký, chỉ số và dấu vết, chất lượng tín hiệu, và chi phí của đo từ xa.
+
+## Mối liên hệ giữa các chủ đề
+
+Chủ đề nền tảng (xem chủ đề 10.1, AI trong đo lường quản lý dịch vụ) đặt ra phương pháp: đường cơ sở, so sánh, lấy mẫu và chi phí đầy đủ. Nó áp dụng cho mọi chủ đề khác trong phần. Chủ đề công việc có hỗ trợ (xem chủ đề 10.2, Đo lường công việc có AI hỗ trợ) dùng phương pháp đó cho công việc mọi người làm với AI bên cạnh, và xem điều gì còn lại và điều gì xảy ra với sự hiểu biết. Chủ đề chatbot và tác tử (xem chủ đề 10.3, Chỉ số tác tử AI và chatbot) áp dụng nó cho các hệ thống đối mặt trực tiếp với người dùng hoặc hành động thay mặt họ, nơi cái giá của một câu trả lời hoặc hành động sai rơi vào người khác.
+
+Lạm phát và pha loãng (xem chủ đề 10.4, Lạm phát chỉ số và pha loãng chất lượng) là bạn đồng hành mang tính cảnh báo của tất cả những điều này. Nó giải thích vì sao các con số dễ lại tăng và cần ghép gì với chúng, và nó kết nối với các phép kiểm tra tính hữu ích trong các chủ đề khác. Quản trị (xem chủ đề 10.5, Chỉ số quản trị và rủi ro AI) là cấu trúc giữ phần còn lại ở đúng chỗ: nó cung cấp sổ đăng ký cho bạn biết cái gì cần đo, các lớp rủi ro cho bạn biết đo sâu đến đâu, kiểm soát thay đổi giữ cho hành vi không trôi đi mà không ai thấy, và quy trình sự cố khi có điều gì sai.
+
+Vài cặp rào chắn theo sau. Một thước đo tốc độ nên được đọc cùng thời gian đến một kết quả đã kiểm tra và gánh nặng xác minh. Một con số về ngăn chặn hoặc chuyển hướng nên được đọc cùng giải quyết đã xác minh và liên hệ quay lại. Một số đếm các việc sử dụng đã đăng ký nên được đọc so với việc phát hiện độc lập. Một con số áp dụng cho một công cụ AI nên được coi là mô tả, và kết quả so với đối chứng mang trọng lượng.
+
+Phần này liên kết với các phần trước: các thước đo rà soát và dòng chảy của Phần 2, các thước đo tri thức và tự phục vụ của Phần 3, các thước đo an ninh và rủi ro của Phần 8, và các thước đo con người của Phần 9. Các chủ đề 10.6 đến 10.10 mở rộng phương pháp sang tự động hóa, đường ống, phân tích, dự báo và khả năng quan sát: cùng một đường cơ sở, cùng cách ghép tốc độ với chất lượng, và cùng thói quen kiểm tra điều con số không thể cho thấy. Các thước đo tự động hóa và đường ống (xem chủ đề 10.6, Chỉ số tự động hóa và điều phối, và chủ đề 10.7, Chỉ số đường ống và thay đổi tự động) dựa trên các thước đo chất lượng dữ liệu của chủ đề 10.8 (xem chủ đề 10.8, Chỉ số phân tích và chất lượng dữ liệu), và dự báo (xem chủ đề 10.9, Chỉ số dự báo và phân tích dự đoán) và đo từ xa (xem chủ đề 10.10, Chỉ số khả năng quan sát và đo từ xa) nuôi cả hai. Nó dẫn vào phần nội dung cuối cùng, nói về việc xây dựng chính một chương trình chỉ số, vì một chương trình đưa đo lường vào mà không cẩn thận sẽ chịu cùng những sự méo mó mà phần này mô tả.
