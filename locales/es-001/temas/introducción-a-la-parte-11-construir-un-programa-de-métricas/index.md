@@ -1,3 +1,29 @@
 # Introducción a la Parte 11: Construir un programa de métricas
 
-<!-- stub -->
+**Un programa de métricas es un servicio de larga vida por derecho propio: necesita una audiencia, un conjunto pequeño de medidas, herramientas honestas, la confianza de las personas medidas y un camino para crecer paso a paso.**
+
+Las Partes 2 a 10 describen qué medir. Esta parte describe cómo convertir esas medidas en un hábito que dure. Muchas organizaciones tratan la medición como un proyecto: eligen una herramienta, construyen un panel, anuncian un conjunto de objetivos y pasan a otra cosa. Un año después el panel está obsoleto, los objetivos han torcido el comportamiento de maneras que nadie pretendía y las personas medidas han aprendido a desconfiar de todo el ejercicio. Un programa es distinto. Tiene responsables, un propósito, una cadencia de revisión y una forma de retirar las medidas que dejaron de ayudar. Es en sí mismo un servicio, y puede medirse y mejorarse como tal.
+
+Los fines ágiles se aplican al programa como a cualquier otro trabajo. La implicación continua de las partes interesadas significa que las personas que serán medidas, y las que usarán los resultados, ayudan a elegir las medidas desde el principio. La mejora continua significa que el programa se revisa a sí mismo y abandona lo que no se gana su costo. La evolución permanente significa que el conjunto de medidas cambia a medida que cambian los servicios. Un ritmo sostenible significa que el programa no añade una carga de reportes que desplace el trabajo que debe iluminar. Y construir en torno a individuos motivados significa que las medidas se ofrecen como ayuda a los equipos que poseen su trabajo, no se imponen como vigilancia (véase el tema 1.2, Ley de Goodhart y psicología de las métricas).
+
+Dos fallos silenciosos acechan a todo programa. El primero es el miedo. Si la gente cree que los números se usarán para clasificarla, culparla o recortarla, gestionará los números en lugar del trabajo, y los datos dejarán de ser verdaderos. El segundo es la dispersión. Cada parte interesada quiere una medida más, cada herramienta ofrece cincuenta gráficos más, y pronto nadie sabe decir qué números importan. Los temas de esta parte tratan sobre todo de evitar estos dos fallos: mantén pequeño el conjunto, mantenlo en manos de los equipos y mantén visible y benigno su uso.
+
+Las cuatro lentes dan forma a un programa de métricas. Debe construirse con el mismo espíritu de entrega continua que los servicios que mide. Las funciones de IA de las herramientas y los datos derivados de la IA sobre las personas necesitan reglas explícitas. La automatización reduce el esfuerzo de recogida y necesita la misma propiedad y las mismas comprobaciones que cualquier otra automatización. La práctica de la analítica, con su calidad de datos y su incertidumbre, es lo que hace que la salida del programa merezca leerse.
+
+## Temas de esta parte
+
+- **11.1 Diseño de un panel de métricas de servicio**: audiencias, un conjunto pequeño y equilibrado, contexto y tendencia, y vistas para equipos, servicios y liderazgo.
+- **11.2 Panorama de herramientas**: construir o comprar, los tipos de plataformas, los pipelines de datos y los criterios de selección neutrales respecto de los proveedores.
+- **11.3 Implantar métricas sin sembrar miedo**: transparencia, propiedad de los equipos, sin tablas de clasificación individuales y una implantación que se gane la confianza.
+- **11.4 Modelo de madurez para programas de métricas**: la escala común de cinco niveles aplicada al propio programa.
+- **11.5 Una hoja de ruta de adopción incremental**: un plan para los primeros 30, 90 y 180 días que empieza donde estás.
+
+## Cómo se relacionan estos temas
+
+La implantación sin miedo (véase el tema 11.3, Implantar métricas sin sembrar miedo) viene primero en importancia, aunque lo que la gente ve sea el panel. Los acuerdos sobre quién posee los datos, quién los ve y para qué no se usarán nunca deciden si algún panel llevará números verdaderos. El tema del panel (véase el tema 11.1, Diseño de un panel de métricas de servicio) convierte esos acuerdos en un diseño: conjuntos pequeños, contexto, tendencia y vistas adecuadas a cada audiencia. El tema de las herramientas (véase el tema 11.2, Panorama de herramientas) pregunta después qué plataformas y pipelines pueden suministrar los datos sin convertirse en un proyecto mayor que el beneficio.
+
+El modelo de madurez (véase el tema 11.4, Modelo de madurez para programas de métricas) da al programa una forma de describir dónde está y cuál podría ser el siguiente paso, con la misma escala que todos los demás temas. La hoja de ruta (véase el tema 11.5, Una hoja de ruta de adopción incremental) lo convierte en un plan de pasos pequeños, cada uno de los cuales entrega algún valor a las personas medidas antes de que empiece el siguiente. Es la misma lógica de entrega continua que el resto del libro recomienda para los servicios: entrega pronto algo útil, aprende de su uso y mejora.
+
+Varios emparejamientos mantienen honesto el programa. Un panel de resultados debe leerse con un registro de cómo se recogieron los datos y de sus brechas conocidas. Un plan de implantación debe leerse con una promesa sobre aquello para lo que no se usarán los datos. Una elección de herramienta debe leerse con el costo de abandonarla. Una puntuación de madurez debe tratarse como un punto de partida de la conversación y nunca como un objetivo.
+
+La parte se apoya en los fundamentos de la Parte 1, en especial la gobernanza de las métricas (véase el tema 1.4, Gobernanza y propiedad de las métricas) y las fuentes de datos (véase el tema 1.5, Fuentes de datos e instrumentación), y en las medidas de mejora y de cambio de la Parte 9 (véase el tema 9.5, Métricas de mejora continua, y el tema 9.6, Métricas de cambio organizacional y adopción). Los apéndices de la Parte 12 aportan las listas de verificación, las plantillas y las referencias consolidadas que un equipo de programa usará a diario.
