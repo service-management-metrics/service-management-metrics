@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# Regenerates the de-001 appendices 12.2 (metric definitions), 12.6 (references) and 12.7 (index)
+# from the de-001 content topics. The home topic is the authority; rerun after any de-001 topic changes.
+import os, re, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+VI = f"{root}/locales/de-001/themen"
+def nk(n): return [int(x) for x in n.split(".")]
+def sec(t, n):
+    m = re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", t, re.M | re.S)
+    return m.group(1) if m else ""
+def table(s):
+    out = []
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| Kennzahl |"):
+            out.append([x.strip() for x in l.strip().strip("|").split(" | ")])
+    return out
+def pid(path):
+    return open(path).read().strip()
+peer = {}
+for d in os.listdir(VI):
+    p = f"{VI}/{d}/.locale-peer-id"
+    if os.path.exists(p): peer[pid(p)] = d
+def adir(slug):
+    return peer[pid(f"{root}/locales/en-001/topics/{slug}/.locale-peer-id")]
+texts, titles, en = {}, {}, {}
+PARTS = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    d = adir(slug)
+    texts[num] = open(f"{VI}/{d}/index.md").read()
+    titles[num] = texts[num].splitlines()[0][2:]
+    en[num] = open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    if num.endswith(".0"):
+        PARTS[part] = re.sub(r"^Einführung in Teil \d+: ", "", titles[num])
+
+# 12.2 metric definitions
+o = []; total = 0; miss = []; cur = None
+for part, num, slug, pt in rows:
+    if int(part) >= 12 or num.endswith(".0"): continue
+    t = texts[num]
+    md = table(sec(t, "Kennzahlendefinitionen")); gv = {c[0]: c for c in table(sec(t, "Manipulationsvektoren und Leitplanken")) if len(c) == 3}
+    if part != cur:
+        o.append(f"\n## Teil {part}: {PARTS[part]}\n"); cur = part
+    o.append(f"### {num} {titles[num]}\n")
+    o.append(f"Heimatthema: (siehe Thema {num}, {titles[num]}).\n")
+    o.append("| Kennzahl | Definition | Formel | Einheit | Datenquelle | ITIL-Praktik | Agiles Gegenstück | Rhythmus | Manipulationsvektor | Leitplanke |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c) != 8: miss.append((num, c[0], len(c))); continue
+        g = gv.get(c[0])
+        if not g: miss.append((num, c[0], "nogaming")); continue
+        o.append("| " + " | ".join(c[:8] + [g[1], g[2]]) + " |"); total += 1
+    o.append("")
+HEAD = """# Nachschlagewerk für Kennzahlendefinitionen und Formeln
+
+Dieser Anhang listet jede Kennzahl auf, die in den inhaltlichen Themen definiert ist, gruppiert nach Teil und Thema. Jeder Eintrag trägt Definition, Formel, Einheit, Datenquelle, verwandte ITIL-Praktik, agiles Gegenstück und Rhythmus aus dem Heimatthema, zusammen mit dem zugehörigen Manipulationsvektor und der Leitplanke. Er wird aus den zwei Abschnitten „Kennzahlendefinitionen“ und „Manipulationsvektoren und Leitplanken“ jedes Themas erzeugt, das Heimatthema ist also maßgeblich. Weicht ein Eintrag hier von seinem Thema ab, gilt das Thema, und der Anhang wird neu erzeugt.
+
+## So nutzen Sie das Nachschlagewerk
+
+- **Vor der Einführung nachschlagen.** Lesen Sie, bevor Sie eine Kennzahl auf ein Dashboard setzen, ihren Eintrag, einschließlich Manipulationsvektor und Leitplanke, und wenden Sie die Leitplanke gemeinsam mit ihr an (siehe Thema 1.3, Ergebnisse vor Output: Auswählen, was gemessen wird).
+- **Teams, Services und Systeme messen.** Kein Eintrag ist dazu gedacht, Einzelne zu ordnen (siehe Thema 1.2, Goodharts Gesetz und die Psychologie von Kennzahlen).
+- **Für Urteile das Heimatthema bevorzugen.** Die Formeln hier sind kurz. Definitionen von Begriffen, Hinweise zu Stichproben und praktische Beispiele stehen im Heimatthema.
+- **Eigene Varianten erfassen.** Ändert Ihre Organisation eine Definition, erfassen Sie die Änderung und den Grund in Ihrem Kennzahlenregister (siehe Thema 1.4, Governance und Verantwortung für Kennzahlen). Eine Kennzahlenkarte hilft (siehe Thema 12.4, Vorlagen).
+- **Illustrative Zahlen sind markiert.** Dieser Anhang enthält keine Richtwerte. Alle Zahlen kommen aus Ihren eigenen Basislinien.
+"""
+open(f"{VI}/{adir('metric-definitions-and-formulas-reference')}/index.md", "w").write(HEAD + "\n".join(o))
+print("12.2 metrics:", total, "missing:", miss, file=sys.stderr)
+
+# 12.6 references (entries are kept verbatim; the cited-in lists use topic numbers)
+refs = {}; wiki = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    m = re.search(r"^## Quellen und weiterführende Literatur\n(.*?)\Z", texts[num], re.M | re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm = re.match(r"\d+\. (.*)", l)
+        if not mm: continue
+        r = mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm = re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$", r)
+            wiki.setdefault(wm.group(2), [wm.group(1), []])[1].append(num)
+        else:
+            refs.setdefault(r, []).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]", "", r.lower())
+cite = lambda ns: ", ".join(sorted(set(ns), key=nk))
+o = ["# Quellen und weiterführende Literatur", "",
+     "Dieser Anhang sammelt die in den inhaltlichen Themen angeführten Quellen, zusammen mit den Themen, die jede anführen. Die Einträge sind alphabetisch nach Autor oder Organ geordnet und in ihrer ursprünglichen Form unverändert. Das Heimatthema bleibt der Ort, um zu sehen, wie eine Quelle genutzt wird.", "",
+     "## Zur Verifizierung", "",
+     "Die Wikipedia-Links in diesem Buch wurden geprüft, sodass sie sich öffnen. Bücher, Aufsätze, Standards und Anleitungen wurden von den Autoren aus dem Gedächtnis angeführt und nicht alle gegen die Originale abgeglichen. Behandeln Sie bibliografische Angaben (Jahr, Ausgabe, Titel) als Hinweise, die zu bestätigen sind, bevor Sie sich in förmlicher Arbeit darauf verlassen. Melden Sie Korrekturen über den Wartungs-Skill.", "",
+     "## Bücher, Aufsätze, Standards und Anleitungen", ""]
+for i, r in enumerate(sorted(refs, key=key), 1):
+    o.append(f"{i}. {r} (angeführt in {cite(refs[r])})")
+o += ["", "## Wikipedia-Artikel", ""]
+for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
+    o.append(f"{i}. Wikipedia, [{title}]({u}) (angeführt in {cite(ns)})")
+open(f"{VI}/{adir('references-and-further-reading')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.6 refs:", len(refs), len(wiki), file=sys.stderr)
+
+# 12.7 index
+metrics = {}; wurl = {}
+url_title = {u: v[0] for u, v in wiki.items()}
+for num, t in texts.items():
+    if num.endswith(".0"): continue
+    for c in table(sec(t, "Kennzahlendefinitionen")):
+        metrics.setdefault(c[0], []).append(num)
+    body = t.split("## Quellen und weiterführende Literatur")[0]
+    for m in re.finditer(r"\]\((https://en\.wikipedia\.org/wiki/[^)\s]+(?:\([^)]*\))?[^)\s]*)\)", body):
+        wurl.setdefault(m.group(1), set()).add(num)
+FW = ["ITIL 5", "ITIL 4", "ITIL", "DORA", "SPACE", "DevEx", "OKR", "GQM", "Balanced scorecard", "Goal-Question-Metric", "Site reliability", "Lean", "Kanban Guide", "COBIT", "ISO/IEC 20000", "ISO/IEC 27001", "NIST", "Cynefin", "Value stream mapping", "HEART", "Four Keys", "Westrum", "CMMI", "FinOps", "COPC", "Team Topologies", "Theory of constraints"]
+fw = {}
+for f in FW:
+    ns = [n for n, t in en.items() if re.search(rf"\b{re.escape(f)}\b", t.split("## References and further reading")[0])]
+    if ns: fw[f] = ns
+def fmt(ns): return ", ".join(sorted(set(ns), key=nk))
+o = ["# Index", "",
+     "Begriffe, Rahmenwerke und Kennzahlen, jeweils mit Verweisen auf die Themen, in denen sie vorkommen. Die Zahlen sind Themennummern. Die Titel stehen im Inhaltsverzeichnis in der README und in der [Struktur](../../../../spec/structure.md). Für kurze Definitionen mit Heimatthemen siehe Thema 12.1, Glossar.", "",
+     "## Rahmenwerke und Modelle", ""]
+for f in sorted(fw, key=str.lower):
+    o.append(f"- **{f}**: {fmt(fw[f]) if len(fw[f]) <= 12 else fmt(sorted(fw[f], key=nk)[:12]) + ' und weitere Themen'}")
+o += ["", "## Kennzahlen", "", "Die Namen der Kennzahlen, wie sie in der Definitionstabelle jedes Themas erscheinen. Die vollständigen Einträge stehen in Anhang 12.2 (siehe Thema 12.2, Nachschlagewerk für Kennzahlendefinitionen und Formeln).", ""]
+for k in sorted(metrics): o.append(f"- **{k}**: {fmt(metrics[k])}")
+o += ["", "## Begriffe", "", "Die Begriffe stammen aus den Termen, bei denen jedes Thema für Hintergrund auf Wikipedia verlinkt (die Artikeltitel bleiben englisch). Die erste Zahl ist meist das Thema, das den Begriff am vollständigsten erklärt.", ""]
+for u in sorted(wurl, key=lambda u: url_title.get(u, u).lower()):
+    o.append(f"- **{url_title.get(u, u.rsplit('/', 1)[-1].replace('_', ' '))}**: {fmt(wurl[u])}")
+open(f"{VI}/{adir('index')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.7:", len(fw), len(metrics), len(wurl), file=sys.stderr)
