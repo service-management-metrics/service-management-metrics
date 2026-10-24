@@ -63,7 +63,7 @@ Definieren Sie „nützlich“ in einem schriftlichen Raster: richtig, relevant 
 
 **5. Begrenzen Sie, was in das System gelangt.** Entscheiden Sie, welcher erzeugte Inhalt automatisch erstellt und veröffentlicht werden darf und was Review braucht. Setzen Sie Grenzen für Größe und Zahl erzeugter Changes in einem Review. Machen Sie es leicht, Nein zu Volumen zu sagen. Eine kleinere Warteschlange mit klareren Elementen dient Nutzern besser.
 
-**6. Führen Sie die Wissensdatenbank wie ein Produkt.** Kennzeichnen Sie erzeugten Inhalt, verlangen Sie Review vor der Veröffentlichung, stellen Sie Dubletten und veraltete Elemente ein und verfolgen Sie Redundanz und Nutzung. Eine Wissensdatenbank ist in dem Maß nützlich, wie Nutzer ihr vertrauen. Entfernen Sie Artikel, die niemand nutzt und für die niemand bürgen kann (siehe Thema 3.6, Kennzahlen für das Wissensmanagement).
+**6. Führen Sie die Wissensdatenbank wie ein Produkt.** Kennzeichnen Sie erzeugten Inhalt, verlangen Sie Review vor der Veröffentlichung, stellen Sie Dubletten und veraltete Elemente ein und verfolgen Sie Redundanz und Nutzung. Eine Wissensdatenbank ist in dem Maß nützlich, wie Nutzer ihr vertrauen. Entfernen Sie Artikel, die niemand nutzt und für die niemand bürgen kann (siehe Thema 3.6, Kennzahlen für Wissensmanagement).
 
 **7. Halten Sie Alarm- und Ticketströme sauber.** Erzeugt KI Tickets aus Alarmen oder Zusammenfassungen, messen Sie den nützlichen Anteil und die Dubletten. Stimmen Sie energisch ab. Behandeln Sie ein fallendes Signal-Rausch-Verhältnis als Incident aus eigenem Recht, denn es schadet der Reaktion, wenn echter Ärger kommt.
 

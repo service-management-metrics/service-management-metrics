@@ -143,7 +143,7 @@ Führungskräfte sollten Trends und Streuung je Service verlangen und die Antwor
 
 ### Kunden und Nutzer
 
-Kunden sehen Releases, nicht Deployments. Ihnen liegt daran, dass Korrekturen bald eintreffen, dass neues Verhalten sie nicht überrascht und dass ein schlechter Change schnell zurückgenommen werden kann. Ein Team, das die beiden Ereignisse trennt, kann Kunden frühen Zugang zu einer Funktion geben, ein Datum ankündigen, das es halten kann, und eine Funktion zurücknehmen, ohne den Rest zu verlieren. Koppeln Sie diese Kennzahlen mit kundenseitigen (siehe Thema 5.3, Kennzahlen für Verfügbarkeit, und Thema 6.1, Kennzahlen für Kundenzufriedenheit).
+Kunden sehen Releases, nicht Deployments. Ihnen liegt daran, dass Korrekturen bald eintreffen, dass neues Verhalten sie nicht überrascht und dass ein schlechter Change schnell zurückgenommen werden kann. Ein Team, das die beiden Ereignisse trennt, kann Kunden frühen Zugang zu einer Funktion geben, ein Datum ankündigen, das es halten kann, und eine Funktion zurücknehmen, ohne den Rest zu verlieren. Koppeln Sie diese Kennzahlen mit kundenseitigen (siehe Thema 5.3, Verfügbarkeitskennzahlen, und Thema 6.1, Kennzahlen für Kundenzufriedenheit).
 
 ## In der Praxis: ein Beispiel aus dem Service-Management
 

@@ -11,7 +11,7 @@ Der Reiz ist offensichtlich. Nutzer bekommen zu jeder Stunde Hilfe ohne Warten. 
 Zwei Arten von Systemen brauchen unterschiedliche Kennzahlen.
 
 - **Dialogassistenten** beantworten Fragen, führen Nutzer und sammeln Informationen. Ihr Risiko sind falsche oder nicht hilfreiche Antworten und das Gefangenhalten von Nutzern in Schleifen. Kennzahlen konzentrieren sich auf Lösung, Genauigkeit und den Weg zu einem Menschen.
-- **Agenten, die handeln,** verändern Dinge in der Welt: Konten, Systeme, Tickets, Geld. Ihr Risiko ist eine falsche Handlung mit realen Folgen. Kennzahlen konzentrieren sich auf Richtigkeit von Handlungen, Umkehrbarkeit, Berechtigungsgrenzen und Audit-Trails. Diese Nutzungen verlangen stärkere Governance und oft menschliche Genehmigung für folgenreiche Schritte (siehe Thema 10.5, Kennzahlen für KI-Governance und Risiken).
+- **Agenten, die handeln,** verändern Dinge in der Welt: Konten, Systeme, Tickets, Geld. Ihr Risiko ist eine falsche Handlung mit realen Folgen. Kennzahlen konzentrieren sich auf Richtigkeit von Handlungen, Umkehrbarkeit, Berechtigungsgrenzen und Audit-Trails. Diese Nutzungen verlangen stärkere Governance und oft menschliche Genehmigung für folgenreiche Schritte (siehe Thema 10.5, Kennzahlen für KI-Governance und -Risiken).
 
 Mehrere Entwurfsfragen prägen, was Sie messen.
 
@@ -68,7 +68,7 @@ Definieren Sie die Anliegen, die der Bot bearbeitet, und nehmen Sie von der Eind
 
 **7. Beproben Sie Antworten auf Genauigkeit und Sicherheit.** Ziehen Sie jeden Monat eine Zufallsstichprobe von Gesprächen und lassen Sie eine qualifizierte Person die Antworten beurteilen: richtig, vollständig, sicher und ehrlich über Unsicherheit. Erfassen Sie Fehler nach Art: veraltet, erfunden, regelwidrig oder missverstanden. Speisen Sie Fehler in die Wissensdatenbank und die Konfiguration. Fügen Sie gezielte Tests für sensible Themen hinzu und für Versuche, den Assistenten aus seinem Umfang zu drängen.
 
-**8. Halten Sie das Wissen aktuell.** Ein Assistent ist nur so gut wie die Inhalte und Werkzeuge, auf die er zurückgreift. Verknüpfen Sie Antwortfehler mit Wissensartikeln und messen Sie die Aktualität des Wissens, das er nutzt (siehe Thema 3.6, Kennzahlen für das Wissensmanagement). Nutzt das System Retrieval aus einer Wissensdatenbank, schließen Sie eine Prüfung ein, dass es seine Quellen angibt und die Quellen stimmen.
+**8. Halten Sie das Wissen aktuell.** Ein Assistent ist nur so gut wie die Inhalte und Werkzeuge, auf die er zurückgreift. Verknüpfen Sie Antwortfehler mit Wissensartikeln und messen Sie die Aktualität des Wissens, das er nutzt (siehe Thema 3.6, Kennzahlen für Wissensmanagement). Nutzt das System Retrieval aus einer Wissensdatenbank, schließen Sie eine Prüfung ein, dass es seine Quellen angibt und die Quellen stimmen.
 
 **9. Seien Sie ehrlich zu den Nutzern.** Sagen Sie zu Beginn, dass sie mit einer KI sprechen und was sie kann und was nicht. Geben Sie ihr keinen menschlichen Namen oder ein Auftreten, das etwas anderes nahelegt. Wo sie unsicher ist, sollte sie es sagen und einen Menschen anbieten. Prüfen Sie das geltende Recht zur Offenlegung.
 

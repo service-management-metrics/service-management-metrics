@@ -40,7 +40,7 @@ Begriffe und Akronyme, die in diesem Buch verwendet werden, in alphabetischer Re
 
 ## E
 
-- **Error budget** (Fehlerbudget): die Menge an Unzuverlässigkeit, die ein Service innerhalb seines Ziels über einen Zeitraum aufwenden darf (siehe Thema 5.2, Kennzahlen für SLIs, SLOs und Fehlerbudgets).
+- **Error budget** (Fehlerbudget): die Menge an Unzuverlässigkeit, die ein Service innerhalb seines Ziels über einen Zeitraum aufwenden darf (siehe Thema 5.2, SLIs, SLOs und Fehlerbudgets).
 - **Estate map** (Bestandskarte): eine Liste der Services, digitalen Produkte, Plattformen und KI-Systeme, die eine Organisation betreibt, jeweils mit einem Eigner (siehe Thema 1.8, ITIL 5: Messung und Wertergebnisse).
 - **Experience level agreement (XLA)** (Experience Level Agreement): eine Vereinbarung, die um die Ergebnisse und das Erlebnis gerahmt ist, die Nutzer brauchen, als Ergänzung zu SLAs (siehe Thema 6.2, Experience Level Agreements).
 
@@ -63,14 +63,14 @@ Begriffe und Akronyme, die in diesem Buch verwendet werden, in alphabetischer Re
 
 ## I
 
-- **Incident** (Incident): eine ungeplante Unterbrechung eines Services oder Minderung seiner Qualität (siehe Thema 3.2, Incident-Volumen und Priorität).
+- **Incident** (Incident): eine ungeplante Unterbrechung eines Services oder Minderung seiner Qualität (siehe Thema 3.2, Incident-Aufkommen und Priorität).
 - **ITIL** (ITIL): eine Sammlung von Anleitungen für IT-Service-Management, deren vierte Ausgabe Arbeit als Service-Wertschöpfungssystem rahmt (siehe Thema 1.1, Warum Service-Management messen).
 - **ITIL 5** (ITIL 5): die Version von ITIL, die ihr Eigner PeopleCert 2026 ankündigte; nur Aussagen, die der Eigner veröffentlicht hat, gelten in diesem Buch als verifiziert (siehe Thema 1.8, ITIL 5: Messung und Wertergebnisse).
 
 ## K
 
-- **Knowledge management** (Wissensmanagement): die Praxis, Wissen von Menschen zu erfassen, zu teilen und zu verbessern, gemessen an Nutzung und Nützlichkeit (siehe Thema 3.6, Kennzahlen für das Wissensmanagement).
-- **Known error** (bekannter Fehler): ein Problem mit dokumentierter Ursache oder Umgehung, bis zur Behebung verfolgt (siehe Thema 4.6, Technische Schuld und bekannte Fehler).
+- **Knowledge management** (Wissensmanagement): die Praxis, Wissen von Menschen zu erfassen, zu teilen und zu verbessern, gemessen an Nutzung und Nützlichkeit (siehe Thema 3.6, Kennzahlen für Wissensmanagement).
+- **Known error** (bekannter Fehler): ein Problem mit dokumentierter Ursache oder Umgehung, bis zur Behebung verfolgt (siehe Thema 4.6, Technische Schulden und bekannte Fehler).
 
 ## L
 
@@ -117,15 +117,15 @@ Begriffe und Akronyme, die in diesem Buch verwendet werden, in alphabetischer Re
 
 - **Self-service** (Self-Service): die Möglichkeit für Nutzer, Antworten zu finden oder Anfragen zu erledigen, ohne eine Person zu kontaktieren (siehe Thema 3.7, Kennzahlen für Self-Service und Automatisierung).
 - **Service level agreement (SLA)** (Service Level Agreement): eine Vereinbarung zwischen Anbieter und Kunde über das Niveau des Services (siehe Thema 5.1, Kennzahlen für SLA, OLA und XLA).
-- **Service level indicator (SLI)** (Service-Level-Indikator): ein gemessener Aspekt der Servicequalität, etwa der Anteil erfolgreicher Anfragen (siehe Thema 5.2, Kennzahlen für SLIs, SLOs und Fehlerbudgets).
-- **Service level objective (SLO)** (Service-Level-Ziel): ein Ziel für einen SLI über einen Zeitraum (siehe Thema 5.2, Kennzahlen für SLIs, SLOs und Fehlerbudgets).
+- **Service level indicator (SLI)** (Service-Level-Indikator): ein gemessener Aspekt der Servicequalität, etwa der Anteil erfolgreicher Anfragen (siehe Thema 5.2, SLIs, SLOs und Fehlerbudgets).
+- **Service level objective (SLO)** (Service-Level-Ziel): ein Ziel für einen SLI über einen Zeitraum (siehe Thema 5.2, SLIs, SLOs und Fehlerbudgets).
 - **Service request** (Serviceanfrage): eine förmliche Anfrage eines Nutzers, etwas bereitzustellen, etwa Zugriff oder Information (siehe Thema 3.5, Kennzahlen für die Erfüllung von Serviceanfragen).
 - **Shadow IT** (Schatten-IT): Technologie, die ohne Wissen oder Genehmigung der zuständigen Funktion genutzt wird, einschließlich KI-Werkzeugen, die Beschäftigte übernehmen (siehe Thema 10.5, Kennzahlen für KI-Governance und -Risiken).
 - **Sustainable pace** (nachhaltiges Tempo): eine Arbeitsgeschwindigkeit, die Menschen dauerhaft halten können, ohne Schaden für ihre Gesundheit oder die Qualität der Arbeit (siehe Thema 9.2, Kennzahlen für Zufriedenheit und Wohlbefinden).
 
 ## T
 
-- **Technical debt** (technische Schuld): die angesammelten Kosten von Abkürzungen und aufgeschobener Wartung, die künftige Arbeit bremsen (siehe Thema 4.6, Technische Schuld und bekannte Fehler).
+- **Technical debt** (technische Schuld): die angesammelten Kosten von Abkürzungen und aufgeschobener Wartung, die künftige Arbeit bremsen (siehe Thema 4.6, Technische Schulden und bekannte Fehler).
 - **Telemetry** (Telemetrie): die Logs, Metriken und Traces, die ein laufender Service aussendet (siehe Thema 10.10, Kennzahlen für Observability und Telemetrie).
 - **Throughput** (Durchsatz): die Zahl der in einem Zeitraum abgeschlossenen Arbeitselemente (siehe Thema 2.1, Flussmaße).
 - **Toil** (Toil): wiederholte, manuelle, automatisierbare Betriebsarbeit, die mit dem Service wächst und keinen bleibenden Wert hat (siehe Thema 5.7, Kennzahlen für Toil und Bereitschaftsdienst).

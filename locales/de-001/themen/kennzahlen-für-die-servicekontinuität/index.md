@@ -141,7 +141,7 @@ Betriebsteams führen die meisten Übungen durch und tragen die Last ihrer Vorbe
 
 ### Führung und Governance
 
-Führungskräfte setzen die Objectives mit dem Geschäft und entscheiden, wie viel Wiederherstellung es wert ist zu kaufen. Sie sollten das zuletzt gezeigte Ergebnis neben jedem Objective, das Alter des Belegs und die offenen Befunde sehen wollen und vermeiden, ein sauberes Blatt zu belohnen. Governance-Gremien sollten einen kleinen, stabilen Satz von Kontinuitätskennzahlen erwarten, verknüpft mit dem Risikoregister und, wo es gilt, mit der regulatorischen Berichterstattung (siehe Thema 8.2, Kennzahlen für Risiko und Kontrollen, und Thema 8.5, Regulatorische und behördliche Berichterstattung).
+Führungskräfte setzen die Objectives mit dem Geschäft und entscheiden, wie viel Wiederherstellung es wert ist zu kaufen. Sie sollten das zuletzt gezeigte Ergebnis neben jedem Objective, das Alter des Belegs und die offenen Befunde sehen wollen und vermeiden, ein sauberes Blatt zu belohnen. Governance-Gremien sollten einen kleinen, stabilen Satz von Kontinuitätskennzahlen erwarten, verknüpft mit dem Risikoregister und, wo es gilt, mit der regulatorischen Berichterstattung (siehe Thema 8.2, Kennzahlen für Risiken und Kontrollen, und Thema 8.5, Regulatorische und behördliche Berichterstattung).
 
 ### Kunden und Nutzer
 

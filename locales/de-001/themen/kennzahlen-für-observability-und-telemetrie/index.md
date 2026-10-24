@@ -10,7 +10,7 @@ Monitoring stellt bekannte Fragen, etwa „liegt die Fehlerrate über einer Schw
 
 Telemetrie hat Kosten und Risiken. Alles zu erfassen ist teuer an Speicher und Geld und kann personenbezogene oder vertrauliche Daten einfangen. Zu wenig zu erfassen lässt ein Team bei einem Incident blind. Telemetrie sind auch Daten im Sinn des vorigen Themas (siehe Thema 10.8, Kennzahlen für Analytik und Datenqualität), sie wirft also Fragen zu Vollständigkeit, Aktualität und Herkunft auf. Und wenn KI-Werkzeuge Telemetrie lesen, um Incidents zusammenzufassen und Ursachen vorzuschlagen, entscheidet die Qualität der Signale, ob die Zusammenfassung stimmt.
 
-Hier verwendete Begriffe. Ein **Signal** ist ein Strom von Telemetrie, etwa ein Log, eine Metrik oder ein Trace. **Instrumentierung** ist der Code, der Signale erzeugt. **Kardinalität** ist die Zahl unterschiedlicher Werte eines Labels an einer Metrik, und hohe Kardinalität erhöht die Kosten. Ein **Service-Level-Indikator (SLI)** misst einen Aspekt des Services, wie Nutzer ihn erleben (siehe Thema 5.2, Kennzahlen für SLIs, SLOs und Fehlerbudgets). **Sampling** behält nur einen Anteil der Daten, was Kosten spart und Details verliert. **Aufbewahrung (Retention)** ist, wie lange Daten behalten werden. **Korrelation** bedeutet, Signale, die dieselbe Anfrage oder dasselbe Ereignis beschreiben, über gemeinsame Kennungen zu verknüpfen.
+Hier verwendete Begriffe. Ein **Signal** ist ein Strom von Telemetrie, etwa ein Log, eine Metrik oder ein Trace. **Instrumentierung** ist der Code, der Signale erzeugt. **Kardinalität** ist die Zahl unterschiedlicher Werte eines Labels an einer Metrik, und hohe Kardinalität erhöht die Kosten. Ein **Service-Level-Indikator (SLI)** misst einen Aspekt des Services, wie Nutzer ihn erleben (siehe Thema 5.2, SLIs, SLOs und Fehlerbudgets). **Sampling** behält nur einen Anteil der Daten, was Kosten spart und Details verliert. **Aufbewahrung (Retention)** ist, wie lange Daten behalten werden. **Korrelation** bedeutet, Signale, die dieselbe Anfrage oder dasselbe Ereignis beschreiben, über gemeinsame Kennungen zu verknüpfen.
 
 ## Leitprinzipien
 
@@ -39,7 +39,7 @@ Die Instrumentierungsabdeckung hängt von einem vereinbarten Kernstandard ab, et
 
 ### Entscheiden, was man sehen will
 
-**1. Beginnen Sie bei Nutzer-Journeys und Service Levels.** Listen Sie die Journeys auf, die zählen, und die Indikatoren, die zeigen, ob Nutzer Erfolg haben. Instrumentieren Sie diese zuerst, denn sie binden Telemetrie an Ergebnisse (siehe Thema 5.2, Kennzahlen für SLIs, SLOs und Fehlerbudgets).
+**1. Beginnen Sie bei Nutzer-Journeys und Service Levels.** Listen Sie die Journeys auf, die zählen, und die Indikatoren, die zeigen, ob Nutzer Erfolg haben. Instrumentieren Sie diese zuerst, denn sie binden Telemetrie an Ergebnisse (siehe Thema 5.2, SLIs, SLOs und Fehlerbudgets).
 
 **2. Vereinbaren Sie einen Kernstandard.** Definieren Sie die Mindestsignale, die jeder Service sendet, und die Namens- und Kennungskonventionen. Nehmen Sie den Standard in die Definition of Done für neue Services auf.
 
