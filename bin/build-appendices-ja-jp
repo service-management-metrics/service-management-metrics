@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+# Regenerates the ja-jp appendices 12.2 (metric definitions), 12.6 (references) and 12.7 (index)
+# from the ja-jp content topics. The home topic is the authority; rerun after any ja-jp topic changes.
+import os, re, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+JA = f"{root}/locales/ja-jp/トピック"
+PARTS = {"1": "測定の基礎", "2": "フローと継続的デリバリーのメトリクス", "3": "サービスデスク、インシデント、リクエストのメトリクス", "4": "問題、変更、リリースのメトリクス",
+         "5": "サービスレベル、可用性、信頼性のメトリクス", "6": "顧客と体験のメトリクス", "7": "資産、構成、財務のメトリクス",
+         "8": "セキュリティ、リスク、コンプライアンス、サプライヤーのメトリクス", "9": "人、チーム、改善のメトリクス", "10": "AI、自動化、アナリティクスのメトリクス", "11": "メトリクスプログラムを築く"}
+def nk(n): return [int(x) for x in n.split(".")]
+def sec(t, n):
+    m = re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", t, re.M | re.S)
+    return m.group(1) if m else ""
+def table(s):
+    out = []
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| メトリクス |"):
+            out.append([x.strip() for x in l.strip().strip("|").split(" | ")])
+    return out
+# map slug -> ja-jp directory through the shared locale peer id
+def pid(path):
+    return open(path).read().strip()
+peer = {}
+for d in os.listdir(JA):
+    p = f"{JA}/{d}/.locale-peer-id"
+    if os.path.exists(p): peer[pid(p)] = d
+def adir(slug):
+    return peer[pid(f"{root}/locales/en-001/topics/{slug}/.locale-peer-id")]
+jadirs = {}
+texts, titles, en = {}, {}, {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    d = adir(slug)
+    jadirs[num] = d
+    texts[num] = open(f"{JA}/{d}/index.md").read()
+    titles[num] = texts[num].splitlines()[0][2:]
+    en[num] = open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+
+# 12.2 metric definitions
+o = []; total = 0; miss = []; cur = None
+for part, num, slug, pt in rows:
+    if int(part) >= 12 or num.endswith(".0"): continue
+    t = texts[num]
+    md = table(sec(t, "メトリクスの定義")); gv = {c[0]: c for c in table(sec(t, "悪用の手口と防護柵")) if len(c) == 3}
+    if part != cur:
+        o.append(f"\n## 第{part}部：{PARTS[part]}\n"); cur = part
+    o.append(f"### {num} {titles[num]}\n")
+    o.append(f"属するトピック：（トピック {num}「{titles[num]}」を参照）。\n")
+    o.append("| メトリクス | 定義 | 計算式 | 単位 | データソース | ITILプラクティス | アジャイルの対応物 | 頻度 | 悪用の手口 | 防護柵 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c) != 8: miss.append((num, c[0], len(c))); continue
+        g = gv.get(c[0])
+        if not g: miss.append((num, c[0], "nogaming")); continue
+        o.append("| " + " | ".join(c[:8] + [g[1], g[2]]) + " |"); total += 1
+    o.append("")
+HEAD = """# メトリクスの定義と計算式のリファレンス
+
+この付録は、内容のトピックで定義されたすべての測定値を、部とトピックごとにまとめて列挙します。各項目は、属するトピックからの定義、計算式、単位、データソース、関連するITILのプラクティス、アジャイルの対応物、頻度に加えて、悪用の手口と組になる防護柵を持ちます。各トピックの「メトリクスの定義」と「悪用の手口と防護柵」の二つのセクションから生成されるので、属するトピックが権威です。ここでの項目がそのトピックと異なる場合は、トピックが優先され、この付録は再生成されます。
+
+## このリファレンスの使い方
+
+- **採用する前に調べる。** 測定値をダッシュボードに加える前に、悪用の手口と防護柵を含めてその項目を読み、防護柵をそれと一緒に採用します（トピック 1.3「アウトプットよりアウトカム：何を測るかを選ぶ」を参照）。
+- **チーム、サービス、システムを測る。** どの項目も、個人をランク付けするためにあるのではありません（トピック 1.2「グッドハートの法則とメトリクスの心理学」を参照）。
+- **判断は属するトピックに従う。** ここでの計算式は短いものです。用語の定義、標本抽出の注意点、実践の例は、属するトピックにあります。
+- **自分たち自身の変種を記録する。** 組織が定義を変えた場合は、その変更と理由をメトリクスのカタログに記録します（トピック 1.4「メトリクスのガバナンスとオーナーシップ」を参照）。メトリクスカードが役立ちます（トピック 12.4「テンプレート」を参照）。
+- **例示の数字には印が付いている。** この付録にはベンチマークの値は含まれません。どの数字も、自分たち自身のベースラインから来ます。
+"""
+open(f"{JA}/{adir('metric-definitions-and-formulas-reference')}/index.md", "w").write(HEAD + "\n".join(o))
+print("12.2 metrics:", total, "missing:", miss, file=sys.stderr)
+
+# 12.6 references (entries are kept verbatim; the cited-in lists use topic numbers)
+refs = {}; wiki = {}
+for part, num, slug, pt in rows:
+    if int(part) >= 12: continue
+    m = re.search(r"^## 参考文献とさらなる読書\n(.*?)\Z", texts[num], re.M | re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm = re.match(r"\d+\. (.*)", l)
+        if not mm: continue
+        r = mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm = re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$", r)
+            wiki.setdefault(wm.group(2), [wm.group(1), []])[1].append(num)
+        else:
+            refs.setdefault(r, []).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]", "", r.lower())
+cite = lambda ns: "、".join(sorted(set(ns), key=nk))
+o = ["# 参考文献とさらなる読書", "",
+     "この付録は、内容のトピックで引用された参考文献をまとめ、それぞれを引用するトピックを列挙します。項目は著者または機関のアルファベット順に並べ、原文のまま保っています。ある情報源がどう使われているかは、属するトピックを参照してください。", "",
+     "## 検証について", "",
+     "この本のWikipediaのリンクは、開けることを確認済みです。書籍、論文、規格、指導文書は、著者が記憶から引用したもので、すべてが原本と照合されたわけではありません。書誌の詳細（年、版、タイトル）は手がかりとして扱い、正式な仕事で頼る前に確認してください。訂正はメンテナースキルを通じて報告してください。", "",
+     "## 書籍、論文、規格、指導文書", ""]
+for i, r in enumerate(sorted(refs, key=key), 1):
+    sep = " " if "http" in r else ""  # a bare URL must end at whitespace, not swallow the （引用元：…） note
+    o.append(f"{i}. {r}{sep}（引用元：{cite(refs[r])}）")
+o += ["", "## Wikipediaの記事", ""]
+for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
+    o.append(f"{i}. Wikipedia, [{title}]({u})（引用元：{cite(ns)}）")
+open(f"{JA}/{adir('references-and-further-reading')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.6 refs:", len(refs), len(wiki), file=sys.stderr)
+
+# 12.7 index
+metrics = {}; wurl = {}
+url_title = {u: v[0] for u, v in wiki.items()}
+for num, t in texts.items():
+    if num.endswith(".0"): continue
+    for c in table(sec(t, "メトリクスの定義")):
+        metrics.setdefault(c[0], []).append(num)
+    body = t.split("## 参考文献とさらなる読書")[0]
+    for m in re.finditer(r"\]\((https://en\.wikipedia\.org/wiki/[^)\s]+(?:\([^)]*\))?[^)\s]*)\)", body):
+        wurl.setdefault(m.group(1), set()).add(num)
+FW = ["ITIL 5", "ITIL 4", "ITIL", "DORA", "SPACE", "DevEx", "OKR", "GQM", "Balanced scorecard", "Goal-Question-Metric", "Site reliability", "Lean", "Kanban Guide", "COBIT", "ISO/IEC 20000", "ISO/IEC 27001", "NIST", "Cynefin", "Value stream mapping", "HEART", "Four Keys", "Westrum", "CMMI", "FinOps", "COPC", "Team Topologies", "Theory of constraints"]
+fw = {}
+for f in FW:
+    ns = [n for n, t in en.items() if re.search(rf"\b{re.escape(f)}\b", t.split("## References and further reading")[0])]
+    if ns: fw[f] = ns
+def fmt(ns): return "、".join(sorted(set(ns), key=nk))
+o = ["# 索引", "",
+     "概念、フレームワーク、測定値を、それぞれが現れるトピックとともに示します。数字はトピック番号です。タイトルは、READMEの目次と[構成](../../../../spec/structure.md)にあります。属するトピックを伴う短い定義については、トピック 12.1「用語集」を参照してください。", "",
+     "## フレームワークとモデル", ""]
+for f in sorted(fw, key=str.lower):
+    o.append(f"- **{f}**：{fmt(fw[f]) if len(fw[f]) <= 12 else fmt(sorted(fw[f], key=nk)[:12]) + ' など'}")
+o += ["", "## メトリクス", "", "メトリクスの名前は、各トピックの定義の表に現れるとおりです。完全な項目は付録12.2にあります（トピック 12.2「メトリクスの定義と計算式のリファレンス」を参照）。", ""]
+for k in sorted(metrics): o.append(f"- **{k}**：{fmt(metrics[k])}")
+o += ["", "## 概念", "", "概念は、各トピックが背景知識のためにWikipediaにリンクする用語から取られています（項目のタイトルは英語のままです）。最初の数字は、通常、その概念を最も詳しく説明するトピックです。", ""]
+for u in sorted(wurl, key=lambda u: url_title.get(u, u).lower()):
+    o.append(f"- **{url_title.get(u, u.rsplit('/', 1)[-1].replace('_', ' '))}**：{fmt(wurl[u])}")
+open(f"{JA}/{adir('index')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.7:", len(fw), len(metrics), len(wurl), file=sys.stderr)
