@@ -190,7 +190,7 @@ Escolha indicadores que os dados possam sustentar e diga que decisão cada um in
 
 ## Business case: motivações, ROI e TCO
 
-O custo de uma estrutura é sobretudo tempo: uma sessão facilitada para projetar medidas, uma breve revisão trimestral e a manutenção de um registro. Existem softwares para OKRs ou scorecards, mas um documento ou uma planilha costuma bastar em pequena escala. O custo maior é a atenção da liderança, já que uma estrutura que os líderes não usam vira relatório por relatório.
+O custo de uma estrutura é sobretudo tempo: uma sessão facilitada para projetar medidas, uma breve revisão trimestral e a manutenção de um registro. Existem softwares para OKRs ou scorecards, mas um documento ou uma planilha costuma bastar em pequena escala. O custo maior é a atenção da liderança, já que uma estrutura que os líderes não usam vira relatório pelo relatório.
 
 O retorno vem de medidas menos numerosas e melhores. As equipes que sabem dizer por que cada número existe gastam menos tempo produzindo relatórios que ninguém lê, discutem menos sobre definições e percebem mais cedo quando uma medida deixou de informar decisões. Em vez de citar uma cifra, meça suas próprias linhas de base: o número de métricas relatadas, a proporção com um objetivo registrado e o tempo gasto preparando relatórios recorrentes, antes e depois de adotar a estrutura. Um tratamento mais completo do retorno sobre o investimento está em outro lugar (veja o tópico 7.7, Retorno do investimento e business case).
 
