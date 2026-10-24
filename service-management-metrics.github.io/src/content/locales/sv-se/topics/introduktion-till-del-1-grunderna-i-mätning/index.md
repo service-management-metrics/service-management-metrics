@@ -1,0 +1,28 @@
+# Introduktion till del 1: Grunderna i mätning
+
+**Mätning hjälper ett team som bygger och driftar tjänster bara när den väljs för ett syfte, ägs av någon, bygger på tillförlitliga data, läses med omsorg och hindras från att böja det arbete den beskriver.**
+
+Team som arbetar med kontinuerlig leverans och team som arbetar med it-tjänstehantering (ITSM) producerar båda en jämn ström av siffror: stängda ärenden, slutförda berättelser, genomförda driftsättningar, lösta incidenter. Att ha siffror är lätt. Att ha siffror som hjälper människor att besluta något är svårare, och det är i det glappet de flesta mätetalsprogram kämpar. Den här delen ger den gemensamma grunden som varje senare del bygger på, innan något enskilt mätetal definieras. Den lägger också till ett perspektiv som boken bär med sig hela vägen: hur ITIL 5, AI, automatisering och analys förändrar vad en tjänsteorganisation mäter.
+
+Grunden består av sju frågor i tur och ordning. Varför mäta överhuvudtaget, och vad kostar det att mäta ingenting eller fel saker? Hur blir ett mått ett mål och slutar sedan säga sanningen? Vad är värt att mäta från början? Vem definierar, äger och avvecklar varje mätetal? Var kommer data ifrån, och hur långt kan de litas på? Hur ska siffrorna läsas, med tanke på att ärende- och flödesdata är sneda och ofta glesa? Ett ämne visar hur etablerade ramverk hjälper till att organisera svaren, och ett avslutande ämne frågar vad ITIL 5, så som dess ägare beskriver det, betyder för mätning, och skiljer det som går att verifiera från det som inte går det.
+
+Läs den här delen först om du är ny i boken, och återvänd till den när ett senare mätetal verkar bete sig illa. De flesta misslyckanden med mätetal i de senare delarna går att spåra tillbaka till någon av idéerna som introduceras här. Mätetalen i den här boken beskriver team, tjänster och system. De används aldrig för att rangordna individer.
+
+## Ämnen i den här delen
+
+- **1.1 Varför mäta tjänstehantering**: varför team som bygger och driftar tjänster behöver siffror, vad agilitet och ITIL var för sig bidrar med till mätning, och kostnaden för att mäta ingenting eller fel saker.
+- **1.2 Goodharts lag och mätetalens psykologi**: skyddsräcket bakom alla andra ämnen, med hur ett mått blir ett mål, hur manipulation går till i ärende- och leveransdata, och vilka vanor som förebygger den.
+- **1.3 Resultat före leverans: att välja vad som ska mätas**: värde, resultat, leverans och aktivitet, ledande och eftersläpande indikatorer, och ITIL:s samskapande av värde som provet på ett bra mätetal.
+- **1.4 Styrning och ägarskap av mätetal**: mätetalsägare, definitioner, granskningsrytm, avveckling och vem som får se vad.
+- **1.5 Datakällor och instrumentering**: ITSM-verktyg, ärendehanteringssystem, versionshantering, pipelines för kontinuerlig integration och leverans, övervakning, konfigurationsdatabasen (CMDB) och enkäter som källor, med fokus på datakvalitet, tidsstämplar och statusmodeller.
+- **1.6 Statistisk läskunnighet för tjänstemätetal**: percentiler framför medelvärden, sneda fördelningar, små urval, kontrolldiagram och ärlig osäkerhet för ärende- och flödesdata.
+- **1.7 Ramverk för mätning**: Goal-Question-Metric, mål och nyckelresultat (OKR:er), balanserat styrkort, kritiska framgångsfaktorer och nyckeltal (KPI:er), och hur de kombineras med ITIL-praxis.
+- **1.8 Mätning av ITIL 5 och värdeutfall**: ITIL 5:s uttalade betoning på mätbart värde, digitala produkter och AI-aktiverade miljöer, verifierad mot ägarens egna publikationer, samt de grunder (ägarskap, resultat, AI-tillsyn) som du kan mäta redan i dag.
+
+## Hur ämnena hänger ihop
+
+Ämnena bildar en loop snarare än en stege. Ämne 1.1 (se ämne 1.1, Varför mäta tjänstehantering) ger syftet, och ämne 1.3 (se ämne 1.3, Resultat före leverans: att välja vad som ska mätas) gör om syftet till ett val av vad som ska mätas. Ett mätetal som valts för sitt resultatfokus behöver ändå en definition, en ägare och ett granskningsdatum, vilket är arbetet i ämne 1.4 (se ämne 1.4, Styrning och ägarskap av mätetal). Ramverk som Goal-Question-Metric, som behandlas i ämne 1.7 (se ämne 1.7, Ramverk för mätning), ger ett upprepbart sätt att gå från ett mål till en liten uppsättning mått, så de passar naturligt ihop med ämnena 1.3 och 1.4.
+
+Data och statistik bildar ett andra par. Ett väl valt mätetal är bara så bra som de poster som ligger bakom det, och ämne 1.5 (se ämne 1.5, Datakällor och instrumentering) förklarar hur tidsstämplar, statusmodeller och verktygskonfiguration formar vad en siffra kan betyda. Ämne 1.6 (se ämne 1.6, Statistisk läskunnighet för tjänstemätetal) behandlar sedan hur den siffran läses ärligt, med percentiler, kontrolldiagram och enkla uttalanden om osäkerhet. Svaga data slår ut bra statistik, och svag statistik slösar bort bra data, så de två läses bäst tillsammans.
+
+Ämne 1.8 (se ämne 1.8, Mätning av ITIL 5 och värdeutfall) tillämpar samma loop på ett ramverk i förändring: det mäter de grunder som varje version behöver, och det håller overifierade påståenden märkta. Ämne 1.2 (se ämne 1.2, Goodharts lag och mätetalens psykologi) ligger tvärs över alla de andra som skyddsräcke. Varje mätetal som väljs enligt ämne 1.3, styrs enligt ämne 1.4 och hämtas från källorna i ämne 1.5 kan ändå manipuleras när människor bedöms efter det. Styrning begränsar vem som ser vad och hur ett mätetal används. Resultatinriktade val gör manipulation mindre lönsam. Parade mått, som introduceras här och utvecklas genom hela boken, låter en siffra kontrollera en annan. Varje mätetal i de senare delarna har därför en manipuleringsvektor och ett skyddsräcke, och den här delen förklarar varför.

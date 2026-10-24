@@ -1,0 +1,903 @@
+# Index
+
+Begrepp, ramverk och mätetal, var och en med pekare till de ämnen där de förekommer. Talen är ämnesnummer. Titlarna finns i innehållsförteckningen i README och i [strukturen](../../../../spec/structure.md). För korta definitioner med hemämnen, se ämne 12.1, Ordlista.
+
+## Ramverk och modeller
+
+- **Balanced scorecard**: 1.7
+- **DevEx**: 9.1
+- **DORA**: 1.1, 1.3, 1.5, 2.0, 2.1, 2.2, 2.4, 2.7, 2.8, 3.3, 3.4, 3.7 och andra ämnen
+- **FinOps**: 5.4, 7.0, 7.5, 7.6, 7.7
+- **Four Keys**: 2.8
+- **Goal-Question-Metric**: 1.0, 1.7
+- **GQM**: 1.7
+- **ISO/IEC 20000**: 1.4
+- **ISO/IEC 27001**: 8.1, 8.3
+- **ITIL**: 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 2.0, 2.1, 2.2 och andra ämnen
+- **ITIL 4**: 1.1, 1.3, 1.4, 1.6, 1.7, 1.8, 2.1, 2.3, 2.4, 2.7, 2.8, 2.9 och andra ämnen
+- **ITIL 5**: 1.0, 1.1, 1.3, 1.8
+- **Kanban Guide**: 1.6, 2.1, 2.2, 2.5
+- **Lean**: 2.2, 2.3, 2.4
+- **NIST**: 1.7, 10.5
+- **OKR**: 1.7
+- **Site reliability**: 1.1, 5.0, 5.1, 5.4, 5.5
+- **SPACE**: 1.1, 9.1
+
+## Mätetal
+
+Mätetalens namn så som de förekommer i varje ämnes definitionstabell. De fullständiga posterna finns i bilaga 12.2 (se ämne 12.2, Referens för mätetalsdefinitioner och formler).
+
+- **AI-användningens täckning**: 10.1
+- **Acceptans- och åsidosättandegrad för förslag**: 10.1
+- **Aktualitet för larmregler**: 5.5
+- **Aktualitet i automatiseringsägarskap**: 10.6
+- **Aktualitet i due diligence**: 8.4
+- **Aktualitet i genomförd granskning**: 3.4
+- **Aktualitet i kommunikation**: 3.4
+- **Aktualitet i leverantörers AI-granskning**: 10.5
+- **Aktualitet i riskbedömning**: 10.5
+- **Aktualitet i riskgranskning**: 8.2
+- **Aktualitet i utvärdering**: 10.5
+- **Aktualitet i åtkomstgranskning**: 1.4
+- **Andel RPO uppfyllt**: 5.6
+- **Andel RTO uppfyllt**: 5.6
+- **Andel aktiv användning**: 6.3
+- **Andel aktiv tid**: 3.3
+- **Andel anrop utanför kontorstid**: 5.7
+- **Andel användbara poster**: 10.4
+- **Andel automatiserade godkännanden**: 4.3
+- **Andel automatiskt godkännande**: 10.7
+- **Andel beslutskopplade mätetal**: 1.1
+- **Andel degradering**: 5.3
+- **Andel dubbla CI:er**: 7.4
+- **Andel enbart med tillfällig lösning**: 4.1
+- **Andel falska positiva**: 5.5
+- **Andel fokustid**: 9.1
+- **Andel frivilligt upptag**: 9.6
+- **Andel föråldrade poster**: 6.3
+- **Andel idéer från frontlinjen**: 9.5
+- **Andel kapacitet för förbättring**: 9.5
+- **Andel kapacitet kopplad till resultat**: 6.5
+- **Andel kommentarsteman**: 6.1
+- **Andel lyckade återställningar från säkerhetskopia**: 5.6
+- **Andel lösta vid första kontakten**: 3.1
+- **Andel manuell insats**: 11.2
+- **Andel med beläggskvalitet**: 6.5
+- **Andel misslyckade ändringar**: 2.8, 4.4
+- **Andel nattavbrott**: 5.7
+- **Andel nästan-missar**: 5.1
+- **Andel nödändringar**: 4.4
+- **Andel oplanerat arbete**: 2.9
+- **Andel ouppklarade tillgångar**: 7.1
+- **Andel overksamma enheter**: 7.3
+- **Andel pausad klocka**: 5.1
+- **Andel planerat driftstopp**: 5.3
+- **Andel programinsats**: 11.5
+- **Andel riskbaserade ändringar**: 8.2
+- **Andel rutinarbete av tiden**: 5.7
+- **Andel skyddad lärandetid**: 9.4
+- **Andel standardändringar**: 4.3
+- **Andel stopp på belägg**: 7.7
+- **Andel stängda övningsfynd**: 5.6
+- **Andel sökningar utan träff**: 3.6
+- **Andel teamägande**: 11.3
+- **Andel tillgångar utan ägare**: 7.1
+- **Andel tvister om kostnadsvisning**: 7.5
+- **Andel upprepade anrop**: 5.7
+- **Andel upprepat oplanerat arbete**: 2.9
+- **Andel upptäckt av övervakningen**: 5.5
+- **Andel upptäckta av övervakning**: 3.2
+- **Andel utbyten i tid**: 7.3
+- **Andel väntan vid överlämning**: 9.3
+- **Andel åtgärdbara larm**: 5.5
+- **Andel övergivna samtal**: 3.1
+- **Andel överträdelser av WIP-gräns**: 2.3
+- **Ankomst- och avgångstakt**: 2.3
+- **Anrop per pass**: 5.7
+- **Antal definitionsändringar**: 1.2
+- **Antal ej sanktionerade applikationer**: 7.2
+- **Antal inaktuella flaggor**: 4.5
+- **Antal inaktuella pull requests**: 2.7
+- **Antal omtilldelningar**: 3.3
+- **Antal större incidenter**: 3.4
+- **Antal överlämningar**: 2.4, 9.3
+- **Användarviktad tillgänglighet**: 5.3
+- **Användningsgrad för mätetal**: 1.2
+- **Artikelfärskhet**: 3.6
+- **Automatiseringsandel**: 3.5
+- **Automatiseringsgrad för belägg**: 8.3
+- **Automatiseringstäckning**: 3.7
+- **Avbrottsfrekvens**: 2.9
+- **Avbrottsfrekvens och avstånd**: 5.3
+- **Avkastning på investering**: 7.7
+- **Avstämningsavvikelse**: 1.5, 10.8
+- **Avstämningsgrad**: 7.1, 11.2
+- **Avtalstäckning och aktualitet**: 5.1
+- **Avvecklade mått och rapporter**: 11.5
+- **Avvecklingsgrad**: 1.4, 11.1
+- **Backlogens storlek**: 2.6
+- **Backlogens ålder**: 2.6
+- **Baslinjens fullständighet**: 10.1
+- **Baslinjetäckning**: 1.1
+- **Bearbetningstid**: 2.2
+- **Bedömningsbörda**: 11.4
+- **Beläggsålder för resultat**: 1.8
+- **Beredskap för utträde**: 11.2
+- **Beredskap första dagen**: 6.4
+- **Beroendefördröjning**: 9.3
+- **Beroendetäckning**: 7.4
+- **Beslutsanvändningsgrad**: 10.8
+- **Beslutsbelägg**: 11.4
+- **Beslutskoppling**: 1.4
+- **Betyg på arbetsbelastningens påfrestning**: 9.2
+- **Betyg på behovsstöd**: 9.2
+- **Betyg på hållbar takt**: 9.2
+- **Betyg på kognitiv belastning**: 9.1
+- **Betyg på psykologisk trygghet**: 9.2
+- **Bidragsbredd**: 3.6
+- **Blockerad tidsandel**: 2.1
+- **Borttaget rutinarbete**: 5.7
+- **Botnöjdhet och ansträngning**: 10.3
+- **Bredd i införande av praxis**: 9.6
+- **CES**: 6.1
+- **CI-fullständighet**: 7.4
+- **CI-noggrannhet**: 7.4
+- **CMDB-användningsgrad**: 7.4
+- **CSAT**: 6.1
+- **Cykeltid**: 2.1, 2.2
+- **Dagar sedan senaste lyckade återställningstest**: 5.6
+- **Dataaktualitet**: 1.5
+- **Datans aktualitet**: 10.8, 11.1
+- **Dataålder vid granskning**: 1.1
+- **Definitionsaktualitet**: 1.4
+- **Definitionsöverensstämmelse**: 8.5
+- **Deltagande i bedömning**: 11.4
+- **Deltagande i gemenskaper**: 9.4
+- **Detektionstäckning**: 5.5
+- **Dimensionstäckning**: 9.1
+- **Djup på redo arbete**: 2.6
+- **Driftsättningsfrekvens**: 2.8, 4.5
+- **Effektiv licensposition**: 7.2
+- **Efterhandsregistrering**: 1.5
+- **Efterlevnad av budgetpolicy**: 5.2
+- **Efterlevnad av integritetsskydd**: 6.4
+- **Enhetskostnad**: 7.5
+- **Enkätsvarsfrekvens**: 1.5
+- **Expedieringsgrad**: 2.9
+- **Exponeringsfönster**: 8.1
+- **Felgrad i datapipelinekörningar**: 10.8
+- **Felgrad och omarbetsgrad för automatisering**: 3.7
+- **Felgrad per modell**: 7.3
+- **Finansieringsandel för bestående team**: 7.5
+- **Flaggor för mätetalsdrift**: 10.4
+- **Flödeseffektivitet**: 2.2
+- **Friktionshändelser per användare**: 6.2
+- **Frivilligt avhopp och teman från avgångssamtal**: 9.2
+- **Frivilligt införande**: 11.3
+- **Fullständighet i belägg**: 10.7
+- **Fullständighet i definitioner**: 11.1
+- **Fullständighet i livscykelsteg**: 7.1
+- **Fullständighet i obligatoriska fält**: 10.8
+- **Fullständighet i spår**: 10.10
+- **Fullständighet i ändringsposter**: 4.3
+- **Fullständighet i överlämningens sammanhang**: 10.3
+- **Funktionsanvändning**: 1.3
+- **Funktionsflaggtäckning**: 4.5
+- **Följsamhet till kapacitetsfördelning**: 2.9
+- **Förbigångsgrad**: 10.7
+- **Förbrukningstakt**: 5.2
+- **Förbättringar spårade till mått**: 11.5
+- **Förbättringsbacklogens ålder**: 9.5
+- **Förbättringsåtgärder från bedömningar**: 11.4
+- **Fördelning av nyckelresultatpoäng**: 1.7
+- **Fördelning mellan drift, ändring och förbättring**: 7.5
+- **Fördelningstäckning**: 7.5, 7.6
+- **Förekomst av kringgåenden**: 6.4
+- **Förfiningstäckning**: 2.6
+- **Förflyttning av resultatindikator**: 6.5
+- **Förfrågningsbacklog och ålder**: 3.5
+- **Förfrågningsbaserad tillgänglighet**: 5.3
+- **Förfrågningskoncentration**: 6.3
+- **Förfrågningsvolym per katalogobjekt**: 3.5
+- **Förnyelseberedskap**: 7.2
+- **Försenade kritiska fynd**: 8.1
+- **Förtroende för definitioner och data**: 11.4
+- **Förändringsbelastning**: 9.6
+- **Genomfallsgrad**: 3.7
+- **Genomflöde**: 2.1
+- **Genomflödets stabilitet**: 2.5
+- **Genomförande av förbättringar**: 1.1
+- **Genomförandegrad för nyttogranskningar**: 1.3
+- **Genomförandegrad för resa**: 6.2
+- **Genomförda etappöversyner**: 11.5
+- **Genomloppstid för belägg**: 8.3
+- **Glapp mellan driftsättning och release**: 4.5
+- **Godkändgrad vid förklaringskontroll**: 10.2
+- **Godkännandeväntan**: 3.5
+- **Grad av AI-incidenter och tid till inneslutning**: 10.5
+- **Grad av automatiseringsorsakade incidenter**: 10.6
+- **Grad av belägg för mänsklig tillsyn**: 10.5
+- **Grad av effektkontroll**: 9.5
+- **Grad av innehållsredundans**: 10.4
+- **Grad av intressentinvolvering**: 9.6
+- **Grad av lyckade automatiseringskörningar**: 10.6
+- **Grad av manuellt ingripande**: 10.6
+- **Grad av opålitliga test**: 10.7
+- **Grad av policyportsstopp**: 10.7
+- **Grad av samarbetslösning**: 9.3
+- **Grad av signalkorrelation**: 10.10
+- **Grad av undkomna fel**: 10.2
+- **Grad av verifierad lösning**: 10.3
+- **Grad av återanvändning och återvinning**: 7.3
+- **Grad av återkommande kontakt**: 10.3
+- **Grad av återkommande kontakter**: 1.3
+- **Granskad andel av genererad kunskap**: 10.4
+- **Granskningsbelastning**: 10.2
+- **Granskningscykeltid**: 2.7
+- **Granskningsgrad för analys**: 10.8
+- **Granskningskvalitetspoäng**: 4.2
+- **Granskningsrundor**: 2.7
+- **Granskningstäckning**: 4.2
+- **Hanteringstid**: 3.1
+- **Hjälpsamhetsgrad**: 3.6
+- **Incidenter i blinda fläckar**: 10.10
+- **Incidenter länkade till öppna kända fel**: 4.6
+- **Incidenter med individanvändning**: 11.3
+- **Incidentvolym per tjänst**: 3.2
+- **Inflöde i backlog mot lösning**: 10.4
+- **Inflödes-utflödeskvot för backlog**: 2.6
+- **Införandegrad**: 6.3
+- **Intervallbredd**: 1.6
+- **Intressenters svarstid**: 9.3
+- **Inventeringstäckning för AI-system**: 1.8
+- **Kalibreringsglapp**: 10.9
+- **Kapacitetsandel för skuld**: 4.6
+- **Kapacitetsfördelning**: 2.5
+- **Kasseringsgrad för backlog**: 2.6
+- **Katalogtäckning**: 6.3
+- **Kategorikoncentration**: 3.2
+- **Koncentration**: 8.4
+- **Koncentration av granskningsbelastning**: 2.7
+- **Konflikter i uppdelning av arbetsuppgifter**: 8.3
+- **Konsistenskvot enligt Littles lag**: 2.3
+- **Kontaktfrekvens**: 3.1
+- **Kontaktvolym**: 3.1
+- **Kontrolleffektivitetsgrad**: 8.2
+- **Kontrollgrad för hypoteser**: 6.5
+- **Koppling mellan prognos och beslut**: 10.9
+- **Koppling till beslut**: 11.1
+- **Korsutbildningsdjup**: 9.4
+- **Kostnad för hyllvärmare**: 7.2
+- **Kostnad per AI-stödd uppgift**: 10.1
+- **Kostnad per tjänst**: 7.5
+- **Kostnadsuppskattningens noggrannhet**: 7.7
+- **Kundpåverkan**: 3.4
+- **Kunskapslänkgrad**: 3.6
+- **Kunskapstäckning**: 9.3
+- **Kvalitet i stött support**: 10.2
+- **Kvarstående grad**: 10.2
+- **Kvot mellan utdata och utfall**: 10.4
+- **Källtäckning**: 1.5, 11.2
+- **Källöverensstämmelse**: 1.4
+- **Känsliga data i telemetri**: 10.10
+- **Kölängd**: 2.3
+- **Kötid**: 2.3
+- **Larmkoncentration**: 5.5
+- **Larmvolym**: 5.5
+- **Ledtid**: 2.2
+- **Ledtid för ersättning**: 7.3
+- **Ledtid för godkännande**: 4.3
+- **Ledtid för kapacitet**: 5.4
+- **Ledtid för ändring**: 2.8
+- **Leverantörsattribuerad incidenttid**: 8.4
+- **Licensutnyttjandegrad**: 7.2
+- **Lokal velocity**: 2.5
+- **Länkgrad mellan incident och problem**: 4.1
+- **Länkgrad mellan ändring och incident**: 4.4
+- **Lärandets räckvidd**: 4.2
+- **Lärdomar delade mellan team**: 9.4
+- **Lösningstid för hinder**: 9.1
+- **Lösningstid för tillgänglighetsförfrågningar**: 6.4
+- **Lösningstid vid hög percentil**: 1.6
+- **Manuell bearbetningstid per förfrågningstyp**: 3.7
+- **Marginal**: 5.4
+- **Mediantid för lösning**: 1.6
+- **Minuter av påtvingat avbrott**: 6.4
+- **Molnenhetskostnad**: 7.6
+- **Mätinsats**: 1.1
+- **Mätningstäckning**: 5.3
+- **Mättnad**: 5.4
+- **Målspårbarhet**: 1.7
+- **Måluppfyllelse för leverantörens servicenivå**: 8.4
+- **Måluppfyllelse i leverans**: 2.5
+- **NPS**: 6.1
+- **Nettoförändring av skuld**: 4.6
+- **Nivåfördelning (skifta-vänster-andel)**: 3.7
+- **Normaliserad incidentfrekvens**: 3.2
+- **Nuvärde**: 7.7
+- **Nyttorealiseringsgrad**: 6.5
+- **Nyttouppskattningens noggrannhet**: 7.7
+- **Nöjdhet med verktyg och processer**: 9.1
+- **OLA-måluppfyllelse**: 5.1
+- **Omarbete efter sammanfogning**: 10.2
+- **Omarbetsgrad vid driftsättning**: 2.8, 4.4
+- **Omfattningsändringsgrad**: 2.5
+- **Omklassificeringsgrad för prioritet**: 3.2
+- **Omräkningsgrad**: 8.5
+- **Omtilldelningsgrad**: 9.3
+- **Oplanerat driftstopp**: 5.3
+- **Patchefterlevnad**: 8.1
+- **Pausandel för klockan**: 2.2
+- **Percentil av fördröjning**: 5.4
+- **Perspektivtäckning**: 1.7
+- **Pipelinens lyckandegrad**: 10.7
+- **Pipelinens tillförlitlighet**: 11.2
+- **Pipelinens varaktighet**: 10.7
+- **Plans aktualitet**: 5.6
+- **Precision och återkallning för larm**: 10.9
+- **Presentationens storlek**: 11.1
+- **Prioritetsmix**: 3.2
+- **Problembacklogens ålder**: 4.1
+- **Procent komplett och korrekt (steg)**: 2.4
+- **Processeffektivitet**: 2.4
+- **Processtid**: 2.4
+- **Profil per dimension**: 11.4
+- **Prognosavvikelse**: 7.5, 7.6
+- **Prognosfel**: 5.4, 10.9
+- **Prognosintervallets bredd**: 2.5
+- **Publikens räckvidd (beskrivande)**: 11.1
+- **Pull requests storlek**: 2.7
+- **Puls för att våga tala**: 4.2
+- **Punktlighet i behandlingsplaner**: 8.2
+- **Punktlighet i rapportering**: 8.5
+- **Pågående arbete**: 2.3
+- **Pågående arbete (WIP)**: 2.1
+- **Rapporteringsgrad för nästan-misslyckanden**: 4.2
+- **Rapporteringsgrad för säkerhet**: 8.1
+- **Rapporteringsinsats**: 8.5
+- **Registrets noggrannhet**: 7.1
+- **Releasebatchens storlek**: 4.5
+- **Releasefrekvens**: 4.5
+- **Releaseledtid**: 4.5
+- **Resultatförflyttning mot jämförelse**: 9.6, 10.1
+- **Resultattäckning**: 1.3
+- **Resursutnyttjande**: 5.4
+- **Revisionsinsats**: 8.3
+- **Riktighet i granskad utdata**: 10.1
+- **Rutinarbete per källa**: 5.7
+- **Rättelsegrad efter sammanslagning**: 2.7
+- **SBOM-täckning**: 7.2
+- **SLA-måluppfyllelse**: 5.1
+- **SLE-uppfyllelse**: 2.1
+- **SLI-måluppfyllelse**: 5.2
+- **SLO-efterlevnad**: 5.2
+- **SLO-täckning**: 5.2
+- **Sammanlagd procent komplett och korrekt**: 2.4
+- **Schemadjup**: 5.7
+- **Servicebacklog bortom mål**: 2.6
+- **Signal om prognosdrift**: 10.9
+- **Signal om öppenhet**: 11.3
+- **Signalfrekvens i kontrolldiagram**: 1.6
+- **Självbetjäningsanvändning (portal-först-andel)**: 3.7
+- **Självbetjäningsframgång**: 3.7
+- **Självförtroende utan verktyg**: 10.2
+- **Skanningstäckning**: 8.1
+- **Skicklighet mot baslinje**: 10.9
+- **Skuldbestånd**: 4.6
+- **Skuldränta**: 4.6
+- **Skyddsräckestäckning**: 1.2
+- **Slutförd säker avyttring**: 7.3
+- **Slöserigrad**: 7.6
+- **Snabbrättelsegrad**: 4.4
+- **Sparad tid, verifierad**: 10.6
+- **Spårbarhetstäckning**: 8.5
+- **Statusmodellens glidning**: 1.5
+- **Stämningstrend**: 6.2
+- **Stängningsgrad för gemensamma åtgärder**: 8.4
+- **Stängningstid för fynd**: 8.3
+- **Svarandetäckning**: 6.1
+- **Svarens riktighet**: 10.3
+- **Svarsfrekvens för enkät**: 6.1
+- **Svarstid**: 3.1
+- **Svarstid på ifrågasättanden**: 11.3
+- **Svarstid vid KRI-överskridande**: 8.2
+- **Sökframgång**: 6.3
+- **Taktkvot**: 2.4
+- **Team som aktivt använder mått**: 11.5
+- **Teamets belastningskvot**: 2.3
+- **Telemetrikostnad per tjänst**: 10.10
+- **Testad återställningstäckning**: 5.6
+- **Tid att agera på välbefinnandeåterkoppling**: 9.2
+- **Tid att registrera**: 7.1
+- **Tid från idé till försök**: 9.5
+- **Tid som förloras på it-problem**: 6.2
+- **Tid till deklaration**: 3.4
+- **Tid till ett nytt mått**: 11.2
+- **Tid till första användbara resultat**: 11.5
+- **Tid till första bidrag**: 9.4
+- **Tid till första granskning**: 2.7
+- **Tid till första svar**: 3.3
+- **Tid till första värde**: 6.5
+- **Tid till förståelse**: 10.10
+- **Tid till grundorsak**: 4.1
+- **Tid till inneslutning**: 8.1
+- **Tid till kvittering**: 3.3
+- **Tid till kvittering av avvikelse**: 7.6
+- **Tid till lösning**: 3.3
+- **Tid till människa**: 10.3
+- **Tid till nästa nivå (beskrivande)**: 11.4
+- **Tid till permanent rättelse**: 4.1
+- **Tid till produktivitet**: 6.4
+- **Tid till publicering**: 3.6
+- **Tid till uppföljning av kritiker**: 6.1
+- **Tid till upptäckt**: 3.3
+- **Tid till upptäckt (TTD)**: 5.5
+- **Tid till återställning**: 3.3
+- **Tidsbaserad tillgänglighet**: 5.3
+- **Tidsstämpelkomplettering**: 1.5
+- **Tillförlitlighet i planerat åtagande**: 2.9
+- **Tillgänglighetsefterlevnad i publicering**: 8.5
+- **Tillämpningsgrad för utbildning**: 9.4
+- **Timmar av affärspåverkan**: 6.5
+- **Total ägandekostnad**: 7.7
+- **Trend i teamets hälsokontroll**: 9.1
+- **Träffgrad för konsekvensprognos**: 7.4
+- **Träffgrad för prognoser**: 2.5
+- **Tydlighet i syfte**: 9.6
+- **Täckning av andelsrapportering**: 1.6
+- **Täckning av användningsstadga**: 11.3
+- **Täckning av avtalsregister**: 8.4
+- **Täckning av baslinjer**: 11.5
+- **Täckning av frågor**: 11.1
+- **Täckning av granskning av öppen källkod**: 7.2
+- **Täckning av härkomst**: 10.8
+- **Täckning av instrumentering**: 10.10
+- **Täckning av kontrolltest**: 8.2
+- **Täckning av prestandatester**: 5.4
+- **Täckning av prognosintervall**: 10.9
+- **Täckning av rapporteringsskyldigheter**: 8.5
+- **Täckning av relevant certifiering**: 9.4
+- **Täckning av resultatutsagor**: 1.8
+- **Täckning av skyldigheter**: 8.3
+- **Täckning av tillfälliga lösningar**: 4.6
+- **Täckning av uppgiftsautomatisering**: 10.6
+- **Täckning av ändringskontroll**: 10.5
+- **Täckning från CSF till KPI**: 1.7
+- **Täckning i registret över AI-användningar**: 10.5
+- **Undanträngning av planerat arbete**: 2.9
+- **Uppdateringsfördröjning**: 7.4
+- **Uppfattningsglapp**: 1.2
+- **Uppfyllande inom mål**: 3.5
+- **Uppfyllandetid för förfrågan**: 3.5
+- **Uppföljning av åtgärdspunkter**: 3.4
+- **Uppföljningsgrad för åtgärder**: 9.5
+- **Uppgiftstid mot baslinje**: 10.1
+- **Upplevd trygghet i mätning (enkät)**: 11.3
+- **Upplevelseglapp**: 6.2
+- **Upplevelsepoäng**: 6.2
+- **Upplevelsepoäng per resa**: 5.1
+- **Upprepningsgrad för fynd**: 8.3
+- **Upprepningsgrad för incidenter**: 3.2
+- **Upprepningsgrad för problem**: 9.5
+- **Upprepningsgrad för större incidenter**: 3.4
+- **Uppskattad avvisningsgrad**: 3.7
+- **Upptäcktstäckning**: 7.1
+- **Utträdesberedskap**: 8.4
+- **Valideringsgrad för ledande indikatorer**: 1.3
+- **Varaktighet för större incident**: 3.4
+- **Vattenmelonglapp**: 5.1
+- **Veckor med ihållande förlängd arbetstid**: 9.2
+- **Verifieringsbörda**: 10.4
+- **Verifieringsgrad för påståenden**: 1.8
+- **Verktygskostnad per stött team**: 11.2
+- **Verktygspuls**: 6.4
+- **Väntetid**: 2.2, 2.4
+- **Väntetid vid överlämning (85:e percentilen)**: 5.1
+- **Värdeströmmens ledtid**: 2.4
+- **XLA-måluppfyllelse**: 6.2
+- **Ägarskapstäckning**: 1.4
+- **Ägartäckning**: 8.2
+- **Ägartäckning för tillgångar**: 1.8
+- **Ändringsvolym per typ**: 4.3
+- **Ålder på arbetsobjekt**: 2.1
+- **Ålder på backlogen av kända fel**: 4.6
+- **Ålder på godkännandekön**: 4.3
+- **Ålder på indikatorgranskning**: 1.7
+- **Ålder på riskundantag**: 8.1
+- **Ålder på äldsta öppna incident**: 3.3
+- **Ålder på äldsta öppna objekt**: 1.6
+- **Ålder på öppna åtgärder**: 4.2
+- **Åldersprofil**: 7.3
+- **Åtagandetäckning**: 7.6
+- **Åtagandeutnyttjande**: 7.6
+- **Återanvändningsgrad för kända fel**: 4.1
+- **Återanvändningskvot**: 3.6
+- **Återbetalningstid**: 7.7
+- **Återgångsgrad**: 9.6
+- **Återkallandegrad för agenthandlingar**: 10.3
+- **Återkomstgrad efter rättelse**: 4.1
+- **Återkomstgrad för orsaker**: 4.2
+- **Återkontaktsgrad**: 3.1
+- **Återkopplingsloopens tid**: 9.1
+- **Återställningsgrad**: 4.4
+- **Återställningstid**: 10.6
+- **Återställningstid efter misslyckad driftsättning**: 2.8
+- **Återstående felbudget**: 5.2
+- **Återöppningsgrad**: 1.2, 3.2
+- **Återöppningsgrad för förfrågningar**: 3.5
+- **Åtgärdsstängningsgrad**: 4.2
+- **Öppnade och stängda problem**: 4.1
+- **Överensstämmelse i misslyckandedefinition**: 4.4
+- **Överföring av retrospektivåtgärder**: 4.2
+- **Övergivandegrad för förfrågningar**: 6.3
+
+## Begrepp
+
+Begreppen hämtas ur de termer som varje ämne länkar till Wikipedia för bakgrund (artikelrubrikerna förblir engelska). Det första talet är vanligen ämnet som förklarar begreppet mest fullständigt.
+
+- **A/B testing**: 6.5
+- **Accountability**: 8.5
+- **Activity-based costing**: 7.5
+- **Agile software development**: 1.1, 1.3, 3.4, 4.2
+- **AI slop**: 10.4
+- **AIOps**: 10.1
+- **Alarm fatigue**: 5.5, 5.7
+- **Alert fatigue**: 10.4
+- **Algorithmic bias**: 10.5
+- **Analytics**: 10.8
+- **Anomaly detection**: 7.6
+- **Application programming interface**: 11.2
+- **Artificial intelligence**: 10.1
+- **Artificial Intelligence Act**: 10.5
+- **Asset tracking**: 7.1
+- **Attack surface**: 8.1
+- **Audit trail**: 4.3, 8.3, 10.5
+- **Automated decision-making**: 10.3
+- **Automatic call distributor**: 3.1
+- **Automation**: 3.7, 10.6
+- **Automation bias**: 10.1
+- **Autoscaling**: 5.4, 7.6
+- **Availability**: 5.2
+- **Backlog**: 4.1
+- **Balanced scorecard**: 1.3, 1.7, 11.1
+- **Benefits realisation management**: 6.5
+- **Black swan theory**: 8.2
+- **Blue-green deployment**: 4.5
+- **Brandolini's law**: 10.4
+- **Brooks's law**: 9.3
+- **Bus factor**: 3.6, 9.3
+- **Business case**: 7.7
+- **Business continuity planning**: 5.6
+- **Business impact analysis**: 5.6
+- **Call centre**: 3.1
+- **Campbell's law**: 1.2, 10.4, 11.3
+- **Canary release**: 2.8, 4.4, 4.5, 5.2
+- **Capability Maturity Model**: 11.4
+- **Capacity planning**: 2.5, 5.4
+- **Capital expenditure**: 7.5
+- **Carbon footprint**: 7.6
+- **Cargo cult**: 9.6
+- **Cargo cult programming**: 9.6
+- **Chain of custody**: 7.1
+- **Change fatigue**: 9.6
+- **Change management**: 9.6, 11.3, 11.5
+- **Chaos engineering**: 5.6
+- **Chartjunk**: 11.1
+- **Chatbot**: 3.7, 10.3
+- **CI/CD**: 1.5, 2.8
+- **Circular economy**: 7.3
+- **Class of service**: 2.9
+- **Cloud computing**: 7.6
+- **Co-creation**: 1.3
+- **Cobra effect**: 1.2
+- **Code refactoring**: 4.6
+- **Code review**: 2.7, 4.3, 10.2
+- **Code smell**: 4.6
+- **Cognitive load**: 6.4, 9.1
+- **Cognitive offloading**: 10.2
+- **Cohort analysis**: 6.3
+- **Common Vulnerabilities and Exposures**: 8.1
+- **Common Vulnerability Scoring System**: 8.1
+- **Community of practice**: 9.4
+- **Computer security incident management**: 8.1
+- **Concept drift**: 10.4
+- **Cone of Uncertainty**: 2.5
+- **Confidence interval**: 1.6, 6.1
+- **Configuration item**: 7.4
+- **Configuration management database**: 1.5, 7.4
+- **Confounding**: 6.5
+- **Continual improvement process**: 1.4, 9.5, 11.4
+- **Continuous auditing**: 8.3
+- **Continuous delivery**: 2.8, 4.4, 4.5, 10.7
+- **Continuous integration**: 2.7, 10.7
+- **Control chart**: 1.6, 2.1, 3.2, 11.1
+- **Conversion funnel**: 6.3
+- **Conway's law**: 9.3
+- **Coordinated Universal Time**: 1.5
+- **Copyleft**: 7.2
+- **Cost accounting**: 7.5
+- **Cost allocation**: 7.5
+- **Cost driver**: 7.5
+- **Cost of delay**: 2.9, 4.6
+- **Critical success factor**: 1.7
+- **Cross-functional team**: 9.3
+- **Cumulative flow diagram**: 2.1, 2.3
+- **Customer experience**: 6.2
+- **Customer satisfaction**: 3.1, 6.1
+- **Cycle time**: 2.2
+- **Dark pattern**: 6.3, 10.3
+- **Data dictionary**: 1.4
+- **Data erasure**: 7.3
+- **Data governance**: 1.4, 11.2
+- **Data integrity**: 7.4
+- **Data minimization**: 6.4
+- **Data pipeline**: 11.2
+- **Data quality**: 7.1, 10.8, 11.2, 11.5
+- **Data steward**: 1.4
+- **Data visualization**: 11.1
+- **Data warehouse**: 11.2
+- **Depreciation**: 7.3
+- **Deskilling**: 10.2
+- **Developer experience**: 9.1
+- **DevOps**: 1.1
+- **DevOps Research and Assessment**: 2.8
+- **DevSecOps**: 8.1
+- **Difference in differences**: 6.5
+- **Diffusion of innovations**: 6.3, 9.6
+- **Digital workplace**: 6.4
+- **Double-loop learning**: 9.5
+- **Downtime**: 5.3
+- **Duplicate code**: 10.2
+- **Economic indicator**: 1.3
+- **Economies of scale**: 7.5
+- **Electronic waste**: 7.3
+- **Employee engagement**: 9.2
+- **Employee experience management**: 6.4
+- **Employee monitoring**: 6.4
+- **Entity resolution**: 7.4
+- **Exit strategy**: 8.4
+- **Extract, transform, load**: 1.5, 11.2
+- **Failure rate**: 7.3
+- **False positives and false negatives**: 5.5
+- **Feature toggle**: 2.8, 4.4, 4.5, 5.2
+- **First call resolution**: 3.1
+- **Five whys**: 4.1, 4.2
+- **Fixed asset**: 7.1
+- **Fixed cost**: 7.5
+- **Forecasting**: 2.5, 5.4, 10.9
+- **Freedom of information laws by country**: 8.5
+- **General Data Protection Regulation**: 8.3
+- **Generative artificial intelligence**: 10.1
+- **Goodhart's law**: 1.1, 1.2, 2.5, 2.7, 2.8, 3.4, 3.5, 4.3, 4.4, 4.5, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 8.1, 8.2, 8.3, 8.4, 8.5, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 10.1, 10.2, 10.3, 10.4, 10.5, 11.1, 11.3
+- **Graph database**: 7.4
+- **Hawthorne effect**: 9.6, 11.3
+- **Help desk**: 3.1
+- **Help desk software**: 3.2
+- **High availability**: 5.3
+- **Hindsight bias**: 4.2
+- **Hotfix**: 4.4
+- **Accelerate (book**: 2.8
+- **Bottleneck (production**: 2.3, 9.3
+- **Change management (ITSM**: 4.3
+- **Cross-training (business**: 9.4
+- **Dashboard (business**: 11.1
+- **Dependency (project management**: 9.3
+- **Flow (psychology**: 6.4, 9.1
+- **Hallucination (artificial intelligence**: 10.1
+- **Incident management (ITSM**: 3.4
+- **Latency (engineering**: 5.4
+- **Observability (software**: 1.5, 10.10, 11.2
+- **Orchestration (computing**: 10.6
+- **Reconciliation (accounting**: 7.1
+- **Rollback (data management**: 2.8, 4.4
+- **Task switching (psychology**: 2.9
+- **Trust (social science**: 11.3
+- **Velocity (software development**: 1.2, 2.5
+- **Vulnerability (computing**: 8.1
+- **Human-centered design**: 6.2
+- **Human-in-the-loop**: 10.1
+- **Incident commander**: 3.4
+- **Incident management**: 3.2, 3.3, 5.7
+- **Information overload**: 10.4
+- **Information radiator**: 11.3, 11.5
+- **Information technology audit**: 8.3
+- **Information technology service management**: 1.1, 1.5
+- **Infrastructure as code**: 3.7, 4.3, 5.6, 7.4, 10.6
+- **Intelligent agent**: 10.3
+- **Internal audit**: 8.3
+- **Internal control**: 8.2
+- **Intrinsic motivation**: 9.2
+- **Inventory management**: 7.1
+- **Ishikawa diagram**: 4.1
+- **ISO 22301**: 5.6
+- **ISO/IEC 27001**: 8.3
+- **Issue tracking system**: 1.5, 2.6
+- **IT asset management**: 7.1
+- **IT service management**: 1.8, 3.1, 11.2
+- **ITIL**: 1.1, 1.2, 1.3, 1.5, 1.7, 1.8, 2.4, 2.6, 2.8, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 4.1, 4.2, 4.3, 4.4, 4.6, 5.1, 5.3
+- **Jevons paradox**: 10.4
+- **Job satisfaction**: 9.2
+- **Just culture**: 4.2
+- **K-anonymity**: 6.4
+- **Kaizen**: 9.5, 11.4, 11.5
+- **Key performance indicator**: 1.2, 1.7, 11.1
+- **Key risk indicator**: 8.2
+- **Kingman's formula**: 2.3
+- **Knowledge base**: 3.6
+- **Knowledge management**: 3.6
+- **Knowledge-centered support**: 3.6
+- **Known error database**: 4.1
+- **Lagging indicator**: 6.5
+- **Large language model**: 10.1
+- **Lead time**: 2.2, 2.4
+- **Leading indicator**: 6.5
+- **Lean manufacturing**: 2.4, 9.5
+- **Lean software development**: 2.1, 2.2, 2.3
+- **Learning organization**: 9.4
+- **Likert scale**: 6.1
+- **Lines of code**: 10.2
+- **Little's law**: 2.1, 2.2, 2.3, 2.4, 2.6, 2.9, 5.4
+- **Load testing**: 5.4
+- **Log-normal distribution**: 1.6, 3.3
+- **Logic model**: 6.5
+- **Machine learning**: 10.1
+- **Margin of error**: 6.1
+- **Mean time between failures**: 5.3, 7.3
+- **Mean time to repair**: 3.3, 5.3
+- **Median**: 1.6, 3.3
+- **Mentorship**: 9.4
+- **Minimum viable product**: 11.5
+- **Mobile device management**: 7.3
+- **Model collapse**: 10.4
+- **Monte Carlo method**: 2.5
+- **Multisourcing**: 8.4
+- **Net present value**: 7.7
+- **Net promoter score**: 6.1
+- **Objectives and key results**: 1.3, 6.5
+- **Occupational burnout**: 5.7, 9.2
+- **OKR**: 1.7
+- **On-call**: 5.5, 5.7
+- **Open data**: 8.5
+- **Open government**: 8.5
+- **Open-source software**: 7.2
+- **Operational-level agreement**: 5.1
+- **Opportunity cost**: 4.6, 7.7
+- **Optimism bias**: 7.7
+- **Organizational change**: 9.6
+- **Organizational culture**: 9.6
+- **Outsourcing**: 8.4
+- **Pair programming**: 2.7, 9.4
+- **Pareto chart**: 4.1, 5.7
+- **Pareto principle**: 3.2, 6.3
+- **Pay as you go**: 7.6
+- **Payback period**: 7.7
+- **PDCA**: 9.5
+- **Percentile**: 1.6, 2.1, 2.2, 2.6, 3.1, 3.3, 3.4, 3.5, 5.1, 5.2, 5.4
+- **Performance audit**: 8.5
+- **Performance-based contracting**: 8.4
+- **Perverse incentive**: 1.2
+- **Pilot project**: 9.6, 11.3, 11.5
+- **Planning fallacy**: 2.5
+- **Postmortem documentation**: 3.4, 4.2
+- **Precision and recall**: 5.5
+- **Principle of least privilege**: 1.4
+- **Process automation**: 3.5
+- **Product backlog**: 2.6, 6.3
+- **Product lifecycle**: 7.1
+- **Productivity**: 9.1
+- **Professional certification**: 9.4
+- **Prompt injection**: 10.5
+- **Pseudonymization**: 6.4
+- **Psychological safety**: 1.2, 4.2, 9.1, 9.2, 11.3
+- **Public procurement**: 8.5
+- **Public sector**: 8.5
+- **Pull request**: 2.7, 10.2
+- **Queueing theory**: 2.1, 2.3, 3.1, 5.4
+- **RACI matrix**: 1.4
+- **Real user monitoring**: 5.3, 6.2
+- **Records management**: 8.5
+- **Recovery point objective**: 5.6
+- **Recovery time objective**: 5.6
+- **Reference class forecasting**: 7.7
+- **Regression testing**: 4.4, 10.2
+- **Regression toward the mean**: 1.6
+- **Regulation of artificial intelligence**: 10.5
+- **Regulatory compliance**: 8.3
+- **Release management**: 4.5
+- **Resistance to change**: 9.6
+- **Response bias**: 6.1
+- **Responsible AI**: 10.5
+- **Return on investment**: 1.1, 7.7
+- **Rework**: 4.4
+- **Risk management**: 8.2
+- **Risk matrix**: 8.2
+- **Risk register**: 8.2
+- **Rolled throughput yield**: 2.4
+- **Root cause analysis**: 3.2, 3.4, 4.1, 4.2, 4.6, 9.5
+- **Run chart**: 2.1, 11.1, 11.5
+- **Runbook**: 3.6, 3.7
+- **Sarbanes–Oxley Act**: 8.3
+- **Seasonality**: 3.2, 5.4
+- **Segregation of duties**: 8.3
+- **Selection bias**: 1.5
+- **Self-determination theory**: 9.2
+- **Self-service**: 10.3
+- **Self-service software**: 3.7
+- **Sensitivity analysis**: 7.7
+- **Sentiment analysis**: 6.2
+- **Separation of duties**: 4.3
+- **Serverless computing**: 7.6
+- **Service catalog**: 3.5, 6.3
+- **Service desk**: 3.6
+- **Service discovery**: 7.4
+- **Service integration and management**: 8.4
+- **Service level indicator**: 5.1, 5.2
+- **Service level objective**: 5.1
+- **Service-dominant logic**: 1.3
+- **Service-level agreement**: 2.1, 2.9, 3.1, 3.3, 3.5, 5.1, 5.2, 5.3, 6.2, 8.4
+- **Service-level objective**: 5.2, 5.3, 5.5
+- **Shadow IT**: 6.4, 7.2, 10.5
+- **Signal-to-noise ratio**: 5.5, 10.4
+- **Single source of truth**: 1.4
+- **Site reliability engineering**: 1.1, 3.3, 3.4, 4.2, 5.1, 5.2, 5.4, 5.5, 5.6, 5.7
+- **Skewness**: 1.6
+- **Sleep deprivation**: 5.7
+- **SOC 2**: 8.3
+- **Social desirability bias**: 9.2
+- **Software as a service**: 7.2
+- **Software asset management**: 7.2
+- **Software audit**: 7.2
+- **Software bill of materials**: 7.2
+- **Software bug**: 4.6
+- **Software composition analysis**: 7.2
+- **Software deployment**: 4.5
+- **Software license**: 7.2
+- **Software supply chain**: 8.1
+- **Software testing**: 10.2
+- **Sparkline**: 11.1
+- **Static program analysis**: 2.7, 4.6
+- **Statistical process control**: 1.6
+- **Story point**: 2.5
+- **Strategy map**: 1.7
+- **Sunk cost**: 7.7
+- **Supply chain attack**: 8.4
+- **Surrogation**: 1.2
+- **Survey methodology**: 6.1
+- **Survivorship bias**: 6.5
+- **Synthetic monitoring**: 5.3
+- **System monitoring**: 5.5
+- **T-shaped skills**: 9.4
+- **Tacit knowledge**: 3.6, 9.4
+- **Tail latency**: 5.4
+- **Technical debt**: 2.9, 4.1, 4.6, 10.2
+- **Technology adoption life cycle**: 11.3
+- **Telemetry**: 10.10
+- **Theory of change**: 6.5
+- **Theory of constraints**: 2.3, 2.4, 9.5
+- **Throughput**: 5.4
+- **Time value of money**: 7.7
+- **Total cost of ownership**: 7.3, 7.7, 11.2
+- **Triage**: 2.9
+- **Trunk-based development**: 2.7
+- **Unit cost**: 7.5
+- **Usability**: 6.2
+- **User experience**: 6.2
+- **User story**: 2.6
+- **Value for money**: 8.5
+- **Value stream**: 2.4
+- **Value-stream mapping**: 2.4
+- **Vanity metric**: 1.3, 1.7, 10.4, 11.1, 11.4
+- **Variable cost**: 7.5
+- **Variance analysis**: 7.6
+- **Vendor lock-in**: 7.2, 8.4, 11.2
+- **Vendor management**: 8.4
+- **Version control**: 1.5, 2.7
+- **Victor Basili**: 1.7
+- **Virtual assistant**: 10.3
+- **Volume discount**: 7.6
+- **Ward Cunningham**: 4.6
+- **Warranty**: 7.3
+- **Web accessibility**: 6.4
+- **Web analytics**: 6.3
+- **Work in process**: 2.3
+- **Workaround**: 4.1
