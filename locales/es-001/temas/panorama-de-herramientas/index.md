@@ -206,7 +206,7 @@ Los retornos vienen del esfuerzo de reporte ahorrado, respuestas más rápidas, 
 | Dimensión | 1 Iniciar | 2 Desarrollar | 3 Estandarizar | 4 Gestionar | 5 Orquestar |
 | --- | --- | --- | --- | --- | --- |
 | Suministro de datos | Recogida manual; hojas de cálculo | Algunos flujos automatizados; scripts individuales | Fuentes acordadas alimentan un almacén compartido mediante pipelines probados | Fiabilidad, conciliación y frescura gestionadas y visibles | Pipelines federados con contratos compartidos entre equipos y proveedores; fuentes mejoradas a partir de la retroalimentación |
-| Definiciones y catálogo | En la cabeza de la gente | Algunas documentadas | Un catálogo de definiciones con responsables, versionado y revisado | El catálogo impulsa los paneles; cambios revisados con los usuarios | Definiciones copropiedad de entre equipos y proveedores; retiradas cuando dejan de informar decisiones |
+| Definiciones y catálogo | En la cabeza de la gente | Algunas documentadas | Un catálogo de definiciones con responsables, versionado y revisado | El catálogo impulsa los paneles; cambios revisados con los usuarios | Definiciones de propiedad compartida entre equipos y proveedores; retiradas cuando dejan de informar decisiones |
 | Elección y costo | Compras ad hoc | Herramientas que se solapan | Criterios escritos; salida probada; costo completo contado | Costo por equipo atendido y esfuerzo manual gestionados | Elecciones de herramientas revisadas con regularidad con los usuarios y adaptadas a medida que cambian las necesidades |
 
 ## Lista de verificación
