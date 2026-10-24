@@ -1,3 +1,898 @@
 # Índice
 
-<!-- stub -->
+Conceptos, marcos y métricas, cada uno con remisiones a los temas en que aparecen. Los números son números de tema. Los títulos están en el índice de contenidos del README y en la [estructura](../../../../spec/structure.md). Para definiciones breves con sus temas de origen, véase el tema 12.1, Glosario.
+
+## Marcos y modelos
+
+- **Balanced scorecard**: 1.7
+- **DevEx**: 9.1
+- **DORA**: 1.1, 1.3, 1.5, 2.0, 2.1, 2.2, 2.4, 2.7, 2.8, 3.3, 3.4, 3.7 y otros temas
+- **FinOps**: 5.4, 7.0, 7.5, 7.6, 7.7
+- **Four Keys**: 2.8
+- **Goal-Question-Metric**: 1.0, 1.7
+- **GQM**: 1.7
+- **ISO/IEC 20000**: 1.4
+- **ISO/IEC 27001**: 8.1, 8.3
+- **ITIL**: 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 2.0, 2.1, 2.2 y otros temas
+- **ITIL 4**: 1.1, 1.3, 1.4, 1.6, 1.7, 1.8, 2.1, 2.3, 2.4, 2.7, 2.8, 2.9 y otros temas
+- **ITIL 5**: 1.0, 1.1, 1.3, 1.8
+- **Kanban Guide**: 1.6, 2.1, 2.2, 2.5
+- **Lean**: 2.2, 2.3, 2.4
+- **NIST**: 1.7, 10.5
+- **OKR**: 1.7
+- **Site reliability**: 1.1, 5.0, 5.1, 5.4, 5.5
+- **SPACE**: 1.1, 9.1
+
+## Métricas
+
+Los nombres de las métricas tal como aparecen en la tabla de definiciones de cada tema. Las entradas completas están en el apéndice 12.2 (véase el tema 12.2, Referencia de definiciones y fórmulas de métricas).
+
+- **Abandono voluntario y temas de salida**: 9.2
+- **Acciones de mejora derivadas de las evaluaciones**: 11.4
+- **Adherencia a la asignación de capacidad**: 2.9
+- **Adhesión a la política del presupuesto**: 5.2
+- **Adopción del autoservicio (proporción primero-portal)**: 3.7
+- **Adopción voluntaria**: 11.3
+- **Alcance de la audiencia (descriptivo)**: 11.1
+- **Alcance del aprendizaje**: 4.2
+- **Alineación de definiciones**: 8.5
+- **Amplitud de adopción de la práctica**: 9.6
+- **Amplitud de la contribución**: 3.6
+- **Anchura del intervalo**: 1.6
+- **Anchura del rango del pronóstico**: 2.5
+- **Antigüedad de la cola de aprobación**: 4.3
+- **Antigüedad de la evidencia de resultados**: 1.8
+- **Antigüedad de la lista de pendientes**: 2.6
+- **Antigüedad de la lista de pendientes de errores conocidos**: 4.6
+- **Antigüedad de la lista de pendientes de mejoras**: 9.5
+- **Antigüedad de la lista de pendientes de problemas**: 4.1
+- **Antigüedad de la revisión de indicadores**: 1.7
+- **Antigüedad de las acciones abiertas**: 4.2
+- **Antigüedad de las excepciones de riesgo**: 8.1
+- **Antigüedad de los datos en la revisión**: 1.1
+- **Antigüedad del elemento abierto más antiguo**: 1.6
+- **Antigüedad del elemento de trabajo**: 2.1
+- **Antigüedad del incidente abierto más antiguo**: 3.3
+- **Arrastre de acciones de la retrospectiva**: 4.2
+- **Asignación de capacidad**: 2.5
+- **Avisos por turno**: 5.7
+- **Brecha de calibración**: 10.9
+- **Brecha de experiencia**: 6.2
+- **Brecha de percepción**: 1.2
+- **Brecha entre despliegue y publicación**: 4.5
+- **Brecha sandía**: 5.1
+- **CES**: 6.1
+- **CSAT**: 6.1
+- **Calidad del soporte asistido**: 10.2
+- **Cambio neto de la deuda**: 4.6
+- **Carga de cambio**: 9.6
+- **Carga de la evaluación**: 11.4
+- **Carga de revisión**: 10.2
+- **Carga de verificación**: 10.4
+- **Caudal**: 2.1
+- **Claridad del objetivo**: 9.6
+- **Cobertura de CSF por KPI**: 1.7
+- **Cobertura de SBOM**: 7.2
+- **Cobertura de SLO**: 5.2
+- **Cobertura de automatización de tareas**: 10.6
+- **Cobertura de barreras de protección**: 1.2
+- **Cobertura de cartas de uso**: 11.3
+- **Cobertura de certificaciones pertinentes**: 9.4
+- **Cobertura de compromisos**: 7.6
+- **Cobertura de conocimiento**: 9.3
+- **Cobertura de dependencias**: 7.4
+- **Cobertura de detección**: 5.5
+- **Cobertura de dimensiones**: 9.1
+- **Cobertura de enunciados de resultado**: 1.8
+- **Cobertura de escaneos**: 8.1
+- **Cobertura de fuentes**: 1.5, 11.2
+- **Cobertura de indicadores de función**: 4.5
+- **Cobertura de instrumentación**: 10.10
+- **Cobertura de la asignación**: 7.5, 7.6
+- **Cobertura de la automatización**: 3.7
+- **Cobertura de la elaboración de informes de tasas**: 1.6
+- **Cobertura de la línea base**: 11.5
+- **Cobertura de la medición**: 5.3
+- **Cobertura de las obligaciones de reporte**: 8.5
+- **Cobertura de los encuestados**: 6.1
+- **Cobertura de líneas base**: 1.1
+- **Cobertura de obligaciones**: 8.3
+- **Cobertura de perspectivas**: 1.7
+- **Cobertura de preguntas**: 11.1
+- **Cobertura de pruebas de controles**: 8.2
+- **Cobertura de pruebas de rendimiento**: 5.4
+- **Cobertura de recuperación probada**: 5.6
+- **Cobertura de responsables**: 1.4, 8.2
+- **Cobertura de responsables del parque**: 1.8
+- **Cobertura de resultados**: 1.3
+- **Cobertura de revisiones**: 4.2
+- **Cobertura de revisión de código abierto**: 7.2
+- **Cobertura de soluciones provisionales**: 4.6
+- **Cobertura de trazabilidad**: 8.5
+- **Cobertura de uso de IA**: 10.1
+- **Cobertura del catálogo**: 6.3
+- **Cobertura del control de cambios**: 10.5
+- **Cobertura del descubrimiento**: 7.1
+- **Cobertura del intervalo de previsión**: 10.9
+- **Cobertura del inventario de sistemas de IA**: 1.8
+- **Cobertura del linaje**: 10.8
+- **Cobertura del refinamiento**: 2.6
+- **Cobertura del registro de contratos**: 8.4
+- **Cobertura del registro de usos de IA**: 10.5
+- **Cobertura y vigencia de los acuerdos**: 5.1
+- **Compleción de las revisiones de etapa**: 11.5
+- **Completitud de la etapa del ciclo de vida**: 7.1
+- **Completitud de la evidencia**: 10.7
+- **Completitud de la línea base**: 10.1
+- **Completitud de las definiciones**: 11.1
+- **Completitud de las trazas**: 10.10
+- **Completitud de los CI**: 7.4
+- **Completitud de los campos obligatorios**: 10.8
+- **Completitud de marcas de tiempo**: 1.5
+- **Completitud del contexto del traspaso**: 10.3
+- **Completitud del registro de cambios**: 4.3
+- **Concentración**: 8.4
+- **Concentración de alertas**: 5.5
+- **Concentración de la carga de revisión**: 2.7
+- **Concentración de solicitudes**: 6.3
+- **Concentración por categoría**: 3.2
+- **Concordancia en la definición de fallo**: 4.4
+- **Confianza en las definiciones y los datos**: 11.4
+- **Conflictos de segregación de funciones**: 8.3
+- **Conformidad de accesibilidad de lo publicado**: 8.5
+- **Conformidad de la fuente**: 1.4
+- **Costo de herramientas por equipo atendido**: 11.2
+- **Costo de shelfware**: 7.2
+- **Costo de telemetría por servicio**: 10.10
+- **Costo por servicio**: 7.5
+- **Costo por tarea asistida por IA**: 10.1
+- **Costo total de propiedad**: 7.7
+- **Costo unitario**: 7.5
+- **Costo unitario en la nube**: 7.6
+- **Cumplimiento de la SLE**: 2.1
+- **Cumplimiento de las salvaguardas de privacidad**: 6.4
+- **Cumplimiento de los niveles de servicio del proveedor**: 8.4
+- **Cumplimiento de parches**: 8.1
+- **Cumplimiento del SLI**: 5.2
+- **Cumplimiento del SLO**: 5.2
+- **Cumplimiento del XLA**: 6.2
+- **Cumplimiento dentro del objetivo**: 3.5
+- **Datos sensibles en la telemetría**: 10.10
+- **Deriva del modelo de estados**: 1.5
+- **Desplazamiento del trabajo planificado**: 2.9
+- **Destreza frente a la línea base**: 10.9
+- **Disponibilidad basada en el tiempo**: 5.3
+- **Disponibilidad basada en solicitudes**: 5.3
+- **Disponibilidad ponderada por usuarios**: 5.3
+- **Distribución de puntuaciones de resultados clave**: 1.7
+- **Distribución por nivel (proporción de desplazamiento a la izquierda)**: 3.7
+- **Duración del incidente grave**: 3.4
+- **Duración del pipeline**: 10.7
+- **Días desde la última prueba de recuperación exitosa**: 5.6
+- **Eficiencia del flujo**: 2.2
+- **Eficiencia del proceso**: 2.4
+- **Entrada de pendientes frente a resolución**: 10.4
+- **Equipos que usan activamente las medidas**: 11.5
+- **Error de previsión**: 5.4, 10.9
+- **Esfuerzo de auditoría**: 8.3
+- **Esfuerzo de medición**: 1.1
+- **Esfuerzo de reporte**: 8.5
+- **Estabilidad del caudal**: 2.5
+- **Eventos de fricción por usuario**: 6.2
+- **Evidencia de decisiones**: 11.4
+- **Exactitud de la estimación de beneficios**: 7.7
+- **Exactitud de la estimación de costos**: 7.7
+- **Exactitud de la salida revisada**: 10.1
+- **Exactitud de las respuestas**: 10.3
+- **Exactitud de los CI**: 7.4
+- **Exactitud del inventario**: 7.1
+- **Fiabilidad del compromiso planificado**: 2.9
+- **Fiabilidad del pipeline**: 11.2
+- **Finalización de la eliminación segura**: 7.3
+- **Frecuencia de despliegue**: 2.8, 4.5
+- **Frecuencia de publicación**: 4.5
+- **Frecuencia y espaciado de las interrupciones**: 5.3
+- **Frescura de los datos**: 1.5, 10.8, 11.1
+- **Hallazgos críticos vencidos**: 8.1
+- **Horas de impacto en el negocio**: 6.5
+- **Impacto en los clientes**: 3.4
+- **Inactividad no planificada**: 5.3
+- **Incidentes de uso individual**: 11.3
+- **Incidentes en puntos ciegos**: 10.10
+- **Incidentes vinculados a errores conocidos abiertos**: 4.6
+- **Intereses de la deuda**: 4.6
+- **Latencia de actualización**: 7.4
+- **Lecciones compartidas entre equipos**: 9.4
+- **Lista de pendientes de servicio fuera de objetivo**: 2.6
+- **Lista de pendientes de solicitudes y antigüedad**: 3.5
+- **Longitud de la cola**: 2.3
+- **Marcas de deriva de las métricas**: 10.4
+- **Margen**: 5.4
+- **Medidas e informes retirados**: 11.5
+- **Mejoras atribuidas a las medidas**: 11.5
+- **Mezcla de prioridades**: 3.2
+- **Minutos de interrupción forzada**: 6.4
+- **Movimiento del indicador de resultado**: 6.5
+- **Movimiento del resultado frente a la comparación**: 9.6, 10.1
+- **NPS**: 6.1
+- **Participación en comunidades**: 9.4
+- **Participación en la evaluación**: 11.4
+- **Percentil de latencia**: 5.4
+- **Perfil de antigüedad**: 7.3
+- **Perfil por dimensión**: 11.4
+- **Periodo de recuperación**: 7.7
+- **Plazo de entrega**: 2.2
+- **Plazo de entrega de la aprobación**: 4.3
+- **Plazo de entrega de la capacidad**: 5.4
+- **Plazo de entrega de la evidencia**: 8.3
+- **Plazo de entrega de la publicación**: 4.5
+- **Plazo de entrega de la sustitución**: 7.3
+- **Plazo de entrega de los cambios**: 2.8
+- **Plazo de entrega del flujo de valor**: 2.4
+- **Porcentaje completo y exacto (etapa)**: 2.4
+- **Porcentaje completo y exacto acumulado**: 2.4
+- **Posición efectiva de licencias**: 7.2
+- **Precisión y exhaustividad de las alertas**: 10.9
+- **Preparación de la salida**: 8.4
+- **Preparación de renovaciones**: 7.2
+- **Preparación para la salida**: 11.2
+- **Presupuesto de errores restante**: 5.2
+- **Prevalencia de soluciones provisionales**: 6.4
+- **Problemas abiertos y cerrados**: 4.1
+- **Profundidad de la formación cruzada**: 9.4
+- **Profundidad de la rotación**: 5.7
+- **Profundidad del trabajo listo**: 2.6
+- **Proporción de activos sin responsable**: 7.1
+- **Proporción de adopción voluntaria**: 9.6
+- **Proporción de aprobación automatizada**: 4.3, 10.7
+- **Proporción de automatización**: 3.5
+- **Proporción de avisos fuera de horario**: 5.7
+- **Proporción de calidad de la evidencia**: 6.5
+- **Proporción de cambios basados en el riesgo**: 8.2
+- **Proporción de cambios de emergencia**: 4.4
+- **Proporción de cambios estándar**: 4.3
+- **Proporción de capacidad para deuda**: 4.6
+- **Proporción de capacidad para mejora**: 9.5
+- **Proporción de capacidad vinculada a resultados**: 6.5
+- **Proporción de casi fallos**: 5.1
+- **Proporción de degradación**: 5.3
+- **Proporción de detección monitorizada**: 5.5
+- **Proporción de dispositivos ociosos**: 7.3
+- **Proporción de elementos obsoletos**: 6.3
+- **Proporción de elementos útiles**: 10.4
+- **Proporción de esfuerzo del programa**: 11.5
+- **Proporción de esfuerzo manual**: 11.2
+- **Proporción de espera tras un traspaso**: 9.3
+- **Proporción de financiación de equipos permanentes**: 7.5
+- **Proporción de ideas de primera línea**: 9.5
+- **Proporción de inactividad planificada**: 5.3
+- **Proporción de métricas ligadas a una decisión**: 1.1
+- **Proporción de pausa del reloj**: 2.2, 5.1
+- **Proporción de propiedad del equipo**: 11.3
+- **Proporción de reutilización**: 3.6
+- **Proporción de temas de comentarios**: 6.1
+- **Proporción de tiempo activo**: 3.3
+- **Proporción de tiempo bloqueado**: 2.1
+- **Proporción de tiempo de aprendizaje protegido**: 9.4
+- **Proporción de tiempo de concentración**: 9.1
+- **Proporción de tiempo en trabajo repetitivo**: 5.7
+- **Proporción de trabajo no planificado**: 2.9
+- **Proporción de trabajo no planificado repetido**: 2.9
+- **Proporción detectada por monitorización**: 3.2
+- **Proporción revisada del conocimiento generado**: 10.4
+- **Proporción solo con solución provisional**: 4.1
+- **Pulso de seguridad para hablar**: 4.2
+- **Puntuación de calidad de las revisiones**: 4.2
+- **Puntuación de experiencia**: 6.2
+- **Puntuación de experiencia por recorrido**: 5.1
+- **Puntuación de pulso de una herramienta**: 6.4
+- **Puntualidad de la comunicación**: 3.4
+- **Puntualidad de la finalización de la revisión**: 3.4
+- **Puntualidad de los informes**: 8.5
+- **Puntualidad de los planes de tratamiento**: 8.2
+- **Razón de carga del equipo**: 2.3
+- **Razón de coherencia de la ley de Little**: 2.3
+- **Razón de takt time**: 2.4
+- **Razón entrada-salida de la lista de pendientes**: 2.6
+- **Razón producción a resultado**: 10.4
+- **Recuento de aplicaciones no autorizadas**: 7.2
+- **Recuento de cambios de definición**: 1.2
+- **Recuento de incidentes graves**: 3.4
+- **Recuento de indicadores obsoletos**: 4.5
+- **Recuento de reasignaciones**: 3.3
+- **Recuento de solicitudes de incorporación obsoletas**: 2.7
+- **Recuento de traspasos**: 2.4, 9.3
+- **Reparto entre funcionamiento, cambio y mejora**: 7.5
+- **Retorno de la inversión**: 7.7
+- **Retrabajo posterior a la incorporación**: 10.2
+- **Retraso por dependencias**: 9.3
+- **Rondas de revisión**: 2.7
+- **Satisfacción con herramientas y procesos**: 9.1
+- **Satisfacción y esfuerzo con el bot**: 10.3
+- **Saturación**: 5.4
+- **Seguimiento de las acciones**: 3.4
+- **Seguimiento de las mejoras**: 1.1
+- **Seguridad percibida de la medición (encuesta)**: 11.3
+- **Semanas sostenidas de horario ampliado**: 9.2
+- **Señal de deriva de la previsión**: 10.9
+- **Señal de franqueza**: 11.3
+- **Stock de deuda**: 4.6
+- **Tamaño de la lista de pendientes**: 2.6
+- **Tamaño de la presentación**: 11.1
+- **Tamaño de la solicitud de incorporación**: 2.7
+- **Tamaño del lote de la publicación**: 4.5
+- **Tasa de CI duplicados**: 7.4
+- **Tasa de RPO cumplido**: 5.6
+- **Tasa de RTO cumplido**: 5.6
+- **Tasa de abandono**: 3.1
+- **Tasa de abandono de solicitudes**: 6.3
+- **Tasa de aceptación y de anulación de sugerencias**: 10.1
+- **Tasa de acierto en la predicción de impacto**: 7.4
+- **Tasa de aciertos del pronóstico**: 2.5
+- **Tasa de activos sin contabilizar**: 7.1
+- **Tasa de adopción**: 6.3
+- **Tasa de adopción de funciones**: 1.3
+- **Tasa de alertas accionables**: 5.5
+- **Tasa de aplicación de la formación**: 9.4
+- **Tasa de aprobación de la comprobación de explicación**: 10.2
+- **Tasa de arreglos urgentes**: 4.4
+- **Tasa de automatización de la evidencia**: 8.3
+- **Tasa de avisos repetidos**: 5.7
+- **Tasa de búsquedas sin resultados**: 3.6
+- **Tasa de cambio de alcance**: 2.5
+- **Tasa de caída al siguiente nivel**: 3.7
+- **Tasa de cierre de acciones**: 4.2
+- **Tasa de cierre de acciones conjuntas**: 8.4
+- **Tasa de cierre de hallazgos de ejercicios**: 5.6
+- **Tasa de comprobación de efectos**: 9.5
+- **Tasa de comprobación de hipótesis**: 6.5
+- **Tasa de conciliación**: 7.1, 11.2
+- **Tasa de consumo**: 5.2
+- **Tasa de contactos**: 3.1
+- **Tasa de contactos de retorno**: 10.3
+- **Tasa de contactos repetidos**: 1.3
+- **Tasa de correcciones posteriores a la fusión**: 2.7
+- **Tasa de correlación de señales**: 10.10
+- **Tasa de cumplimiento del OLA**: 5.1
+- **Tasa de cumplimiento del SLA**: 5.1
+- **Tasa de defectos escapados**: 10.2
+- **Tasa de descarte de la lista de pendientes**: 2.6
+- **Tasa de desperdicio**: 7.6
+- **Tasa de detenciones basadas en evidencia**: 7.7
+- **Tasa de disputas del showback**: 7.5
+- **Tasa de eficacia de los controles**: 8.2
+- **Tasa de elusión**: 10.7
+- **Tasa de evidencia de supervisión humana**: 10.5
+- **Tasa de fallos de cambio**: 2.8, 4.4
+- **Tasa de fallos de ejecución del pipeline de datos**: 10.8
+- **Tasa de fallos de las puertas de política**: 10.7
+- **Tasa de fallos por modelo**: 7.3
+- **Tasa de fallos y retrabajo de la automatización**: 3.7
+- **Tasa de falsos positivos**: 5.5
+- **Tasa de finalización del recorrido**: 6.2
+- **Tasa de hallazgos repetidos**: 8.3
+- **Tasa de implicación de las partes interesadas**: 9.6
+- **Tasa de incidentes causados por la automatización**: 10.6
+- **Tasa de incidentes de IA y tiempo hasta la contención**: 10.5
+- **Tasa de incidentes graves repetidos**: 3.4
+- **Tasa de incidentes repetidos**: 3.2
+- **Tasa de interrupciones**: 2.9
+- **Tasa de interrupción nocturna**: 5.7
+- **Tasa de intervención manual**: 10.6
+- **Tasa de llegada y de salida**: 2.3
+- **Tasa de preparación el primer día**: 6.4
+- **Tasa de problemas repetidos**: 9.5
+- **Tasa de pruebas inestables**: 10.7
+- **Tasa de realización de beneficios**: 6.5
+- **Tasa de reapertura de solicitudes**: 3.5
+- **Tasa de reaperturas**: 1.2, 3.2
+- **Tasa de reasignaciones**: 9.3
+- **Tasa de reclasificación de prioridad**: 3.2
+- **Tasa de recontacto**: 3.1
+- **Tasa de rectificaciones**: 8.5
+- **Tasa de recurrencia de causas**: 4.2
+- **Tasa de recurrencia tras la corrección**: 4.1
+- **Tasa de redundancia del contenido**: 10.4
+- **Tasa de renovación a tiempo**: 7.3
+- **Tasa de reporte de cuasi accidentes**: 4.2
+- **Tasa de reportes de seguridad**: 8.1
+- **Tasa de resolución colaborativa**: 9.3
+- **Tasa de resolución en el primer contacto**: 3.1
+- **Tasa de resolución verificada**: 10.3
+- **Tasa de respuesta a encuestas**: 1.5
+- **Tasa de respuesta a la encuesta**: 6.1
+- **Tasa de retención**: 10.2
+- **Tasa de retirada**: 1.4, 11.1
+- **Tasa de retrabajo en los despliegues**: 2.8, 4.4
+- **Tasa de retrofechado**: 1.5
+- **Tasa de reutilización de errores conocidos**: 4.1
+- **Tasa de reutilización y reciclaje**: 7.3
+- **Tasa de reversiones**: 4.4
+- **Tasa de reversión**: 9.6
+- **Tasa de reversión de acciones del agente**: 10.3
+- **Tasa de revisión de beneficios completada**: 1.3
+- **Tasa de revisión de los análisis**: 10.8
+- **Tasa de seguimiento de acciones**: 9.5
+- **Tasa de señales del gráfico de control**: 1.6
+- **Tasa de superación del límite de WIP**: 2.3
+- **Tasa de urgencias**: 2.9
+- **Tasa de uso activo**: 6.3
+- **Tasa de uso de la CMDB**: 7.4
+- **Tasa de uso de métricas**: 1.2
+- **Tasa de uso en decisiones**: 10.8
+- **Tasa de utilidad**: 3.6
+- **Tasa de utilización de licencias**: 7.2
+- **Tasa de validación de indicadores adelantados**: 1.3
+- **Tasa de verificación de afirmaciones**: 1.8
+- **Tasa de vinculación de cambio a incidente**: 4.4
+- **Tasa de vinculación de conocimiento**: 3.6
+- **Tasa de vinculación de incidentes a problemas**: 4.1
+- **Tasa de éxito de la búsqueda**: 6.3
+- **Tasa de éxito de las ejecuciones de automatización**: 10.6
+- **Tasa de éxito de restauración de copias de seguridad**: 5.6
+- **Tasa de éxito del autoservicio**: 3.7
+- **Tasa de éxito del pipeline**: 10.7
+- **Tasa estimada de desvío**: 3.7
+- **Tasa normalizada de incidentes**: 3.2
+- **Tendencia de sentimiento**: 6.2
+- **Tendencia del chequeo de salud del equipo**: 9.1
+- **Tiempo ahorrado verificado**: 10.6
+- **Tiempo de acuse de recibo**: 3.3
+- **Tiempo de acuse de recibo de anomalías**: 7.6
+- **Tiempo de ciclo**: 2.1, 2.2
+- **Tiempo de ciclo de la revisión**: 2.7
+- **Tiempo de cierre de hallazgos**: 8.3
+- **Tiempo de cumplimiento de solicitudes**: 3.5
+- **Tiempo de detección**: 3.3
+- **Tiempo de detección (TTD)**: 5.5
+- **Tiempo de espera**: 2.2, 2.4
+- **Tiempo de espera de aprobación**: 3.5
+- **Tiempo de espera de traspaso (percentil 85)**: 5.1
+- **Tiempo de gestión**: 3.1
+- **Tiempo de incidentes atribuido al proveedor**: 8.4
+- **Tiempo de la idea a la prueba**: 9.5
+- **Tiempo de la tarea frente a la línea base**: 10.1
+- **Tiempo de proceso**: 2.4
+- **Tiempo de recuperación tras un despliegue fallido**: 2.8
+- **Tiempo de resolución**: 3.3
+- **Tiempo de resolución de obstáculos**: 9.1
+- **Tiempo de resolución de solicitudes de accesibilidad**: 6.4
+- **Tiempo de resolución en percentil alto**: 1.6
+- **Tiempo de respuesta**: 3.1
+- **Tiempo de respuesta a cuestionamientos**: 11.3
+- **Tiempo de respuesta a una brecha de KRI**: 8.2
+- **Tiempo de respuesta de las partes interesadas**: 9.3
+- **Tiempo de restablecimiento**: 3.3
+- **Tiempo de reversión**: 10.6
+- **Tiempo de seguimiento de detractores**: 6.1
+- **Tiempo de trabajo activo**: 2.2
+- **Tiempo del ciclo de retroalimentación**: 9.1
+- **Tiempo en cola**: 2.3
+- **Tiempo hasta el primer resultado útil**: 11.5
+- **Tiempo hasta el primer valor**: 6.5
+- **Tiempo hasta el siguiente nivel (descriptivo)**: 11.4
+- **Tiempo hasta entender**: 10.10
+- **Tiempo hasta la causa raíz**: 4.1
+- **Tiempo hasta la contención**: 8.1
+- **Tiempo hasta la corrección permanente**: 4.1
+- **Tiempo hasta la declaración**: 3.4
+- **Tiempo hasta la primera contribución**: 9.4
+- **Tiempo hasta la primera respuesta**: 3.3
+- **Tiempo hasta la primera revisión**: 2.7
+- **Tiempo hasta la publicación**: 3.6
+- **Tiempo hasta registrar**: 7.1
+- **Tiempo hasta ser productivo**: 6.4
+- **Tiempo hasta un humano**: 10.3
+- **Tiempo hasta una medida nueva**: 11.2
+- **Tiempo manual de trabajo activo por tipo de solicitud**: 3.7
+- **Tiempo mediano de resolución**: 1.6
+- **Tiempo para actuar sobre la retroalimentación de bienestar**: 9.2
+- **Tiempo perdido por problemas de TI**: 6.2
+- **Trabajo en curso**: 2.3
+- **Trabajo en curso (WIP)**: 2.1
+- **Trabajo repetitivo eliminado**: 5.7
+- **Trabajo repetitivo por origen**: 5.7
+- **Trazabilidad de objetivos**: 1.7
+- **Utilización de compromisos**: 7.6
+- **Utilización de recursos**: 5.4
+- **Valor actual neto**: 7.7
+- **Valoración de confianza sin ayuda**: 10.2
+- **Valoración de la carga cognitiva**: 9.1
+- **Valoración de la seguridad psicológica**: 9.2
+- **Valoración de la tensión de la carga de trabajo**: 9.2
+- **Valoración del apoyo a las necesidades**: 9.2
+- **Valoración del ritmo sostenible**: 9.2
+- **Varianza de conciliación**: 1.5, 10.8
+- **Varianza de previsión**: 7.5, 7.6
+- **Velocidad local**: 2.5
+- **Ventana de exposición**: 8.1
+- **Vigencia de la diligencia debida**: 8.4
+- **Vigencia de la diligencia debida sobre la IA de los proveedores**: 10.5
+- **Vigencia de la evaluación**: 10.5
+- **Vigencia de la evaluación de riesgos**: 10.5
+- **Vigencia de la propiedad de las automatizaciones**: 10.6
+- **Vigencia de la revisión de accesos**: 1.4
+- **Vigencia de la revisión de riesgos**: 8.2
+- **Vigencia de las definiciones**: 1.4
+- **Vigencia de las reglas de alerta**: 5.5
+- **Vigencia de los artículos**: 3.6
+- **Vigencia del plan**: 5.6
+- **Vinculación con decisiones**: 1.4, 11.1
+- **Vinculación de la previsión con decisiones**: 10.9
+- **Volumen de alertas**: 5.5
+- **Volumen de cambios por tipo**: 4.3
+- **Volumen de contactos**: 3.1
+- **Volumen de incidentes por servicio**: 3.2
+- **Volumen de solicitudes por elemento del catálogo**: 3.5
+- **Éxito del objetivo de entrega**: 2.5
+
+## Conceptos
+
+Los conceptos proceden de los términos para los que cada tema enlaza con Wikipedia como contexto (los títulos de los artículos siguen en inglés). El primer número suele ser el tema que explica el concepto de forma más completa.
+
+- **A/B testing**: 6.5
+- **Accountability**: 8.5
+- **Activity-based costing**: 7.5
+- **Agile software development**: 1.1, 1.3, 3.4, 4.2
+- **AI slop**: 10.4
+- **AIOps**: 10.1
+- **Alarm fatigue**: 5.5, 5.7
+- **Alert fatigue**: 10.4
+- **Algorithmic bias**: 10.5
+- **Analytics**: 10.8
+- **Anomaly detection**: 7.6
+- **Application programming interface**: 11.2
+- **Artificial intelligence**: 10.1
+- **Artificial Intelligence Act**: 10.5
+- **Asset tracking**: 7.1
+- **Attack surface**: 8.1
+- **Audit trail**: 4.3, 8.3, 10.5
+- **Automated decision-making**: 10.3
+- **Automatic call distributor**: 3.1
+- **Automation**: 3.7, 10.6
+- **Automation bias**: 10.1
+- **Autoscaling**: 5.4, 7.6
+- **Availability**: 5.2
+- **Backlog**: 4.1
+- **Balanced scorecard**: 1.3, 1.7, 11.1
+- **Benefits realisation management**: 6.5
+- **Black swan theory**: 8.2
+- **Blue-green deployment**: 4.5
+- **Brandolini's law**: 10.4
+- **Brooks's law**: 9.3
+- **Bus factor**: 3.6, 9.3
+- **Business case**: 7.7
+- **Business continuity planning**: 5.6
+- **Business impact analysis**: 5.6
+- **Call centre**: 3.1
+- **Campbell's law**: 1.2, 10.4, 11.3
+- **Canary release**: 2.8, 4.4, 4.5, 5.2
+- **Capability Maturity Model**: 11.4
+- **Capacity planning**: 2.5, 5.4
+- **Capital expenditure**: 7.5
+- **Carbon footprint**: 7.6
+- **Cargo cult**: 9.6
+- **Cargo cult programming**: 9.6
+- **Chain of custody**: 7.1
+- **Change fatigue**: 9.6
+- **Change management**: 9.6, 11.3, 11.5
+- **Chaos engineering**: 5.6
+- **Chartjunk**: 11.1
+- **Chatbot**: 3.7, 10.3
+- **CI/CD**: 1.5, 2.8
+- **Circular economy**: 7.3
+- **Class of service**: 2.9
+- **Cloud computing**: 7.6
+- **Co-creation**: 1.3
+- **Cobra effect**: 1.2
+- **Code refactoring**: 4.6
+- **Code review**: 2.7, 4.3, 10.2
+- **Code smell**: 4.6
+- **Cognitive load**: 6.4, 9.1
+- **Cognitive offloading**: 10.2
+- **Cohort analysis**: 6.3
+- **Common Vulnerabilities and Exposures**: 8.1
+- **Common Vulnerability Scoring System**: 8.1
+- **Community of practice**: 9.4
+- **Computer security incident management**: 8.1
+- **Concept drift**: 10.4
+- **Cone of Uncertainty**: 2.5
+- **Confidence interval**: 1.6, 6.1
+- **Configuration item**: 7.4
+- **Configuration management database**: 1.5, 7.4
+- **Confounding**: 6.5
+- **Continual improvement process**: 1.4, 9.5, 11.4
+- **Continuous auditing**: 8.3
+- **Continuous delivery**: 2.8, 4.4, 4.5, 10.7
+- **Continuous integration**: 2.7, 10.7
+- **Control chart**: 1.6, 2.1, 3.2, 11.1
+- **Conversion funnel**: 6.3
+- **Conway's law**: 9.3
+- **Coordinated Universal Time**: 1.5
+- **Copyleft**: 7.2
+- **Cost accounting**: 7.5
+- **Cost allocation**: 7.5
+- **Cost driver**: 7.5
+- **Cost of delay**: 2.9, 4.6
+- **Critical success factor**: 1.7
+- **Cross-functional team**: 9.3
+- **Cumulative flow diagram**: 2.1, 2.3
+- **Customer experience**: 6.2
+- **Customer satisfaction**: 3.1, 6.1
+- **Cycle time**: 2.2
+- **Dark pattern**: 6.3, 10.3
+- **Data dictionary**: 1.4
+- **Data erasure**: 7.3
+- **Data governance**: 1.4, 11.2
+- **Data integrity**: 7.4
+- **Data minimization**: 6.4
+- **Data pipeline**: 11.2
+- **Data quality**: 7.1, 10.8, 11.2, 11.5
+- **Data steward**: 1.4
+- **Data visualization**: 11.1
+- **Data warehouse**: 11.2
+- **Depreciation**: 7.3
+- **Deskilling**: 10.2
+- **Developer experience**: 9.1
+- **DevOps**: 1.1
+- **DevOps Research and Assessment**: 2.8
+- **DevSecOps**: 8.1
+- **Difference in differences**: 6.5
+- **Diffusion of innovations**: 6.3, 9.6
+- **Digital workplace**: 6.4
+- **Double-loop learning**: 9.5
+- **Downtime**: 5.3
+- **Duplicate code**: 10.2
+- **Economic indicator**: 1.3
+- **Economies of scale**: 7.5
+- **Electronic waste**: 7.3
+- **Employee engagement**: 9.2
+- **Employee experience management**: 6.4
+- **Employee monitoring**: 6.4
+- **Entity resolution**: 7.4
+- **Exit strategy**: 8.4
+- **Extract, transform, load**: 1.5, 11.2
+- **Failure rate**: 7.3
+- **False positives and false negatives**: 5.5
+- **Feature toggle**: 2.8, 4.4, 4.5, 5.2
+- **First call resolution**: 3.1
+- **Five whys**: 4.1, 4.2
+- **Fixed asset**: 7.1
+- **Fixed cost**: 7.5
+- **Forecasting**: 2.5, 5.4, 10.9
+- **Freedom of information laws by country**: 8.5
+- **General Data Protection Regulation**: 8.3
+- **Generative artificial intelligence**: 10.1
+- **Goodhart's law**: 1.1, 1.2, 2.5, 2.7, 2.8, 3.4, 3.5, 4.3, 4.4, 4.5, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 8.1, 8.2, 8.3, 8.4, 8.5, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 10.1, 10.2, 10.3, 10.4, 10.5, 11.1, 11.3
+- **Graph database**: 7.4
+- **Hawthorne effect**: 9.6, 11.3
+- **Help desk**: 3.1
+- **Help desk software**: 3.2
+- **High availability**: 5.3
+- **Hindsight bias**: 4.2
+- **Hotfix**: 4.4
+- **Accelerate (book**: 2.8
+- **Bottleneck (production**: 2.3, 9.3
+- **Change management (ITSM**: 4.3
+- **Cross-training (business**: 9.4
+- **Dashboard (business**: 11.1
+- **Dependency (project management**: 9.3
+- **Flow (psychology**: 6.4, 9.1
+- **Hallucination (artificial intelligence**: 10.1
+- **Incident management (ITSM**: 3.4
+- **Latency (engineering**: 5.4
+- **Observability (software**: 1.5, 10.10, 11.2
+- **Orchestration (computing**: 10.6
+- **Reconciliation (accounting**: 7.1
+- **Rollback (data management**: 2.8, 4.4
+- **Task switching (psychology**: 2.9
+- **Trust (social science**: 11.3
+- **Velocity (software development**: 1.2, 2.5
+- **Vulnerability (computing**: 8.1
+- **Human-centered design**: 6.2
+- **Human-in-the-loop**: 10.1
+- **Incident commander**: 3.4
+- **Incident management**: 3.2, 3.3, 5.7
+- **Information overload**: 10.4
+- **Information radiator**: 11.3, 11.5
+- **Information technology audit**: 8.3
+- **Information technology service management**: 1.1, 1.5
+- **Infrastructure as code**: 3.7, 4.3, 5.6, 7.4, 10.6
+- **Intelligent agent**: 10.3
+- **Internal audit**: 8.3
+- **Internal control**: 8.2
+- **Intrinsic motivation**: 9.2
+- **Inventory management**: 7.1
+- **Ishikawa diagram**: 4.1
+- **ISO 22301**: 5.6
+- **ISO/IEC 27001**: 8.3
+- **Issue tracking system**: 1.5, 2.6
+- **IT asset management**: 7.1
+- **IT service management**: 1.8, 3.1, 11.2
+- **ITIL**: 1.1, 1.2, 1.3, 1.5, 1.7, 1.8, 2.4, 2.6, 2.8, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 4.1, 4.2, 4.3, 4.4, 4.6, 5.1, 5.3
+- **Jevons paradox**: 10.4
+- **Job satisfaction**: 9.2
+- **Just culture**: 4.2
+- **K-anonymity**: 6.4
+- **Kaizen**: 9.5, 11.4, 11.5
+- **Key performance indicator**: 1.2, 1.7, 11.1
+- **Key risk indicator**: 8.2
+- **Kingman's formula**: 2.3
+- **Knowledge base**: 3.6
+- **Knowledge management**: 3.6
+- **Knowledge-centered support**: 3.6
+- **Known error database**: 4.1
+- **Lagging indicator**: 6.5
+- **Large language model**: 10.1
+- **Lead time**: 2.2, 2.4
+- **Leading indicator**: 6.5
+- **Lean manufacturing**: 2.4, 9.5
+- **Lean software development**: 2.1, 2.2, 2.3
+- **Learning organization**: 9.4
+- **Likert scale**: 6.1
+- **Lines of code**: 10.2
+- **Little's law**: 2.1, 2.2, 2.3, 2.4, 2.6, 2.9, 5.4
+- **Load testing**: 5.4
+- **Log-normal distribution**: 1.6, 3.3
+- **Logic model**: 6.5
+- **Machine learning**: 10.1
+- **Margin of error**: 6.1
+- **Mean time between failures**: 5.3, 7.3
+- **Mean time to repair**: 3.3, 5.3
+- **Median**: 1.6, 3.3
+- **Mentorship**: 9.4
+- **Minimum viable product**: 11.5
+- **Mobile device management**: 7.3
+- **Model collapse**: 10.4
+- **Monte Carlo method**: 2.5
+- **Multisourcing**: 8.4
+- **Net present value**: 7.7
+- **Net promoter score**: 6.1
+- **Objectives and key results**: 1.3, 6.5
+- **Occupational burnout**: 5.7, 9.2
+- **OKR**: 1.7
+- **On-call**: 5.5, 5.7
+- **Open data**: 8.5
+- **Open government**: 8.5
+- **Open-source software**: 7.2
+- **Operational-level agreement**: 5.1
+- **Opportunity cost**: 4.6, 7.7
+- **Optimism bias**: 7.7
+- **Organizational change**: 9.6
+- **Organizational culture**: 9.6
+- **Outsourcing**: 8.4
+- **Pair programming**: 2.7, 9.4
+- **Pareto chart**: 4.1, 5.7
+- **Pareto principle**: 3.2, 6.3
+- **Pay as you go**: 7.6
+- **Payback period**: 7.7
+- **PDCA**: 9.5
+- **Percentile**: 1.6, 2.1, 2.2, 2.6, 3.1, 3.3, 3.4, 3.5, 5.1, 5.2, 5.4
+- **Performance audit**: 8.5
+- **Performance-based contracting**: 8.4
+- **Perverse incentive**: 1.2
+- **Pilot project**: 9.6, 11.3, 11.5
+- **Planning fallacy**: 2.5
+- **Postmortem documentation**: 3.4, 4.2
+- **Precision and recall**: 5.5
+- **Principle of least privilege**: 1.4
+- **Process automation**: 3.5
+- **Product backlog**: 2.6, 6.3
+- **Product lifecycle**: 7.1
+- **Productivity**: 9.1
+- **Professional certification**: 9.4
+- **Prompt injection**: 10.5
+- **Pseudonymization**: 6.4
+- **Psychological safety**: 1.2, 4.2, 9.1, 9.2, 11.3
+- **Public procurement**: 8.5
+- **Public sector**: 8.5
+- **Pull request**: 2.7, 10.2
+- **Queueing theory**: 2.1, 2.3, 3.1, 5.4
+- **RACI matrix**: 1.4
+- **Real user monitoring**: 5.3, 6.2
+- **Records management**: 8.5
+- **Recovery point objective**: 5.6
+- **Recovery time objective**: 5.6
+- **Reference class forecasting**: 7.7
+- **Regression testing**: 4.4, 10.2
+- **Regression toward the mean**: 1.6
+- **Regulation of artificial intelligence**: 10.5
+- **Regulatory compliance**: 8.3
+- **Release management**: 4.5
+- **Resistance to change**: 9.6
+- **Response bias**: 6.1
+- **Responsible AI**: 10.5
+- **Return on investment**: 1.1, 7.7
+- **Rework**: 4.4
+- **Risk management**: 8.2
+- **Risk matrix**: 8.2
+- **Risk register**: 8.2
+- **Rolled throughput yield**: 2.4
+- **Root cause analysis**: 3.2, 3.4, 4.1, 4.2, 4.6, 9.5
+- **Run chart**: 2.1, 11.1, 11.5
+- **Runbook**: 3.6, 3.7
+- **Sarbanes–Oxley Act**: 8.3
+- **Seasonality**: 3.2, 5.4
+- **Segregation of duties**: 8.3
+- **Selection bias**: 1.5
+- **Self-determination theory**: 9.2
+- **Self-service**: 10.3
+- **Self-service software**: 3.7
+- **Sensitivity analysis**: 7.7
+- **Sentiment analysis**: 6.2
+- **Separation of duties**: 4.3
+- **Serverless computing**: 7.6
+- **Service catalog**: 3.5, 6.3
+- **Service desk**: 3.6
+- **Service discovery**: 7.4
+- **Service integration and management**: 8.4
+- **Service level indicator**: 5.1, 5.2
+- **Service level objective**: 5.1
+- **Service-dominant logic**: 1.3
+- **Service-level agreement**: 2.1, 2.9, 3.1, 3.3, 3.5, 5.1, 5.2, 5.3, 6.2, 8.4
+- **Service-level objective**: 5.2, 5.3, 5.5
+- **Shadow IT**: 6.4, 7.2, 10.5
+- **Signal-to-noise ratio**: 5.5, 10.4
+- **Single source of truth**: 1.4
+- **Site reliability engineering**: 1.1, 3.3, 3.4, 4.2, 5.1, 5.2, 5.4, 5.5, 5.6, 5.7
+- **Skewness**: 1.6
+- **Sleep deprivation**: 5.7
+- **SOC 2**: 8.3
+- **Social desirability bias**: 9.2
+- **Software as a service**: 7.2
+- **Software asset management**: 7.2
+- **Software audit**: 7.2
+- **Software bill of materials**: 7.2
+- **Software bug**: 4.6
+- **Software composition analysis**: 7.2
+- **Software deployment**: 4.5
+- **Software license**: 7.2
+- **Software supply chain**: 8.1
+- **Software testing**: 10.2
+- **Sparkline**: 11.1
+- **Static program analysis**: 2.7, 4.6
+- **Statistical process control**: 1.6
+- **Story point**: 2.5
+- **Strategy map**: 1.7
+- **Sunk cost**: 7.7
+- **Supply chain attack**: 8.4
+- **Surrogation**: 1.2
+- **Survey methodology**: 6.1
+- **Survivorship bias**: 6.5
+- **Synthetic monitoring**: 5.3
+- **System monitoring**: 5.5
+- **T-shaped skills**: 9.4
+- **Tacit knowledge**: 3.6, 9.4
+- **Tail latency**: 5.4
+- **Technical debt**: 2.9, 4.1, 4.6, 10.2
+- **Technology adoption life cycle**: 11.3
+- **Telemetry**: 10.10
+- **Theory of change**: 6.5
+- **Theory of constraints**: 2.3, 2.4, 9.5
+- **Throughput**: 5.4
+- **Time value of money**: 7.7
+- **Total cost of ownership**: 7.3, 7.7, 11.2
+- **Triage**: 2.9
+- **Trunk-based development**: 2.7
+- **Unit cost**: 7.5
+- **Usability**: 6.2
+- **User experience**: 6.2
+- **User story**: 2.6
+- **Value for money**: 8.5
+- **Value stream**: 2.4
+- **Value-stream mapping**: 2.4
+- **Vanity metric**: 1.3, 1.7, 10.4, 11.1, 11.4
+- **Variable cost**: 7.5
+- **Variance analysis**: 7.6
+- **Vendor lock-in**: 7.2, 8.4, 11.2
+- **Vendor management**: 8.4
+- **Version control**: 1.5, 2.7
+- **Victor Basili**: 1.7
+- **Virtual assistant**: 10.3
+- **Volume discount**: 7.6
+- **Ward Cunningham**: 4.6
+- **Warranty**: 7.3
+- **Web accessibility**: 6.4
+- **Web analytics**: 6.3
+- **Work in process**: 2.3
+- **Workaround**: 4.1
