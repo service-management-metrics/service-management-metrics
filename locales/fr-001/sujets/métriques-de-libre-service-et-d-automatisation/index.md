@@ -137,7 +137,7 @@ Les équipes d'exploitation portent le parc d'automatisations et le repli avec l
 
 ### Direction et gouvernance
 
-Les dirigeants sont tentés de traiter la déflexion comme un chiffre d'économies. Une meilleure demande porte sur le résultat de l'utilisateur, la méthode derrière toute estimation et la fiabilité de l'automatisation. La gouvernance doit attendre une liste de candidats, un responsable pour chaque flux automatisé et une règle de retrait. Les dirigeants doivent aussi protéger la voie avec le personnel contre un masquage pour atteindre un objectif (voir le sujet 11.3, Déployer les métriques sans engendrer la peur).
+Les dirigeants sont tentés de traiter la déflexion comme un chiffre d'économies. Une meilleure demande porte sur le résultat de l'utilisateur, la méthode derrière toute estimation et la fiabilité de l'automatisation. La gouvernance doit attendre une liste de candidats, un responsable pour chaque flux automatisé et une règle de retrait. Les dirigeants doivent aussi protéger la voie avec le personnel contre un masquage pour atteindre un objectif (voir le sujet 11.3, Déployer les métriques sans semer la peur).
 
 ### Clients et utilisateurs
 
