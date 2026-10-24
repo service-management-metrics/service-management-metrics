@@ -8,7 +8,7 @@
 
 ## 書籍、論文、規格、指導文書
 
-1. "Alerting on SLOs," chapter 5 in *The Site Reliability Workbook*, O'Reilly Media, 2018, https://sre.google/workbook/alerting-on-slos/（引用元：5.2）
+1. "Alerting on SLOs," chapter 5 in *The Site Reliability Workbook*, O'Reilly Media, 2018, https://sre.google/workbook/alerting-on-slos/ （引用元：5.2）
 2. Allspaw, J., *The Art of Capacity Planning*, O'Reilly Media, 2008.（引用元：5.4）
 3. American Institute of Certified Public Accountants, *Trust Services Criteria* (used in SOC 2 examinations), latest version.（引用元：8.3）
 4. Anderson, D. J., *Kanban: Successful Evolutionary Change for Your Technology Business*, Blue Hole Press, 2010.（引用元：2.1、2.2、2.3、2.6、2.9、3.5）
@@ -32,27 +32,27 @@
 22. Bacchelli, A., and Bird, C., "Expectations, Outcomes, and Challenges of Modern Code Review," *Proceedings of the 35th International Conference on Software Engineering (ICSE)*, 2013.（引用元：2.7）
 23. Baldé, C. P., et al., *The Global E-waste Monitor*, United Nations University, International Telecommunication Union, and International Solid Waste Association (latest edition).（引用元：7.3）
 24. Basili, V. R., Caldiera, G., and Rombach, H. D., "The Goal Question Metric Approach," in *Encyclopedia of Software Engineering*, Wiley, 1994.（引用元：1.7）
-25. Beck, K., et al., *Manifesto for Agile Software Development*, 2001, https://agilemanifesto.org/.（引用元：1.1）
-26. Beck, K., et al., *Manifesto for Agile Software Development* and *Principles behind the Agile Manifesto*, 2001, https://agilemanifesto.org.（引用元：2.5、6.5、8.4、9.6）
-27. Beck, K., et al., *Principles behind the Agile Manifesto*, 2001, https://agilemanifesto.org/principles.html.（引用元：1.3、6.4、7.1、7.2、7.3、7.4、7.5、7.6、7.7、8.1、8.2、8.3、8.5、9.1、9.2、9.3、9.4、9.5、10.1、10.2、10.3、10.4、10.5、11.1、11.2、11.3、11.4、11.5）
+25. Beck, K., et al., *Manifesto for Agile Software Development*, 2001, https://agilemanifesto.org/. （引用元：1.1）
+26. Beck, K., et al., *Manifesto for Agile Software Development* and *Principles behind the Agile Manifesto*, 2001, https://agilemanifesto.org. （引用元：2.5、6.5、8.4、9.6）
+27. Beck, K., et al., *Principles behind the Agile Manifesto*, 2001, https://agilemanifesto.org/principles.html. （引用元：1.3、6.4、7.1、7.2、7.3、7.4、7.5、7.6、7.7、8.1、8.2、8.3、8.5、9.1、9.2、9.3、9.4、9.5、10.1、10.2、10.3、10.4、10.5、11.1、11.2、11.3、11.4、11.5）
 28. Bender, E. M., Gebru, T., McMillan-Major, A., and Shmitchell, S., "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency*, 2021.（引用元：10.1）
-29. Beyer, B., et al. (eds.), "Managing Incidents," in *Site Reliability Engineering*, O'Reilly Media, 2016, https://sre.google/sre-book/managing-incidents/（引用元：3.4）
+29. Beyer, B., et al. (eds.), "Managing Incidents," in *Site Reliability Engineering*, O'Reilly Media, 2016, https://sre.google/sre-book/managing-incidents/ （引用元：3.4）
 30. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly, 2016.（引用元：1.7、6.2、7.6、8.4）
 31. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016.（引用元：1.1、1.3、10.6、10.10）
-32. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016. Chapter "Being On-Call", https://sre.google/sre-book/being-on-call/（引用元：5.7）
-33. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016. Chapter "Eliminating Toil", https://sre.google/sre-book/eliminating-toil/（引用元：5.7）
-34. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, chapter "Embracing Risk", https://sre.google/sre-book/embracing-risk/.（引用元：5.3）
+32. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016. Chapter "Being On-Call", https://sre.google/sre-book/being-on-call/ （引用元：5.7）
+33. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016. Chapter "Eliminating Toil", https://sre.google/sre-book/eliminating-toil/ （引用元：5.7）
+34. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, chapter "Embracing Risk", https://sre.google/sre-book/embracing-risk/. （引用元：5.3）
 35. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016 (chapter on eliminating toil).（引用元：3.7）
-36. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, chapter "Service Level Objectives", https://sre.google/sre-book/service-level-objectives/.（引用元：5.3）
-37. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, https://sre.google/sre-book/table-of-contents/（引用元：1.5、2.3、2.8、2.9、3.1、3.2、3.3、3.4、4.1、4.2、4.4、4.6、5.1、5.2、5.4、5.6）
-38. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, "Monitoring Distributed Systems," https://sre.google/sre-book/monitoring-distributed-systems/（引用元：5.5）
-39. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, "Practical Alerting from Time-Series Data," https://sre.google/sre-book/practical-alerting/（引用元：5.5）
-40. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SLOs*, O'Reilly Media, 2018, chapter "Implementing SLOs", https://sre.google/workbook/implementing-slos/.（引用元：5.3）
-41. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SLOs*, O'Reilly Media, 2018, https://sre.google/workbook/table-of-contents/（引用元：5.1）
+36. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, chapter "Service Level Objectives", https://sre.google/sre-book/service-level-objectives/. （引用元：5.3）
+37. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, https://sre.google/sre-book/table-of-contents/ （引用元：1.5、2.3、2.8、2.9、3.1、3.2、3.3、3.4、4.1、4.2、4.4、4.6、5.1、5.2、5.4、5.6）
+38. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, "Monitoring Distributed Systems," https://sre.google/sre-book/monitoring-distributed-systems/ （引用元：5.5）
+39. Beyer, B., Jones, C., Petoff, J., and Murphy, N. R. (eds.), *Site Reliability Engineering: How Google Runs Production Systems*, O'Reilly Media, 2016, "Practical Alerting from Time-Series Data," https://sre.google/sre-book/practical-alerting/ （引用元：5.5）
+40. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SLOs*, O'Reilly Media, 2018, chapter "Implementing SLOs", https://sre.google/workbook/implementing-slos/. （引用元：5.3）
+41. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SLOs*, O'Reilly Media, 2018, https://sre.google/workbook/table-of-contents/ （引用元：5.1）
 42. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SRE*, O'Reilly Media, 2018.（引用元：3.3）
-43. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SRE*, O'Reilly Media, 2018, "Alerting on SLOs," https://sre.google/workbook/alerting-on-slos/（引用元：5.5）
-44. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SRE*, O'Reilly Media, 2018. Chapter "Eliminating Toil", https://sre.google/workbook/eliminating-toil/（引用元：5.7）
-45. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SRE*, O'Reilly Media, 2018, https://sre.google/workbook/table-of-contents/（引用元：5.2、5.4、5.6）
+43. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SRE*, O'Reilly Media, 2018, "Alerting on SLOs," https://sre.google/workbook/alerting-on-slos/ （引用元：5.5）
+44. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SRE*, O'Reilly Media, 2018. Chapter "Eliminating Toil", https://sre.google/workbook/eliminating-toil/ （引用元：5.7）
+45. Beyer, B., Murphy, N. R., Rensin, D. K., Kawahara, K., and Thorne, S. (eds.), *The Site Reliability Workbook: Practical Ways to Implement SRE*, O'Reilly Media, 2018, https://sre.google/workbook/table-of-contents/ （引用元：5.2、5.4、5.6）
 46. Brealey, R. A., Myers, S. C., and Allen, F., *Principles of Corporate Finance*, McGraw-Hill (latest edition).（引用元：7.7）
 47. Brooks, F. P., *The Mythical Man-Month: Essays on Software Engineering*, Addison-Wesley, 1975 (anniversary edition 1995).（引用元：9.3）
 48. Campbell, D., "Assessing the Impact of Planned Social Change," *Evaluation and Program Planning*, 1979.（引用元：11.3）
@@ -61,15 +61,15 @@
 51. Cohn, M., *Agile Estimating and Planning*, Prentice Hall, 2005.（引用元：2.5）
 52. Cohn, M., *User Stories Applied: For Agile Software Development*, Addison-Wesley, 2004.（引用元：2.6）
 53. Committee of Sponsoring Organizations of the Treadway Commission, *Enterprise Risk Management: Integrating with Strategy and Performance*, 2017.（引用元：8.2）
-54. Consortium for Service Innovation, *KCS v6 Practices Guide*, first released 2016 and updated since, https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide (check the page for the current version).（引用元：3.6）
+54. Consortium for Service Innovation, *KCS v6 Practices Guide*, first released 2016 and updated since, https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide (check the page for the current version). （引用元：3.6）
 55. Conway, M. E., "How Do Committees Invent?" *Datamation*, 14(4), 1968.（引用元：9.3）
 56. Cox, L. A., "What's wrong with risk matrices?" *Risk Analysis*, 28(2), 2008.（引用元：8.2）
 57. Csikszentmihalyi, M., *Flow: The Psychology of Optimal Experience*, Harper & Row, 1990.（引用元：6.4）
 58. Cunningham, W., "The WyCash Portfolio Management System," OOPSLA '92 Experience Report, ACM, 1992.（引用元：4.6）
-59. Cybersecurity and Infrastructure Security Agency, *Known Exploited Vulnerabilities Catalog*, https://www.cisa.gov/known-exploited-vulnerabilities-catalog.（引用元：8.1）
+59. Cybersecurity and Infrastructure Security Agency, *Known Exploited Vulnerabilities Catalog*, https://www.cisa.gov/known-exploited-vulnerabilities-catalog. （引用元：8.1）
 60. DAMA International, *DAMA-DMBOK: Data Management Body of Knowledge*, 2nd ed., Technics Publications, 2017.（引用元：7.4）
 61. DAMA International, *DAMA-DMBOK: Data Management Body of Knowledge*, 2nd edition, Technics Publications, 2017.（引用元：1.4、1.5）
-62. Davidovič, Š., *Incident Metrics in SRE: Critically Evaluating MTTR and Friends*, O'Reilly Media, 2021, https://sre.google/resources/practices-and-processes/incident-metrics-in-sre/.（引用元：3.3）
+62. Davidovič, Š., *Incident Metrics in SRE: Critically Evaluating MTTR and Friends*, O'Reilly Media, 2021, https://sre.google/resources/practices-and-processes/incident-metrics-in-sre/. （引用元：3.3）
 63. Dean, J., and Barroso, L. A., "The Tail at Scale," *Communications of the ACM*, 56(2), 2013.（引用元：5.4）
 64. Deci, E. L., and Ryan, R. M., "The 'what' and 'why' of goal pursuits: Human needs and the self-determination of behavior," *Psychological Inquiry*, 11(4), 2000.（引用元：9.2）
 65. DeGrandis, D., *Making Work Visible: Exposing Time Theft to Optimize Work and Flow*, IT Revolution, 2017.（引用元：2.2）
@@ -81,11 +81,11 @@
 71. Dixon, M., Toman, N., and DeLisi, R., *The Effortless Experience*, Portfolio/Penguin, 2013.（引用元：3.7、6.1、6.2、10.3）
 72. Doerr, J., *Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs*, Portfolio, 2018.（引用元：1.3、1.7）
 73. Doerr, J., *Measure What Matters*, Portfolio/Penguin, 2018.（引用元：6.5）
-74. DORA, *DORA research program*, Google Cloud, https://dora.dev/research/（引用元：2.8）
-75. DORA, *DORA's software delivery performance metrics*, Google Cloud, https://dora.dev/guides/dora-metrics/（引用元：2.8、4.4、4.5）
-76. DORA, *Four Keys project*, https://github.com/dora-team/fourkeys（引用元：2.8）
-77. DORA, Google Cloud, *Accelerate State of DevOps Report* (latest edition addressing AI), https://dora.dev/.（引用元：10.2）
-78. DORA (Google Cloud), "Streamlining change approval" and "Software delivery performance metrics," DORA capabilities and guides, https://dora.dev/ (read the pages directly and note the date you consulted them).（引用元：4.3）
+74. DORA, *DORA research program*, Google Cloud, https://dora.dev/research/ （引用元：2.8）
+75. DORA, *DORA's software delivery performance metrics*, Google Cloud, https://dora.dev/guides/dora-metrics/ （引用元：2.8、4.4、4.5）
+76. DORA, *Four Keys project*, https://github.com/dora-team/fourkeys （引用元：2.8）
+77. DORA, Google Cloud, *Accelerate State of DevOps Report* (latest edition addressing AI), https://dora.dev/. （引用元：10.2）
+78. DORA (Google Cloud), "Streamlining change approval" and "Software delivery performance metrics," DORA capabilities and guides, https://dora.dev/ (read the pages directly and note the date you consulted them). （引用元：4.3）
 79. Edmondson, A. C., "Psychological safety and learning behavior in work teams," *Administrative Science Quarterly*, 44(2), 1999.（引用元：9.1、9.2）
 80. Edmondson, A., "Psychological Safety and Learning Behavior in Work Teams," *Administrative Science Quarterly*, 1999.（引用元：11.3）
 81. Edmondson, A., "Psychological Safety and Learning Behavior in Work Teams," *Administrative Science Quarterly*, 44(2), 1999.（引用元：4.2）
@@ -95,20 +95,20 @@
 85. European Parliament and Council, *Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)*, 2024.（引用元：10.3、10.5）
 86. Few, S., *Information Dashboard Design: The Effective Visual Communication of Data*, O'Reilly Media, 2006.（引用元：11.1）
 87. Feynman, R. P., "Cargo Cult Science," Caltech commencement address, 1974, reprinted in *Surely You're Joking, Mr. Feynman!*, W. W. Norton, 1985.（引用元：9.6）
-88. FinOps Foundation, *FinOps Framework*, https://www.finops.org/framework/.（引用元：7.6）
+88. FinOps Foundation, *FinOps Framework*, https://www.finops.org/framework/. （引用元：7.6）
 89. Flyvbjerg, B., "From Nobel Prize to project management: Getting risks right," *Project Management Journal*, 37(3), 2006.（引用元：7.7）
 90. Forsgren, N., Humble, J., and Kim, G., *Accelerate: The Science of Lean Software and DevOps*, IT Revolution, 2018.（引用元：1.1、1.2、1.3、1.5、1.6、2.1、2.2、2.3、2.4、2.5、2.7、2.8、2.9、3.1、3.2、3.3、3.4、3.6、3.7、4.1、4.2、4.3、4.4、4.5、4.6、5.1、5.2、5.3、5.4、5.5、5.6、5.7、7.5、7.6、8.1、8.2、8.3、9.1、9.3、10.2、10.7）
 91. Forsgren, N., Humble, J., and Kim, G., *Accelerate: The Science of Lean Software and DevOps*, IT Revolution Press, 2018.（引用元：11.2、11.3、11.5）
 92. Forsgren, N., Storey, M.-A., Maddila, C., Zimmermann, T., Houck, B., and Butler, J., "The SPACE of Developer Productivity," *ACM Queue*, 19(1), 2021.（引用元：1.1、1.3、1.7、5.7、6.4、9.1、9.2、10.2）
 93. Forsgren, N., Storey, M.-A., Maddila, C., Zimmermann, T., Houck, B., and Butler, J., "The SPACE of Developer Productivity," *ACM Queue*, 2021.（引用元：2.7、2.8）
-94. Forum of Incident Response and Security Teams, *Common Vulnerability Scoring System*, specification (latest version), https://www.first.org/cvss/.（引用元：8.1）
+94. Forum of Incident Response and Security Teams, *Common Vulnerability Scoring System*, specification (latest version), https://www.first.org/cvss/. （引用元：8.1）
 95. Fowler, M., *Refactoring: Improving the Design of Existing Code*, 2nd edition, Addison-Wesley, 2018.（引用元：4.6）
-96. Fowler, M., "Technical Debt Quadrant," 2009, https://martinfowler.com/bliki/TechnicalDebtQuadrant.html（引用元：4.6）
+96. Fowler, M., "Technical Debt Quadrant," 2009, https://martinfowler.com/bliki/TechnicalDebtQuadrant.html （引用元：4.6）
 97. Goldratt, E. M., and Cox, J., *The Goal: A Process of Ongoing Improvement*, North River Press, 1984.（引用元：2.3、2.4、9.5）
 98. Goodhart, C. A. E., "Problems of Monetary Management: The U.K. Experience," in *Papers in Monetary Economics*, Reserve Bank of Australia, 1975.（引用元：1.1、1.2、1.4、1.5、2.2、2.4、2.5、2.7、2.8、2.9、3.1、3.2、3.3、3.4、3.5、3.6、3.7、4.1、4.2、4.3、4.4、4.5、4.6、5.1、5.2、5.3、5.5、5.6、6.5、7.2、7.3、8.4、8.5、10.4）
-99. Google, *Code Review Developer Guide*, Google Engineering Practices documentation, https://google.github.io/eng-practices/review/（引用元：2.7）
-100. Google, "Monitoring Distributed Systems," chapter in *Site Reliability Engineering*, 2016, https://sre.google/sre-book/monitoring-distributed-systems/（引用元：5.4）
-101. Government Digital Service, *Service Standard*, United Kingdom, https://www.gov.uk/service-manual/service-standard.（引用元：8.5）
+99. Google, *Code Review Developer Guide*, Google Engineering Practices documentation, https://google.github.io/eng-practices/review/ （引用元：2.7）
+100. Google, "Monitoring Distributed Systems," chapter in *Site Reliability Engineering*, 2016, https://sre.google/sre-book/monitoring-distributed-systems/ （引用元：5.4）
+101. Government Digital Service, *Service Standard*, United Kingdom, https://www.gov.uk/service-manual/service-standard. （引用元：8.5）
 102. Gregg, B., *Systems Performance: Enterprise and the Cloud*, 2nd edition, Addison-Wesley, 2020.（引用元：5.4）
 103. Grove, A. S., *High Output Management*, Random House, 1983.（引用元：1.7）
 104. Groves, R. M., Fowler, F. J., Couper, M. P., Lepkowski, J. M., Singer, E., and Tourangeau, R., *Survey Methodology*, 2nd ed., Wiley, 2009.（引用元：6.1）
@@ -116,7 +116,7 @@
 106. Hansen, M. T., Nohria, N., and Tierney, T., "What's your strategy for managing knowledge?", *Harvard Business Review*, March-April 1999.（引用元：3.6）
 107. Hiatt, J. M., *ADKAR: A Model for Change in Business, Government and our Community*, Prosci Learning Center Publications, 2006.（引用元：9.6）
 108. HM Treasury, *The Green Book: Central Government Guidance on Appraisal and Evaluation*, United Kingdom, latest edition.（引用元：7.7）
-109. Hodgson, P., "Feature Toggles (aka Feature Flags)," martinfowler.com, 2017, https://martinfowler.com/articles/feature-toggles.html（引用元：4.5）
+109. Hodgson, P., "Feature Toggles (aka Feature Flags)," martinfowler.com, 2017, https://martinfowler.com/articles/feature-toggles.html （引用元：4.5）
 110. Hopp, W. J., and Spearman, M. L., *Factory Physics*, 3rd edition, Waveland Press, 2011.（引用元：2.3）
 111. Hubbard, D. W., *How to Measure Anything: Finding the Value of Intangibles in Business*, 3rd ed., Wiley, 2014.（引用元：6.5、7.7）
 112. Hubbard, D. W., *How to Measure Anything: Finding the Value of Intangibles in Business*, 3rd edition, Wiley, 2014.（引用元：1.6）
@@ -125,9 +125,9 @@
 115. Humble, J., and Farley, D., *Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation*, Addison-Wesley, 2010.（引用元：4.4、4.5）
 116. Hunnebeck, L., *ITIL Service Design* (service catalogue management), The Stationery Office, 2011.（引用元：6.3）
 117. Hunt, A. and Thomas, D., *The Pragmatic Programmer*, Addison-Wesley, for the habit of removing what is no longer useful.（引用元：6.3）
-118. Hyndman, R. J., and Athanasopoulos, G., *Forecasting: Principles and Practice*, 3rd edition, OTexts, 2021, https://otexts.com/fpp3/（引用元：10.9）
+118. Hyndman, R. J., and Athanasopoulos, G., *Forecasting: Principles and Practice*, 3rd edition, OTexts, 2021, https://otexts.com/fpp3/ （引用元：10.9）
 119. Imai, M., *Kaizen: The Key to Japan's Competitive Success*, McGraw-Hill, 1986.（引用元：9.5、11.4）
-120. "Implementing SLOs," chapter 2 in *The Site Reliability Workbook*, O'Reilly Media, 2018, https://sre.google/workbook/implementing-slos/（引用元：5.2）
+120. "Implementing SLOs," chapter 2 in *The Site Reliability Workbook*, O'Reilly Media, 2018, https://sre.google/workbook/implementing-slos/ （引用元：5.2）
 121. Institute of Internal Auditors, *Global Internal Audit Standards*, 2024.（引用元：8.3）
 122. ISO 22301:2019, *Security and resilience: Business continuity management systems: Requirements*, International Organization for Standardization.（引用元：5.6）
 123. ISO 22313:2020, *Security and resilience: Business continuity management systems: Guidance on the use of ISO 22301*, International Organization for Standardization.（引用元：5.6）
@@ -147,11 +147,11 @@
 137. ISO/IEC 33001, *Information technology: Process assessment: Concepts and terminology*, International Organization for Standardization, 2015.（引用元：11.4）
 138. ISO/IEC 42001, *Information technology: Artificial intelligence: Management system*, International Organization for Standardization, 2023.（引用元：10.1、10.5）
 139. ISO/IEC 5962, *Information technology: SPDX Specification*, International Organization for Standardization, 2021.（引用元：7.2）
-140. Jones, C., Wilkes, J., Murphy, N., and Smith, C., "Service Level Objectives," chapter 4 in *Site Reliability Engineering*, O'Reilly Media, 2016, https://sre.google/sre-book/service-level-objectives/（引用元：5.2）
+140. Jones, C., Wilkes, J., Murphy, N., and Smith, C., "Service Level Objectives," chapter 4 in *Site Reliability Engineering*, O'Reilly Media, 2016, https://sre.google/sre-book/service-level-objectives/ （引用元：5.2）
 141. Kahneman, D., and Lovallo, D., "Timid choices and bold forecasts: A cognitive perspective on risk taking," *Management Science*, 39(1), 1993.（引用元：7.7）
 142. Kahneman, D., and Tversky, A., "Intuitive prediction: biases and corrective procedures," *TIMS Studies in Management Science*, 12, 1979.（引用元：2.5）
 143. Kahneman, D., *Thinking, Fast and Slow*, Farrar, Straus and Giroux, 2011.（引用元：1.6）
-144. Kanban Guide, kanbanguides.org, current version as of October 2026, https://kanbanguides.org/english/（引用元：2.1）
+144. Kanban Guide, kanbanguides.org, current version as of October 2026, https://kanbanguides.org/english/ （引用元：2.1）
 145. Kaplan, R., and Norton, D., "The Balanced Scorecard: Measures That Drive Performance," *Harvard Business Review*, 1992.（引用元：11.1）
 146. Kaplan, R. S., and Anderson, S. R., "Time-Driven Activity-Based Costing," *Harvard Business Review*, 82(11), 2004.（引用元：7.5）
 147. Kaplan, R. S., and Cooper, R., *Cost & Effect: Using Integrated Cost Systems to Drive Profitability and Performance*, Harvard Business School Press, 1998.（引用元：7.5）
@@ -167,14 +167,14 @@
 157. Kirkpatrick, D. L., and Kirkpatrick, J. D., *Evaluating Training Programs: The Four Levels*, 3rd ed., Berrett-Koehler, 2006.（引用元：9.4）
 158. Kleinrock, L., *Queueing Systems, Volume 1: Theory*, Wiley, 1975.（引用元：2.3）
 159. Kleppmann, M., *Designing Data-Intensive Applications*, O'Reilly Media, 2017.（引用元：1.5）
-160. Klyne, G., and Newman, C., *RFC 3339: Date and Time on the Internet: Timestamps*, Internet Engineering Task Force, 2002, https://www.rfc-editor.org/rfc/rfc3339（引用元：1.5）
+160. Klyne, G., and Newman, C., *RFC 3339: Date and Time on the Internet: Timestamps*, Internet Engineering Task Force, 2002, https://www.rfc-editor.org/rfc/rfc3339 （引用元：1.5）
 161. Kohavi, R., Tang, D., and Xu, Y., *Trustworthy Online Controlled Experiments*, Cambridge University Press, 2020.（引用元：6.5）
 162. Kotter, J., *Leading Change*, Harvard Business School Press, 1996.（引用元：11.3、11.5）
 163. Kotter, J. P., *Leading Change*, Harvard Business School Press, 1996.（引用元：9.6）
 164. Kruchten, P., Nord, R., and Ozkaya, I., *Managing Technical Debt: Reducing Friction in Software Development*, Addison-Wesley, 2019.（引用元：4.6）
 165. Likert, R., "A technique for the measurement of attitudes," *Archives of Psychology*, 22(140), 1932.（引用元：6.1）
 166. Little, J. D. C., "A Proof for the Queuing Formula: L = λW," *Operations Research*, 9(3), 1961.（引用元：2.1、2.2、2.3、2.4、3.5、5.4）
-167. Lunney, L., and Lueder, S., "Postmortem Culture: Learning from Failure," in *Site Reliability Engineering*, O'Reilly Media, 2016, https://sre.google/sre-book/postmortem-culture/（引用元：3.4、4.2）
+167. Lunney, L., and Lueder, S., "Postmortem Culture: Learning from Failure," in *Site Reliability Engineering*, O'Reilly Media, 2016, https://sre.google/sre-book/postmortem-culture/ （引用元：3.4、4.2）
 168. Mark, G., Gudith, D., and Klocke, U., "The cost of interrupted work: more speed and stress," in *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI 2008)*, ACM, 2008.（引用元：2.9）
 169. Martin, K., and Osterling, M., *Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation*, McGraw-Hill, 2014.（引用元：2.4）
 170. Maslach, C., and Leiter, M. P., "Understanding the burnout experience: recent research and its implications for psychiatry," *World Psychiatry*, 15(2), 2016.（引用元：9.2）
@@ -195,9 +195,9 @@
 185. Parasuraman, R., and Manzey, D. H., "Complacency and bias in human use of automation: An attentional integration," *Human Factors*, 52(3), 2010.（引用元：10.1、10.2、10.3、10.4）
 186. Paulk, M., et al., *Capability Maturity Model for Software, Version 1.1*, Software Engineering Institute, Carnegie Mellon University, 1993.（引用元：11.4）
 187. Peng, S., Kalliamvakou, E., Cihon, P., and Demirer, M., "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot," arXiv preprint, 2023.（引用元：10.2）
-188. PeopleCert, ITIL Foundation Bridge (Version 5), certification page, accessed 20 October 2026, https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-foundation-bridge-version-5-4158（引用元：1.8）
+188. PeopleCert, ITIL Foundation Bridge (Version 5), certification page, accessed 20 October 2026, https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-foundation-bridge-version-5-4158 （引用元：1.8）
 189. Polanyi, M., *The Tacit Dimension*, Doubleday, 1966.（引用元：9.4）
-190. Rau, V., "Eliminating Toil," chapter 5 in *Site Reliability Engineering*, O'Reilly Media, 2016, https://sre.google/sre-book/eliminating-toil/（引用元：2.9）
+190. Rau, V., "Eliminating Toil," chapter 5 in *Site Reliability Engineering*, O'Reilly Media, 2016, https://sre.google/sre-book/eliminating-toil/ （引用元：2.9）
 191. Reason, J., *Human Error*, Cambridge University Press, 1990.（引用元：4.2）
 192. Redman, T. C., *Data Driven: Profiting from Your Most Important Business Asset*, Harvard Business Press, 2008.（引用元：7.1）
 193. Redman, T., *Data Driven: Profiting from Your Most Important Business Asset*, Harvard Business Press, 2008.（引用元：11.2）
@@ -211,9 +211,9 @@
 201. Rother, M., *Toyota Kata: Managing People for Improvement, Adaptiveness, and Superior Results*, McGraw-Hill, 2009.（引用元：9.5）
 202. Russell, S., and Norvig, P., *Artificial Intelligence: A Modern Approach*, 4th ed., Pearson, 2020.（引用元：10.1）
 203. Schein, E. H., *Organizational Culture and Leadership*, 5th ed., Wiley, 2016.（引用元：9.6）
-204. Schwaber, K., and Sutherland, J., *The Scrum Guide*, 2020, https://scrumguides.org/scrum-guide.html.（引用元：2.6）
+204. Schwaber, K., and Sutherland, J., *The Scrum Guide*, 2020, https://scrumguides.org/scrum-guide.html. （引用元：2.6）
 205. Schwaber, K., and Sutherland, J., *The Scrum Guide*, Scrum.org and Scrum Inc., 2020.（引用元：2.7）
-206. Sculley, D., and others, "Hidden Technical Debt in Machine Learning Systems," Advances in Neural Information Processing Systems 28, 2015, https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html（引用元：4.6）
+206. Sculley, D., and others, "Hidden Technical Debt in Machine Learning Systems," Advances in Neural Information Processing Systems 28, 2015, https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html （引用元：4.6）
 207. Seddon, J., *Systems Thinking in the Public Sector*, Triarchy Press, 2008.（引用元：8.5）
 208. Seiden, J., *Outcomes Over Output: Why Customer Behavior Is the Key Metric for Business Success*, Sense & Respond Press, 2019.（引用元：1.3）
 209. Senge, P. M., *The Fifth Discipline: The Art and Practice of the Learning Organization*, Doubleday, 1990.（引用元：9.4）
@@ -231,7 +231,7 @@
 221. Tufte, E., *The Visual Display of Quantitative Information*, Graphics Press, 1983.（引用元：11.1）
 222. Vacanti, D., *Actionable Agile Metrics for Predictability: An Introduction*, Daniel S. Vacanti, Inc., 2015.（引用元：1.1、2.6）
 223. Vacanti, D. S., *Actionable Agile Metrics for Predictability: An Introduction*, Daniel S. Vacanti, Inc., 2015.（引用元：1.5、1.6、2.1、2.2、2.3、2.4、2.5、2.7、2.9、3.1、3.2、3.3、3.5、4.1）
-224. Vacanti, D., Yeret, Y., et al., *The Kanban Guide*, 2020, https://kanbanguides.org/.（引用元：1.1、1.6、2.2、2.6）
+224. Vacanti, D., Yeret, Y., et al., *The Kanban Guide*, 2020, https://kanbanguides.org/. （引用元：1.1、1.6、2.2、2.6）
 225. Vargo, S. L., and Lusch, R. F., "Evolving to a New Dominant Logic for Marketing," *Journal of Marketing*, 68(1), 2004.（引用元：1.3）
 226. Wang, R. Y., and Strong, D. M., "Beyond accuracy: what data quality means to data consumers," *Journal of Management Information Systems*, 12(4), 1996.（引用元：7.4）
 227. Ward, J., and Daniel, E., *Benefits Management: How to Increase the Business Value of Your IT Projects*, 2nd ed., Wiley, 2012.（引用元：6.5、7.7）
@@ -242,7 +242,7 @@
 232. Wheeler, D., *Understanding Variation: The Key to Managing Chaos*, SPC Press, 2000.（引用元：11.1）
 233. Womack, J. P., and Jones, D. T., *Lean Thinking: Banish Waste and Create Wealth in Your Corporation*, Simon and Schuster, 1996.（引用元：2.4）
 234. World Health Organization, *International Classification of Diseases, 11th Revision (ICD-11)*, entry on burn-out as an occupational phenomenon.（引用元：9.2）
-235. World Wide Web Consortium, *Web Content Accessibility Guidelines (WCAG) 2.2*, 2023, https://www.w3.org/TR/WCAG22/.（引用元：6.4、8.5）
+235. World Wide Web Consortium, *Web Content Accessibility Guidelines (WCAG) 2.2*, 2023, https://www.w3.org/TR/WCAG22/. （引用元：6.4、8.5）
 
 ## Wikipediaの記事
 

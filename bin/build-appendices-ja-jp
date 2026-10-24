@@ -92,7 +92,8 @@ o = ["# 参考文献とさらなる読書", "",
      "この本のWikipediaのリンクは、開けることを確認済みです。書籍、論文、規格、指導文書は、著者が記憶から引用したもので、すべてが原本と照合されたわけではありません。書誌の詳細（年、版、タイトル）は手がかりとして扱い、正式な仕事で頼る前に確認してください。訂正はメンテナースキルを通じて報告してください。", "",
      "## 書籍、論文、規格、指導文書", ""]
 for i, r in enumerate(sorted(refs, key=key), 1):
-    o.append(f"{i}. {r}（引用元：{cite(refs[r])}）")
+    sep = " " if "http" in r else ""  # a bare URL must end at whitespace, not swallow the （引用元：…） note
+    o.append(f"{i}. {r}{sep}（引用元：{cite(refs[r])}）")
 o += ["", "## Wikipediaの記事", ""]
 for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
     o.append(f"{i}. Wikipedia, [{title}]({u})（引用元：{cite(ns)}）")
