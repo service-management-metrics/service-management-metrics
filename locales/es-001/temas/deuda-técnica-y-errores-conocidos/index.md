@@ -135,7 +135,7 @@ Los equipos de entrega ven la deuda primero, normalmente mientras cambian códig
 
 ### Equipos de servicio y de operaciones
 
-Los equipos de operaciones ven los intereses: incidentes repetidos, pasos manuales, soluciones provisionales frágiles y la carga de guardia que sigue. Poseen los registros de errores conocidos y los documentos de soluciones, y tienen los datos de incidentes que ponen precio a los intereses. Deben vincular cada incidente con su error conocido, probar las soluciones y llevar a la conversación de planificación evidencia ordenada en lugar de una lista de quejas (véase el tema 5.7, Métricas de trabajo repetitivo y de guardia).
+Los equipos de operaciones ven los intereses: incidentes repetidos, pasos manuales, soluciones provisionales frágiles y la carga de guardia que sigue. Poseen los registros de errores conocidos y los documentos de soluciones, y tienen los datos de incidentes que ponen precio a los intereses. Deben vincular cada incidente con su error conocido, probar las soluciones y llevar a la conversación de planificación evidencia ordenada en lugar de una lista de quejas (véase el tema 5.7, Métricas de trabajo repetitivo y guardias).
 
 ### Liderazgo y gobernanza
 
