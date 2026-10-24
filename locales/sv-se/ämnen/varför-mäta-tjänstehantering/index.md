@@ -166,7 +166,7 @@ En manipulationsrisk dyker upp inom en månad. Driftteamet märker att två av d
 
 ### Agilitet
 
-Kontinuerlig leverans och kontinuerligt intressentinvolvering ger en jämn tillförsel av små ändringar och regelbunden återkoppling, vilket är precis vad en handfull ärliga siffror behöver. En användbar praxis är att granska samma lilla uppsättning mått vid varje regelbundet förbättringssamtal och fråga vad teamet ska ändra härnäst. Varningen är att undvika att behandla granskningen som en lägesrapport: en siffra som visas utan ett beslut kopplat till sig är en belastning.
+Kontinuerlig leverans och kontinuerlig intressentmedverkan ger en jämn tillförsel av små ändringar och regelbunden återkoppling, vilket är precis vad en handfull ärliga siffror behöver. En användbar praxis är att granska samma lilla uppsättning mått vid varje regelbundet förbättringssamtal och fråga vad teamet ska ändra härnäst. Varningen är att undvika att behandla granskningen som en lägesrapport: en siffra som visas utan ett beslut kopplat till sig är en belastning.
 
 ### AI
 
