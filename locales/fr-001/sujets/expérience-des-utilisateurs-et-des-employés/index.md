@@ -124,7 +124,7 @@ Listez les corrections et la manière dont elles ont été annoncées. Si la lis
 
 ### Équipes produit et de livraison
 
-Les équipes de livraison sont à la fois utilisatrices et constructrices d'outils internes. Leur propre friction, comme les compilations lentes, les environnements instables et les retards d'accès, ralentit tout ce qu'elles livrent, et les mesures de ce sujet s'appliquent aussi à elles. Elles doivent faire des outils internes une partie du backlog produit avec un responsable et des utilisateurs, et participer au sondage flash et aux revues comme collègues (voir le sujet 9.1, Santé de l'équipe et expérience développeur).
+Les équipes de livraison sont à la fois utilisatrices et constructrices d'outils internes. Leur propre friction, comme les compilations lentes, les environnements instables et les retards d'accès, ralentit tout ce qu'elles livrent, et les mesures de ce sujet s'appliquent aussi à elles. Elles doivent faire des outils internes une partie du backlog produit avec un responsable et des utilisateurs, et participer au sondage flash et aux revues comme collègues (voir le sujet 9.1, Santé de l'équipe et expérience des développeurs).
 
 ### Équipes de service et d'exploitation
 
