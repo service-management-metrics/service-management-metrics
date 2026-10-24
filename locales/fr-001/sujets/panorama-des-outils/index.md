@@ -192,7 +192,7 @@ Les rendements viennent de l'effort de rapport économisé, de réponses plus ra
 
 ## Anti-modèles et pièges
 
-- **L'outil d'abord, les questions ensuite.** La plateforme arrive, et personne ne sait ce lui demander. Écrivez d'abord les mesures.
+- **L'outil d'abord, les questions ensuite.** La plateforme arrive, et personne ne sait quoi lui demander. Écrivez d'abord les mesures.
 - **Acheter pour régler un problème de définitions.** Le désaccord sur le sens persiste dans tout outil. Réglez les définitions.
 - **Des scores individuels intégrés.** Ils tentent et ils faussent. Désactivez-les et fixez la politique d'abord.
 - **Aucune sortie.** L'historique et les définitions sont piégés. Testez l'export et gardez une copie.
