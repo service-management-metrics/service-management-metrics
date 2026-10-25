@@ -1,3 +1,32 @@
 # Introdução à Parte 9: Métricas de pessoas, equipes e melhoria
 
-<!-- stub -->
+**Todo serviço depende de pessoas motivadas, apoiadas e livres para melhorar o próprio trabalho; por isso as medidas desta parte descrevem condições e hábitos, e nenhuma delas é um meio de classificar ou vigiar alguém.**
+
+As primeiras oito partes deste livro descrevem serviços, fluxos e registros. Esta parte se volta para as pessoas que os constroem e operam. Por trás de toda métrica há uma equipe que tem de conviver com ela, e a qualidade do trabalho não pode subir acima das condições em que a equipe trabalha. Os princípios do Manifesto Ágil dizem isso com clareza: construa projetos em torno de indivíduos motivados, dê a eles o ambiente e o apoio de que precisam, confie que farão o trabalho e deixe que mantenham um ritmo constante indefinidamente. Dizem também que a equipe deve refletir regularmente sobre como se tornar mais eficaz. As medidas desta parte são o modo de tornar essas afirmações verificáveis.
+
+A gestão de serviços de TI (ITSM), como codificada pelo ITIL, aborda o mesmo terreno por meio de suas práticas de gestão da força de trabalho e dos talentos, gestão do conhecimento, mudança organizacional e melhoria contínua. As duas tradições concordam no essencial: as pessoas precisam de propósito claro, segurança para falar, tempo para aprender e voz na organização do trabalho. Onde diferem, a diferença é sobretudo de vocabulário.
+
+Esta parte carrega a maior carga ética do livro. As medidas que tocam as pessoas podem escorregar para a vigilância, criar medo e produzir respostas falsas. Um único uso errado, como classificar indivíduos por uma pontuação de engajamento ou acompanhar horas on-line, pode arruinar anos de confiança e inutilizar todas as medidas posteriores. Por isso cada tópico aqui declara suas regras de privacidade, agrega no nível da equipe, define tamanhos mínimos de grupo e proíbe o uso dos dados na avaliação individual. Cada métrica ainda vem com o modo como é manipulada e uma barreira de proteção, porque mesmo as medidas bem-intencionadas sobre pessoas se distorcem quando viram metas (veja o tópico 1.2, A lei de Goodhart e a psicologia das métricas).
+
+As quatro lentes moldam esta parte. Um ritmo sustentável e indivíduos motivados são o objetivo das medidas. Os assistentes de IA mudam a carga de trabalho e as habilidades; por isso pergunte diretamente sobre benefício e ônus. A automação deve ser usada para coletar e lembrar, e não para monitorar pessoas. A análise relata no nível da equipe, com contagens de respostas e um tamanho mínimo de grupo.
+
+## Tópicos desta parte
+
+- **9.1 Saúde da equipe e experiência do desenvolvedor**: ciclos de feedback, carga cognitiva, fluxo, avaliações de saúde que pertencem à equipe e remoção de obstáculos.
+- **9.2 Métricas de satisfação e bem-estar**: ritmo sustentável, segurança psicológica, tensão da carga de trabalho e como perguntar sem bisbilhotar nem diagnosticar.
+- **9.3 Métricas de colaboração e transferências de trabalho**: transferências, esperas, dependências, colaboração em tempo real, conhecimento compartilhado e tempo de resposta às partes interessadas.
+- **9.4 Métricas de habilidades e aprendizado**: tempo de aprendizado protegido, treinamento cruzado, integração, comunidades de prática e lições compartilhadas entre equipes.
+- **9.5 Métricas de melhoria contínua**: acompanhamento de ações, verificação de efeitos, problemas repetidos e capacidade para melhorar.
+- **9.6 Métricas de mudança organizacional e adoção**: clareza de objetivo, resultados contra uma comparação, carga de mudança, adesão voluntária e a diferença entre uma prática e um ritual.
+
+## Como estes tópicos se relacionam
+
+O tópico 9.1 (veja o tópico 9.1, Saúde da equipe e experiência do desenvolvedor) descreve as condições diárias: com que rapidez chega o feedback, quão pesada é a carga sobre a mente e se as pessoas conseguem se concentrar. Introduz a regra que percorre toda a parte, a de que a equipe é dona de sua própria avaliação de saúde e lê primeiro os resultados. O tópico 9.2 (veja o tópico 9.2, Métricas de satisfação e bem-estar) vai à pergunta mais profunda de se o ritmo pode ser sustentado e se as pessoas se sentem seguras para dizê-lo, e dá as regras de privacidade mais estritas do livro.
+
+Os tópicos 9.3 e 9.4 olham como o trabalho e o conhecimento circulam entre as pessoas. As transferências e dependências (veja o tópico 9.3, Métricas de colaboração e transferências de trabalho) mostram onde o trabalho espera. As habilidades e o aprendizado (veja o tópico 9.4, Métricas de habilidades e aprendizado) mostram se o conhecimento está espalhado o bastante para que a espera e o risco diminuam. Ambos dependem de condições dos dois primeiros tópicos: uma equipe sem tempo de foco ou sem segurança para pedir ajuda não compartilhará o que sabe.
+
+Os tópicos 9.5 e 9.6 fecham a parte com melhoria e mudança. A melhoria contínua (veja o tópico 9.5, Métricas de melhoria contínua) pergunta se as ideias viram mudanças e se as mudanças são verificadas. A mudança organizacional (veja o tópico 9.6, Métricas de mudança organizacional e adoção) pergunta se uma nova forma de trabalhar pegou pela razão pretendida ou se se espalhou apenas como um ritual. Ambos são testes das condições expostas antes: a melhoria precisa de tempo protegido e segurança, e a mudança que ignora o ritmo e as pessoas fracassa.
+
+Vários pares de barreiras de proteção decorrem disso. Uma pontuação de saúde da equipe deve ser lida com a lista de obstáculos e o que foi feito a respeito. Um pulso de bem-estar deve ser lido com fatos de carga de trabalho no nível da equipe, nunca com horas individuais. Uma medida de aprendizado deve ser lida com evidência de capacidade em uso, para que a presença não substitua a habilidade. Uma cifra de adoção deve ser lida com resultados contra um grupo de comparação, para que a forma não seja confundida com a substância.
+
+Esta parte se apoia nas medidas de partes anteriores: fluxo e planejamento (veja o tópico 2.5, Métricas de previsão e planejamento de entregas), carga operacional (veja o tópico 2.9, Trabalho operacional e trabalho não planejado), trabalho repetitivo e plantão (veja o tópico 5.7, Métricas de trabalho repetitivo e plantão) e a experiência dos usuários internos (veja o tópico 6.4, Experiência de usuários e colaboradores). Conduz às duas últimas partes: a IA muda o que muitas dessas medidas significam, e um programa de métricas é ele próprio uma mudança que precisa ser introduzida com o cuidado que esta parte descreve.
