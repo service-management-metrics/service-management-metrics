@@ -63,7 +63,7 @@ Defina "útil" em uma rubrica escrita: correto, relevante para uma necessidade r
 
 **5. Limite o que entra no sistema.** Decida que conteúdo gerado pode ser criado e publicado automaticamente e qual precisa de revisão. Defina limites para o tamanho e o número de mudanças geradas em uma revisão. Facilite dizer não ao volume. Uma fila menor com itens mais claros serve melhor os usuários.
 
-**6. Gerencie a base de conhecimento como um produto.** Rotule o conteúdo gerado, exija revisão antes da publicação, aposente duplicatas e itens obsoletos e acompanhe a redundância e o uso. Uma base de conhecimento é útil na proporção da confiança que os usuários têm nela. Remova os artigos que ninguém usa e por que ninguém consegue responder (veja o tópico 3.6, Métricas de gestão do conhecimento).
+**6. Gerencie a base de conhecimento como um produto.** Rotule o conteúdo gerado, exija revisão antes da publicação, aposente duplicatas e itens obsoletos e acompanhe a redundância e o uso. Uma base de conhecimento é útil na proporção da confiança que os usuários têm nela. Remova os artigos que ninguém usa e que ninguém consegue avalizar (veja o tópico 3.6, Métricas de gestão do conhecimento).
 
 **7. Mantenha limpos os fluxos de alertas e de tickets.** Se a IA cria tickets a partir de alertas ou resumos, meça a parcela útil e as duplicatas. Ajuste com firmeza. Trate uma relação sinal-ruído em queda como um incidente por direito próprio, já que prejudica a resposta quando o problema real chega.
 
