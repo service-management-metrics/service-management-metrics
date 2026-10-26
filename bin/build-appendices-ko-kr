@@ -1,0 +1,127 @@
+#!/usr/bin/env python3
+# Regenerates the ko-kr appendices 12.2 (metric definitions), 12.6 (references) and 12.7 (index)
+# from the ko-kr content topics. The home topic is the authority; rerun after any ko-kr topic changes.
+import os, re, sys
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+rows = [l.rstrip("\n").split("\t") for l in open(f"{root}/spec/topics.tsv")][1:]
+VI = f"{root}/locales/ko-kr/주제"
+def nk(n): return [int(x) for x in n.split(".")]
+def sec(t, n):
+    m = re.search(rf"^## {re.escape(n)}\n(.*?)(?=^## |\Z)", t, re.M | re.S)
+    return m.group(1) if m else ""
+def table(s):
+    out = []
+    for l in s.splitlines():
+        if l.startswith("|") and not l.startswith("| ---") and not l.startswith("| 지표 |"):
+            out.append([x.strip() for x in l.strip().strip("|").split(" | ")])
+    return out
+def pid(path):
+    return open(path).read().strip()
+peer = {}
+for d in os.listdir(VI):
+    p = f"{VI}/{d}/.locale-peer-id"
+    if os.path.exists(p): peer[pid(p)] = d
+def adir(slug):
+    return peer[pid(f"{root}/locales/en-001/topics/{slug}/.locale-peer-id")]
+texts, titles, en = {}, {}, {}
+PARTS = {}
+for part, num, slug, ko in rows:
+    if int(part) >= 12: continue
+    d = adir(slug)
+    texts[num] = open(f"{VI}/{d}/index.md").read()
+    titles[num] = texts[num].splitlines()[0][2:]
+    en[num] = open(f"{root}/locales/en-001/topics/{slug}/index.md").read()
+    if num.endswith(".0"):
+        PARTS[part] = re.sub(r"^제\d+부 소개: ", "", titles[num])
+
+# 12.2 metric definitions
+o = []; total = 0; miss = []; cur = None
+for part, num, slug, ko in rows:
+    if int(part) >= 12 or num.endswith(".0"): continue
+    t = texts[num]
+    md = table(sec(t, "지표 정의")); gv = {c[0]: c for c in table(sec(t, "악용 방식과 방호책")) if len(c) == 3}
+    if part != cur:
+        o.append(f"\n## 제{part}부: {PARTS[part]}\n"); cur = part
+    o.append(f"### {num} {titles[num]}\n")
+    o.append(f"원본 주제: (주제 {num}, {titles[num]} 참조).\n")
+    o.append("| 지표 | 정의 | 공식 | 단위 | 데이터 원천 | ITIL 프랙티스 | 애자일 대응 | 주기 | 악용 방식 | 방호책 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+    for c in md:
+        if len(c) != 8: miss.append((num, c[0], len(c))); continue
+        g = gv.get(c[0])
+        if not g: miss.append((num, c[0], "nogaming")); continue
+        o.append("| " + " | ".join(c[:8] + [g[1], g[2]]) + " |"); total += 1
+    o.append("")
+HEAD = """# 지표 정의와 공식 참조
+
+이 부록은 내용 주제에서 정의한 모든 지표를 부와 주제별로 묶어 나열합니다. 각 항목에는 원본 주제의 정의, 공식, 단위, 데이터 원천, 관련 ITIL 프랙티스, 애자일 대응, 주기가 해당 악용 방식 및 방호책과 함께 실려 있습니다. 이 부록은 각 주제의 "지표 정의" 절과 "악용 방식과 방호책" 절에서 생성되므로, 원본 주제가 기준입니다. 이곳의 항목이 주제와 다르면 주제가 옳으며, 부록은 다시 생성됩니다.
+
+## 사용 방법
+
+- **채택하기 전에 찾아보세요.** 대시보드에 지표를 올리기 전에 악용 방식과 방호책을 포함한 항목을 읽고, 방호책을 지표와 함께 적용하세요 (주제 1.3, 산출물보다 성과: 무엇을 측정할지 고르기 참조).
+- **팀, 서비스, 시스템을 측정하세요.** 어떤 항목도 개인의 순위를 매기려는 것이 아닙니다 (주제 1.2, 굿하트의 법칙과 지표의 심리학 참조).
+- **판단은 원본 주제에 맡기세요.** 여기의 공식은 간략합니다. 용어 정의, 표본에 관한 메모, 실제 사례는 원본 주제에 있습니다.
+- **조직의 변형을 기록하세요.** 조직이 정의를 바꾸면 변경 내용과 이유를 지표 레지스트리에 남기세요 (주제 1.4, 지표 거버넌스와 소유권 참조). 지표 카드가 도움이 됩니다 (주제 12.4, 템플릿 참조).
+- **예시 숫자에는 표시가 있습니다.** 이 부록에는 기준 값이 없습니다. 모든 숫자는 조직 고유의 기준선에서 나와야 합니다.
+"""
+open(f"{VI}/{adir('metric-definitions-and-formulas-reference')}/index.md", "w").write(HEAD + "\n".join(o))
+print("12.2 metrics:", total, "missing:", miss, file=sys.stderr)
+
+# 12.6 references (entries are kept verbatim; the cited-in lists use topic numbers)
+refs = {}; wiki = {}
+for part, num, slug, ko in rows:
+    if int(part) >= 12: continue
+    m = re.search(r"^## 참고 문헌과 더 읽을거리\n(.*?)\Z", texts[num], re.M | re.S)
+    if not m: continue
+    for l in m.group(1).splitlines():
+        mm = re.match(r"\d+\. (.*)", l)
+        if not mm: continue
+        r = mm.group(1).strip()
+        if r.startswith("Wikipedia, "):
+            wm = re.match(r"Wikipedia, \[(.*)\]\((.*)\)\.?$", r)
+            if not wm: refs.setdefault(r, []).append(num); continue
+            wiki.setdefault(wm.group(2), [wm.group(1), []])[1].append(num)
+        else:
+            refs.setdefault(r, []).append(num)
+def key(r): return re.sub(r"[^a-z0-9 ]", "", r.lower())
+cite = lambda ns: ", ".join(sorted(set(ns), key=nk))
+o = ["# 참고 문헌과 더 읽을거리", "",
+     "이 부록은 내용 주제에서 인용한 출처를 인용한 주제와 함께 모았습니다. 항목은 저자 또는 기관의 알파벳 순서로 정렬했으며 원문 그대로 유지했습니다. 출처가 어떻게 쓰였는지는 원본 주제에서 확인할 수 있습니다.", "",
+     "## 검증에 관하여", "",
+     "이 책의 위키백과 링크는 열리는지 확인했습니다. 책, 논문, 표준, 지침은 저자들이 기억에 의존해 인용했으며 모두 원문과 대조한 것은 아닙니다. 서지 정보(연도, 판, 제목)는 공식적인 작업에 쓰기 전에 확인할 힌트로 보시기 바랍니다. 수정 사항은 유지보수 스킬을 통해 알려 주세요.", "",
+     "## 책, 논문, 표준, 지침", ""]
+for i, r in enumerate(sorted(refs, key=key), 1):
+    o.append(f"{i}. {r} (인용 주제: {cite(refs[r])})")
+o += ["", "## 위키백과 문서", ""]
+for i, (u, (title, ns)) in enumerate(sorted(wiki.items(), key=lambda kv: kv[1][0].lower()), 1):
+    o.append(f"{i}. Wikipedia, [{title}]({u}) (인용 주제: {cite(ns)})")
+open(f"{VI}/{adir('references-and-further-reading')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.6 refs:", len(refs), len(wiki), file=sys.stderr)
+
+# 12.7 index
+metrics = {}; wurl = {}
+url_title = {u: v[0] for u, v in wiki.items()}
+for num, t in texts.items():
+    if num.endswith(".0"): continue
+    for c in table(sec(t, "지표 정의")):
+        metrics.setdefault(c[0], []).append(num)
+    body = t.split("## 참고 문헌과 더 읽을거리")[0]
+    for m in re.finditer(r"\]\((https://en\.wikipedia\.org/wiki/[^)\s]+(?:\([^)]*\))?[^)\s]*)\)", body):
+        wurl.setdefault(m.group(1), set()).add(num)
+FW = ["ITIL 5", "ITIL 4", "ITIL", "DORA", "SPACE", "DevEx", "OKR", "GQM", "Balanced scorecard", "Goal-Question-Metric", "Site reliability", "Lean", "Kanban Guide", "COBIT", "ISO/IEC 20000", "ISO/IEC 27001", "NIST", "Cynefin", "Value stream mapping", "HEART", "Four Keys", "Westrum", "CMMI", "FinOps", "COPC", "Team Topologies", "Theory of constraints"]
+fw = {}
+for f in FW:
+    ns = [n for n, t in en.items() if re.search(rf"\b{re.escape(f)}\b", t.split("## References and further reading")[0])]
+    if ns: fw[f] = ns
+def fmt(ns): return ", ".join(sorted(set(ns), key=nk))
+o = ["# 색인", "",
+     "개념, 프레임워크, 지표를 그것이 나오는 주제와 함께 나열합니다. 숫자는 주제 번호입니다. 제목은 README의 목차와 [구조](../../../../spec/structure.md)에 있습니다. 짧은 정의와 원본 주제는 주제 12.1, 용어집을 참조하세요.", "",
+     "## 프레임워크와 모델", ""]
+for f in sorted(fw, key=str.lower):
+    o.append(f"- **{f}**: {fmt(fw[f]) if len(fw[f]) <= 12 else fmt(sorted(fw[f], key=nk)[:12]) + ' 외 다수'}")
+o += ["", "## 지표", "", "각 주제의 정의 표에 적힌 지표 이름입니다. 전체 항목은 부록 12.2에 있습니다 (주제 12.2, 지표 정의와 공식 참조 참조).", ""]
+for k in sorted(metrics): o.append(f"- **{k}**: {fmt(metrics[k])}")
+o += ["", "## 개념", "", "개념은 각 주제가 맥락으로 위키백과에 연결한 용어에서 가져옵니다. 첫 번째 번호는 대개 그 개념을 가장 충실히 설명하는 주제입니다.", ""]
+for u in sorted(wurl, key=lambda u: url_title.get(u, u).lower()):
+    o.append(f"- **{url_title.get(u, u.rsplit('/', 1)[-1].replace('_', ' '))}**: {fmt(wurl[u])}")
+open(f"{VI}/{adir('index')}/index.md", "w").write("\n".join(o) + "\n")
+print("12.7:", len(fw), len(metrics), len(wurl), file=sys.stderr)
