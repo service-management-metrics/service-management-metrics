@@ -1,3 +1,900 @@
 # 색인
 
-<!-- stub -->
+개념, 프레임워크, 지표를 그것이 나오는 주제와 함께 나열합니다. 숫자는 주제 번호입니다. 제목은 README의 목차와 [구조](../../../../spec/structure.md)에 있습니다. 짧은 정의와 원본 주제는 주제 12.1, 용어집을 참조하세요.
+
+## 프레임워크와 모델
+
+- **Balanced scorecard**: 1.7
+- **DevEx**: 9.1
+- **DORA**: 1.1, 1.3, 1.5, 2.0, 2.1, 2.2, 2.4, 2.7, 2.8, 3.3, 3.4, 3.7 외 다수
+- **FinOps**: 5.4, 7.0, 7.5, 7.6, 7.7
+- **Four Keys**: 2.8
+- **Goal-Question-Metric**: 1.0, 1.7
+- **GQM**: 1.7
+- **ISO/IEC 20000**: 1.4
+- **ISO/IEC 27001**: 8.1, 8.3
+- **ITIL**: 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 2.0, 2.1, 2.2 외 다수
+- **ITIL 4**: 1.1, 1.3, 1.4, 1.6, 1.7, 1.8, 2.1, 2.3, 2.4, 2.7, 2.8, 2.9 외 다수
+- **ITIL 5**: 1.0, 1.1, 1.3, 1.8
+- **Kanban Guide**: 1.6, 2.1, 2.2, 2.5
+- **Lean**: 2.2, 2.3, 2.4
+- **NIST**: 1.7, 10.5
+- **OKR**: 1.7
+- **Site reliability**: 1.1, 5.0, 5.1, 5.4, 5.5
+- **SPACE**: 1.1, 9.1
+
+## 지표
+
+각 주제의 정의 표에 적힌 지표 이름입니다. 전체 항목은 부록 12.2에 있습니다 (주제 12.2, 지표 정의와 공식 참조 참조).
+
+- **AI 사용 레지스트리 포괄률**: 10.5
+- **AI 사용 포괄률**: 10.1
+- **AI 시스템 인벤토리 포괄률**: 1.8
+- **AI 인시던트율과 격리까지의 시간**: 10.5
+- **AI 지원 과업당 비용**: 10.1
+- **CES**: 6.1
+- **CI 완전성**: 7.4
+- **CI 정확성**: 7.4
+- **CMDB 사용률**: 7.4
+- **CSAT**: 6.1
+- **CSF-KPI 포괄률**: 1.7
+- **IT 문제로 잃은 시간**: 6.2
+- **KRI 위반 대응 시간**: 8.2
+- **NPS**: 6.1
+- **OLA 달성률**: 5.1
+- **RPO 충족률**: 5.6
+- **RTO 충족률**: 5.6
+- **SBOM 포괄률**: 7.2
+- **SLA 달성률**: 5.1
+- **SLE 달성률**: 2.1
+- **SLI 달성**: 5.2
+- **SLO 준수**: 5.2
+- **SLO 포괄률**: 5.2
+- **WIP 제한 초과율**: 2.3
+- **XLA 달성**: 6.2
+- **가설 확인율**: 6.5
+- **가장 오래된 미해결 항목 경과 시간**: 1.6
+- **가장 오래된 열린 인시던트 경과 기간**: 3.3
+- **가치 흐름 리드 타임**: 2.4
+- **감사 노력**: 8.3
+- **감성 추세**: 6.2
+- **감지 포괄률**: 5.5
+- **감지까지의 시간(TTD)**: 5.5
+- **강제 방해 분**: 6.4
+- **개선 백로그 경과**: 9.5
+- **개선 용량 비중**: 9.5
+- **개선 후속 조치율**: 1.1
+- **개인 대상 사용 사건**: 11.3
+- **개인정보 보호 장치 준수**: 6.4
+- **갱신 준비**: 7.2
+- **갱신 지연**: 7.4
+- **거짓 양성률**: 5.5
+- **검색 성공률**: 6.3
+- **검증 부담**: 10.4
+- **검증된 절약 시간**: 10.6
+- **검증된 해결률**: 10.3
+- **검토 시점의 데이터 연령**: 1.1
+- **검토 완료 적시성**: 3.4
+- **검토 포괄률**: 4.2
+- **검토 품질 점수**: 4.2
+- **검토된 출력 정확성**: 10.1
+- **게시까지의 시간**: 3.6
+- **격리까지의 시간**: 8.1
+- **결정 사용률**: 10.8
+- **결정 연결률**: 1.4
+- **결정 연계 지표 비율**: 1.1
+- **결정 연계율**: 11.1
+- **결정의 증거**: 11.4
+- **경보 규칙 최신성**: 5.5
+- **경보 물량**: 5.5
+- **경보 정밀도와 재현율**: 10.9
+- **경보 집중도**: 5.5
+- **경험 간극**: 6.2
+- **경험 점수**: 6.2
+- **계보 포괄률**: 10.8
+- **계약 레지스트리 포괄률**: 8.4
+- **계측 포괄률**: 10.10
+- **계획 외 작업 비율**: 2.9
+- **계획 최신성**: 5.6
+- **계획된 작업의 밀려남**: 2.9
+- **계획된 중단 비중**: 5.3
+- **계획된 확약의 신뢰도**: 2.9
+- **계획에 없던 중단**: 5.3
+- **고객 영향**: 3.4
+- **공급업체 AI 실사 최신성**: 10.5
+- **공급업체 귀속 인시던트 시간**: 8.4
+- **공급업체 서비스 수준 달성**: 8.4
+- **공동 조치 종료율**: 8.4
+- **공동체 참여**: 9.4
+- **공표 접근성 적합도**: 8.5
+- **과업 자동화 포괄률**: 10.6
+- **관련 자격증 포괄률**: 9.4
+- **관리도 신호율**: 1.6
+- **관점 포괄률**: 1.7
+- **교대당 호출**: 5.7
+- **교육 적용률**: 9.4
+- **교차 교육 깊이**: 9.4
+- **교체 리드 타임**: 7.3
+- **구간 폭**: 1.6
+- **근무 시간 외 호출 비중**: 5.7
+- **근본 원인까지의 시간**: 4.1
+- **기능 도입률**: 1.3
+- **기능 플래그 포괄률**: 4.5
+- **기록 소요 시간**: 7.1
+- **기여 폭**: 3.6
+- **기준 대비 기량**: 10.9
+- **기준선 완전성**: 10.1
+- **기준선 포괄률**: 1.1, 11.5
+- **기준선에 비춘 과업 시간**: 10.1
+- **기한이 지난 핵심 발견 사항**: 8.1
+- **긴급 변경 비중**: 4.4
+- **긴급 처리율**: 2.9
+- **낙하율**: 3.7
+- **낡은 플래그 수**: 4.5
+- **낡은 항목 비중**: 6.3
+- **남은 오류 예산**: 5.2
+- **낭비율**: 7.6
+- **노출 기간**: 8.1
+- **누적 완전하고 정확한 비율**: 2.4
+- **다음 단계까지의 시간(서술적)**: 11.4
+- **단계 검토 완료**: 11.5
+- **단위 원가**: 7.5
+- **담당 변경 횟수**: 3.3
+- **답변 정확성**: 10.3
+- **대기 시간**: 2.2, 2.4
+- **대기열 길이**: 2.3
+- **대기열 시간**: 2.3
+- **대조 편차**: 1.5
+- **대조율**: 7.1
+- **댓글 주제 비중**: 6.1
+- **데이터 신선도**: 1.5, 10.8
+- **데이터 최신성**: 11.1
+- **도구 없는 자신감 평가**: 10.2
+- **도구 펄스 점수**: 6.4
+- **도구와 프로세스 만족도**: 9.1
+- **도움이 됨 비율**: 3.6
+- **도입률**: 6.3
+- **도착률 및 출발률**: 2.3
+- **라이선스 활용률**: 7.2
+- **레벨 분포(시프트 레프트 비중)**: 3.7
+- **로컬 벨로시티**: 2.5
+- **롤백 시간**: 10.6
+- **롤백률**: 4.4
+- **리드 타임**: 2.2
+- **리뷰 라운드**: 2.7
+- **리뷰 부담 쏠림**: 2.7
+- **리뷰 부하**: 10.2
+- **리뷰 사이클 타임**: 2.7
+- **리틀의 법칙 일관성 비율**: 2.3
+- **릴리스 리드 타임**: 4.5
+- **릴리스 배치 크기**: 4.5
+- **릴리스 빈도**: 4.5
+- **마지막 성공한 복구 시험 이후 일수**: 5.6
+- **말하기 안전 펄스**: 4.2
+- **모니터링 감지 비중**: 3.2, 5.5
+- **모델별 고장률**: 7.3
+- **목적 명확성**: 9.6
+- **목표 내 이행**: 3.5
+- **목표 초과 서비스 백로그**: 2.6
+- **목표 추적성**: 1.7
+- **무결과 검색률**: 3.6
+- **문서 최신성**: 3.6
+- **문제 백로그 경과 시간**: 4.1
+- **반복 문제 비율**: 9.5
+- **반복 발견 사항 비율**: 8.3
+- **반복 인시던트율**: 3.2
+- **반복 중대 인시던트율**: 3.4
+- **반복 호출률**: 5.7
+- **반복되는 계획 외 작업 비중**: 2.9
+- **발견 사항 종료 시간**: 8.3
+- **방호책 적용률**: 1.2
+- **배분 범위**: 7.5
+- **배분 포괄률**: 7.6
+- **배포 빈도**: 2.8, 4.5
+- **배포 재작업률**: 2.8, 4.4
+- **배포-릴리스 간극**: 4.5
+- **백로그 경과 시간**: 2.6
+- **백로그 유입-유출 비율**: 2.6
+- **백로그 크기**: 2.6
+- **백로그 폐기율**: 2.6
+- **백업 복원 성공률**: 5.6
+- **범위 변경률**: 2.5
+- **범주 집중도**: 3.2
+- **변경 레코드 완전성**: 4.3
+- **변경 리드 타임**: 2.8
+- **변경 실패율**: 2.8, 4.4
+- **변경 통제 포괄률**: 10.5
+- **변경-인시던트 연결률**: 4.4
+- **변화 부하**: 9.6
+- **병합 후 수정 비율**: 2.7
+- **병합 후 재작업**: 10.2
+- **보고 노력**: 8.5
+- **보고 의무 포괄률**: 8.5
+- **보고서 적시성**: 8.5
+- **보안 신고율**: 8.1
+- **보정 간극**: 10.9
+- **보호된 학습 시간 비중**: 9.4
+- **복구 시간**: 3.3
+- **복귀율**: 9.6
+- **봇 만족도와 노력**: 10.3
+- **부채 순변화**: 4.6
+- **부채 용량 비중**: 4.6
+- **부채 이자**: 4.6
+- **부채 재고**: 4.6
+- **분석 검토율**: 10.8
+- **불안정한 테스트 비율**: 10.7
+- **비교에 비춘 성과 변화**: 9.6, 10.1
+- **비승인 애플리케이션 수**: 7.2
+- **비용 추정 정확성**: 7.7
+- **비율 보고 적용률**: 1.6
+- **비즈니스 영향 시간**: 6.5
+- **비추천 고객 후속 조치 시간**: 6.1
+- **사각지대 인시던트**: 10.10
+- **사람 감독 증거율**: 10.5
+- **사람까지의 시간**: 10.3
+- **사용 헌장 포괄률**: 11.3
+- **사용자 가중 가용성**: 5.3
+- **사용자당 마찰 사건**: 6.2
+- **사이클 타임**: 2.1, 2.2
+- **산출 대 성과 비율**: 10.4
+- **상설 팀 자금 비중**: 7.5
+- **상태 모델 이탈**: 1.5
+- **새 측정치까지의 시간**: 11.2
+- **생산성 도달까지의 시간**: 6.4
+- **생성된 지식의 검토 비중**: 10.4
+- **서비스당 텔레메트리 비용**: 10.10
+- **서비스별 비용**: 7.5
+- **서비스별 인시던트 건수**: 3.2
+- **선언까지의 시간**: 3.4
+- **선행 지표 검증률**: 1.3
+- **설명 점검 통과율**: 10.2
+- **설문 응답률**: 1.5, 6.1
+- **성과 연결률**: 1.3
+- **성과 연계 용량 비중**: 6.5
+- **성과 증거 경과 시간**: 1.8
+- **성과 지표 변화**: 6.5
+- **성과 진술 포괄률**: 1.8
+- **성능 시험 포괄률**: 5.4
+- **셀프서비스 도입(포털 우선 비중)**: 3.7
+- **셀프서비스 성공률**: 3.7
+- **소급 입력률**: 1.5
+- **소유권 적용률**: 1.4
+- **소유자 없는 자산 비율**: 7.1
+- **소유자 포괄률**: 8.2
+- **소진율**: 5.2
+- **소통 적시성**: 3.4
+- **솔직함 신호**: 11.3
+- **쇼백 이의 제기율**: 7.5
+- **수동 개입률**: 10.6
+- **수명 주기 단계 완전성**: 7.1
+- **수박 간극**: 5.1
+- **수작업 노력 비중**: 11.2
+- **수정 후 재발률**: 4.1
+- **순현재가치**: 7.7
+- **순환 근무 깊이**: 5.7
+- **스캔 포괄률**: 8.1
+- **승인 대기 시간**: 3.5
+- **승인 대기열 경과 시간**: 4.3
+- **승인 리드 타임**: 4.3
+- **시간 기반 가용성**: 5.3
+- **시간 중 토일 비중**: 5.7
+- **시계 멈춤 비중**: 5.1
+- **시계 정지 비율**: 2.2
+- **시험된 복구 포괄률**: 5.6
+- **신호 상관율**: 10.10
+- **실사 최신성**: 8.4
+- **실천 도입 폭**: 9.6
+- **실패 정의 일치도**: 4.4
+- **실패한 배포 복구 시간**: 2.8
+- **실행 가능한 경보 비율**: 5.5
+- **심리적 안전 평가**: 9.2
+- **쓰이지 않는 라이선스 비용**: 7.2
+- **아슬아슬한 사건 보고율**: 4.2
+- **아슬아슬한 충족 비중**: 5.1
+- **아이디어에서 시험까지의 시간**: 9.5
+- **안전한 폐기 완료**: 7.3
+- **알려진 오류 백로그 경과 시간**: 4.6
+- **알려진 오류 재사용률**: 4.1
+- **야간 방해율**: 5.7
+- **약정 포괄률**: 7.6
+- **약정 활용률**: 7.6
+- **업무량 부담 평가**: 9.2
+- **에이전트 행동 되돌림률**: 10.3
+- **여유**: 5.4
+- **여정 완료율**: 6.2
+- **여정별 경험 점수**: 5.1
+- **연습 발견 사항 종료율**: 5.6
+- **연식 프로파일**: 7.3
+- **열고 닫은 문제**: 4.1
+- **열린 알려진 오류에 연결된 인시던트**: 4.6
+- **열린 조치 경과 시간**: 4.2
+- **영구 수정까지의 시간**: 4.1
+- **영향 예측 적중률**: 7.4
+- **예산 정책 준수**: 5.2
+- **예측 결정 연결**: 10.9
+- **예측 구간 포괄률**: 10.9
+- **예측 범위 폭**: 2.5
+- **예측 오차**: 5.4, 10.9
+- **예측 적중률**: 2.5
+- **예측 편차**: 7.5, 7.6
+- **예측 표류 신호**: 10.9
+- **오픈 소스 검토 포괄률**: 7.2
+- **완전하고 정확한 비율(단계)**: 2.4
+- **요청 기반 가용성**: 5.3
+- **요청 백로그와 경과 시간**: 3.5
+- **요청 유형별 수작업 소요 시간**: 3.7
+- **요청 이행 시간**: 3.5
+- **요청 재개방률**: 3.5
+- **요청 집중도**: 6.3
+- **요청 포기율**: 6.3
+- **욕구 지원 평가**: 9.2
+- **용량 리드 타임**: 5.4
+- **용량 배분**: 2.5
+- **용량 배분 준수도**: 2.9
+- **우선순위 구성**: 3.2
+- **우선순위 재분류율**: 3.2
+- **우회율**: 10.7
+- **우회책 전용 비중**: 4.1
+- **우회책 포괄률**: 4.6
+- **운영, 변경, 개선 비중**: 7.5
+- **원인 재발률**: 4.2
+- **원천 일치율**: 1.4
+- **원천 포괄률**: 1.5, 11.2
+- **원천별 토일**: 5.7
+- **웰빙 피드백에 대한 조치 시간**: 9.2
+- **위험 검토 최신성**: 8.2
+- **위험 기반 변경 비중**: 8.2
+- **위험 예외 경과**: 8.1
+- **위험 평가 최신성**: 10.5
+- **유용한 항목 비중**: 10.4
+- **유지율**: 10.2
+- **유출 결함률**: 10.2
+- **유형별 변경량**: 4.3
+- **유효 라이선스 상태**: 7.2
+- **유휴 장치 비중**: 7.3
+- **응답 시간**: 3.1
+- **응답자 포괄도**: 6.1
+- **의무 포괄률**: 8.3
+- **의존성 지연**: 9.3
+- **의존성 포괄률**: 7.4
+- **이상 징후 확인 시간**: 7.6
+- **이의 제기 처리 시간**: 11.3
+- **이익 실현율**: 6.5
+- **이익 추정 정확성**: 7.7
+- **이탈 준비**: 8.4
+- **이탈 준비도**: 11.2
+- **이탈률**: 3.1
+- **이해관계자 응답 시간**: 9.3
+- **이해관계자 참여율**: 9.6
+- **이해까지의 시간**: 10.10
+- **인계 대기 시간(85번째 백분위수)**: 5.1
+- **인계 맥락 완전성**: 10.3
+- **인계 횟수**: 2.4
+- **인벤토리 정확도**: 7.1
+- **인수인계 대기 비율**: 9.3
+- **인수인계 횟수**: 9.3
+- **인시던트-문제 연결률**: 4.1
+- **인식 격차**: 1.2
+- **인지 부하 평가**: 9.1
+- **인지 시간**: 3.3
+- **임시방편 유병률**: 6.4
+- **자동 승인 비중**: 4.3, 10.7
+- **자동화 비중**: 3.5
+- **자동화 소유권 최신성**: 10.6
+- **자동화 실패 및 재작업률**: 3.7
+- **자동화 실행 성공률**: 10.6
+- **자동화 포괄률**: 3.7
+- **자동화가 일으킨 인시던트율**: 10.6
+- **자발적 도입**: 11.3
+- **자발적 수용 비중**: 9.6
+- **자발적 이직과 퇴직 주제**: 9.2
+- **자산 소유자 포괄률**: 1.8
+- **자원 사용률**: 5.4
+- **작업 항목 경과 시간**: 2.1
+- **장애 빈도와 간격**: 5.3
+- **장애물 해결 시간**: 9.1
+- **재개방률**: 1.2, 3.2
+- **재배정 비율**: 9.3
+- **재사용 및 재활용률**: 7.3
+- **재사용 비율**: 3.6
+- **재접촉률**: 1.3, 3.1, 10.3
+- **저하 비중**: 5.3
+- **전달 목표 성공률**: 2.5
+- **접근 검토 최신성**: 1.4
+- **접근성 요청 해결 시간**: 6.4
+- **접촉량**: 3.1
+- **접촉률**: 3.1
+- **정규화된 인시던트율**: 3.2
+- **정시 교체율**: 7.3
+- **정의 변경 건수**: 1.2
+- **정의 완비율**: 11.1
+- **정의 정렬**: 8.5
+- **정의 최신성**: 1.4
+- **정의와 데이터에 대한 신뢰**: 11.4
+- **정정률**: 8.5
+- **정제 포괄률**: 2.6
+- **정책 게이트 실패율**: 10.7
+- **정체된 풀 리퀘스트 수**: 2.7
+- **제거된 토일**: 5.7
+- **제안 수락 및 재정의율**: 10.1
+- **조정 편차**: 10.8
+- **조정률**: 11.2
+- **조치 이행률**: 9.5
+- **조치 종료율**: 4.2
+- **조치 항목 후속 이행**: 3.4
+- **주장 검증률**: 1.8
+- **준비된 작업 깊이**: 2.6
+- **중단율**: 2.9
+- **중대 인시던트 건수**: 3.4
+- **중대 인시던트 지속 시간**: 3.4
+- **중복 CI 비율**: 7.4
+- **증거 기반 중단율**: 7.7
+- **증거 완전성**: 10.7
+- **증거 응답 시간**: 8.3
+- **증거 자동화율**: 8.3
+- **증거 품질 비중**: 6.5
+- **지속 가능한 속도 평가**: 9.2
+- **지속된 연장 근무 주**: 9.2
+- **지식 링크율**: 3.6
+- **지식 커버리지**: 9.3
+- **지연 백분위수**: 5.4
+- **지원 받은 지원 업무의 품질**: 10.2
+- **지원 팀당 도구 비용**: 11.2
+- **지표 검토 경과 시간**: 1.7
+- **지표 표류 표시**: 10.4
+- **지표 활용률**: 1.2
+- **직무 분리 충돌**: 8.3
+- **진행 중인 작업**: 2.3
+- **진행 중인 작업(WIP)**: 2.1
+- **질문 포괄률**: 11.1
+- **집중 시간 비중**: 9.1
+- **집중도**: 8.4
+- **차단 시간 비율**: 2.1
+- **차원 포괄**: 9.1
+- **차원별 프로필**: 11.4
+- **처리 계획 적시성**: 8.2
+- **처리 시간**: 2.4, 3.1
+- **처리량**: 2.1
+- **처리량 안정성**: 2.5
+- **첫 가치까지의 시간**: 6.5
+- **첫 기여까지의 시간**: 9.4
+- **첫 리뷰까지의 시간**: 2.7
+- **첫 유용한 결과까지의 시간**: 11.5
+- **첫 접촉 해결률**: 3.1
+- **첫날 준비율**: 6.4
+- **청중 도달(서술용)**: 11.1
+- **총소유비용**: 7.7
+- **최초 응답 시간**: 3.3
+- **추적성 포괄률**: 8.5
+- **추정 대체율**: 3.7
+- **측정 노력**: 1.1
+- **측정 포괄률**: 5.3
+- **측정에 대해 인지한 안전(설문)**: 11.3
+- **측정치로 거슬러 추적한 개선**: 11.5
+- **측정치를 적극 쓰는 팀**: 11.5
+- **카탈로그 포괄률**: 6.3
+- **카탈로그 항목별 요청량**: 3.5
+- **콘텐츠 중복률**: 10.4
+- **클라우드 단위 비용**: 7.6
+- **타임스탬프 완전성**: 1.5
+- **탐색 범위**: 7.1
+- **탐지 시간**: 3.3
+- **택트 타임 비율**: 2.4
+- **터치 타임**: 2.2
+- **텔레메트리 속 민감 데이터**: 10.10
+- **통제 시험 포괄률**: 8.2
+- **통제 효과율**: 8.2
+- **투자 수익률**: 7.7
+- **트레이스 완전성**: 10.10
+- **팀 간에 공유된 교훈**: 9.4
+- **팀 건강 점검 추세**: 9.1
+- **팀 부하 비율**: 2.3
+- **팀 소유 비중**: 11.3
+- **파이프라인 성공률**: 10.7
+- **파이프라인 소요 시간**: 10.7
+- **파이프라인 신뢰성**: 11.2
+- **파이프라인 실행 실패율**: 10.8
+- **패치 준수**: 8.1
+- **편익 검토 완료율**: 1.3
+- **평가 부담**: 11.4
+- **평가 참여**: 11.4
+- **평가 최신성**: 10.5
+- **평가에서 나온 개선 조치**: 11.4
+- **폐기율**: 1.4, 11.1
+- **폐기한 측정치와 보고서**: 11.5
+- **포화**: 5.4
+- **표준 변경 비중**: 4.3
+- **풀 리퀘스트 크기**: 2.7
+- **프로그램 노력 비중**: 11.5
+- **프로세스 효율**: 2.4
+- **피드백 고리 시간**: 9.1
+- **필수 필드 완전성**: 10.8
+- **학습 도달 범위**: 4.2
+- **핫픽스율**: 4.4
+- **해결 시간**: 3.3
+- **해결 시간 높은 백분위수**: 1.6
+- **해결 시간 중앙값**: 1.6
+- **해결에 비춘 백로그 유입**: 10.4
+- **핵심 결과 점수 분포**: 1.7
+- **현장 아이디어 비중**: 9.5
+- **협약 포괄률과 최신성**: 5.1
+- **협업 해결률**: 9.3
+- **화면 크기**: 11.1
+- **확인 불가 자산 비율**: 7.1
+- **활성 사용률**: 6.3
+- **활성 시간 비율**: 3.3
+- **회고 조치 이월**: 4.2
+- **회수 기간**: 7.7
+- **효과 점검률**: 9.5
+- **흐름 효율**: 2.2
+
+## 개념
+
+개념은 각 주제가 맥락으로 위키백과에 연결한 용어에서 가져옵니다. 첫 번째 번호는 대개 그 개념을 가장 충실히 설명하는 주제입니다.
+
+- **A/B testing**: 6.5
+- **Accountability**: 8.5
+- **Activity-based costing**: 7.5
+- **Agile software development**: 1.1, 1.3, 3.4, 4.2
+- **AI slop**: 10.4
+- **AIOps**: 10.1
+- **Alarm fatigue**: 5.5, 5.7
+- **Alert fatigue**: 10.4
+- **Algorithmic bias**: 10.5
+- **Analytics**: 10.8
+- **Anomaly detection**: 7.6
+- **Application programming interface**: 11.2
+- **Artificial intelligence**: 10.1
+- **Artificial Intelligence Act**: 10.5
+- **Asset tracking**: 7.1
+- **Attack surface**: 8.1
+- **Audit trail**: 4.3, 8.3, 10.5
+- **Automated decision-making**: 10.3
+- **Automatic call distributor**: 3.1
+- **Automation**: 3.7, 10.6
+- **Automation bias**: 10.1
+- **Autoscaling**: 5.4, 7.6
+- **Availability**: 5.2
+- **Backlog**: 4.1
+- **Balanced scorecard**: 1.3, 1.7, 11.1
+- **Benefits realisation management**: 6.5
+- **Black swan theory**: 8.2
+- **Blue-green deployment**: 4.5
+- **Brandolini's law**: 10.4
+- **Brooks's law**: 9.3
+- **Bus factor**: 3.6, 9.3
+- **Business case**: 7.7
+- **Business continuity planning**: 5.6
+- **Business impact analysis**: 5.6
+- **Call centre**: 3.1
+- **Campbell's law**: 1.2, 10.4, 11.3
+- **Canary release**: 2.8, 4.4, 4.5, 5.2
+- **Capability Maturity Model**: 11.4
+- **Capacity planning**: 2.5, 5.4
+- **Capital expenditure**: 7.5
+- **Carbon footprint**: 7.6
+- **Cargo cult**: 9.6
+- **Cargo cult programming**: 9.6
+- **Chain of custody**: 7.1
+- **Change fatigue**: 9.6
+- **Change management**: 9.6, 11.3, 11.5
+- **Chaos engineering**: 5.6
+- **Chartjunk**: 11.1
+- **Chatbot**: 3.7, 10.3
+- **CI/CD**: 1.5, 2.8
+- **Circular economy**: 7.3
+- **Class of service**: 2.9
+- **Cloud computing**: 7.6
+- **Co-creation**: 1.3
+- **Cobra effect**: 1.2
+- **Code refactoring**: 4.6
+- **Code review**: 2.7, 4.3, 10.2
+- **Code smell**: 4.6
+- **Cognitive load**: 6.4, 9.1
+- **Cognitive offloading**: 10.2
+- **Cohort analysis**: 6.3
+- **Common Vulnerabilities and Exposures**: 8.1
+- **Common Vulnerability Scoring System**: 8.1
+- **Community of practice**: 9.4
+- **Computer security incident management**: 8.1
+- **Concept drift**: 10.4
+- **Cone of Uncertainty**: 2.5
+- **Confidence interval**: 1.6, 6.1
+- **Configuration item**: 7.4
+- **Configuration management database**: 1.5, 7.4
+- **Confounding**: 6.5
+- **Continual improvement process**: 1.4, 9.5, 11.4
+- **Continuous auditing**: 8.3
+- **Continuous delivery**: 2.8, 4.4, 4.5, 10.7
+- **Continuous integration**: 2.7, 10.7
+- **Control chart**: 1.6, 2.1, 3.2, 11.1
+- **Conversion funnel**: 6.3
+- **Conway's law**: 9.3
+- **Coordinated Universal Time**: 1.5
+- **Copyleft**: 7.2
+- **Cost accounting**: 7.5
+- **Cost allocation**: 7.5
+- **Cost driver**: 7.5
+- **Cost of delay**: 2.9, 4.6
+- **Critical success factor**: 1.7
+- **Cross-functional team**: 9.3
+- **Cumulative flow diagram**: 2.1, 2.3
+- **Customer experience**: 6.2
+- **Customer satisfaction**: 3.1, 6.1
+- **Dark pattern**: 6.3, 10.3
+- **Data dictionary**: 1.4
+- **Data erasure**: 7.3
+- **Data governance**: 1.4, 11.2
+- **Data integrity**: 7.4
+- **Data minimization**: 6.4
+- **Data pipeline**: 11.2
+- **Data quality**: 7.1, 10.8, 11.2, 11.5
+- **Data steward**: 1.4
+- **Data visualization**: 11.1
+- **Data warehouse**: 11.2
+- **Depreciation**: 7.3
+- **Deskilling**: 10.2
+- **Developer experience**: 9.1
+- **DevOps**: 1.1
+- **DevOps Research and Assessment**: 2.8
+- **DevSecOps**: 8.1
+- **Difference in differences**: 6.5
+- **Diffusion of innovations**: 6.3, 9.6
+- **Digital workplace**: 6.4
+- **Double-loop learning**: 9.5
+- **Downtime**: 5.3
+- **Duplicate code**: 10.2
+- **Economic indicator**: 1.3
+- **Economies of scale**: 7.5
+- **Electronic waste**: 7.3
+- **Employee engagement**: 9.2
+- **Employee experience management**: 6.4
+- **Employee monitoring**: 6.4
+- **Entity resolution**: 7.4
+- **Exit strategy**: 8.4
+- **Extract, transform, load**: 1.5, 11.2
+- **Failure rate**: 7.3
+- **False positives and false negatives**: 5.5
+- **Feature toggle**: 2.8, 4.4, 4.5, 5.2
+- **First call resolution**: 3.1
+- **Five whys**: 4.1, 4.2
+- **Fixed asset**: 7.1
+- **Fixed cost**: 7.5
+- **Forecasting**: 2.5, 5.4, 10.9
+- **Freedom of information laws by country**: 8.5
+- **General Data Protection Regulation**: 8.3
+- **Generative artificial intelligence**: 10.1
+- **Goodhart's law**: 1.1, 1.2, 2.5, 2.7, 2.8, 3.4, 3.5, 4.3, 4.4, 4.5, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 8.1, 8.2, 8.3, 8.4, 8.5, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 10.1, 10.2, 10.3, 10.4, 10.5, 11.1, 11.3
+- **Graph database**: 7.4
+- **Hawthorne effect**: 9.6, 11.3
+- **Help desk**: 3.1
+- **Help desk software**: 3.2
+- **High availability**: 5.3
+- **Hindsight bias**: 4.2
+- **Hotfix**: 4.4
+- **Accelerate (book**: 2.8
+- **Bottleneck (production**: 2.3, 9.3
+- **Change management (ITSM**: 4.3
+- **Cross-training (business**: 9.4
+- **Dashboard (business**: 11.1
+- **Dependency (project management**: 9.3
+- **Flow (psychology**: 6.4, 9.1
+- **Hallucination (artificial intelligence**: 10.1
+- **Incident management (ITSM**: 3.4
+- **Latency (engineering**: 5.4
+- **Observability (software**: 1.5, 10.10, 11.2
+- **Orchestration (computing**: 10.6
+- **Reconciliation (accounting**: 7.1
+- **Rollback (data management**: 2.8, 4.4
+- **Task switching (psychology**: 2.9
+- **Trust (social science**: 11.3
+- **Velocity (software development**: 1.2, 2.5
+- **Vulnerability (computing**: 8.1
+- **Human-centered design**: 6.2
+- **Human-in-the-loop**: 10.1
+- **Incident commander**: 3.4
+- **Incident management**: 3.2, 3.3, 5.7
+- **Information overload**: 10.4
+- **Information radiator**: 11.3, 11.5
+- **Information technology audit**: 8.3
+- **Information technology service management**: 1.1, 1.5
+- **Infrastructure as code**: 3.7, 4.3, 5.6, 7.4, 10.6
+- **Intelligent agent**: 10.3
+- **Internal audit**: 8.3
+- **Internal control**: 8.2
+- **Intrinsic motivation**: 9.2
+- **Inventory management**: 7.1
+- **Ishikawa diagram**: 4.1
+- **ISO 22301**: 5.6
+- **ISO/IEC 27001**: 8.3
+- **Issue tracking system**: 1.5, 2.6
+- **IT asset management**: 7.1
+- **IT service management**: 1.8, 3.1, 11.2
+- **ITIL**: 1.1, 1.2, 1.3, 1.5, 1.7, 1.8, 2.4, 2.6, 2.8, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 4.1, 4.2, 4.3, 4.4, 4.6, 5.1, 5.3
+- **Jevons paradox**: 10.4
+- **Job satisfaction**: 9.2
+- **Just culture**: 4.2
+- **K-anonymity**: 6.4
+- **Kaizen**: 9.5, 11.4, 11.5
+- **Key performance indicator**: 1.2, 1.7, 11.1
+- **Key risk indicator**: 8.2
+- **Kingman's formula**: 2.3
+- **Knowledge base**: 3.6
+- **Knowledge management**: 3.6
+- **Knowledge-centered support**: 3.6
+- **Known error database**: 4.1
+- **Lagging indicator**: 6.5
+- **Large language model**: 10.1
+- **Leading indicator**: 6.5
+- **Lean manufacturing**: 2.4, 9.5
+- **Lean software development**: 2.1, 2.2, 2.3
+- **Learning organization**: 9.4
+- **Likert scale**: 6.1
+- **Lines of code**: 10.2
+- **Little's law**: 2.1, 2.2, 2.3, 2.4, 2.6, 2.9, 5.4
+- **Load testing**: 5.4
+- **Log-normal distribution**: 1.6, 3.3
+- **Logic model**: 6.5
+- **Machine learning**: 10.1
+- **Margin of error**: 6.1
+- **Mean time between failures**: 5.3, 7.3
+- **Mean time to repair**: 3.3, 5.3
+- **Median**: 1.6, 3.3
+- **Mentorship**: 9.4
+- **Minimum viable product**: 11.5
+- **Mobile device management**: 7.3
+- **Model collapse**: 10.4
+- **Monte Carlo method**: 2.5
+- **Multisourcing**: 8.4
+- **Net present value**: 7.7
+- **Net promoter score**: 6.1
+- **Objectives and key results**: 1.3, 6.5
+- **Occupational burnout**: 5.7, 9.2
+- **OKR**: 1.7
+- **On-call**: 5.5, 5.7
+- **Open data**: 8.5
+- **Open government**: 8.5
+- **Open-source software**: 7.2
+- **Operational-level agreement**: 5.1
+- **Opportunity cost**: 4.6, 7.7
+- **Optimism bias**: 7.7
+- **Organizational change**: 9.6
+- **Organizational culture**: 9.6
+- **Outsourcing**: 8.4
+- **Pair programming**: 2.7, 9.4
+- **Pareto chart**: 4.1, 5.7
+- **Pareto principle**: 3.2, 6.3
+- **Pay as you go**: 7.6
+- **Payback period**: 7.7
+- **PDCA**: 9.5
+- **Percentile**: 1.6, 2.1, 2.2, 2.6, 3.1, 3.3, 3.4, 3.5, 5.1, 5.2, 5.4
+- **Performance audit**: 8.5
+- **Performance-based contracting**: 8.4
+- **Perverse incentive**: 1.2
+- **Pilot project**: 9.6, 11.3, 11.5
+- **Planning fallacy**: 2.5
+- **Postmortem documentation**: 3.4, 4.2
+- **Precision and recall**: 5.5
+- **Principle of least privilege**: 1.4
+- **Process automation**: 3.5
+- **Product backlog**: 2.6, 6.3
+- **Product lifecycle**: 7.1
+- **Productivity**: 9.1
+- **Professional certification**: 9.4
+- **Prompt injection**: 10.5
+- **Pseudonymization**: 6.4
+- **Psychological safety**: 1.2, 4.2, 9.1, 9.2, 11.3
+- **Public procurement**: 8.5
+- **Public sector**: 8.5
+- **Pull request**: 2.7, 10.2
+- **Queueing theory**: 2.1, 2.3, 3.1, 5.4
+- **RACI matrix**: 1.4
+- **Real user monitoring**: 5.3, 6.2
+- **Records management**: 8.5
+- **Recovery point objective**: 5.6
+- **Recovery time objective**: 5.6
+- **Reference class forecasting**: 7.7
+- **Regression testing**: 4.4, 10.2
+- **Regression toward the mean**: 1.6
+- **Regulation of artificial intelligence**: 10.5
+- **Regulatory compliance**: 8.3
+- **Release management**: 4.5
+- **Resistance to change**: 9.6
+- **Response bias**: 6.1
+- **Responsible AI**: 10.5
+- **Return on investment**: 1.1, 7.7
+- **Rework**: 4.4
+- **Risk management**: 8.2
+- **Risk matrix**: 8.2
+- **Risk register**: 8.2
+- **Rolled throughput yield**: 2.4
+- **Root cause analysis**: 3.2, 3.4, 4.1, 4.2, 4.6, 9.5
+- **Run chart**: 2.1, 11.1, 11.5
+- **Runbook**: 3.6, 3.7
+- **Sarbanes–Oxley Act**: 8.3
+- **Seasonality**: 3.2, 5.4
+- **Segregation of duties**: 8.3
+- **Selection bias**: 1.5
+- **Self-determination theory**: 9.2
+- **Self-service**: 10.3
+- **Self-service software**: 3.7
+- **Sensitivity analysis**: 7.7
+- **Sentiment analysis**: 6.2
+- **Separation of duties**: 4.3
+- **Serverless computing**: 7.6
+- **Service catalog**: 3.5, 6.3
+- **Service desk**: 3.6
+- **Service discovery**: 7.4
+- **Service integration and management**: 8.4
+- **Service level indicator**: 5.1, 5.2
+- **Service level objective**: 5.1
+- **Service-dominant logic**: 1.3
+- **Service-level agreement**: 2.1, 2.9, 3.1, 3.3, 3.5, 5.1, 5.2, 5.3, 6.2, 8.4
+- **Service-level objective**: 5.2, 5.3, 5.5
+- **Shadow IT**: 6.4, 7.2, 10.5
+- **Signal-to-noise ratio**: 5.5, 10.4
+- **Single source of truth**: 1.4
+- **Site reliability engineering**: 1.1, 3.3, 3.4, 4.2, 5.1, 5.2, 5.4, 5.5, 5.6, 5.7
+- **Skewness**: 1.6
+- **Sleep deprivation**: 5.7
+- **SOC 2**: 8.3
+- **Social desirability bias**: 9.2
+- **Software as a service**: 7.2
+- **Software asset management**: 7.2
+- **Software audit**: 7.2
+- **Software bill of materials**: 7.2
+- **Software bug**: 4.6
+- **Software composition analysis**: 7.2
+- **Software deployment**: 4.5
+- **Software license**: 7.2
+- **Software supply chain**: 8.1
+- **Software testing**: 10.2
+- **Sparkline**: 11.1
+- **Static program analysis**: 2.7, 4.6
+- **Statistical process control**: 1.6
+- **Story point**: 2.5
+- **Strategy map**: 1.7
+- **Sunk cost**: 7.7
+- **Supply chain attack**: 8.4
+- **Surrogation**: 1.2
+- **Survey methodology**: 6.1
+- **Survivorship bias**: 6.5
+- **Synthetic monitoring**: 5.3
+- **System monitoring**: 5.5
+- **T-shaped skills**: 9.4
+- **Tacit knowledge**: 3.6, 9.4
+- **Tail latency**: 5.4
+- **Technical debt**: 2.9, 4.1, 4.6, 10.2
+- **Technology adoption life cycle**: 11.3
+- **Telemetry**: 10.10
+- **Theory of change**: 6.5
+- **Theory of constraints**: 2.3, 2.4, 9.5
+- **Throughput**: 5.4
+- **Time value of money**: 7.7
+- **Total cost of ownership**: 7.3, 7.7, 11.2
+- **Triage**: 2.9
+- **Trunk-based development**: 2.7
+- **Unit cost**: 7.5
+- **Usability**: 6.2
+- **User experience**: 6.2
+- **User story**: 2.6
+- **Value for money**: 8.5
+- **Value stream**: 2.4
+- **Value-stream mapping**: 2.4
+- **Vanity metric**: 1.3, 1.7, 10.4, 11.1, 11.4
+- **Variable cost**: 7.5
+- **Variance analysis**: 7.6
+- **Vendor lock-in**: 7.2, 8.4, 11.2
+- **Vendor management**: 8.4
+- **Version control**: 1.5, 2.7
+- **Victor Basili**: 1.7
+- **Virtual assistant**: 10.3
+- **Volume discount**: 7.6
+- **Ward Cunningham**: 4.6
+- **Warranty**: 7.3
+- **Web accessibility**: 6.4
+- **Web analytics**: 6.3
+- **Work in process**: 2.3
+- **Workaround**: 4.1
+- **리드 타임(Lead time)**: 2.2, 2.4
+- **사이클 타임(Cycle time)**: 2.2
