@@ -146,7 +146,7 @@ Mae risg gamio yn ymddangos. Mae rheolwr yn gofyn i godi'r gyfran cymeradwyo awt
 
 ### Ystwyth
 
-Newidiadau bach, aml drwy biblinell y ymddiriedir ynddi yw craidd cyflawni parhaus, ac mae ôl-groniad y biblinell ei hun yn haeddu'r un adolygiad rheolaidd gyda rhanddeiliaid â'r cynnyrch. Arfer da yw adolygu profion simsan ac osgoi mewn sgwrs gwelliant rheolaidd. Y rhybudd yw bod dathlu amlder defnyddio yn unig yn gwobrwyo hollti newidiadau.
+Newidiadau bach, aml drwy biblinell yr ymddiriedir ynddi yw craidd cyflawni parhaus, ac mae ôl-groniad y biblinell ei hun yn haeddu'r un adolygiad rheolaidd gyda rhanddeiliaid â'r cynnyrch. Arfer da yw adolygu profion simsan ac osgoi mewn sgwrs gwelliant rheolaidd. Y rhybudd yw bod dathlu amlder defnyddio yn unig yn gwobrwyo hollti newidiadau.
 
 ### AI
 
@@ -162,7 +162,7 @@ Defnyddiwch ddigwyddiadau piblinell i ddangos ble mae amser yn mynd a ble mae me
 
 ## Lens sector
 
-**Cwmni newydd.** Gall piblinell syml â phrofion cyflym a defnyddio awtomatig i gynhyrchu fod yn ddigon. Mesurwch hyd ac osgoi, a chofnodwch dystiolaeth o brofion ac adolygiad yn y ystorfa.
+**Cwmni newydd.** Gall piblinell syml â phrofion cyflym a defnyddio awtomatig i gynhyrchu fod yn ddigon. Mesurwch hyd ac osgoi, a chofnodwch dystiolaeth o brofion ac adolygiad yn yr ystorfa.
 
 **Busnes bach.** Gall y biblinell fod yn wasanaeth a gynhelir neu'n eiddo cyflenwr. Gofynnwch beth y mae'n ei gofnodi a ble, a chadwch ffordd o ailadeiladu'r hyn a ddefnyddiwyd. Osgowch adeiladu rheolaethau na fyddwch yn eu cynnal.
 
