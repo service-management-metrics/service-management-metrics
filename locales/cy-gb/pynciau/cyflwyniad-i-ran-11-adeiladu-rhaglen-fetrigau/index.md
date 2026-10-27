@@ -16,13 +16,13 @@ Mae'r pedair lens yn llunio rhaglen fetrigau. Dylid ei hadeiladu yn yr un ysbryd
 - **11.2 Tirwedd offer**: adeiladu yn erbyn prynu, y mathau o lwyfannau, piblinellau data, a meini prawf dethol sy'n niwtral o ran gwerthwyr.
 - **11.3 Cyflwyno metrigau heb fagu ofn**: tryloywder, perchnogaeth tîm, dim tablau cynghrair unigol, a chyflwyniad sy'n ennill ymddiriedaeth.
 - **11.4 Model aeddfedrwydd ar gyfer rhaglenni metrigau**: y raddfa bum lefel a rennir wedi'i chymhwyso i'r rhaglen ei hun.
-- **11.5 Map ffordd mabwysiadu cynyddrannol**: cynllun ar gyfer y 30, 90 a 180 diwrnod cyntaf sy'n dechrau o'ch man cychwyn.
+- **11.5 Map ffordd mabwysiadu cynyddol**: cynllun ar gyfer y 30, 90 a 180 diwrnod cyntaf sy'n dechrau o'ch man cychwyn.
 
 ## Sut mae'r pynciau hyn yn perthyn i'w gilydd
 
 Daw cyflwyno heb ofn (gweler pwnc 11.3, Cyflwyno metrigau heb fagu ofn) gyntaf o ran pwysigrwydd, er mai'r dangosfwrdd yw'r hyn y mae pobl yn ei weld. Y cytundebau ynghylch pwy sy'n berchen ar y data, pwy sy'n ei weld, a'r hyn na chaiff ei ddefnyddio ar ei gyfer byth sy'n penderfynu a fydd unrhyw ddangosfwrdd yn cario rhifau gwir. Mae'r pwnc dangosfwrdd (gweler pwnc 11.1, Dylunio dangosfwrdd metrigau gwasanaeth) yn troi'r cytundebau hynny'n ddyluniad: setiau bach, cyd-destun, tuedd, a golygfeydd sy'n addas i bob cynulleidfa. Yna mae'r pwnc offer (gweler pwnc 11.2, Tirwedd offer) yn gofyn pa lwyfannau a phiblinellau all gyflenwi'r data heb droi'n brosiect mwy na'r budd.
 
-Mae'r model aeddfedrwydd (gweler pwnc 11.4, Model aeddfedrwydd ar gyfer rhaglenni metrigau) yn rhoi ffordd i'r rhaglen ddisgrifio ble mae hi a beth allai'r cam nesaf fod, gan ddefnyddio'r un raddfa â phob pwnc arall. Mae'r map ffordd (gweler pwnc 11.5, Map ffordd mabwysiadu cynyddrannol) yn troi hynny'n gynllun o gamau bach, a phob un yn cyflwyno rhywfaint o werth i'r bobl a fesurir cyn i'r nesaf ddechrau. Dyma'r un rhesymeg cyflawni parhaus ag y mae gweddill y llyfr yn ei hargymell ar gyfer gwasanaethau: cyflwynwch rywbeth defnyddiol yn gynnar, dysgwch o'i ddefnyddio, a gwellwch.
+Mae'r model aeddfedrwydd (gweler pwnc 11.4, Model aeddfedrwydd ar gyfer rhaglenni metrigau) yn rhoi ffordd i'r rhaglen ddisgrifio ble mae hi a beth allai'r cam nesaf fod, gan ddefnyddio'r un raddfa â phob pwnc arall. Mae'r map ffordd (gweler pwnc 11.5, Map ffordd mabwysiadu cynyddol) yn troi hynny'n gynllun o gamau bach, a phob un yn cyflwyno rhywfaint o werth i'r bobl a fesurir cyn i'r nesaf ddechrau. Dyma'r un rhesymeg cyflawni parhaus ag y mae gweddill y llyfr yn ei hargymell ar gyfer gwasanaethau: cyflwynwch rywbeth defnyddiol yn gynnar, dysgwch o'i ddefnyddio, a gwellwch.
 
 Mae sawl pâr yn cadw'r rhaglen yn onest. Dylid darllen dangosfwrdd o ganlyniadau gyda chofnod o sut y casglwyd y data a'i fylchau hysbys. Dylid darllen cynllun cyflwyno gydag addewid ynghylch yr hyn na ddefnyddir y data ar ei gyfer. Dylid darllen dewis offeryn gyda chost ei adael. Dylid trin sgôr aeddfedrwydd fel man cychwyn sgwrs, ac nid fel targed byth.
 

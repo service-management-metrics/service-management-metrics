@@ -13,14 +13,14 @@ Mae'r pedair lens yn bwysig yma oherwydd bod systemau AI yn ychwanegu risgiau a 
 ## Pynciau yn y rhan hon
 
 - **8.1 Metrigau digwyddiadau diogelwch a gwendidau**: ffenestri amlygiad, cydymffurfio â chlytiau, cwmpas sganio, amser i ffrwyno, eithriadau, a'r diwylliant adrodd sy'n cadw signalau'n llifo.
-- **8.2 Metrigau risg a rheolaeth**: cofrestr risg fer a berchnogir, profi rheolaethau, dangosyddion risg allweddol, a chymeradwyo newid ar sail risg.
+- **8.2 Metrigau risg a rheolaethau**: cofrestr risg fer a berchnogir, profi rheolaethau, dangosyddion risg allweddol, a chymeradwyo newid ar sail risg.
 - **8.3 Metrigau cydymffurfio ac archwilio**: cwmpas rhwymedigaethau, awtomeiddio tystiolaeth, cau canfyddiadau ac ailadroddiadau, a gweithio gydag archwilwyr.
 - **8.4 Metrigau cyflenwyr a chontractau**: perfformiad cyflenwyr yn erbyn profiad, crynodiad, diwydrwydd dyladwy, adolygiadau ar y cyd, a chynlluniau ymadael wedi'u profi.
 - **8.5 Adrodd rheoleiddiedig a llywodraethol**: rhwymedigaethau adrodd fel mewnbynnau dylunio, adroddiadau olrheiniadwy, diffiniadau wedi'u cysoni, a gwybodaeth gyhoeddus ddefnyddiadwy.
 
 ## Sut mae'r pynciau hyn yn perthyn i'w gilydd
 
-Mae mesurau diogelwch (gweler pwnc 8.1, Metrigau digwyddiadau diogelwch a gwendidau) yn disgrifio bygythiadau a gwendidau mewn termau pendant, ac maent yn cyflenwi rhai o'r dangosyddion risg allweddol cryfaf ar gyfer y gofrestr risg. Mae mesurau risg a rheolaeth (gweler pwnc 8.2, Metrigau risg a rheolaeth) yn rhoi'r dangosyddion hynny yn eu cyd-destun, yn penderfynu pa reolaethau sy'n bwysig, ac yn profi eu bod yn gweithio. Mae mesurau cydymffurfio ac archwilio (gweler pwnc 8.3, Metrigau cydymffurfio ac archwilio) yn troi'r un rheolaethau a phrofion yn dystiolaeth i bobl o'r tu allan, ac maent yn dangos faint o'r dystiolaeth honno y mae'r gwaith yn ei chynhyrchu ohono'i hun.
+Mae mesurau diogelwch (gweler pwnc 8.1, Metrigau digwyddiadau diogelwch a gwendidau) yn disgrifio bygythiadau a gwendidau mewn termau pendant, ac maent yn cyflenwi rhai o'r dangosyddion risg allweddol cryfaf ar gyfer y gofrestr risg. Mae mesurau risg a rheolaeth (gweler pwnc 8.2, Metrigau risg a rheolaethau) yn rhoi'r dangosyddion hynny yn eu cyd-destun, yn penderfynu pa reolaethau sy'n bwysig, ac yn profi eu bod yn gweithio. Mae mesurau cydymffurfio ac archwilio (gweler pwnc 8.3, Metrigau cydymffurfio ac archwilio) yn troi'r un rheolaethau a phrofion yn dystiolaeth i bobl o'r tu allan, ac maent yn dangos faint o'r dystiolaeth honno y mae'r gwaith yn ei chynhyrchu ohono'i hun.
 
 Mae mesurau cyflenwyr (gweler pwnc 8.4, Metrigau cyflenwyr a chontractau) yn ymestyn pob un o'r rhain ar draws ffin y sefydliad. Daw gwendidau, risgiau a statws cydymffurfio cyflenwr yn eiddo i chi, ac mae'r contract yn un o'r rheolaethau. Mae'r pwnc adrodd (gweler pwnc 8.5, Adrodd rheoleiddiedig a llywodraethol) yn cau'r rhan drwy ofyn beth sy'n rhaid ei ddweud wrth bwy, a sut i'w ddweud yn gywir heb adael i'r golwg adrodd ystumio'r gwaith y mae'n ei ddisgrifio.
 

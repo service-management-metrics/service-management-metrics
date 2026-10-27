@@ -12,21 +12,21 @@ Mae'r pedair lens yn bwysig mewn ffordd benodol yma. Cyfranogiad parhaus rhandde
 
 ## Pynciau yn y rhan hon
 
-- **6.1 Metrigau boddhad cwsmeriaid**: boddhad cwsmeriaid (CSAT), sgôr hyrwyddwyr net (NPS), sgôr ymdrech cwsmeriaid (CES), dylunio arolygon, tuedd ymateb a maint sampl.
+- **6.1 Metrigau bodlonrwydd cwsmeriaid**: boddhad cwsmeriaid (CSAT), sgôr hyrwyddwyr net (NPS), sgôr ymdrech cwsmeriaid (CES), dylunio arolygon, tuedd ymateb a maint sampl.
 - **6.2 Cytundebau lefel profiad**: mesur profiad yn lle targedau gweithredol yn unig, gan ddefnyddio mesurau teimlad, ymdrech a thaith.
-- **6.3 Metrigau mabwysiadu gwasanaethau a chatalog**: defnydd eitemau catalog, mabwysiadu a gadael, cymysgedd ceisiadau, a thrin y catalog fel ôl-groniad cynnyrch.
+- **6.3 Metrigau mabwysiadu gwasanaeth a chatalog**: defnydd eitemau catalog, mabwysiadu a gadael, cymysgedd ceisiadau, a thrin y catalog fel ôl-groniad cynnyrch.
 - **6.4 Profiad defnyddwyr a gweithwyr**: profiad gweithwyr digidol, ffrithiant, amser a gollir i broblemau TG, a chanlyniadau cwsmeriaid mewnol.
-- **6.5 Gwireddu gwerth a chanlyniadau busnes**: clymu gwaith gwasanaeth wrth ganlyniadau busnes, tracio buddion, a therfynau priodoli.
+- **6.5 Sylweddoli gwerth a chanlyniadau busnes**: clymu gwaith gwasanaeth wrth ganlyniadau busnes, tracio buddion, a therfynau priodoli.
 
 ## Sut mae'r pynciau hyn yn perthyn i'w gilydd
 
-Mae pwnc 6.1 (gweler pwnc 6.1, Metrigau boddhad cwsmeriaid) yn cyflenwi'r offerynnau sylfaenol: y mesurau arolwg a'r ddisgyblaeth i'w casglu. Mae hefyd yn nodi terfynau'r offerynnau hynny, gan gynnwys tuedd ymateb a maint sampl, sy'n berthnasol i bob pwnc arall yn y rhan. Darllenwch ef yn gyntaf, oherwydd mae'r pynciau diweddarach yn ailddefnyddio ei fesurau ac yn etifeddu ei rybuddion.
+Mae pwnc 6.1 (gweler pwnc 6.1, Metrigau bodlonrwydd cwsmeriaid) yn cyflenwi'r offerynnau sylfaenol: y mesurau arolwg a'r ddisgyblaeth i'w casglu. Mae hefyd yn nodi terfynau'r offerynnau hynny, gan gynnwys tuedd ymateb a maint sampl, sy'n berthnasol i bob pwnc arall yn y rhan. Darllenwch ef yn gyntaf, oherwydd mae'r pynciau diweddarach yn ailddefnyddio ei fesurau ac yn etifeddu ei rybuddion.
 
 Mae pwnc 6.2 (gweler pwnc 6.2, Cytundebau lefel profiad) yn cymryd yr offerynnau hynny ac yn eu defnyddio i ategu targedau gweithredol. Gall gwasanaeth fodloni targed amser ymateb a dal i gynhyrchu profiad gwael, felly mae cytundeb lefel profiad yn eistedd wrth ymyl y cytundeb lefel gwasanaeth confensiynol ac nid yw'n ei ddisodli. Mae'r paru'n gweithio i'r ddau gyfeiriad. Mae data gweithredol yn egluro pam y symudodd sgôr profiad, ac mae data profiad yn dangos a yw targed gweithredol wedi'i anelu at y peth cywir.
 
-Mae pynciau 6.3 a 6.4 yn edrych ar ymddygiad a ffrithiant yn lle barn. Mae mabwysiadu a gadael ym mhwnc 6.3 (gweler pwnc 6.3, Metrigau mabwysiadu gwasanaethau a chatalog) yn dangos beth mae pobl yn ei wneud mewn gwirionedd, sy'n gwirio'r hyn a ddywedant mewn arolwg. Mae ffrithiant ac amser a gollir ym mhwnc 6.4 (gweler pwnc 6.4, Profiad defnyddwyr a gweithwyr) yn dangos cost gwasanaeth gwael i'r cwsmer mewnol. Mae mesurau ymddygiadol yn gwarchod y mesurau arolwg rhag atebion cwrtais neu anghynrychioliadol, ac mae arolygon yn egluro'r ymddygiad na all data defnydd yn unig ei egluro.
+Mae pynciau 6.3 a 6.4 yn edrych ar ymddygiad a ffrithiant yn lle barn. Mae mabwysiadu a gadael ym mhwnc 6.3 (gweler pwnc 6.3, Metrigau mabwysiadu gwasanaeth a chatalog) yn dangos beth mae pobl yn ei wneud mewn gwirionedd, sy'n gwirio'r hyn a ddywedant mewn arolwg. Mae ffrithiant ac amser a gollir ym mhwnc 6.4 (gweler pwnc 6.4, Profiad defnyddwyr a gweithwyr) yn dangos cost gwasanaeth gwael i'r cwsmer mewnol. Mae mesurau ymddygiadol yn gwarchod y mesurau arolwg rhag atebion cwrtais neu anghynrychioliadol, ac mae arolygon yn egluro'r ymddygiad na all data defnydd yn unig ei egluro.
 
-Mae pwnc 6.5 (gweler pwnc 6.5, Gwireddu gwerth a chanlyniadau busnes) yn cau'r rhan drwy ofyn a newidiodd unrhyw un o hyn ganlyniad y mae'r busnes yn gofalu amdano. Dyma'r pwnc mwyaf gofalus, oherwydd mae priodoli'n anodd: mae llawer o bethau'n symud canlyniad busnes, a dylai tîm gwasanaeth hawlio dim ond yr hyn y mae ei dystiolaeth yn ei gefnogi. Mae'n gwarchod gweddill y rhan rhag mesur boddhad er ei fwyn ei hun.
+Mae pwnc 6.5 (gweler pwnc 6.5, Sylweddoli gwerth a chanlyniadau busnes) yn cau'r rhan drwy ofyn a newidiodd unrhyw un o hyn ganlyniad y mae'r busnes yn gofalu amdano. Dyma'r pwnc mwyaf gofalus, oherwydd mae priodoli'n anodd: mae llawer o bethau'n symud canlyniad busnes, a dylai tîm gwasanaeth hawlio dim ond yr hyn y mae ei dystiolaeth yn ei gefnogi. Mae'n gwarchod gweddill y rhan rhag mesur boddhad er ei fwyn ei hun.
 
 Mae sawl pâr o ganllawiau amddiffynnol yn dilyn o hyn. Dylid darllen sgôr boddhad gyda'i chyfradd ymateb a maint y sampl. Dylid darllen mesur ymdrech neu deimlad gyda'r data gweithredol y tu ôl iddo. Dylid darllen ffigur mabwysiadu gyda gadael, fel na chaiff eitem catalog boblogaidd y mae pobl yn rhoi'r gorau iddi ei chyfrif yn llwyddiant. Dylid darllen mesurau datrys cyflym o rannau cynharach gyda boddhad, fel na phrynir cyflymder gyda chanlyniadau gwael (gweler pwnc 2.2, Amser arweiniol, amser cylch ac effeithlonrwydd llif, am y clociau y mae'r mesurau cyflymder hynny'n eu defnyddio).
 

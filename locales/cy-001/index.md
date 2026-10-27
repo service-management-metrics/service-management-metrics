@@ -88,7 +88,7 @@ Llyfr gwaith ar fesur rheoli gwasanaethau'n dda drwy bedwar lens: ystwyth, AI, a
 
 - [8.0 Cyflwyniad i Ran 8: Metrigau Diogelwch, Risg, Cydymffurfio a Chyflenwyr](pynciau/cyflwyniad-i-ran-8-metrigau-diogelwch-risg-cydymffurfio-a-chyflenwyr/index.md)
 - [8.1 Metrigau digwyddiadau diogelwch a gwendidau](pynciau/metrigau-digwyddiadau-diogelwch-a-gwendidau/index.md)
-- [8.2 Metrigau risg a rheolaethau](pynciau/metrigau-risg-a-rheolaethau/index.md)
+- [8.2 Metrigau risg a rheolaethauau](pynciau/metrigau-risg-a-rheolaethau/index.md)
 - [8.3 Metrigau cydymffurfio ac archwilio](pynciau/metrigau-cydymffurfio-ac-archwilio/index.md)
 - [8.4 Metrigau cyflenwyr a chontractau](pynciau/metrigau-cyflenwyr-a-chontractau/index.md)
 - [8.5 Adrodd rheoleiddiedig a llywodraethol](pynciau/adrodd-rheoleiddiedig-a-llywodraethol/index.md)

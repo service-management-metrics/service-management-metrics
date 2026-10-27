@@ -173,7 +173,7 @@ Mae'r pwnc hwn yn ymwneud â dadansoddeg, felly yr arfer yw nodyn byr ar bob met
 
 Y gost yw amser staff ar gyfer gwiriadau ansawdd data, cysoni, dogfennaeth ac adolygu, ynghyd ag offer ar gyfer piblinellau data a chatalogau lle y'u defnyddir. Gall llawer ohoni ddechrau gyda chamau bach, megis dilysu yn ffurflen y tocyn.
 
-Yr elw yw penderfyniadau a wneir ar rifau gwell, llai o amser a dreulir yn dadlau pa adroddiad sy'n gywir, a llai o ailwampio pan geir rhif a gamddarllenwyd yn hwyr. Disgrifiwch ef fel patrwm, nid fel ffigur: llai o benderfyniadau a wrthdröwyd a llai o anghydfodau. Os oes angen rhifau arnoch ar gyfer achos, mesurwch eich llinellau sylfaen eich hun, megis amrywiant cysoni a'r amser a dreulir yn datrys anghydfodau adroddiadau, cyn ac ar ôl y newid (gweler pwnc 7.7, Elw ar fuddsoddiad ac achos busnes).
+Yr elw yw penderfyniadau a wneir ar rifau gwell, llai o amser a dreulir yn dadlau pa adroddiad sy'n gywir, a llai o ailwampio pan geir rhif a gamddarllenwyd yn hwyr. Disgrifiwch ef fel patrwm, nid fel ffigur: llai o benderfyniadau a wrthdröwyd a llai o anghydfodau. Os oes angen rhifau arnoch ar gyfer achos, mesurwch eich llinellau sylfaen eich hun, megis amrywiant cysoni a'r amser a dreulir yn datrys anghydfodau adroddiadau, cyn ac ar ôl y newid (gweler pwnc 7.7, Elw ar fuddsoddiad a'r achos busnes).
 
 ## Gwrth-batrymau a thrapiau
 

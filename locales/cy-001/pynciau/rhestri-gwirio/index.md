@@ -81,7 +81,7 @@ Defnyddiwch hon ddwywaith y flwyddyn, gyda'r timau, ochr yn ochr â'r hunanasesi
 
 - [ ] Mae mesurau canlyniad yn eistedd wrth ymyl mesurau gweithgarwch ym mhob golwg.
 - [ ] Mae mesurau sy'n ymwneud ag AI yn dilyn llinellau sylfaen, samplu a chanlyniadau wedi'u gwirio, nid cyfaint yn unig (gweler pwnc 10.4, Chwyddiant metrigau a gwanhau ansawdd).
-- [ ] Mae mesurau awtomeiddio a phiblinellau yn cynnwys methiannau, dychweliadau ac osgoi, ac mae gan bob awtomeiddio berchennog (gweler pwnc 10.6, Metrigau awtomeiddio ac orchestreiddio, a phwnc 10.7, Metrigau piblinellau a newid awtomataidd).
+- [ ] Mae mesurau awtomeiddio a phiblinellau yn cynnwys methiannau, dychweliadau ac osgoi, ac mae gan bob awtomeiddio berchennog (gweler pwnc 10.6, Metrigau awtomeiddio a threfnu, a phwnc 10.7, Metrigau piblinellau a newid awtomataidd).
 - [ ] Dangosir ansawdd data ac ansicrwydd wrth ymyl y rhifau, ac mae honiadau ITIL 5 wedi'u labelu'n wiriedig neu'n anghadarnhaol (gweler pwnc 10.8, Metrigau dadansoddeg ac ansawdd data, a phwnc 1.8, Mesur ITIL 5 a chanlyniadau gwerth).
 - [ ] Mae mesurau cost, risg a phobl yn bresennol lle maent o bwys, ac ni ddefnyddir yr un i raddio unigolion.
 
@@ -90,4 +90,4 @@ Defnyddiwch hon ddwywaith y flwyddyn, gyda'r timau, ochr yn ochr â'r hunanasesi
 - [ ] Mae camau gwella o'r adolygiad diwethaf wedi'u cwblhau neu eu gollwng gyda rheswm.
 - [ ] Ymddeolwyd mesurau ac adroddiadau yn ystod y flwyddyn ddiwethaf.
 - [ ] Amcangyfrifwyd yr ymdrech a ofynnir gan dimau ar gyfer mesur, ac mae'n dderbyniol ganddynt.
-- [ ] Adolygwyd y rhaglen ei hun gyda'r timau, a newidiwyd y cynllun o ganlyniad (gweler pwnc 11.5, Map ffordd mabwysiadu cynyddrannol).
+- [ ] Adolygwyd y rhaglen ei hun gyda'r timau, a newidiwyd y cynllun o ganlyniad (gweler pwnc 11.5, Map ffordd mabwysiadu cynyddol).

@@ -8,7 +8,7 @@ Mae [rhagolygu](https://en.wikipedia.org/wiki/Forecasting) yn amcangyfrif maint 
 
 Mae rhagolygon a rhagfynegiadau'n methu mewn ffyrdd cyffredin. Efallai na fydd y gorffennol yn debyg i'r dyfodol, am fod gwasanaeth, tîm neu offeryn wedi newid. Gall y data fod yn denau neu'n unochrog. Gall yr ystod fod yn rhy gul, am fod un rhif yn edrych yn fwy defnyddiol na chyfwng. Ac mae'n bosibl y defnyddir y rhagolwg fel ymrwymiad, fel bod pobl yn gweithio i wneud iddo ddod yn wir neu'n cuddio'r hyn sy'n ei wrthddweud.
 
-Rhoddodd pynciau cynharach ragolygon ar gyfer defnyddiau penodol: dyddiadau cyflawni o drwybwn (gweler pwnc 2.5, Metrigau rhagolygu a chynllunio cyflawni), capasiti o alw (gweler pwnc 5.4, Metrigau capasiti a pherfformiad), a chost (gweler pwnc 7.5, Cost gwasanaeth ac economeg uned). Mae'r pwnc hwn yn rhoi'r dull cyffredinol o fesur ansawdd unrhyw ragolwg neu ragfynegiad, sy'n berthnasol i bob un ohonynt. Mae hefyd yn trafod modelau rhagfynegol y mae eu hallbwn yn gyrru gweithred, lle mae cost rhagfynegiad anghywir yn disgyn ar rywun.
+Rhoddodd pynciau cynharach ragolygon ar gyfer defnyddiau penodol: dyddiadau cyflawni o drwybwn (gweler pwnc 2.5, Metrigau rhagweld a chynllunio cyflawni), capasiti o alw (gweler pwnc 5.4, Metrigau capasiti a pherfformiad), a chost (gweler pwnc 7.5, Cost gwasanaeth ac economeg uned). Mae'r pwnc hwn yn rhoi'r dull cyffredinol o fesur ansawdd unrhyw ragolwg neu ragfynegiad, sy'n berthnasol i bob un ohonynt. Mae hefyd yn trafod modelau rhagfynegol y mae eu hallbwn yn gyrru gweithred, lle mae cost rhagfynegiad anghywir yn disgyn ar rywun.
 
 Termau a ddefnyddir yma. **Rhagolwg pwynt** yw un gwerth a ragfynegir. **Cyfwng rhagfynegi** yw ystod y bwriedir iddi gynnwys y gwerth gwirioneddol gyda thebygolrwydd a nodir. **Graddnodi** yw'r cytundeb rhwng tebygolrwydd a nodir ac amlder a arsylwir: o'r rhagolygon a ddywedodd 80 y cant, dylai tua 80 y cant ddod yn wir. **Gwall rhagolwg** yw'r gwahaniaeth rhwng rhagolwg a'r gwir. **Rhagolwg llinell sylfaen** yw dull syml, megis "yr un fath â'r cyfnod diwethaf", y cymharir dull mwy cymhleth ag ef. **Positif ffug** yw rhagfynegiad o ddigwyddiad nad yw'n digwydd, a **negatif ffug** yw methiant i ragfynegi un sy'n digwydd. **Drifft** yw newid yn y data neu yn y berthynas rhwng mewnbynnau a chanlyniadau sy'n lleihau cywirdeb model dros amser.
 
@@ -173,7 +173,7 @@ Dadansoddeg rhagolygon yw'r pwnc hwn: dangoswch wall fel dosbarthiad, cwmpas gyd
 
 Y costau yw gwaith data, logio rhagolygon, offer ar gyfer modelu os y'u defnyddir, amser adolygu, a monitro modelau am ddrifft. Mae dechrau gyda log a llinell sylfaen naïf yn costio ychydig iawn.
 
-Yr elw yw cynllunio gwell: capasiti sy'n cyrraedd cyn yr angen, staffio sy'n cyfateb i'r galw, a llai o bethau annisgwyl. Mae'n anodd ei briodoli, felly osgowch hawlio ffigur. Cymharwch gost a gwall dull rhagolygu â'r llinell sylfaen dros amser, a nodwch y tybiaethau fel ystodau (gweler pwnc 7.7, Elw ar fuddsoddiad ac achos busnes). Ochr y risg yw cost gorddibyniaeth ar fodel sydd wedi drifftio, a phenderfyniadau a wneir ar gywirdeb ffug.
+Yr elw yw cynllunio gwell: capasiti sy'n cyrraedd cyn yr angen, staffio sy'n cyfateb i'r galw, a llai o bethau annisgwyl. Mae'n anodd ei briodoli, felly osgowch hawlio ffigur. Cymharwch gost a gwall dull rhagolygu â'r llinell sylfaen dros amser, a nodwch y tybiaethau fel ystodau (gweler pwnc 7.7, Elw ar fuddsoddiad a'r achos busnes). Ochr y risg yw cost gorddibyniaeth ar fodel sydd wedi drifftio, a phenderfyniadau a wneir ar gywirdeb ffug.
 
 ## Gwrth-batrymau a thrapiau
 

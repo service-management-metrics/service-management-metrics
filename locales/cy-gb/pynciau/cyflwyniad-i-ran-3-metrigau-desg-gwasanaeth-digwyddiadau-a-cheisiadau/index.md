@@ -13,7 +13,7 @@ Mae'r pedair lens yn bwysicaf yn y rhan hon, oherwydd mae didoli AI, asiantau rh
 ## Pynciau yn y rhan hon
 
 - **3.1 Metrigau desg gwasanaeth**: cyfaint cysylltiadau, datrys ar y cyswllt cyntaf, gadael, ac amser trin; beth mae pob un yn ei wobrwyo a beth mae pob un yn ei guddio.
-- **3.2 Cyfaint a blaenoriaeth digwyddiadau**: cyfrifon digwyddiadau, categorïau, effaith a brys, cymysgedd blaenoriaeth, digwyddiadau sy'n ailadrodd, a normaleiddio cyfaint yn erbyn defnydd.
+- **3.2 Nifer a blaenoriaeth digwyddiadau**: cyfrifon digwyddiadau, categorïau, effaith a brys, cymysgedd blaenoriaeth, digwyddiadau sy'n ailadrodd, a normaleiddio cyfaint yn erbyn defnydd.
 - **3.3 Amser ymateb a datrys digwyddiadau**: amser i ganfod, cydnabod, ymateb a datrys; mesurau amser cymedrig a'u problemau ystadegol; canraddau yn lle hynny.
 - **3.4 Metrigau digwyddiadau mawr**: amlder, hyd, effaith ar gwsmeriaid, amseroldeb cyfathrebu, a dilyn camau drwodd.
 - **3.5 Metrigau cyflawni ceisiadau gwasanaeth**: amser cyflawni, ôl-groniad, cyfaint ceisiadau yn ôl eitem catalog, a chyfran awtomeiddio.
@@ -22,7 +22,7 @@ Mae'r pedair lens yn bwysicaf yn y rhan hon, oherwydd mae didoli AI, asiantau rh
 
 ## Sut mae'r pynciau hyn yn perthyn i'w gilydd
 
-Mae'r pedwar pwnc cyntaf yn dilyn bywyd tarfu. Mae cysylltiadau'n cyrraedd y ddesg, sef pryder pwnc 3.1 (gweler pwnc 3.1, Metrigau desg gwasanaeth). Mae'r rhai sy'n adrodd bai yn dod yn ddigwyddiadau, y mae pwnc 3.2 (gweler pwnc 3.2, Cyfaint a blaenoriaeth digwyddiadau) yn eu cyfrif a'u dosbarthu yn ôl effaith a brys. Yna mae pwnc 3.3 (gweler pwnc 3.3, Amser ymateb a datrys digwyddiadau) yn mesur pa mor hir y mae pob cam yn ei gymryd. Mae'r ychydig ddigwyddiadau sy'n achosi niwed difrifol yn cael eu triniaeth eu hunain ym mhwnc 3.4 (gweler pwnc 3.4, Metrigau digwyddiadau mawr), oherwydd bod eu prinder a'u maint yn gwneud cyfartaleddau cyffredin yn gamarweiniol.
+Mae'r pedwar pwnc cyntaf yn dilyn bywyd tarfu. Mae cysylltiadau'n cyrraedd y ddesg, sef pryder pwnc 3.1 (gweler pwnc 3.1, Metrigau desg gwasanaeth). Mae'r rhai sy'n adrodd bai yn dod yn ddigwyddiadau, y mae pwnc 3.2 (gweler pwnc 3.2, Nifer a blaenoriaeth digwyddiadau) yn eu cyfrif a'u dosbarthu yn ôl effaith a brys. Yna mae pwnc 3.3 (gweler pwnc 3.3, Amser ymateb a datrys digwyddiadau) yn mesur pa mor hir y mae pob cam yn ei gymryd. Mae'r ychydig ddigwyddiadau sy'n achosi niwed difrifol yn cael eu triniaeth eu hunain ym mhwnc 3.4 (gweler pwnc 3.4, Metrigau digwyddiadau mawr), oherwydd bod eu prinder a'u maint yn gwneud cyfartaleddau cyffredin yn gamarweiniol.
 
 Mae angen partner ar nifer o'r mesurau hyn i aros yn onest. Dylid darllen cyflymder ar y ddesg, megis amser trin ym mhwnc 3.1, wrth ymyl datrys ar y cyswllt cyntaf a'r cysylltiadau mynych a gynhyrchir ganddo, fel na chamgymerir galwadau cyflym am broblemau a ddatryswyd. Mae amser datrys ym mhwnc 3.3 yn perthyn gyda'r digwyddiadau sy'n ailadrodd ym mhwnc 3.2, gan nad yw adferiad cyflym sy'n methu eto wythnos yn ddiweddarach wedi helpu'r defnyddiwr. Mae cymysgedd blaenoriaeth ym mhwnc 3.2 yn rhoi cyd-destun i bob mesur amser: gall cynnydd yn y canolrif amser datrys adlewyrchu newid yn y math o ddigwyddiadau sy'n cyrraedd yn hytrach na newid yn ansawdd ymateb y tîm.
 
