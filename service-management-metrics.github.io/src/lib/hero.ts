@@ -75,6 +75,11 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "Buku kerja tentang cara mengukur manajemen layanan dengan baik melalui empat lensa: agile, AI, otomatisasi, dan analitik. Setiap metrik menyebutkan vektor manipulasi dan pagar pembatas yang menangkapnya. Metrik menggambarkan tim, layanan, dan sistem, dan tidak pernah dipakai untuk memeringkat orang.",
   "translations": "Terjemahan: "
  },
+ "id-id": {
+  "tagline": "Ukur manajemen layanan di era ITIL 5 tanpa memutarbalikkan pekerjaan.",
+  "intro": "Buku kerja tentang cara mengukur manajemen layanan dengan baik melalui empat lensa: agile, AI, otomatisasi, dan analitik. Setiap metrik menyebutkan vektor manipulasi dan pagar pembatas yang menangkapnya. Metrik menggambarkan tim, layanan, dan sistem, dan tidak pernah dipakai untuk memeringkat orang.",
+  "translations": "Terjemahan: "
+ },
  "ja-001": {
   "tagline": "ITIL 5時代のサービスマネジメントを、仕事をゆがめることなく測定する。",
   "intro": "アジャイル、AI、自動化、アナリティクスという四つのレンズでサービスマネジメントを適切に測定するための実践的な本です。各メトリクスには、悪用されうる方法とそれを見つける防護柵を示しています。メトリクスはチーム、サービス、システムを記述するものであり、個人の順位付けには決して使いません。",
@@ -178,6 +183,7 @@ export const ENDONYMS: Record<string, string> = {
  "hi-001": "हिन्दी",
  "hi-in": "हिन्दी (भारत)",
  "id-001": "Bahasa Indonesia",
+ "id-id": "Bahasa Indonesia (Indonesia)",
  "ja-001": "日本語",
  "ja-jp": "日本語（日本）",
  "ko-001": "한국어",

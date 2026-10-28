@@ -1,0 +1,21 @@
+{
+  "name": "Bahasa Indonesia (dunia)",
+  "topic_word": "topik",
+  "topics_word": "topik",
+  "h2": {},
+  "h3": {},
+  "maturity": {},
+  "dirs": {
+    "topics": "topik",
+    "contents": "konten",
+    "terminology": "terminologi"
+  },
+  "strings": {
+    "title": "Metrik Manajemen Layanan",
+    "tagline": "Ukur manajemen layanan tanpa memutarbalikkan pekerjaan.",
+    "intro": "Buku kerja tentang cara mengukur manajemen layanan dengan baik melalui empat lensa: agile, AI, otomatisasi, dan analitik. Setiap metrik menyebutkan vektor manipulasi dan pagar pembatas yang menangkapnya. Metrik menggambarkan tim, layanan, dan sistem, dan tidak pernah dipakai untuk memeringkat orang.",
+    "contents": "Konten",
+    "read": "Baca di web",
+    "part_fmt": "Bagian {n}"
+  }
+}
