@@ -1019,12 +1019,14 @@ body {
     font-weight: 600;
 }
 
+.page-hero-languages,
 .page-hero-translations {
     margin: 0;
     font-size: 0.875em;
     color: var(--lily-text-muted);
 }
 
+.page-hero-languages a[aria-current='page'],
 .page-hero-translations a[aria-current='page'] {
     font-weight: 700;
     text-decoration: none;

@@ -3,167 +3,200 @@ export const HERO: Record<string, Record<string, string>> = {
  "ar-001": {
   "tagline": "قِس إدارة الخدمات في عصر ITIL 5 دون تشويه العمل.",
   "intro": "كتاب عملي في قياس إدارة الخدمات قياسًا جيدًا عبر أربع عدسات: الأجايل والذكاء الاصطناعي والأتمتة والتحليلات. يسمّي كل مقياس مسار تلاعبه وحاجز الحماية الذي يكشفه. والمقاييس تصف الفرق والخدمات والأنظمة، لا الأفراد أبدًا.",
-  "translations": "الترجمات: "
+  "translations": "الترجمات: ",
+  "language": "اللغة: "
  },
  "bn-001": {
   "tagline": "কাজ বিকৃত না করে ITIL 5-এর যুগে সেবা ব্যবস্থাপনা পরিমাপ করুন।",
   "intro": "চারটি দৃষ্টিকোণ দিয়ে সেবা ব্যবস্থাপনা ভালোভাবে পরিমাপের একটি কার্যকর বই: এজাইল, এআই, অটোমেশন ও বিশ্লেষণ। প্রতিটি মেট্রিকের কারসাজির উপায় ও তা ধরার রক্ষাবেষ্টনী উল্লেখ আছে। এখানকার মেট্রিক দল, সেবা ও ব্যবস্থা বর্ণনা করে, এবং মানুষকে ক্রম দিতে কখনও ব্যবহৃত হয় না।",
-  "translations": "অনুবাদ: "
+  "translations": "অনুবাদ: ",
+  "language": "ভাষা: "
  },
  "cy-001": {
   "tagline": "Mesurwch reoli gwasanaethau yn oes ITIL 5 heb ystumio'r gwaith.",
   "intro": "Llyfr gwaith ar fesur rheoli gwasanaethau'n dda drwy bedwar lens: ystwyth, AI, awtomeiddio a dadansoddeg. Mae pob metrig yn enwi ei fector chwarae'r system a'r canllaw amddiffynnol sy'n ei ddal. Mae metrigau'n disgrifio timau, gwasanaethau a systemau, ac ni chânt byth eu defnyddio i restru pobl.",
-  "translations": "Cyfieithiadau: "
+  "translations": "Cyfieithiadau: ",
+  "language": "Iaith: "
  },
  "cy-gb": {
   "tagline": "Mesurwch reoli gwasanaethau yn oes ITIL 5 heb ystumio'r gwaith.",
   "intro": "Llyfr gwaith ar fesur rheoli gwasanaethau'n dda drwy bedwar lens: ystwyth, AI, awtomeiddio a dadansoddeg. Mae pob metrig yn enwi ei fector chwarae'r system a'r canllaw amddiffynnol sy'n ei ddal. Mae metrigau'n disgrifio timau, gwasanaethau a systemau, ac ni chânt byth eu defnyddio i restru pobl.",
-  "translations": "Cyfieithiadau: "
+  "translations": "Cyfieithiadau: ",
+  "language": "Iaith: "
  },
  "da-001": {
   "tagline": "Mål servicestyring i ITIL 5's tidsalder uden at forvride arbejdet.",
   "intro": "En arbejdsbog om at måle servicestyring godt gennem fire linser: agilitet, AI, automatisering og analyse. Hver måling angiver sin manipulationsvektor og det autoværn, der fanger den. Målinger beskriver teams, tjenester og systemer og bruges aldrig til at rangordne mennesker.",
-  "translations": "Oversættelser: "
+  "translations": "Oversættelser: ",
+  "language": "Sprog: "
  },
  "de-001": {
   "tagline": "Service-Management im Zeitalter von ITIL 5 messen, ohne die Arbeit zu verzerren.",
   "intro": "Ein Arbeitsbuch zum guten Messen von Service-Management durch vier Linsen: Agilität, KI, Automatisierung und Analytik. Jede Kennzahl nennt ihren Manipulationsvektor und die Leitplanke, die ihn auffängt. Kennzahlen beschreiben Teams, Services und Systeme und dienen nie dazu, Menschen in eine Rangfolge zu bringen.",
-  "translations": "Übersetzungen: "
+  "translations": "Übersetzungen: ",
+  "language": "Sprache: "
  },
  "en-001": {
   "tagline": "Measure service management in the age of ITIL 5 without distorting the work.",
   "intro": "A working book on measuring service management well through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",
-  "translations": "Translations: "
+  "translations": "Translations: ",
+  "language": "Language: "
  },
  "en-gb": {
   "tagline": "Measure service management in the age of ITIL 5 without distorting the work.",
   "intro": "A working book on measuring service management well through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",
-  "translations": "Translations: "
+  "translations": "Translations: ",
+  "language": "Language: "
  },
  "en-gb-oxendict": {
   "tagline": "Measure service management in the age of ITIL 5 without distorting the work.",
   "intro": "A working book on measuring service management well through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",
-  "translations": "Translations: "
+  "translations": "Translations: ",
+  "language": "Language: "
  },
  "en-us": {
   "tagline": "Measure service management in the age of ITIL 5 without distorting the work.",
   "intro": "A working book on measuring service management well through four lenses: agile, AI, automation, and analytics. Every metric names its gaming vector and the guardrail that catches it. Metrics describe teams, services, and systems, never individuals.",
-  "translations": "Translations: "
+  "translations": "Translations: ",
+  "language": "Language: "
  },
  "es-001": {
   "tagline": "Mide la gestión de servicios en la era de ITIL 5 sin distorsionar el trabajo.",
   "intro": "Un libro práctico sobre cómo medir bien la gestión de servicios a través de cuatro lentes: ágil, IA, automatización y analítica. Cada métrica indica su vector de manipulación y la barrera de protección que lo detecta. Las métricas describen equipos, servicios y sistemas, y nunca se usan para clasificar a las personas.",
-  "translations": "Traducciones: "
+  "translations": "Traducciones: ",
+  "language": "Idioma: "
  },
  "fr-001": {
   "tagline": "Mesurez la gestion des services à l'ère d'ITIL 5 sans fausser le travail.",
   "intro": "Un livre pratique pour bien mesurer la gestion des services à travers quatre angles : agilité, IA, automatisation et analytique. Chaque métrique indique son vecteur de détournement et le garde-fou qui le détecte. Les métriques décrivent des équipes, des services et des systèmes, et ne servent jamais à classer des personnes.",
-  "translations": "Traductions : "
+  "translations": "Traductions : ",
+  "language": "Langue: "
  },
  "hi-001": {
   "tagline": "ITIL 5 के युग में सेवा प्रबंधन को मापें, काम को विकृत किए बिना।",
   "intro": "एजाइल, AI, स्वचालन और विश्लेषण के चार दृष्टिकोणों से सेवा प्रबंधन को अच्छी तरह मापने की व्यावहारिक पुस्तक। हर मीट्रिक अपना गेमिंग का रास्ता और उसे पकड़ने वाली सुरक्षा-रेखा बताती है। मीट्रिक्स टीमों, सेवाओं और प्रणालियों का वर्णन करते हैं, व्यक्तियों का कभी नहीं।",
-  "translations": "अनुवाद: "
+  "translations": "अनुवाद: ",
+  "language": "भाषा: "
  },
  "hi-in": {
   "tagline": "ITIL 5 के युग में सेवा प्रबंधन को मापें, काम को विकृत किए बिना।",
   "intro": "एजाइल, AI, स्वचालन और विश्लेषण के चार दृष्टिकोणों से सेवा प्रबंधन को अच्छी तरह मापने की व्यावहारिक पुस्तक। हर मीट्रिक अपना गेमिंग का रास्ता और उसे पकड़ने वाली सुरक्षा-रेखा बताती है। मीट्रिक्स टीमों, सेवाओं और प्रणालियों का वर्णन करते हैं, व्यक्तियों का कभी नहीं।",
-  "translations": "अनुवाद: "
+  "translations": "अनुवाद: ",
+  "language": "भाषा: "
  },
  "id-001": {
   "tagline": "Ukur manajemen layanan di era ITIL 5 tanpa memutarbalikkan pekerjaan.",
   "intro": "Buku kerja tentang cara mengukur manajemen layanan dengan baik melalui empat lensa: agile, AI, otomatisasi, dan analitik. Setiap metrik menyebutkan vektor manipulasi dan pagar pembatas yang menangkapnya. Metrik menggambarkan tim, layanan, dan sistem, dan tidak pernah dipakai untuk memeringkat orang.",
-  "translations": "Terjemahan: "
+  "translations": "Terjemahan: ",
+  "language": "Bahasa: "
  },
  "id-id": {
   "tagline": "Ukur manajemen layanan di era ITIL 5 tanpa memutarbalikkan pekerjaan.",
   "intro": "Buku kerja tentang cara mengukur manajemen layanan dengan baik melalui empat lensa: agile, AI, otomatisasi, dan analitik. Setiap metrik menyebutkan vektor manipulasi dan pagar pembatas yang menangkapnya. Metrik menggambarkan tim, layanan, dan sistem, dan tidak pernah dipakai untuk memeringkat orang.",
-  "translations": "Terjemahan: "
+  "translations": "Terjemahan: ",
+  "language": "Bahasa: "
  },
  "ja-001": {
   "tagline": "ITIL 5時代のサービスマネジメントを、仕事をゆがめることなく測定する。",
   "intro": "アジャイル、AI、自動化、アナリティクスという四つのレンズでサービスマネジメントを適切に測定するための実践的な本です。各メトリクスには、悪用されうる方法とそれを見つける防護柵を示しています。メトリクスはチーム、サービス、システムを記述するものであり、個人の順位付けには決して使いません。",
-  "translations": "翻訳： "
+  "translations": "翻訳： ",
+  "language": "言語："
  },
  "ja-jp": {
   "tagline": "ITIL 5時代のサービスマネジメントを、仕事をゆがめることなく測定する。",
   "intro": "アジャイル、AI、自動化、アナリティクスという四つのレンズでサービスマネジメントを適切に測定するための実践的な本です。各メトリクスには、悪用されうる方法とそれを見つける防護柵を示しています。メトリクスはチーム、サービス、システムを記述するものであり、個人の順位付けには決して使いません。",
-  "translations": "翻訳： "
+  "translations": "翻訳： ",
+  "language": "言語："
  },
  "ko-001": {
   "tagline": "일을 왜곡하지 않으면서 ITIL 5 시대의 서비스 관리를 측정하세요.",
   "intro": "애자일, AI, 자동화, 분석이라는 네 가지 렌즈로 서비스 관리를 제대로 측정하는 방법을 담은 실무서입니다. 모든 지표에는 악용될 수 있는 방식과 이를 잡아내는 방호책이 함께 나와 있습니다. 지표는 팀, 서비스, 시스템을 설명할 뿐 개인의 순위를 매기는 데 쓰이지 않습니다.",
-  "translations": "번역: "
+  "translations": "번역: ",
+  "language": "언어: "
  },
  "ko-kr": {
   "tagline": "일을 왜곡하지 않으면서 ITIL 5 시대의 서비스 관리를 측정하세요.",
   "intro": "애자일, AI, 자동화, 분석이라는 네 가지 렌즈로 서비스 관리를 제대로 측정하는 방법을 담은 실무서입니다. 모든 지표에는 악용될 수 있는 방식과 이를 잡아내는 방호책이 함께 나와 있습니다. 지표는 팀, 서비스, 시스템을 설명할 뿐 개인의 순위를 매기는 데 쓰이지 않습니다.",
-  "translations": "번역: "
+  "translations": "번역: ",
+  "language": "언어: "
  },
  "nl-001": {
   "tagline": "Meet servicemanagement in het tijdperk van ITIL 5 zonder het werk te vertekenen.",
   "intro": "Een werkboek over het goed meten van servicemanagement door vier lenzen: agile, AI, automatisering en analytics. Bij elke metriek staat de manipulatievector en de vangrail die die opvangt. Metrieken beschrijven teams, services en systemen en worden nooit gebruikt om mensen te rangschikken.",
-  "translations": "Vertalingen: "
+  "translations": "Vertalingen: ",
+  "language": "Taal: "
  },
  "nl-nl": {
   "tagline": "Meet servicemanagement in het tijdperk van ITIL 5 zonder het werk te vertekenen.",
   "intro": "Een werkboek over het goed meten van servicemanagement door vier lenzen: agile, AI, automatisering en analytics. Bij elke metriek staat de manipulatievector en de vangrail die die opvangt. Metrieken beschrijven teams, services en systemen en worden nooit gebruikt om mensen te rangschikken.",
-  "translations": "Vertalingen: "
+  "translations": "Vertalingen: ",
+  "language": "Taal: "
  },
  "pt-001": {
   "tagline": "Meça a gestão de serviços na era do ITIL 5 sem distorcer o trabalho.",
   "intro": "Um livro prático sobre como medir bem a gestão de serviços por quatro lentes: ágil, IA, automação e análise. Cada métrica indica seu vetor de manipulação e a barreira de proteção que o detecta. As métricas descrevem equipes, serviços e sistemas, e nunca servem para classificar pessoas.",
-  "translations": "Traduções: "
+  "translations": "Traduções: ",
+  "language": "Idioma: "
  },
  "ru-001": {
   "tagline": "Измеряйте управление услугами в эпоху ITIL 5, не искажая работу.",
   "intro": "Практическая книга об измерении управления услугами через четыре линзы: гибкость, ИИ, автоматизацию и аналитику. Для каждой метрики указаны вектор манипуляции и ограждение, которое его выявляет. Метрики описывают команды, услуги и системы и никогда не служат для ранжирования людей.",
-  "translations": "Переводы: "
+  "translations": "Переводы: ",
+  "language": "Язык: "
  },
  "sv-001": {
   "tagline": "Mät tjänstehantering i ITIL 5:s tid utan att förvränga arbetet.",
   "intro": "En arbetsbok om att mäta tjänstehantering väl genom fyra linser: agilitet, AI, automatisering och analys. Varje mätetal anger sin manipuleringsvektor och det skyddsräcke som fångar upp den. Mätetal beskriver team, tjänster och system, och används aldrig för att rangordna människor.",
-  "translations": "Översättningar: "
+  "translations": "Översättningar: ",
+  "language": "Språk: "
  },
  "sv-se": {
   "tagline": "Mät tjänstehantering i ITIL 5:s tid utan att förvränga arbetet.",
   "intro": "En arbetsbok om att mäta tjänstehantering väl genom fyra linser: agilitet, AI, automatisering och analys. Varje mätetal anger sin manipuleringsvektor och det skyddsräcke som fångar upp den. Mätetal beskriver team, tjänster och system, och används aldrig för att rangordna människor.",
-  "translations": "Översättningar: "
+  "translations": "Översättningar: ",
+  "language": "Språk: "
  },
  "sw-001": {
   "tagline": "Pima usimamizi wa huduma katika enzi ya ITIL 5 bila kupotosha kazi.",
   "intro": "Kitabu cha kazi kuhusu kupima vizuri usimamizi wa huduma kupitia lenzi nne: uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi. Kila kipimo kinataja njia yake ya kupotoshwa na kizuizi kinachokikamata. Vipimo vinaelezea timu, huduma na mifumo, na havitumiki kamwe kupanga watu kwa vyeo.",
-  "translations": "Tafsiri: "
+  "translations": "Tafsiri: ",
+  "language": "Lugha: "
  },
  "sw-tz": {
   "tagline": "Pima usimamizi wa huduma katika enzi ya ITIL 5 bila kupotosha kazi.",
   "intro": "Kitabu cha kazi kuhusu kupima vizuri usimamizi wa huduma kupitia lenzi nne: uchapuchapu, AI, uendeshaji otomatiki na uchanganuzi. Kila kipimo kinataja njia yake ya kupotoshwa na kizuizi kinachokikamata. Vipimo vinaelezea timu, huduma na mifumo, na havitumiki kamwe kupanga watu kwa vyeo.",
-  "translations": "Tafsiri: "
+  "translations": "Tafsiri: ",
+  "language": "Lugha: "
  },
  "ur-001": {
   "tagline": "آئی ٹی آئی ایل 5 کے دور میں خدمات کے انتظام کو کام بگاڑے بغیر ناپیں۔",
   "intro": "چار زاویوں سے خدمات کے انتظام کو اچھی طرح ناپنے پر ایک عملی کتاب: ایجائل، مصنوعی ذہانت، خودکاری اور تجزیات۔ ہر میٹرک اپنے بگاڑ کا راستہ اور اسے پکڑنے والی حفاظتی حد بتاتا ہے۔ میٹرکس ٹیموں، خدمات اور نظاموں کو بیان کرتے ہیں، اور لوگوں کی درجہ بندی کے لیے کبھی استعمال نہیں ہوتے۔",
-  "translations": "تراجم: "
+  "translations": "تراجم: ",
+  "language": "زبان: "
  },
  "vi-001": {
   "tagline": "Đo lường quản lý dịch vụ trong kỷ nguyên ITIL 5 mà không làm méo mó công việc.",
   "intro": "Một cuốn sách thực hành về cách đo lường tốt quản lý dịch vụ qua bốn lăng kính: linh hoạt, AI, tự động hóa và phân tích. Mỗi chỉ số nêu rõ vectơ lợi dụng và rào chắn phát hiện được điều đó. Chỉ số mô tả đội nhóm, dịch vụ và hệ thống, và không bao giờ dùng để xếp hạng con người.",
-  "translations": "Bản dịch: "
+  "translations": "Bản dịch: ",
+  "language": "Ngôn ngữ: "
  },
  "vi-vn": {
   "tagline": "Đo lường quản lý dịch vụ trong kỷ nguyên ITIL 5 mà không làm méo mó công việc.",
   "intro": "Một cuốn sách thực hành về cách đo lường tốt quản lý dịch vụ qua bốn lăng kính: linh hoạt, AI, tự động hóa và phân tích. Mỗi chỉ số nêu rõ vectơ lợi dụng và rào chắn phát hiện được điều đó. Chỉ số mô tả đội nhóm, dịch vụ và hệ thống, và không bao giờ dùng để xếp hạng con người.",
-  "translations": "Bản dịch: "
+  "translations": "Bản dịch: ",
+  "language": "Ngôn ngữ: "
  },
  "zh-001": {
   "tagline": "在 ITIL 5 时代度量服务管理，而不扭曲工作。",
   "intro": "一本通过敏捷、AI、自动化与分析四个视角，把服务管理度量做好的实用之书。每项度量都指出它的钻空子途径和能发现它的护栏。度量描述的是团队、服务和系统，绝不针对个人。",
-  "translations": "翻译："
+  "translations": "翻译：",
+  "language": "语言："
  },
  "zh-cn": {
   "tagline": "在 ITIL 5 时代度量服务管理，而不扭曲工作。",
   "intro": "一本通过敏捷、AI、自动化与分析四个视角，把服务管理度量做好的实用之书。每项度量都指出它的钻空子途径和能发现它的护栏。度量描述的是团队、服务和系统，绝不针对个人。",
-  "translations": "翻译："
+  "translations": "翻译：",
+  "language": "语言："
  }
 };
 
