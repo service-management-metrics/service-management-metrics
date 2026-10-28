@@ -137,4 +137,4 @@
 - [12.6 संदर्भ और आगे का अध्ययन](विषय/संदर्भ-और-आगे-का-अध्ययन/index.md)
 - [12.7 अनुक्रमणिका](विषय/अनुक्रमणिका/index.md)
 
-[वेब पर पढ़ें](https://service-management-metrics.github.io/hi-in/contents/)
+[वेब पर पढ़ें](https://service-management-metrics.github.io/hi-in/%E0%A4%B5%E0%A4%BF%E0%A4%B7%E0%A4%AF-%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80/)

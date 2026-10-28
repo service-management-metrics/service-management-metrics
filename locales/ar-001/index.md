@@ -137,4 +137,4 @@
 - [12.6 المراجع والقراءات الإضافية](المواضيع/المراجع-والقراءات-الإضافية/index.md)
 - [12.7 الفهرس](المواضيع/الفهرس/index.md)
 
-[اقرأ على الويب](https://service-management-metrics.github.io/ar-001/contents/)
+[اقرأ على الويب](https://service-management-metrics.github.io/ar-001/%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D9%88%D9%8A%D8%A7%D8%AA/)

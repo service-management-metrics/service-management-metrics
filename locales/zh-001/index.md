@@ -137,4 +137,4 @@
 - [12.6 参考文献与延伸阅读](主题/参考文献与延伸阅读/index.md)
 - [12.7 索引](主题/索引/index.md)
 
-[在网页上阅读](https://service-management-metrics.github.io/zh-001/contents/)
+[在网页上阅读](https://service-management-metrics.github.io/zh-001/%E7%9B%AE%E5%BD%95/)
