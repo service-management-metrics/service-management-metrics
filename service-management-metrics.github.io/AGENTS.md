@@ -2,6 +2,13 @@
 
 Guidance for AI agents working in `service-management-metrics.github.io/`. The governing specification is `../spec/index.md`. The site is a published view of the book; it never owns content. Read `README.md` first.
 
+## Specification Driven Development
+
+**The `spec/` directory is the source of truth.** 
+- Before doing anything read all files inside the `spec/` directory using your file-reading tools.
+- Treat all files inside `spec/` as strict requirements. Where any file disagrees with the spec, the spec wins: fix the file, or change the spec on purpose and bring the other files into line in the same commit. 
+- Do not improvise structure, style, or citation practice.
+
 ## Rules
 
 - **Use pnpm**, never npm or yarn. `packageManager` is pinned in `package.json`; `pnpm-lock.yaml` and `pnpm-workspace.yaml` are committed.

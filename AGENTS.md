@@ -2,9 +2,12 @@
 
 This repository is a book: *Service Management Metrics*, 94 Markdown topics in 12 parts on measuring service management in the age of ITIL 5 (agile, AI, automation, analytics). It is the metrics companion to the *Service Management Guide* (`~/git/service-management-guide/service-management-guide`) and follows the spec shape of `~/git/software-engineering-metrics/software-engineering-metrics`.
 
-## The one rule that governs everything
+## Specification Driven Development
 
-**`spec/index.md` is the source of truth.** Read it first. Where any file disagrees with the spec, the spec wins: fix the file, or change the spec on purpose and bring everything into line in the same commit.
+**The `spec/` directory is the source of truth.** 
+- Before doing anything read all files inside the `spec/` directory using your file-reading tools.
+- Treat all files inside `spec/` as strict requirements. Where any file disagrees with the spec, the spec wins: fix the file, or change the spec on purpose and bring the other files into line in the same commit. 
+- Do not improvise structure, style, or citation practice.
 
 ## Orientation
 

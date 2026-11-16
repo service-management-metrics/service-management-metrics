@@ -1,0 +1,30 @@
+Welcome to Service Management Metrics Discussions
+
+Service Management Metrics now has GitHub Discussions, a place to ask questions, suggest ideas, and share what you have done with it.
+
+Service Management Metrics is a practical handbook for measuring service management in the age of ITIL 5, through four lenses: agile, AI, automation, and analytics, with the gaming vector and guardrail for every metric. It is written for delivery teams, service desk and operations staff, product and service owners, automation and AI engineers, and service and IT managers.
+
+## What this means for you
+
+- You can ask questions and get answers from other readers.
+- You can suggest topics, fixes, and improvements before anyone writes them.
+- You can share how you use the book.
+
+## Where to go for what
+
+- Questions about using the book: Q&A
+- Suggestions for new or changed topics: Ideas
+- Quick community votes: Polls
+- Things you have built or tried with the book: Show and tell
+- Everything else: General
+- Errors, broken links, or typos: Issues (https://github.com/service-management-metrics/service-management-metrics/issues)
+
+## Links
+
+- Read the book: https://service-management-metrics.github.io
+- Source repository: https://github.com/service-management-metrics/service-management-metrics
+- Contributing guide: https://github.com/service-management-metrics/service-management-metrics/blob/main/CONTRIBUTING.md
+
+## Next step
+
+Say hello in the General category and tell us what brought you to Service Management Metrics. Reply here or react with an emoji if you have a question about how Discussions will be used.
