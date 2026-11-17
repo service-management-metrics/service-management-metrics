@@ -3,7 +3,7 @@ set -euf
 
 ## Publish the website: push service-management-metrics.github.io/ (this repo's
 ## site folder) to the site's own repository as a subtree split. The split is
-## deterministic, so re-running it on the same commits yields the same hashes
+## deterministic; when the remote has diverged, its tip is merged in first.
 ## and the push is always a fast-forward of the site repo's main branch.
 ##
 ## Usage: bin/publish [--dry-run]
@@ -24,6 +24,16 @@ test -z "$(git status --porcelain -- "$prefix")" \
 sha="$(git subtree split --prefix="$prefix" HEAD 2>/dev/null | tr '\r' '\n' | tail -n 1 | tr -d '[:space:]')"
 test -n "$sha" && git cat-file -e "${sha}^{commit}" \
     || { >&2 echo "Error: subtree split did not produce a commit."; exit 1; }
+
+## The site repo's history holds merge commits from earlier deploys, so the
+## split alone is not a fast-forward. Merge the remote tip in, keeping the
+## split's tree, so the push is always a fast-forward.
+if git fetch -q "$remote" main 2>/dev/null; then
+    tip="$(git rev-parse FETCH_HEAD)"
+    if ! git merge-base --is-ancestor "$tip" "$sha"; then
+        sha="$(git commit-tree "${sha}^{tree}" -p "$tip" -p "$sha" -m "Merge remote site main; deploy")"
+    fi
+fi
 
 echo "Publishing $sha to $remote (main)"
 ## shellcheck disable=SC2086
