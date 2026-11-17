@@ -12,7 +12,7 @@ Thank you for helping. You can contribute time, corrections, translations, or re
 ## Before you open a pull request
 
 1. Read `spec/index.md`, `AGENTS.md`, and `STYLE_GUIDE.md`.
-2. Run `bin/check --strict` and `bin/check-locales`. Both must pass.
+2. Run `bin/check --strict`, which also checks every locale. It must pass.
 3. If you changed a topic, run `bin/localize`, `bin/build-appendix-metrics`, `bin/build-appendix-references`, `bin/build-appendix-index`, and `bin/build-readme`, and commit the results.
 4. If you used an AI tool for substantial content, say which tool and what it did in the pull request description (see [AI_STATEMENT.md](AI_STATEMENT.md)).
 

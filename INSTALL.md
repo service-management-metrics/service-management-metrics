@@ -15,9 +15,8 @@ open README.md
 You need Python 3.
 
 ```sh
-python3 -I bin/check --strict          # structure, template, and style rules
+python3 -I bin/check --strict          # structure, template, style rules, and every locale
 python3 -I bin/check --strict --links  # also resolves every Wikipedia link
-python3 bin/check-locales              # every locale is complete
 python3 bin/localize --check           # derived English locales are current
 ```
 
