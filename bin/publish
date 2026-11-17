@@ -30,7 +30,10 @@ test -n "$sha" && git cat-file -e "${sha}^{commit}" \
 ## split's tree, so the push is always a fast-forward.
 if git fetch -q "$remote" main 2>/dev/null; then
     tip="$(git rev-parse FETCH_HEAD)"
-    if ! git merge-base --is-ancestor "$tip" "$sha"; then
+    if git merge-base --is-ancestor "$sha" "$tip"; then
+        echo "Site is already up to date ($tip)"
+        exit 0
+    elif ! git merge-base --is-ancestor "$tip" "$sha"; then
         sha="$(git commit-tree "${sha}^{tree}" -p "$tip" -p "$sha" -m "Merge remote site main; deploy")"
     fi
 fi
