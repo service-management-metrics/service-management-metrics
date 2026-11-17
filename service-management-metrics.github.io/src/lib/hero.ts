@@ -6,7 +6,31 @@ export const HERO: Record<string, Record<string, string>> = {
   "translations": "الترجمات: ",
   "language": "اللغة: "
  },
+ "ar-eg": {
+  "tagline": "قِس إدارة الخدمات في عصر ITIL 5 دون تشويه العمل.",
+  "intro": "كتاب عملي في قياس إدارة الخدمات قياسًا جيدًا عبر أربع عدسات: الأجايل والذكاء الاصطناعي والأتمتة والتحليلات. يسمّي كل مقياس مسار تلاعبه وحاجز الحماية الذي يكشفه. والمقاييس تصف الفرق والخدمات والأنظمة، لا الأفراد أبدًا.",
+  "translations": "الترجمات: ",
+  "language": "اللغة: "
+ },
+ "ar-dz": {
+  "tagline": "قِس إدارة الخدمات في عصر ITIL 5 دون تشويه العمل.",
+  "intro": "كتاب عملي في قياس إدارة الخدمات قياسًا جيدًا عبر أربع عدسات: الأجايل والذكاء الاصطناعي والأتمتة والتحليلات. يسمّي كل مقياس مسار تلاعبه وحاجز الحماية الذي يكشفه. والمقاييس تصف الفرق والخدمات والأنظمة، لا الأفراد أبدًا.",
+  "translations": "الترجمات: ",
+  "language": "اللغة: "
+ },
  "bn-001": {
+  "tagline": "কাজ বিকৃত না করে ITIL 5-এর যুগে সেবা ব্যবস্থাপনা পরিমাপ করুন।",
+  "intro": "চারটি দৃষ্টিকোণ দিয়ে সেবা ব্যবস্থাপনা ভালোভাবে পরিমাপের একটি কার্যকর বই: এজাইল, এআই, অটোমেশন ও বিশ্লেষণ। প্রতিটি মেট্রিকের কারসাজির উপায় ও তা ধরার রক্ষাবেষ্টনী উল্লেখ আছে। এখানকার মেট্রিক দল, সেবা ও ব্যবস্থা বর্ণনা করে, এবং মানুষকে ক্রম দিতে কখনও ব্যবহৃত হয় না।",
+  "translations": "অনুবাদ: ",
+  "language": "ভাষা: "
+ },
+ "bn-bd": {
+  "tagline": "কাজ বিকৃত না করে ITIL 5-এর যুগে সেবা ব্যবস্থাপনা পরিমাপ করুন।",
+  "intro": "চারটি দৃষ্টিকোণ দিয়ে সেবা ব্যবস্থাপনা ভালোভাবে পরিমাপের একটি কার্যকর বই: এজাইল, এআই, অটোমেশন ও বিশ্লেষণ। প্রতিটি মেট্রিকের কারসাজির উপায় ও তা ধরার রক্ষাবেষ্টনী উল্লেখ আছে। এখানকার মেট্রিক দল, সেবা ও ব্যবস্থা বর্ণনা করে, এবং মানুষকে ক্রম দিতে কখনও ব্যবহৃত হয় না।",
+  "translations": "অনুবাদ: ",
+  "language": "ভাষা: "
+ },
+ "bn-in": {
   "tagline": "কাজ বিকৃত না করে ITIL 5-এর যুগে সেবা ব্যবস্থাপনা পরিমাপ করুন।",
   "intro": "চারটি দৃষ্টিকোণ দিয়ে সেবা ব্যবস্থাপনা ভালোভাবে পরিমাপের একটি কার্যকর বই: এজাইল, এআই, অটোমেশন ও বিশ্লেষণ। প্রতিটি মেট্রিকের কারসাজির উপায় ও তা ধরার রক্ষাবেষ্টনী উল্লেখ আছে। এখানকার মেট্রিক দল, সেবা ও ব্যবস্থা বর্ণনা করে, এবং মানুষকে ক্রম দিতে কখনও ব্যবহৃত হয় না।",
   "translations": "অনুবাদ: ",
@@ -66,7 +90,31 @@ export const HERO: Record<string, Record<string, string>> = {
   "translations": "Traducciones: ",
   "language": "Idioma: "
  },
+ "es-es": {
+  "tagline": "Mide la gestión de servicios en la era de ITIL 5 sin distorsionar el trabajo.",
+  "intro": "Un libro práctico sobre cómo medir bien la gestión de servicios a través de cuatro lentes: ágil, IA, automatización y analítica. Cada métrica indica su vector de manipulación y la barrera de protección que lo detecta. Las métricas describen equipos, servicios y sistemas, y nunca se usan para clasificar a las personas.",
+  "translations": "Traducciones: ",
+  "language": "Idioma: "
+ },
+ "es-mx": {
+  "tagline": "Mide la gestión de servicios en la era de ITIL 5 sin distorsionar el trabajo.",
+  "intro": "Un libro práctico sobre cómo medir bien la gestión de servicios a través de cuatro lentes: ágil, IA, automatización y analítica. Cada métrica indica su vector de manipulación y la barrera de protección que lo detecta. Las métricas describen equipos, servicios y sistemas, y nunca se usan para clasificar a las personas.",
+  "translations": "Traducciones: ",
+  "language": "Idioma: "
+ },
  "fr-001": {
+  "tagline": "Mesurez la gestion des services à l'ère d'ITIL 5 sans fausser le travail.",
+  "intro": "Un livre pratique pour bien mesurer la gestion des services à travers quatre angles : agilité, IA, automatisation et analytique. Chaque métrique indique son vecteur de détournement et le garde-fou qui le détecte. Les métriques décrivent des équipes, des services et des systèmes, et ne servent jamais à classer des personnes.",
+  "translations": "Traductions : ",
+  "language": "Langue: "
+ },
+ "fr-fr": {
+  "tagline": "Mesurez la gestion des services à l'ère d'ITIL 5 sans fausser le travail.",
+  "intro": "Un livre pratique pour bien mesurer la gestion des services à travers quatre angles : agilité, IA, automatisation et analytique. Chaque métrique indique son vecteur de détournement et le garde-fou qui le détecte. Les métriques décrivent des équipes, des services et des systèmes, et ne servent jamais à classer des personnes.",
+  "translations": "Traductions : ",
+  "language": "Langue: "
+ },
+ "fr-ca": {
   "tagline": "Mesurez la gestion des services à l'ère d'ITIL 5 sans fausser le travail.",
   "intro": "Un livre pratique pour bien mesurer la gestion des services à travers quatre angles : agilité, IA, automatisation et analytique. Chaque métrique indique son vecteur de détournement et le garde-fou qui le détecte. Les métriques décrivent des équipes, des services et des systèmes, et ne servent jamais à classer des personnes.",
   "translations": "Traductions : ",
@@ -91,6 +139,12 @@ export const HERO: Record<string, Record<string, string>> = {
   "language": "Bahasa: "
  },
  "id-id": {
+  "tagline": "Ukur manajemen layanan di era ITIL 5 tanpa memutarbalikkan pekerjaan.",
+  "intro": "Buku kerja tentang cara mengukur manajemen layanan dengan baik melalui empat lensa: agile, AI, otomatisasi, dan analitik. Setiap metrik menyebutkan vektor manipulasi dan pagar pembatas yang menangkapnya. Metrik menggambarkan tim, layanan, dan sistem, dan tidak pernah dipakai untuk memeringkat orang.",
+  "translations": "Terjemahan: ",
+  "language": "Bahasa: "
+ },
+ "id-my": {
   "tagline": "Ukur manajemen layanan di era ITIL 5 tanpa memutarbalikkan pekerjaan.",
   "intro": "Buku kerja tentang cara mengukur manajemen layanan dengan baik melalui empat lensa: agile, AI, otomatisasi, dan analitik. Setiap metrik menyebutkan vektor manipulasi dan pagar pembatas yang menangkapnya. Metrik menggambarkan tim, layanan, dan sistem, dan tidak pernah dipakai untuk memeringkat orang.",
   "translations": "Terjemahan: ",
@@ -138,7 +192,31 @@ export const HERO: Record<string, Record<string, string>> = {
   "translations": "Traduções: ",
   "language": "Idioma: "
  },
+ "pt-pt": {
+  "tagline": "Meça a gestão de serviços na era do ITIL 5 sem distorcer o trabalho.",
+  "intro": "Um livro prático sobre como medir bem a gestão de serviços por quatro lentes: ágil, IA, automação e análise. Cada métrica indica seu vetor de manipulação e a barreira de proteção que o detecta. As métricas descrevem equipes, serviços e sistemas, e nunca servem para classificar pessoas.",
+  "translations": "Traduções: ",
+  "language": "Idioma: "
+ },
+ "pt-br": {
+  "tagline": "Meça a gestão de serviços na era do ITIL 5 sem distorcer o trabalho.",
+  "intro": "Um livro prático sobre como medir bem a gestão de serviços por quatro lentes: ágil, IA, automação e análise. Cada métrica indica seu vetor de manipulação e a barreira de proteção que o detecta. As métricas descrevem equipes, serviços e sistemas, e nunca servem para classificar pessoas.",
+  "translations": "Traduções: ",
+  "language": "Idioma: "
+ },
  "ru-001": {
+  "tagline": "Измеряйте управление услугами в эпоху ITIL 5, не искажая работу.",
+  "intro": "Практическая книга об измерении управления услугами через четыре линзы: гибкость, ИИ, автоматизацию и аналитику. Для каждой метрики указаны вектор манипуляции и ограждение, которое его выявляет. Метрики описывают команды, услуги и системы и никогда не служат для ранжирования людей.",
+  "translations": "Переводы: ",
+  "language": "Язык: "
+ },
+ "ru-ru": {
+  "tagline": "Измеряйте управление услугами в эпоху ITIL 5, не искажая работу.",
+  "intro": "Практическая книга об измерении управления услугами через четыре линзы: гибкость, ИИ, автоматизацию и аналитику. Для каждой метрики указаны вектор манипуляции и ограждение, которое его выявляет. Метрики описывают команды, услуги и системы и никогда не служат для ранжирования людей.",
+  "translations": "Переводы: ",
+  "language": "Язык: "
+ },
+ "ru-by": {
   "tagline": "Измеряйте управление услугами в эпоху ITIL 5, не искажая работу.",
   "intro": "Практическая книга об измерении управления услугами через четыре линзы: гибкость, ИИ, автоматизацию и аналитику. Для каждой метрики указаны вектор манипуляции и ограждение, которое его выявляет. Метрики описывают команды, услуги и системы и никогда не служат для ранжирования людей.",
   "translations": "Переводы: ",
@@ -202,7 +280,11 @@ export const HERO: Record<string, Record<string, string>> = {
 
 export const ENDONYMS: Record<string, string> = {
  "ar-001": "العربية",
+ "ar-eg": "العربية - مصر",
+ "ar-dz": "العربية - الجزائر",
  "bn-001": "বাংলা",
+ "bn-bd": "বাংলা - বাংলাদেশ",
+ "bn-in": "বাংলা - ভারত",
  "cy-001": "Cymraeg",
  "cy-gb": "Cymraeg (Prydain Fawr)",
  "da-001": "Dansk",
@@ -212,11 +294,16 @@ export const ENDONYMS: Record<string, string> = {
  "en-gb-oxendict": "English (Great Britain, Oxford)",
  "en-us": "English (United States)",
  "es-001": "Español",
+ "es-es": "Español - España",
+ "es-mx": "Español - México",
  "fr-001": "Français",
+ "fr-fr": "Français - France",
+ "fr-ca": "Français - Canada",
  "hi-001": "हिन्दी",
  "hi-in": "हिन्दी (भारत)",
  "id-001": "Bahasa Indonesia",
  "id-id": "Bahasa Indonesia (Indonesia)",
+ "id-my": "Bahasa Indonesia - Malaysia",
  "ja-001": "日本語",
  "ja-jp": "日本語（日本）",
  "ko-001": "한국어",
@@ -224,7 +311,11 @@ export const ENDONYMS: Record<string, string> = {
  "nl-001": "Nederlands",
  "nl-nl": "Nederlands (Nederland)",
  "pt-001": "Português",
+ "pt-pt": "Português - Portugal",
+ "pt-br": "Português - Brasil",
  "ru-001": "Русский",
+ "ru-ru": "Русский - Россия",
+ "ru-by": "Русский - Беларусь",
  "sv-001": "Svenska",
  "sv-se": "Svenska (Sverige)",
  "sw-001": "Kiswahili",

@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Português (mundo)"
+  },
+  "siteTitle": "Métricas de gestão de serviços",
+  "skipToContent": "Ir para o conteúdo",
+  "nav": {
+    "contents": "Conteúdo",
+    "skills": "Habilidades",
+    "source": "Código-fonte"
+  },
+  "picker": {
+    "theme": "Tema",
+    "locale": "Idioma",
+    "textSize": "Tamanho do texto",
+    "share": "Compartilhar",
+    "search": "Buscar",
+    "searchInput": "Buscar no livro",
+    "searchSubmit": "Buscar"
+  },
+  "share": {
+    "emailLink": "Enviar link por e-mail",
+    "shareOnLinkedIn": "Compartilhar no LinkedIn",
+    "shareOnReddit": "Compartilhar no Reddit",
+    "shareOnBluesky": "Compartilhar no Bluesky",
+    "shareOnMastodon": "Compartilhar no Mastodon",
+    "copyLink": "Copiar link",
+    "copied": "Copiado",
+    "copyFailed": "Não foi possível copiar"
+  },
+  "links": {
+    "label": "Links",
+    "llms": "llms.txt (para agentes de IA)",
+    "skills": "Habilidades de IA no GitHub",
+    "issues": "Rastreador de problemas"
+  },
+  "footer": {
+    "tagline": "Meça a gestão de serviços sem distorcer o trabalho.",
+    "sourceAndContributions": "Código-fonte e contribuições:",
+    "builtWith": "Criado com",
+    "ledBy": "Criado por"
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "contents": "Conteúdo",
+    "skills": "Habilidades",
+    "label": "Trilha de navegação"
+  },
+  "contents": {
+    "pageTitle": "Conteúdo",
+    "lead": "Doze partes e 94 tópicos sobre como medir a gestão de serviços na era do ITIL 5, pelas lentes ágil, IA, automação e análise, com vetores de manipulação e barreiras de proteção para cada métrica, perguntas para discussão, prompts de IA e habilidades de IA.",
+    "readingIn": "Lendo em {$language}",
+    "part": "Parte {$number}",
+    "reference": "Referência",
+    "comingSoon": "em breve"
+  },
+  "topic": {
+    "eyebrow": "Tópico {$number}",
+    "paginationLabel": "Navegação entre tópicos",
+    "previous": "Anterior",
+    "next": "Próximo"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Por que, o que e como medir sem distorcer o trabalho.",
+      "title": "Fundamentos da medição"
+    },
+    "2": {
+      "tagline": "Como o trabalho flui por equipes ágeis que também operam serviços.",
+      "title": "Métricas de fluxo e entrega contínua"
+    },
+    "3": {
+      "tagline": "Quão bem o suporte e a restauração funcionam para os usuários.",
+      "title": "Métricas de central de serviços, incidentes e requisições"
+    },
+    "4": {
+      "tagline": "Como mudança e aprendizado afetam a estabilidade e a velocidade.",
+      "title": "Métricas de problemas, mudanças e releases"
+    },
+    "5": {
+      "tagline": "Aquilo com que os usuários podem contar.",
+      "title": "Métricas de nível de serviço, disponibilidade e confiabilidade"
+    },
+    "6": {
+      "tagline": "Se os usuários estão em situação melhor.",
+      "title": "Métricas de cliente e experiência"
+    },
+    "7": {
+      "tagline": "Saber o que se tem e quanto custa.",
+      "title": "Métricas de ativos, configuração e finanças"
+    },
+    "8": {
+      "tagline": "Confiança, controle e os terceiros por trás do serviço.",
+      "title": "Métricas de segurança, risco, conformidade e fornecedores"
+    },
+    "9": {
+      "tagline": "A saúde das pessoas e o hábito de melhorar.",
+      "title": "Métricas de pessoas, equipes e melhoria"
+    },
+    "10": {
+      "tagline": "O que a IA, a automação e a análise mudam nos números.",
+      "title": "Métricas na era da IA"
+    },
+    "11": {
+      "tagline": "De um punhado de medidas a um hábito.",
+      "title": "Construir um programa de métricas"
+    },
+    "12": {
+      "tagline": "Material de referência.",
+      "title": "Apêndices"
+    }
+  },
+  "results": {
+    "button": "Buscar",
+    "label": "Resultados da busca",
+    "heading": "Resultados da busca por {$query}",
+    "failed": "Não foi possível carregar o índice de busca. Tente novamente mais tarde.",
+    "searching": "Buscando…",
+    "none": "Nada corresponde a {$query}.",
+    "browse": "Navegue pelo conteúdo.",
+    "count": "{$count} resultados.",
+    "limited": "Mostrando os {$count} melhores resultados."
+  },
+  "skillsPage": {
+    "title": "Habilidades de IA",
+    "lead": "Habilidades no formato do Claude Code para as quais os tópicos apontam. Cada uma é um arquivo SKILL.md que você pode copiar para sua própria pasta de habilidades.",
+    "viewSource": "Ver no GitHub",
+    "backToList": "Todas as habilidades"
+  },
+  "error": {
+    "label": "Erro {$status}",
+    "notFound": "Essa página não está aqui",
+    "generic": "Algo deu errado",
+    "unknown": "Erro desconhecido",
+    "try": "Tente o conteúdo."
+  },
+  "home": {
+    "continue": "Continuar para Métricas de gestão de serviços"
+  },
+  "topicWords": [
+    "tópico",
+    "tópicos"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "locale": {
+    "label": "Bahasa Indonesia (dunia)"
+  },
+  "siteTitle": "Metrik Manajemen Layanan",
+  "skipToContent": "Langsung ke konten",
+  "nav": {
+    "contents": "Konten",
+    "skills": "Skill",
+    "source": "Sumber"
+  },
+  "picker": {
+    "theme": "Tema",
+    "locale": "Bahasa",
+    "textSize": "Ukuran teks",
+    "share": "Bagikan",
+    "search": "Cari",
+    "searchInput": "Cari di buku",
+    "searchSubmit": "Cari"
+  },
+  "share": {
+    "emailLink": "Kirim tautan lewat surel",
+    "shareOnLinkedIn": "Bagikan di LinkedIn",
+    "shareOnReddit": "Bagikan di Reddit",
+    "shareOnBluesky": "Bagikan di Bluesky",
+    "shareOnMastodon": "Bagikan di Mastodon",
+    "copyLink": "Salin tautan",
+    "copied": "Tersalin",
+    "copyFailed": "Tidak dapat menyalin"
+  },
+  "links": {
+    "label": "Tautan",
+    "llms": "llms.txt (untuk agen AI)",
+    "skills": "Skill AI di GitHub",
+    "issues": "Pelacak isu"
+  },
+  "footer": {
+    "tagline": "Ukur manajemen layanan tanpa memutarbalikkan pekerjaan.",
+    "sourceAndContributions": "Sumber dan kontribusi:",
+    "builtWith": "Dibangun dengan",
+    "ledBy": "Dibuat oleh"
+  },
+  "breadcrumb": {
+    "home": "Beranda",
+    "contents": "Konten",
+    "skills": "Skill",
+    "label": "Remah roti navigasi"
+  },
+  "contents": {
+    "pageTitle": "Konten",
+    "lead": "Dua belas bagian dan 94 topik tentang mengukur manajemen layanan di era ITIL 5, melalui lensa agile, AI, otomatisasi, dan analitik, dengan vektor manipulasi dan pagar pembatas untuk setiap metrik, pertanyaan diskusi, prompt AI, dan skill AI.",
+    "readingIn": "Membaca dalam {$language}",
+    "part": "Bagian {$number}",
+    "reference": "Rujukan",
+    "comingSoon": "segera hadir"
+  },
+  "topic": {
+    "eyebrow": "Topik {$number}",
+    "paginationLabel": "Navigasi topik",
+    "previous": "Sebelumnya",
+    "next": "Berikutnya"
+  },
+  "parts": {
+    "1": {
+      "tagline": "Mengapa, apa, dan bagaimana mengukur tanpa memutarbalikkan pekerjaan.",
+      "title": "Dasar-Dasar Pengukuran"
+    },
+    "2": {
+      "tagline": "Bagaimana pekerjaan bergerak melalui tim agile yang juga menjalankan layanan.",
+      "title": "Metrik Alur dan Pengiriman Berkelanjutan"
+    },
+    "3": {
+      "tagline": "Seberapa baik dukungan dan pemulihan bekerja bagi pengguna.",
+      "title": "Metrik Service Desk, Insiden, dan Permintaan"
+    },
+    "4": {
+      "tagline": "Bagaimana perubahan dan pembelajaran memengaruhi stabilitas dan kecepatan.",
+      "title": "Metrik Masalah, Perubahan, dan Rilis"
+    },
+    "5": {
+      "tagline": "Apa yang dapat diandalkan pengguna.",
+      "title": "Metrik Tingkat Layanan, Ketersediaan, dan Keandalan"
+    },
+    "6": {
+      "tagline": "Apakah pengguna menjadi lebih baik.",
+      "title": "Metrik Pelanggan dan Pengalaman"
+    },
+    "7": {
+      "tagline": "Mengetahui apa yang Anda miliki dan berapa biayanya.",
+      "title": "Metrik Aset, Konfigurasi, dan Keuangan"
+    },
+    "8": {
+      "tagline": "Kepercayaan, kendali, dan pihak ketiga di balik layanan.",
+      "title": "Metrik Keamanan, Risiko, Kepatuhan, dan Pemasok"
+    },
+    "9": {
+      "tagline": "Kesehatan orang dan kebiasaan memperbaiki.",
+      "title": "Metrik Manusia, Tim, dan Perbaikan"
+    },
+    "10": {
+      "tagline": "Apa yang diubah AI, otomatisasi, dan analitik pada angka-angka.",
+      "title": "Metrik di Era AI"
+    },
+    "11": {
+      "tagline": "Dari segelintir ukuran menjadi kebiasaan.",
+      "title": "Membangun Program Metrik"
+    },
+    "12": {
+      "tagline": "Bahan rujukan.",
+      "title": "Lampiran"
+    }
+  },
+  "results": {
+    "button": "Cari",
+    "label": "Hasil pencarian",
+    "heading": "Hasil pencarian untuk {$query}",
+    "failed": "Indeks pencarian tidak dapat dimuat. Coba lagi nanti.",
+    "searching": "Mencari…",
+    "none": "Tidak ada yang cocok dengan {$query}.",
+    "browse": "Telusuri konten saja.",
+    "count": "{$count} hasil.",
+    "limited": "Menampilkan {$count} hasil terbaik."
+  },
+  "skillsPage": {
+    "title": "Skill AI",
+    "lead": "Skill dalam format Claude Code yang ditautkan topik. Masing-masing adalah berkas SKILL.md yang dapat Anda salin ke folder skill Anda sendiri.",
+    "viewSource": "Lihat di GitHub",
+    "backToList": "Semua skill"
+  },
+  "error": {
+    "label": "Galat {$status}",
+    "notFound": "Halaman itu tidak ada di sini",
+    "generic": "Ada yang salah",
+    "unknown": "Galat tidak dikenal",
+    "try": "Coba halaman konten."
+  },
+  "home": {
+    "continue": "Lanjut ke Metrik Manajemen Layanan"
+  },
+  "topicWords": [
+    "topik",
+    "topik"
+  ]
+}
