@@ -60,7 +60,7 @@
   </div>
 
   <PaginationNav label={_('topic.paginationLabel')} class="page-pagination">
-    <PaginationList>
+    <PaginationList label={_('topic.paginationLabel')}>
       <PaginationListItem class="page-pagination-previous">
         {#if data.previous}
           <a href={sectionPath(data.locale, 'topics', data.previous.slug)} rel="prev">
