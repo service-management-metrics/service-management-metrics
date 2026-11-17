@@ -4,3 +4,4 @@ build/
 .svelte-kit/
 *.log
 target/
+.vibe/
