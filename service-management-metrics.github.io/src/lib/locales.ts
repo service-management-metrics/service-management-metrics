@@ -15,9 +15,12 @@ export const LOCALES: Locale[] = [
   { slug: 'bn-in', label: 'বাংলা - ভারত' },
   { slug: 'bn-bd', label: 'বাংলা - বাংলাদেশ' },
   { slug: 'cy-001', label: 'Cymraeg - Byd' },
+  { slug: 'cy-ar', label: 'Cymraeg - Ariannin' },
   { slug: 'cy-gb', label: 'Cymraeg - Prydain Fawr' },
   { slug: 'da-001', label: 'Dansk - Verden' },
   { slug: 'de-001', label: 'Deutsch - Welt' },
+  { slug: 'de-at', label: 'Deutsch - Österreich' },
+  { slug: 'de-de', label: 'Deutsch - Deutschland' },
   { slug: 'en-001', label: 'English - World' },
   { slug: 'en-gb', label: 'English - Great Britain' },
   { slug: 'en-gb-oxendict', label: 'English - Great Britain - Oxford' },
@@ -30,6 +33,7 @@ export const LOCALES: Locale[] = [
   { slug: 'fr-fr', label: 'Français - France' },
   { slug: 'hi-001', label: 'हिन्दी - विश्व' },
   { slug: 'hi-in', label: 'हिन्दी - भारत' },
+  { slug: 'hi-np', label: 'हिन्दी - नेपाल' },
   { slug: 'id-001', label: 'Bahasa Indonesia - Dunia' },
   { slug: 'id-id', label: 'Bahasa Indonesia - Indonesia' },
   { slug: 'id-my', label: 'Bahasa Indonesia - Malaysia' },
@@ -54,6 +58,7 @@ export const LOCALES: Locale[] = [
   { slug: 'vi-vn', label: 'Tiếng Việt - Việt Nam' },
   { slug: 'zh-001', label: '简体中文 - 世界' },
   { slug: 'zh-cn', label: '简体中文 - 中国' },
+  { slug: 'zh-th', label: '简体中文 - 泰国' },
 ];
 
 export const LOCALE_SLUGS: string[] = LOCALES.map((locale) => locale.slug);

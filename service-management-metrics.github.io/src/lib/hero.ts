@@ -48,6 +48,12 @@ export const HERO: Record<string, Record<string, string>> = {
   "translations": "Cyfieithiadau: ",
   "language": "Iaith: "
  },
+ "cy-ar": {
+  "tagline": "Mesurwch reoli gwasanaethau yn oes ITIL 5 heb ystumio'r gwaith.",
+  "intro": "Llyfr gwaith ar fesur rheoli gwasanaethau'n dda drwy bedwar lens: ystwyth, AI, awtomeiddio a dadansoddeg. Mae pob metrig yn enwi ei fector chwarae'r system a'r canllaw amddiffynnol sy'n ei ddal. Mae metrigau'n disgrifio timau, gwasanaethau a systemau, ac ni chânt byth eu defnyddio i restru pobl.",
+  "translations": "Cyfieithiadau: ",
+  "language": "Iaith: "
+ },
  "da-001": {
   "tagline": "Mål servicestyring i ITIL 5's tidsalder uden at forvride arbejdet.",
   "intro": "En arbejdsbog om at måle servicestyring godt gennem fire linser: agilitet, AI, automatisering og analyse. Hver måling angiver sin manipulationsvektor og det autoværn, der fanger den. Målinger beskriver teams, tjenester og systemer og bruges aldrig til at rangordne mennesker.",
@@ -55,6 +61,18 @@ export const HERO: Record<string, Record<string, string>> = {
   "language": "Sprog: "
  },
  "de-001": {
+  "tagline": "Service-Management im Zeitalter von ITIL 5 messen, ohne die Arbeit zu verzerren.",
+  "intro": "Ein Arbeitsbuch zum guten Messen von Service-Management durch vier Linsen: Agilität, KI, Automatisierung und Analytik. Jede Kennzahl nennt ihren Manipulationsvektor und die Leitplanke, die ihn auffängt. Kennzahlen beschreiben Teams, Services und Systeme und dienen nie dazu, Menschen in eine Rangfolge zu bringen.",
+  "translations": "Übersetzungen: ",
+  "language": "Sprache: "
+ },
+ "de-at": {
+  "tagline": "Service-Management im Zeitalter von ITIL 5 messen, ohne die Arbeit zu verzerren.",
+  "intro": "Ein Arbeitsbuch zum guten Messen von Service-Management durch vier Linsen: Agilität, KI, Automatisierung und Analytik. Jede Kennzahl nennt ihren Manipulationsvektor und die Leitplanke, die ihn auffängt. Kennzahlen beschreiben Teams, Services und Systeme und dienen nie dazu, Menschen in eine Rangfolge zu bringen.",
+  "translations": "Übersetzungen: ",
+  "language": "Sprache: "
+ },
+ "de-de": {
   "tagline": "Service-Management im Zeitalter von ITIL 5 messen, ohne die Arbeit zu verzerren.",
   "intro": "Ein Arbeitsbuch zum guten Messen von Service-Management durch vier Linsen: Agilität, KI, Automatisierung und Analytik. Jede Kennzahl nennt ihren Manipulationsvektor und die Leitplanke, die ihn auffängt. Kennzahlen beschreiben Teams, Services und Systeme und dienen nie dazu, Menschen in eine Rangfolge zu bringen.",
   "translations": "Übersetzungen: ",
@@ -127,6 +145,12 @@ export const HERO: Record<string, Record<string, string>> = {
   "language": "भाषा: "
  },
  "hi-in": {
+  "tagline": "ITIL 5 के युग में सेवा प्रबंधन को मापें, काम को विकृत किए बिना।",
+  "intro": "एजाइल, AI, स्वचालन और विश्लेषण के चार दृष्टिकोणों से सेवा प्रबंधन को अच्छी तरह मापने की व्यावहारिक पुस्तक। हर मीट्रिक अपना गेमिंग का रास्ता और उसे पकड़ने वाली सुरक्षा-रेखा बताती है। मीट्रिक्स टीमों, सेवाओं और प्रणालियों का वर्णन करते हैं, व्यक्तियों का कभी नहीं।",
+  "translations": "अनुवाद: ",
+  "language": "भाषा: "
+ },
+ "hi-np": {
   "tagline": "ITIL 5 के युग में सेवा प्रबंधन को मापें, काम को विकृत किए बिना।",
   "intro": "एजाइल, AI, स्वचालन और विश्लेषण के चार दृष्टिकोणों से सेवा प्रबंधन को अच्छी तरह मापने की व्यावहारिक पुस्तक। हर मीट्रिक अपना गेमिंग का रास्ता और उसे पकड़ने वाली सुरक्षा-रेखा बताती है। मीट्रिक्स टीमों, सेवाओं और प्रणालियों का वर्णन करते हैं, व्यक्तियों का कभी नहीं।",
   "translations": "अनुवाद: ",
@@ -275,7 +299,13 @@ export const HERO: Record<string, Record<string, string>> = {
   "intro": "一本通过敏捷、AI、自动化与分析四个视角，把服务管理度量做好的实用之书。每项度量都指出它的钻空子途径和能发现它的护栏。度量描述的是团队、服务和系统，绝不针对个人。",
   "translations": "翻译：",
   "language": "语言："
- }
+ },
+ "zh-th": {
+  "tagline": "在 ITIL 5 时代度量服务管理，而不扭曲工作。",
+  "intro": "一本通过敏捷、AI、自动化与分析四个视角，把服务管理度量做好的实用之书。每项度量都指出它的钻空子途径和能发现它的护栏。度量描述的是团队、服务和系统，绝不针对个人。",
+  "translations": "翻译：",
+  "language": "语言："
+ },
 };
 
 export const ENDONYMS: Record<string, string> = {
@@ -287,8 +317,11 @@ export const ENDONYMS: Record<string, string> = {
  "bn-in": "বাংলা - ভারত",
  "cy-001": "Cymraeg",
  "cy-gb": "Cymraeg (Prydain Fawr)",
+ "cy-ar": "Cymraeg (Ariannin)",
  "da-001": "Dansk",
  "de-001": "Deutsch",
+ "de-at": "Deutsch (Österreich)",
+ "de-de": "Deutsch (Deutschland)",
  "en-001": "English",
  "en-gb": "English (Great Britain)",
  "en-gb-oxendict": "English (Great Britain, Oxford)",
@@ -301,6 +334,7 @@ export const ENDONYMS: Record<string, string> = {
  "fr-ca": "Français - Canada",
  "hi-001": "हिन्दी",
  "hi-in": "हिन्दी (भारत)",
+ "hi-np": "हिन्दी (नेपाल)",
  "id-001": "Bahasa Indonesia",
  "id-id": "Bahasa Indonesia (Indonesia)",
  "id-my": "Bahasa Indonesia - Malaysia",
@@ -324,5 +358,6 @@ export const ENDONYMS: Record<string, string> = {
  "vi-001": "Tiếng Việt",
  "vi-vn": "Tiếng Việt (Việt Nam)",
  "zh-001": "中文",
- "zh-cn": "简体中文"
+ "zh-cn": "简体中文",
+ "zh-th": "简体中文 (泰国)",
 };
